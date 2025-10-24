@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #ffffff; /* white */
+    --color-foreground: #0f172a; /* slate-900 */
+    --color-border: #e2e8f0; /* slate-200 */
+    --color-input: #ffffff; /* white */
+    --color-ring: #2563eb; /* blue-600 */
+    
+    /* Card Colors */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #0f172a; /* slate-900 */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #0f172a; /* slate-900 */
+    
+    /* Muted Colors */
+    --color-muted: #f8fafc; /* slate-50 */
+    --color-muted-foreground: #475569; /* slate-600 */
+    
+    /* Primary Colors */
+    --color-primary: #2563eb; /* blue-600 */
+    --color-primary-foreground: #ffffff; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #64748b; /* slate-500 */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #16a34a; /* green-600 */
+    --color-accent-foreground: #ffffff; /* white */
+    
+    /* Success Colors */
+    --color-success: #16a34a; /* green-600 */
+    --color-success-foreground: #ffffff; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #eab308; /* yellow-500 */
+    --color-warning-foreground: #0f172a; /* slate-900 */
+    
+    /* Error/Destructive Colors */
+    --color-error: #dc2626; /* red-600 */
+    --color-error-foreground: #ffffff; /* white */
+    --color-destructive: #dc2626; /* red-600 */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Surface Colors */
+    --color-surface: #f8fafc; /* slate-50 */
+    --color-surface-foreground: #0f172a; /* slate-900 */
+    
+    /* Text Colors */
+    --color-text-primary: #0f172a; /* slate-900 */
+    --color-text-secondary: #475569; /* slate-600 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-text-primary;
+  }
+  
+  p {
+    @apply text-text-primary;
+  }
+  
+  small, .text-small {
+    @apply text-text-secondary;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-medium {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transition-micro {
+    transition: all 150ms ease-out;
+  }
+  
+  .transition-standard {
+    transition: all 300ms ease-out;
+  }
+  
+  .scale-press {
+    transform: scale(0.98);
+  }
+}
