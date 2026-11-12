@@ -1,9 +1,23 @@
 // "Aracnildo puxa a Lua" (~33 s, narração ElevenLabs). Cenas alinhadas às frases de frases.json.
-// Rode: node projects/aracnildo-puxa-a-lua/gerar-storyboard.mjs [--checar]
+// Rode: node projects/aracnildo-puxa-a-lua/gerar-storyboard.mjs [pasta-do-projeto] [--checar]
+//   pasta-do-projeto: outra versão (outro idioma) com a própria narração (frases.json) e textos.json;
+//   sem ela, usa esta pasta. A animação é a mesma; os cortes seguem as frases da narração de cada versão
+//   (a narração precisa ter as mesmas 11 frases, na mesma ordem).
 //   --checar  imprime onde os pontos importantes de cada cena caem na tela 9:16 (x, y de 0 a 1)
 import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const F = JSON.parse(fs.readFileSync(new URL('./frases.json', import.meta.url), 'utf8')).map((f) => [f.inicio, f.fim]);
+const ARG = process.argv.slice(2).find((a) => !a.startsWith('--'));
+const PASTA = ARG ? path.resolve(ARG) : path.dirname(fileURLToPath(import.meta.url));
+const TXT = {
+  titulo: 'Aracnildo puxa a Lua', gancho: 'PUXOU A LUA!', dia: 'DIA 1', mare: 'MARÉ GIGANTE!',
+  quebrou: 'ELA QUEBROU!', olhar: 'LUA É PRA OLHAR!', pergunta: 'VOCÊ PUXARIA?',
+  ...(fs.existsSync(path.join(PASTA, 'textos.json')) ? JSON.parse(fs.readFileSync(path.join(PASTA, 'textos.json'), 'utf8')) : {}),
+};
+
+const F = JSON.parse(fs.readFileSync(path.join(PASTA, 'frases.json'), 'utf8')).map((f) => [f.inicio, f.fim]);
+if (F.length !== 11) throw new Error(`A narração precisa ter 11 frases (tem ${F.length}). Confira a pontuação de narracao.txt.`);
 const r2 = (n) => Math.round(n * 100) / 100;
 const corte = (a, b) => r2((F[a][1] + F[b][0]) / 2); // meio da pausa entre a frase a e a b
 const FIM = r2(F[F.length - 1][1] + 2.5);
@@ -106,7 +120,7 @@ add(0, C1, {
   })],
   fluxos: [{ material: 'luz', origem: add3(H, [0, 0.3, 0]), destino: add3(H, [0, 2.6, 0]), taxa: 10, tamanho: 0.025, dispersao: 0.6, de: 0, ate: C1 }],
   camera: { tipo: 'travelling', de: { pos: add3(add3(H, dirH, 3.0), [0.5, 0.2, 0]), olha: add3(H, [0, 1.15, 0]) }, para: { pos: add3(add3(H, dirH, 2.4), [0.4, 0.15, 0]), olha: add3(H, [0, 1.35, 0]) }, fov: 52 },
-  textos: [{ texto: 'PUXOU A LUA!', de: 0.15, ate: C1, estilo: 'titulo' }],
+  textos: [{ texto: TXT.gancho, de: 0.15, ate: C1, estilo: 'titulo' }],
 });
 
 // ---- 2. gruda e puxa ----
@@ -121,7 +135,7 @@ add(C1, C2, {
   })],
   fluxos: [{ material: 'poeira', origem: add3(H, [0, 0.05, 0]), taxa: 10, tamanho: 0.18, vida: 0.7, de: C1 + 0.4, ate: C2 }],
   camera: { tipo: 'travelling', de: { pos: camAtras.pos, olha: camAtras.olha }, para: { pos: add3(camAtras.pos, dirH, -0.6), olha: camAtras.olha }, fov: 54 },
-  textos: [{ texto: 'DIA 1', de: r2(C1 + 0.2), ate: r2(C1 + 2.4), estilo: 'destaque' }],
+  textos: [{ texto: TXT.dia, de: r2(C1 + 0.2), ate: r2(C1 + 2.4), estilo: 'destaque' }],
 });
 
 // ---- 3. a Lua vem vindo e fica GIGANTE ----
@@ -164,7 +178,7 @@ add(C3, C4, {
     { material: 'agua', origem: [6, 0.4, 7], destino: [7, 0.2, 2], taxa: 30, espalha: 2.5, arco: 1.2, de: r2(C3 + 1.8), ate: C4 },
   ],
   camera: { tipo: 'travelling', ...CAM4, fov: 52 },
-  textos: [{ texto: 'MARÉ GIGANTE!', de: r2(F[5][0]), ate: C4, estilo: 'destaque' }],
+  textos: [{ texto: TXT.mare, de: r2(F[5][0]), ate: C4, estilo: 'destaque' }],
 });
 
 // ---- 5. a onda cobre a praia e tudo alaga ----
@@ -216,7 +230,7 @@ add(C6, C7, {
   fluxos: [{ material: 'poeira', origem: LUA, taxa: 30, tamanho: 1.6, dispersao: 4, vida: 1.6, de: RACHA, ate: r2(RACHA + 1.2) }],
   efeitos: [{ tipo: 'tremor', de: RACHA, ate: r2(RACHA + 0.5), intensidade: 0.6 }],
   camera: { tipo: 'travelling', de: { pos: camAtras7.pos, olha: camAtras7.olha }, para: { pos: add3(camAtras7.pos, dirH, -0.8), olha: camAtras7.olha }, fov: 58 },
-  textos: [{ texto: 'ELA QUEBROU!', de: r2(RACHA + 0.2), ate: C7, estilo: 'destaque' }],
+  textos: [{ texto: TXT.quebrou, de: r2(RACHA + 0.2), ate: C7, estilo: 'destaque' }],
 });
 
 // ---- 8. vira um anel de pedras; o Aracnildo foge balançando ----
@@ -262,14 +276,14 @@ add(C8, FIM, {
   })],
   camera: { tipo: 'travelling', de: { pos: [3.0, 18.9, 9.6], olha: [0.9, 22.6, 1] }, para: { pos: [2.7, 19.0, 8.8], olha: [1.0, 22.4, 1] }, fov: 54 },
   textos: [
-    { texto: 'LUA É PRA OLHAR!', de: r2(F[9][0]), ate: r2(F[10][0] - 0.1), estilo: 'destaque' },
-    { texto: 'VOCÊ PUXARIA?', de: r2(F[10][0]), ate: FIM, estilo: 'pergunta' },
+    { texto: TXT.olhar, de: r2(F[9][0]), ate: r2(F[10][0] - 0.1), estilo: 'destaque' },
+    { texto: TXT.pergunta, de: r2(F[10][0]), ate: FIM, estilo: 'pergunta' },
   ],
 });
 
 const sb = {
   versao: 1,
-  titulo: 'Aracnildo puxa a Lua',
+  titulo: TXT.titulo,
   formato: { largura: 1080, altura: 1920, fps: 30 },
   duracao: FIM,
   audio: 'narracao.mp3',
@@ -278,7 +292,7 @@ const sb = {
   ambiente: NOITE,
   cenas: S,
 };
-fs.writeFileSync(new URL('./storyboard.json', import.meta.url), JSON.stringify(sb, null, 2) + '\n');
+fs.writeFileSync(path.join(PASTA, 'storyboard.json'), JSON.stringify(sb, null, 2) + '\n');
 console.log(`storyboard.json: ${S.length} cenas, ${FIM} s; cortes ${S.map((c) => c.inicio).join(' / ')}`);
 
 // ---------------- conferência de enquadramento ----------------

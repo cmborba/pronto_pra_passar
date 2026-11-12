@@ -1,0 +1,407 @@
+[
+ {
+  "palavra": "Aracnildo",
+  "inicio": 0,
+  "fim": 0.755
+ },
+ {
+  "palavra": "pulled",
+  "inicio": 0.836,
+  "fim": 1.091
+ },
+ {
+  "palavra": "the",
+  "inicio": 1.126,
+  "fim": 1.196
+ },
+ {
+  "palavra": "Moon",
+  "inicio": 1.242,
+  "fim": 1.451
+ },
+ {
+  "palavra": "closer",
+  "inicio": 1.521,
+  "fim": 1.858
+ },
+ {
+  "palavra": "to",
+  "inicio": 1.892,
+  "fim": 1.962
+ },
+ {
+  "palavra": "Earth!",
+  "inicio": 2.055,
+  "fim": 2.566
+ },
+ {
+  "palavra": "He",
+  "inicio": 3.1,
+  "fim": 3.228
+ },
+ {
+  "palavra": "shot",
+  "inicio": 3.286,
+  "fim": 3.506
+ },
+ {
+  "palavra": "a",
+  "inicio": 3.553,
+  "fim": 3.576
+ },
+ {
+  "palavra": "web,",
+  "inicio": 3.646,
+  "fim": 4.063
+ },
+ {
+  "palavra": "it",
+  "inicio": 4.122,
+  "fim": 4.261
+ },
+ {
+  "palavra": "stuck,",
+  "inicio": 4.331,
+  "fim": 4.992
+ },
+ {
+  "palavra": "and",
+  "inicio": 5.248,
+  "fim": 5.387
+ },
+ {
+  "palavra": "he",
+  "inicio": 5.433,
+  "fim": 5.492
+ },
+ {
+  "palavra": "pulled",
+  "inicio": 5.561,
+  "fim": 5.851
+ },
+ {
+  "palavra": "with",
+  "inicio": 5.886,
+  "fim": 6.037
+ },
+ {
+  "palavra": "all",
+  "inicio": 6.095,
+  "fim": 6.397
+ },
+ {
+  "palavra": "his",
+  "inicio": 6.467,
+  "fim": 6.583
+ },
+ {
+  "palavra": "might.",
+  "inicio": 6.653,
+  "fim": 7.14
+ },
+ {
+  "palavra": "The",
+  "inicio": 7.779,
+  "fim": 7.906
+ },
+ {
+  "palavra": "Moon",
+  "inicio": 7.988,
+  "fim": 8.243
+ },
+ {
+  "palavra": "came",
+  "inicio": 8.324,
+  "fim": 8.568
+ },
+ {
+  "palavra": "closer...",
+  "inicio": 8.615,
+  "fim": 9.3
+ },
+ {
+  "palavra": "and",
+  "inicio": 9.706,
+  "fim": 9.845
+ },
+ {
+  "palavra": "got",
+  "inicio": 9.903,
+  "fim": 10.043
+ },
+ {
+  "palavra": "gigantic!",
+  "inicio": 10.101,
+  "fim": 10.913
+ },
+ {
+  "palavra": "But",
+  "inicio": 11.552,
+  "fim": 11.714
+ },
+ {
+  "palavra": "the",
+  "inicio": 11.749,
+  "fim": 11.819
+ },
+ {
+  "palavra": "Moon",
+  "inicio": 11.865,
+  "fim": 12.074
+ },
+ {
+  "palavra": "pulls",
+  "inicio": 12.132,
+  "fim": 12.399
+ },
+ {
+  "palavra": "the",
+  "inicio": 12.446,
+  "fim": 12.527
+ },
+ {
+  "palavra": "ocean.",
+  "inicio": 12.597,
+  "fim": 13.154
+ },
+ {
+  "palavra": "Closer,",
+  "inicio": 13.41,
+  "fim": 13.944
+ },
+ {
+  "palavra": "it",
+  "inicio": 14.002,
+  "fim": 14.129
+ },
+ {
+  "palavra": "pulls",
+  "inicio": 14.164,
+  "fim": 14.396
+ },
+ {
+  "palavra": "way",
+  "inicio": 14.478,
+  "fim": 14.71
+ },
+ {
+  "palavra": "harder!",
+  "inicio": 14.779,
+  "fim": 15.395
+ },
+ {
+  "palavra": "The",
+  "inicio": 15.929,
+  "fim": 16.068
+ },
+ {
+  "palavra": "sea",
+  "inicio": 16.149,
+  "fim": 16.358
+ },
+ {
+  "palavra": "rose,",
+  "inicio": 16.44,
+  "fim": 17.055
+ },
+ {
+  "palavra": "a",
+  "inicio": 17.276,
+  "fim": 17.357
+ },
+ {
+  "palavra": "giant",
+  "inicio": 17.485,
+  "fim": 17.798
+ },
+ {
+  "palavra": "wave",
+  "inicio": 17.856,
+  "fim": 18.146
+ },
+ {
+  "palavra": "hit",
+  "inicio": 18.181,
+  "fim": 18.309
+ },
+ {
+  "palavra": "the",
+  "inicio": 18.343,
+  "fim": 18.413
+ },
+ {
+  "palavra": "beach,",
+  "inicio": 18.448,
+  "fim": 18.901
+ },
+ {
+  "palavra": "and",
+  "inicio": 19.191,
+  "fim": 19.354
+ },
+ {
+  "palavra": "everything",
+  "inicio": 19.446,
+  "fim": 19.922
+ },
+ {
+  "palavra": "flooded!",
+  "inicio": 20.05,
+  "fim": 20.607
+ },
+ {
+  "palavra": "And",
+  "inicio": 20.898,
+  "fim": 21.049
+ },
+ {
+  "palavra": "too",
+  "inicio": 21.107,
+  "fim": 21.269
+ },
+ {
+  "palavra": "close,",
+  "inicio": 21.339,
+  "fim": 21.85
+ },
+ {
+  "palavra": "Earth's",
+  "inicio": 22.14,
+  "fim": 22.477
+ },
+ {
+  "palavra": "gravity",
+  "inicio": 22.535,
+  "fim": 22.941
+ },
+ {
+  "palavra": "tears",
+  "inicio": 23.034,
+  "fim": 23.371
+ },
+ {
+  "palavra": "the",
+  "inicio": 23.417,
+  "fim": 23.487
+ },
+ {
+  "palavra": "Moon",
+  "inicio": 23.533,
+  "fim": 23.707
+ },
+ {
+  "palavra": "apart.",
+  "inicio": 23.754,
+  "fim": 24.276
+ },
+ {
+  "palavra": "It",
+  "inicio": 25.008,
+  "fim": 25.147
+ },
+ {
+  "palavra": "turns",
+  "inicio": 25.182,
+  "fim": 25.437
+ },
+ {
+  "palavra": "into",
+  "inicio": 25.484,
+  "fim": 25.623
+ },
+ {
+  "palavra": "a",
+  "inicio": 25.693,
+  "fim": 25.727
+ },
+ {
+  "palavra": "ring",
+  "inicio": 25.855,
+  "fim": 26.029
+ },
+ {
+  "palavra": "of",
+  "inicio": 26.076,
+  "fim": 26.122
+ },
+ {
+  "palavra": "rocks,",
+  "inicio": 26.203,
+  "fim": 26.714
+ },
+ {
+  "palavra": "just",
+  "inicio": 26.842,
+  "fim": 27.051
+ },
+ {
+  "palavra": "like",
+  "inicio": 27.097,
+  "fim": 27.26
+ },
+ {
+  "palavra": "Saturn!",
+  "inicio": 27.306,
+  "fim": 27.875
+ },
+ {
+  "palavra": "The",
+  "inicio": 28.34,
+  "fim": 28.456
+ },
+ {
+  "palavra": "Moon",
+  "inicio": 28.502,
+  "fim": 28.688
+ },
+ {
+  "palavra": "is",
+  "inicio": 28.734,
+  "fim": 28.804
+ },
+ {
+  "palavra": "for",
+  "inicio": 28.851,
+  "fim": 28.932
+ },
+ {
+  "palavra": "looking,",
+  "inicio": 28.967,
+  "fim": 29.431
+ },
+ {
+  "palavra": "not",
+  "inicio": 29.721,
+  "fim": 29.895
+ },
+ {
+  "palavra": "for",
+  "inicio": 29.942,
+  "fim": 30.046
+ },
+ {
+  "palavra": "pulling.",
+  "inicio": 30.093,
+  "fim": 30.557
+ },
+ {
+  "palavra": "Would",
+  "inicio": 31.022,
+  "fim": 31.219
+ },
+ {
+  "palavra": "you",
+  "inicio": 31.242,
+  "fim": 31.312
+ },
+ {
+  "palavra": "pull",
+  "inicio": 31.358,
+  "fim": 31.509
+ },
+ {
+  "palavra": "it?",
+  "inicio": 31.567,
+  "fim": 31.997
+ }
+]

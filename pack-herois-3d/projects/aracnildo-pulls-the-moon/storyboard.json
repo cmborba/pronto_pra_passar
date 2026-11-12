@@ -1,0 +1,2565 @@
+{
+  "versao": 1,
+  "titulo": "Aracnildo pulls the Moon",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 34.5,
+  "audio": "narracao.mp3",
+  "palavras": "palavras.json",
+  "legendas": {
+    "ativo": true,
+    "palavrasPorBloco": 1
+  },
+  "ambiente": {
+    "fundo": "cidade",
+    "horario": "noite",
+    "chao": "asfalto"
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 2.83,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            -30,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 0,
+              "ate": 2.83,
+              "para": [
+                -18.68,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          },
+          "escala": 1
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            1.5,
+            18.6,
+            -0.5
+          ],
+          "giro": -160,
+          "acoes": [
+            {
+              "clip": "heroi_pose",
+              "de": 0,
+              "ate": 0.9,
+              "expressao": "surprised",
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "lancar_teia",
+              "de": 0.9,
+              "ate": 2.83,
+              "params": {
+                "mira": 68,
+                "alcance": 16
+              }
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            1.5,
+            18.9,
+            -0.5
+          ],
+          "destino": [
+            1.5,
+            21.2,
+            -0.5
+          ],
+          "taxa": 10,
+          "tamanho": 0.025,
+          "dispersao": 0.6,
+          "de": 0,
+          "ate": 2.83
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.97,
+            18.8,
+            -3.32
+          ],
+          "olha": [
+            1.5,
+            19.75,
+            -0.5
+          ]
+        },
+        "para": {
+          "pos": [
+            1.08,
+            18.75,
+            -2.76
+          ],
+          "olha": [
+            1.5,
+            19.95,
+            -0.5
+          ]
+        },
+        "fov": 52
+      },
+      "textos": [
+        {
+          "texto": "HE PULLED THE MOON!",
+          "de": 0.15,
+          "ate": 2.83,
+          "estilo": "titulo"
+        }
+      ]
+    },
+    {
+      "inicio": 2.83,
+      "fim": 7.46,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            -18.68,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 2.83,
+              "ate": 7.46,
+              "para": [
+                -0.16,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          },
+          "anim": {
+            "escala": [
+              [
+                2.83,
+                1
+              ],
+              [
+                7.46,
+                1.35
+              ]
+            ]
+          }
+        },
+        {
+          "id": "teia",
+          "asset": "tubo",
+          "pos": [
+            1.36,
+            19.92,
+            -0.89
+          ],
+          "params": {
+            "pontos": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -15.58,
+                37.25,
+                -42.8
+              ]
+            ],
+            "raio": 0.045,
+            "cor": "#f4f8ff"
+          },
+          "aparece": 2.98
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            1.5,
+            18.6,
+            -0.5
+          ],
+          "giro": -160,
+          "anim": {
+            "pos": [
+              [
+                2.83,
+                [
+                  1.5,
+                  18.6,
+                  -0.5
+                ]
+              ],
+              [
+                7.46,
+                [
+                  1.38,
+                  18.6,
+                  -0.83
+                ]
+              ]
+            ],
+            "suave": false
+          },
+          "acoes": [
+            {
+              "clip": "puxar_fio",
+              "de": 2.83,
+              "ate": 7.46,
+              "params": {
+                "mira": 40
+              },
+              "velocidade": 1.2
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            1.5,
+            18.65,
+            -0.5
+          ],
+          "taxa": 10,
+          "tamanho": 0.18,
+          "vida": 0.7,
+          "de": 3.23,
+          "ate": 7.46
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.85,
+            19,
+            4.5
+          ],
+          "olha": [
+            -0.07,
+            22.46,
+            -4.82
+          ]
+        },
+        "para": {
+          "pos": [
+            4.06,
+            19,
+            5.06
+          ],
+          "olha": [
+            -0.07,
+            22.46,
+            -4.82
+          ]
+        },
+        "fov": 54
+      },
+      "textos": [
+        {
+          "texto": "DAY 1",
+          "de": 3.03,
+          "ate": 5.23,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 7.46,
+      "fim": 11.23,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            -0.16,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 7.46,
+              "ate": 11.23,
+              "para": [
+                14.92,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          },
+          "anim": {
+            "escala": [
+              [
+                7.46,
+                1.35
+              ],
+              [
+                10.63,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": "teia",
+          "asset": "tubo",
+          "pos": [
+            1.36,
+            19.92,
+            -0.89
+          ],
+          "params": {
+            "pontos": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -15.58,
+                37.25,
+                -42.8
+              ]
+            ],
+            "raio": 0.045,
+            "cor": "#f4f8ff"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            1.38,
+            18.6,
+            -0.83
+          ],
+          "giro": -160,
+          "acoes": [
+            {
+              "clip": "puxar_fio",
+              "de": 7.46,
+              "ate": 11.23,
+              "params": {
+                "mira": 40
+              },
+              "velocidade": 1.4
+            }
+          ]
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 10.23,
+          "ate": 10.93,
+          "intensidade": 0.35
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            7,
+            1.8,
+            40
+          ],
+          "olha": [
+            -4,
+            27,
+            -14
+          ]
+        },
+        "para": {
+          "pos": [
+            6,
+            1.6,
+            36
+          ],
+          "olha": [
+            -4,
+            28,
+            -14
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 11.23,
+      "fim": 15.66,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "litoral",
+        "horario": "noite",
+        "chao": "areia"
+      },
+      "objetos": [
+        {
+          "id": "casa1",
+          "asset": "casa_simples",
+          "pos": [
+            -9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "casa2",
+          "asset": "casa_simples",
+          "variante": "azul",
+          "pos": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "id": "casa3",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "palm1",
+          "asset": "palmeira",
+          "pos": [
+            -14,
+            0,
+            5
+          ],
+          "params": {
+            "seed": 2
+          },
+          "anim": {
+            "giro": [
+              [
+                0,
+                0
+              ]
+            ],
+            "oscila": {
+              "eixo": "x",
+              "amp": 0.06,
+              "freq": 0.7
+            }
+          }
+        },
+        {
+          "id": "palm2",
+          "asset": "palmeira",
+          "variante": "alta",
+          "pos": [
+            5,
+            0,
+            6
+          ],
+          "params": {
+            "seed": 4
+          }
+        },
+        {
+          "id": "palm3",
+          "asset": "palmeira",
+          "pos": [
+            12,
+            0,
+            11
+          ],
+          "params": {
+            "seed": 7
+          }
+        },
+        {
+          "id": "predioP",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            24,
+            0,
+            -6
+          ],
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "luaP",
+          "asset": "lua",
+          "pos": [
+            5.47,
+            36.8,
+            87.49
+          ],
+          "escala": 3,
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          }
+        },
+        {
+          "id": "mar",
+          "asset": "agua_nivel",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "params": {
+            "tamanho": [
+              80,
+              52
+            ],
+            "altura": 2.6,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              11.23,
+              0
+            ],
+            [
+              15.66,
+              0.38
+            ]
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "origem": [
+            -6,
+            0.4,
+            6
+          ],
+          "destino": [
+            -6,
+            0.2,
+            1
+          ],
+          "taxa": 30,
+          "espalha": 2.5,
+          "arco": 1.2,
+          "de": 12.43,
+          "ate": 15.66
+        },
+        {
+          "material": "agua",
+          "origem": [
+            6,
+            0.4,
+            7
+          ],
+          "destino": [
+            7,
+            0.2,
+            2
+          ],
+          "taxa": 30,
+          "espalha": 2.5,
+          "arco": 1.2,
+          "de": 13.03,
+          "ate": 15.66
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -3,
+            2,
+            -0.5
+          ],
+          "olha": [
+            1,
+            6.5,
+            30
+          ]
+        },
+        "para": {
+          "pos": [
+            -2.4,
+            2.2,
+            1
+          ],
+          "olha": [
+            1,
+            7,
+            30
+          ]
+        },
+        "fov": 52
+      },
+      "textos": [
+        {
+          "texto": "GIANT TIDE!",
+          "de": 13.41,
+          "ate": 15.66,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 15.66,
+      "fim": 17.93,
+      "ambiente": {
+        "fundo": "litoral",
+        "horario": "noite",
+        "chao": "areia"
+      },
+      "objetos": [
+        {
+          "id": "casa1",
+          "asset": "casa_simples",
+          "pos": [
+            -9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "casa2",
+          "asset": "casa_simples",
+          "variante": "azul",
+          "pos": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "id": "casa3",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "palm1",
+          "asset": "palmeira",
+          "pos": [
+            -14,
+            0,
+            5
+          ],
+          "params": {
+            "seed": 2
+          },
+          "anim": {
+            "giro": [
+              [
+                0,
+                0
+              ]
+            ],
+            "oscila": {
+              "eixo": "x",
+              "amp": 0.06,
+              "freq": 0.7
+            }
+          }
+        },
+        {
+          "id": "palm2",
+          "asset": "palmeira",
+          "variante": "alta",
+          "pos": [
+            5,
+            0,
+            6
+          ],
+          "params": {
+            "seed": 4
+          }
+        },
+        {
+          "id": "palm3",
+          "asset": "palmeira",
+          "pos": [
+            12,
+            0,
+            11
+          ],
+          "params": {
+            "seed": 7
+          }
+        },
+        {
+          "id": "predioP",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            24,
+            0,
+            -6
+          ],
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "luaP",
+          "asset": "lua",
+          "pos": [
+            -11.04,
+            42.08,
+            85.67
+          ],
+          "escala": 3,
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          }
+        },
+        {
+          "id": "mar",
+          "asset": "agua_nivel",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "params": {
+            "tamanho": [
+              80,
+              52
+            ],
+            "altura": 2.6,
+            "progress": 0.38
+          },
+          "etapa": [
+            [
+              15.66,
+              0.38
+            ],
+            [
+              17.93,
+              0.8
+            ]
+          ]
+        },
+        {
+          "id": "onda",
+          "asset": "onda",
+          "pos": [
+            0,
+            0.9,
+            40
+          ],
+          "giro": 180,
+          "params": {
+            "largura": 52,
+            "altura": 6.5,
+            "cor": "#3aa6ee"
+          },
+          "movimentos": [
+            {
+              "de": 15.66,
+              "ate": 17.83,
+              "para": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "origem": {
+            "ancora": "onda",
+            "desloca": [
+              0,
+              4.4,
+              1.2
+            ]
+          },
+          "destino": {
+            "ancora": "onda",
+            "desloca": [
+              0,
+              1.4,
+              6
+            ]
+          },
+          "taxa": 90,
+          "espalha": 9,
+          "arco": 1.5,
+          "de": 15.66,
+          "ate": 17.93
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 17.33,
+          "ate": 17.93,
+          "intensidade": 0.4
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          3,
+          2.4,
+          0.5
+        ],
+        "olha": [
+          0,
+          5.2,
+          30
+        ],
+        "fov": 56
+      }
+    },
+    {
+      "inicio": 17.93,
+      "fim": 20.75,
+      "ambiente": {
+        "fundo": "litoral",
+        "horario": "noite",
+        "chao": "areia"
+      },
+      "objetos": [
+        {
+          "id": "casa1",
+          "asset": "casa_simples",
+          "pos": [
+            -9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "casa2",
+          "asset": "casa_simples",
+          "variante": "azul",
+          "pos": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "id": "casa3",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            9,
+            0,
+            -4
+          ]
+        },
+        {
+          "id": "palm1",
+          "asset": "palmeira",
+          "pos": [
+            -14,
+            0,
+            5
+          ],
+          "params": {
+            "seed": 2
+          },
+          "anim": {
+            "giro": [
+              [
+                0,
+                0
+              ]
+            ],
+            "oscila": {
+              "eixo": "x",
+              "amp": 0.06,
+              "freq": 0.7
+            }
+          }
+        },
+        {
+          "id": "palm2",
+          "asset": "palmeira",
+          "variante": "alta",
+          "pos": [
+            5,
+            0,
+            6
+          ],
+          "params": {
+            "seed": 4
+          }
+        },
+        {
+          "id": "palm3",
+          "asset": "palmeira",
+          "pos": [
+            12,
+            0,
+            11
+          ],
+          "params": {
+            "seed": 7
+          }
+        },
+        {
+          "id": "predioP",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            24,
+            0,
+            -6
+          ],
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "luaP",
+          "asset": "lua",
+          "pos": [
+            5.47,
+            36.8,
+            87.49
+          ],
+          "escala": 3,
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          }
+        },
+        {
+          "id": "mar",
+          "asset": "agua_nivel",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "params": {
+            "tamanho": [
+              80,
+              52
+            ],
+            "altura": 2.6,
+            "progress": 0.8
+          },
+          "etapa": [
+            [
+              17.93,
+              0.8
+            ],
+            [
+              20.75,
+              0.95
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            16.3,
+            1.9,
+            1
+          ],
+          "giro": 90,
+          "anim": {
+            "pos": [
+              [
+                17.93,
+                [
+                  16.3,
+                  1.9,
+                  1
+                ]
+              ],
+              [
+                20.75,
+                [
+                  16.3,
+                  5.3,
+                  1
+                ]
+              ]
+            ],
+            "suave": false
+          },
+          "acoes": [
+            {
+              "clip": "escalar",
+              "de": 17.93,
+              "ate": 20.75,
+              "velocidade": 1.3
+            },
+            {
+              "clip": "sentir_perigo",
+              "de": 17.93,
+              "ate": 19.13,
+              "velocidade": 1.2,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face"
+              ]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "origem": [
+            15.7,
+            2.5,
+            1.6
+          ],
+          "destino": [
+            14.7,
+            2.2,
+            2.8
+          ],
+          "taxa": 25,
+          "espalha": 1.5,
+          "arco": 0.8,
+          "de": 17.93,
+          "ate": 20.75
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            9.5,
+            3.2,
+            8.5
+          ],
+          "olha": [
+            16.3,
+            3.4,
+            1
+          ]
+        },
+        "para": {
+          "pos": [
+            10,
+            4.6,
+            8.2
+          ],
+          "olha": [
+            16.3,
+            4.8,
+            1
+          ]
+        },
+        "fov": 52
+      }
+    },
+    {
+      "inicio": 20.75,
+      "fim": 24.64,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            53,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 20.75,
+              "ate": 24.64,
+              "para": [
+                68.56,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          },
+          "escala": 3,
+          "etapa": [
+            [
+              22.2,
+              0
+            ],
+            [
+              22.45,
+              0.1
+            ],
+            [
+              24.64,
+              0.55
+            ]
+          ]
+        },
+        {
+          "id": "teia",
+          "asset": "tubo",
+          "pos": [
+            1.36,
+            19.92,
+            -0.89
+          ],
+          "params": {
+            "pontos": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -15.58,
+                37.25,
+                -42.8
+              ]
+            ],
+            "raio": 0.045,
+            "cor": "#f4f8ff"
+          },
+          "some": 22.5
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            1.38,
+            18.6,
+            -0.83
+          ],
+          "giro": -160,
+          "acoes": [
+            {
+              "clip": "puxar_fio",
+              "de": 20.75,
+              "ate": 22.5,
+              "params": {
+                "mira": 40
+              },
+              "velocidade": 1.4
+            },
+            {
+              "clip": "surprised",
+              "de": 22.5,
+              "ate": 24.64
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "taxa": 30,
+          "tamanho": 1.6,
+          "dispersao": 4,
+          "vida": 1.6,
+          "de": 22.2,
+          "ate": 23.4
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 22.2,
+          "ate": 22.7,
+          "intensidade": 0.6
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.68,
+            19,
+            4.03
+          ],
+          "olha": [
+            -0.07,
+            22.46,
+            -4.82
+          ]
+        },
+        "para": {
+          "pos": [
+            3.95,
+            19,
+            4.78
+          ],
+          "olha": [
+            -0.07,
+            22.46,
+            -4.82
+          ]
+        },
+        "fov": 58
+      },
+      "textos": [
+        {
+          "texto": "IT BROKE!",
+          "de": 22.4,
+          "ate": 24.64,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 24.64,
+      "fim": 28.11,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            68.56,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 24.64,
+              "ate": 28.11,
+              "para": [
+                82.44,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75
+          },
+          "escala": 3,
+          "etapa": [
+            [
+              24.64,
+              0.55
+            ],
+            [
+              28.11,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "anel",
+          "asset": "anel_pedras",
+          "pos": [
+            -14.22,
+            -228.96,
+            -186.97
+          ],
+          "params": {
+            "raio": 320,
+            "largura": 24,
+            "inclinacao": -63.4,
+            "origem": 90,
+            "pedras": 3200,
+            "tamanhoPedra": 1.5,
+            "velocidade": 0,
+            "apoiada": false,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              24.74,
+              0
+            ],
+            [
+              27.81,
+              1
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            0.63,
+            25.84,
+            9
+          ],
+          "giro": 90,
+          "anim": {
+            "pos": [
+              [
+                24.64,
+                [
+                  0.63,
+                  25.84,
+                  9
+                ]
+              ],
+              [
+                24.72,
+                [
+                  0.64,
+                  25.82,
+                  9
+                ]
+              ],
+              [
+                24.8,
+                [
+                  0.69,
+                  25.75,
+                  9
+                ]
+              ],
+              [
+                24.88,
+                [
+                  0.77,
+                  25.65,
+                  9
+                ]
+              ],
+              [
+                24.96,
+                [
+                  0.87,
+                  25.5,
+                  9
+                ]
+              ],
+              [
+                25.04,
+                [
+                  1.01,
+                  25.33,
+                  9
+                ]
+              ],
+              [
+                25.12,
+                [
+                  1.18,
+                  25.13,
+                  9
+                ]
+              ],
+              [
+                25.2,
+                [
+                  1.38,
+                  24.9,
+                  9
+                ]
+              ],
+              [
+                25.28,
+                [
+                  1.62,
+                  24.65,
+                  9
+                ]
+              ],
+              [
+                25.36,
+                [
+                  1.89,
+                  24.39,
+                  9
+                ]
+              ],
+              [
+                25.44,
+                [
+                  2.2,
+                  24.12,
+                  9
+                ]
+              ],
+              [
+                25.52,
+                [
+                  2.54,
+                  23.85,
+                  9
+                ]
+              ],
+              [
+                25.6,
+                [
+                  2.92,
+                  23.57,
+                  9
+                ]
+              ],
+              [
+                25.68,
+                [
+                  3.33,
+                  23.31,
+                  9
+                ]
+              ],
+              [
+                25.76,
+                [
+                  3.77,
+                  23.05,
+                  9
+                ]
+              ],
+              [
+                25.84,
+                [
+                  4.25,
+                  22.82,
+                  9
+                ]
+              ],
+              [
+                25.92,
+                [
+                  4.75,
+                  22.61,
+                  9
+                ]
+              ],
+              [
+                26,
+                [
+                  5.29,
+                  22.42,
+                  9
+                ]
+              ],
+              [
+                26.08,
+                [
+                  5.84,
+                  22.26,
+                  9
+                ]
+              ],
+              [
+                26.16,
+                [
+                  6.41,
+                  22.14,
+                  9
+                ]
+              ],
+              [
+                26.24,
+                [
+                  7,
+                  22.06,
+                  9
+                ]
+              ],
+              [
+                26.32,
+                [
+                  7.59,
+                  22.01,
+                  9
+                ]
+              ],
+              [
+                26.4,
+                [
+                  8.19,
+                  22,
+                  9
+                ]
+              ],
+              [
+                26.48,
+                [
+                  8.78,
+                  22.03,
+                  9
+                ]
+              ],
+              [
+                26.56,
+                [
+                  9.37,
+                  22.11,
+                  9
+                ]
+              ],
+              [
+                26.64,
+                [
+                  9.95,
+                  22.21,
+                  9
+                ]
+              ],
+              [
+                26.72,
+                [
+                  10.51,
+                  22.36,
+                  9
+                ]
+              ],
+              [
+                26.8,
+                [
+                  11.05,
+                  22.53,
+                  9
+                ]
+              ],
+              [
+                26.88,
+                [
+                  11.56,
+                  22.74,
+                  9
+                ]
+              ],
+              [
+                26.96,
+                [
+                  12.05,
+                  22.96,
+                  9
+                ]
+              ],
+              [
+                27.04,
+                [
+                  12.51,
+                  23.21,
+                  9
+                ]
+              ],
+              [
+                27.12,
+                [
+                  12.93,
+                  23.47,
+                  9
+                ]
+              ],
+              [
+                27.2,
+                [
+                  13.32,
+                  23.74,
+                  9
+                ]
+              ],
+              [
+                27.28,
+                [
+                  13.68,
+                  24.02,
+                  9
+                ]
+              ],
+              [
+                27.36,
+                [
+                  14,
+                  24.29,
+                  9
+                ]
+              ],
+              [
+                27.44,
+                [
+                  14.28,
+                  24.56,
+                  9
+                ]
+              ],
+              [
+                27.52,
+                [
+                  14.53,
+                  24.81,
+                  9
+                ]
+              ],
+              [
+                27.6,
+                [
+                  14.75,
+                  25.04,
+                  9
+                ]
+              ],
+              [
+                27.68,
+                [
+                  14.93,
+                  25.26,
+                  9
+                ]
+              ],
+              [
+                27.76,
+                [
+                  15.08,
+                  25.44,
+                  9
+                ]
+              ],
+              [
+                27.84,
+                [
+                  15.2,
+                  25.6,
+                  9
+                ]
+              ],
+              [
+                27.92,
+                [
+                  15.29,
+                  25.72,
+                  9
+                ]
+              ],
+              [
+                28,
+                [
+                  15.34,
+                  25.8,
+                  9
+                ]
+              ],
+              [
+                28.08,
+                [
+                  15.37,
+                  25.83,
+                  9
+                ]
+              ]
+            ],
+            "suave": false
+          },
+          "acoes": [
+            {
+              "clip": "balancar",
+              "de": 24.64,
+              "ate": 28.11,
+              "velocidade": 0.7,
+              "params": {
+                "fio": 7.2
+              }
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            12,
+            2,
+            42
+          ],
+          "olha": [
+            4.5,
+            30,
+            -6
+          ]
+        },
+        "para": {
+          "pos": [
+            11,
+            2,
+            38
+          ],
+          "olha": [
+            4.5,
+            31,
+            -6
+          ]
+        },
+        "fov": 56
+      }
+    },
+    {
+      "inicio": 28.11,
+      "fim": 34.5,
+      "transicao": "fade",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "noite",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predioH",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            16.5,
+            0,
+            -1
+          ],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "predioF",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -24
+          ],
+          "params": {
+            "floors": 9,
+            "wall": "#e3d4b8"
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            14
+          ],
+          "giro": 90,
+          "params": {
+            "length": 90
+          }
+        },
+        {
+          "id": "poste1",
+          "asset": "poste_luz",
+          "pos": [
+            -6,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "poste2",
+          "asset": "poste_luz",
+          "pos": [
+            9,
+            0.2,
+            9.4
+          ],
+          "giro": 0
+        },
+        {
+          "id": "arv1",
+          "asset": "arvore_redonda",
+          "pos": [
+            3.5,
+            0.2,
+            9.3
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            82.44,
+            0.06,
+            15.7
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 28.11,
+              "ate": 34.5,
+              "para": [
+                108,
+                15.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lua",
+          "asset": "lua",
+          "pos": [
+            -14.22,
+            57.17,
+            -43.69
+          ],
+          "params": {
+            "raio": 3.2,
+            "apoiada": false,
+            "brilho": 0.75,
+            "progress": 1
+          },
+          "escala": 3
+        },
+        {
+          "id": "anel",
+          "asset": "anel_pedras",
+          "pos": [
+            -14.22,
+            -228.96,
+            -186.97
+          ],
+          "params": {
+            "raio": 320,
+            "largura": 24,
+            "inclinacao": -63.4,
+            "origem": 90,
+            "pedras": 3200,
+            "tamanhoPedra": 1.5,
+            "velocidade": 0,
+            "apoiada": false,
+            "progress": 1
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "pos": [
+            1.5,
+            19.07,
+            4.95
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 28.11,
+              "ate": 34.5,
+              "params": {
+                "seatHeight": 0.34,
+                "arms": "lap"
+              },
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "think",
+              "de": 28.11,
+              "ate": 30.66,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face"
+              ]
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3,
+            18.9,
+            9.6
+          ],
+          "olha": [
+            0.9,
+            22.6,
+            1
+          ]
+        },
+        "para": {
+          "pos": [
+            2.7,
+            19,
+            8.8
+          ],
+          "olha": [
+            1,
+            22.4,
+            1
+          ]
+        },
+        "fov": 54
+      },
+      "textos": [
+        {
+          "texto": "THE MOON IS FOR LOOKING!",
+          "de": 28.34,
+          "ate": 30.92,
+          "estilo": "destaque"
+        },
+        {
+          "texto": "WOULD YOU PULL IT?",
+          "de": 31.02,
+          "ate": 34.5,
+          "estilo": "pergunta"
+        }
+      ]
+    }
+  ]
+}
