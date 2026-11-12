@@ -7,6 +7,7 @@
 // Clips de um lado só são escritos para o lado DIREITO e espelhados automaticamente com params.side = 'L'.
 
 import { DIMS, HIP_HEIGHT } from '../characters/skeleton.js';
+import { CLIPS_PODERES } from './clips_poderes.js';
 
 const TAU = Math.PI * 2;
 const rad = (d) => (d * Math.PI) / 180;
@@ -442,6 +443,8 @@ export const CLIPS = {
       };
     },
   },
+  // poderes de heróis (voar, lançar fio, visão de calor, escudo...): ver clips_poderes.js
+  ...CLIPS_PODERES,
 };
 
 export const CLIP_NAMES = Object.keys(CLIPS);

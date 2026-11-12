@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { buildSkeleton, DIMS, headSurface } from './skeleton.js';
 import { mat, rbox, sphere, cylinder, torus, ico, mesh } from './helpers.js';
 import { addHair, addHat, addGlasses, addFacialHair, addHeld } from './parts.js';
+import { montarAcessorios, malhaEmblema } from './acessorios.js';
 
 export const DEFAULT_CONFIG = {
   name: 'pessoa',
@@ -21,7 +22,8 @@ export const DEFAULT_CONFIG = {
   hat: { type: 'none', color: '#f5c518' },                     // ver HAT_TYPES
   face: { brow: '#2b1d14', mustache: false, beard: false, glasses: false, facialHairColor: '#2b1d14' },
   held: { R: 'none', L: 'none' },                              // ver HELD_ITEMS
-  hero: null,        // {mask, eyes, outline, accent, gloves, boots} ativa a estética heroica original
+  hero: null,        // {mask, eyes, outline, accent, gloves, boots, simbolo, corSimbolo, lentes} ativa a estética heroica
+  acessorios: [],    // peças extras: [{ tipo: 'capa', cor: '#...' }, ...] (ver acessorios.js)
   stoop: 0,         // graus de curvatura das costas em repouso (idosos ≈ 10)
 };
 
@@ -93,20 +95,30 @@ function buildFace(head, skin, browColor) {
 
 
 // Máscara própria de HQ, com lentes expressivas; não contém logomarcas de terceiros.
+// Formatos de lente: gota (padrão, inclinada), redonda (coruja), fenda (visor estreito).
+const LENTES = {
+  gota: { sx: 0.95, sy: 1.17, tilt: -0.17, x: 0.105, y: 0.235 },
+  redonda: { sx: 1.15, sy: 1.15, tilt: 0, x: 0.112, y: 0.23 },
+  fenda: { sx: 1.25, sy: 0.6, tilt: -0.28, x: 0.11, y: 0.235 },
+};
+
 function buildHeroFace(head, colors) {
   const rig = { masked: true, eyes: [], brows: [] };
+  const L = LENTES[colors.lentes?.forma] || LENTES.gota;
+  const e = colors.lentes?.escala || 1;
   for (const sx of [-1, 1]) {
     const eye = new THREE.Group();
-    placeOnHead(eye, sx * 0.105, 0.235, 0.017);
+    placeOnHead(eye, sx * L.x, L.y, 0.017);
     head.add(eye);
-    const border = mesh(sphere(0.084, 20, 14), colors.outline || '#06111e', {
-      scale: [0.95, 1.17, 0.17], parent: eye,
+    const border = mesh(sphere(0.084 * e, 20, 14), colors.outline || '#06111e', {
+      scale: [L.sx, L.sy, 0.17], parent: eye,
     });
-    border.rotation.z = sx * -0.17;
-    const inner = mesh(sphere(0.071, 20, 14), colors.eyes || '#ffffff', {
-      pos: [0, 0, 0.014], scale: [0.95, 1.14, 0.14], parent: eye,
+    border.rotation.z = sx * L.tilt;
+    const inner = mesh(sphere(0.071 * e, 20, 14), colors.eyes || '#ffffff', {
+      pos: [0, 0, 0.014], scale: [L.sx, L.sy * 0.975, 0.14], parent: eye,
     });
-    inner.rotation.z = sx * -0.17;
+    inner.rotation.z = sx * L.tilt;
+    inner.userData.lente = true;
     rig.eyes.push(eye);
   }
   return rig;
@@ -114,20 +126,12 @@ function buildHeroFace(head, colors) {
 
 function buildHeroDetails(joints, hero) {
   const accent = hero.accent || '#ff7a00';
-  // Marca própria: raio angular, sem aranha ou referências licenciadas.
-  const polygon = new THREE.Shape();
-  polygon.moveTo(-0.035, 0.10);
-  polygon.lineTo(0.055, 0.10);
-  polygon.lineTo(0.006, 0.024);
-  polygon.lineTo(0.059, 0.024);
-  polygon.lineTo(-0.045, -0.11);
-  polygon.lineTo(-0.018, -0.02);
-  polygon.lineTo(-0.062, -0.02);
-  polygon.closePath();
-  const lightning = new THREE.Mesh(new THREE.ShapeGeometry(polygon), mat(accent));
-  lightning.position.set(0, 0.155, 0.145);
-  lightning.castShadow = true;
-  joints.chest.add(lightning);
+  // Emblema próprio do peito (biblioteca em acessorios.js; padrão: raio angular). simbolo: false = sem emblema.
+  if (hero.simbolo !== false) {
+    const emblema = malhaEmblema(hero.simbolo || 'raio', hero.corSimbolo || accent, hero.escalaSimbolo || 1);
+    emblema.position.set(0, 0.155, 0.145);
+    joints.chest.add(emblema);
+  }
   // Cores fortes nos punhos, joelhos e quadris para leitura em tela pequena.
   for (const side of ['L', 'R']) {
     mesh(rbox(0.115, 0.085, 0.125, 0.028), accent,
@@ -175,7 +179,6 @@ function matContorno(color, esp) {
 
 function acabamentoDesenho(root, faceRig, c) {
   const corContorno = c.hero?.outline || c.contornoCor || '#14161c';
-  const lente = c.hero?.eyes ? `#${new THREE.Color(c.hero.eyes).getHexString()}` : null;
   const rosto = new Set();
   for (const g of [...faceRig.eyes, ...faceRig.brows, faceRig.mouthLine, faceRig.mouthArc, faceRig.mouthOpen]) {
     g?.traverse((o) => rosto.add(o));
@@ -183,11 +186,11 @@ function acabamentoDesenho(root, faceRig, c) {
   const pecas = [];
   root.traverse((o) => { if (o.isMesh) pecas.push(o); });
   for (const m of pecas) {
+    if (m.userData.manterMaterial || !m.material.color) continue; // feixes, fios, fumaça: material próprio
     const hex = `#${m.material.color.getHexString()}`;
-    const ehLente = rosto.has(m) && hex === lente;
-    if (c.hero) m.material = matLiso(hex, ehLente ? 0.35 : 0);
-    // sem contorno no rosto (lentes já têm borda) nem em peças planas (símbolo do peito)
-    if (rosto.has(m) || m.geometry.type === 'ShapeGeometry') continue;
+    if (c.hero) m.material = matLiso(hex, m.userData.lente ? 0.35 : 0);
+    // sem contorno no rosto (lentes já têm borda), em peças planas (emblemas) nem nas marcadas
+    if (rosto.has(m) || m.userData.semContorno || m.geometry.type === 'ShapeGeometry') continue;
     const esc = new THREE.Vector3(1, 1, 1);
     for (let n = m; n && n !== root; n = n.parent) esc.multiply(n.scale);
     const s = (Math.abs(esc.x) + Math.abs(esc.y) + Math.abs(esc.z)) / 3;
@@ -281,6 +284,7 @@ export function makeCharacter(userConfig = {}) {
 
   addHeld(joints.handR, c.held.R);
   addHeld(joints.handL, c.held.L);
+  const controles = montarAcessorios({ joints, head, faceRig, c }, c.acessorios);
 
   // ---- escala e repouso ----
   root.scale.setScalar(c.height);
@@ -304,6 +308,7 @@ export function makeCharacter(userConfig = {}) {
     rest,
     seed: hashSeed(c.name),
     heightScale: c.height,
+    controles,
   };
   root.name = `personagem:${c.name}`;
   root.userData.character = character;

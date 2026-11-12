@@ -24,6 +24,10 @@
 - `heroi_vertice` (1.75 m): Protagonista mascarado
 - `heroina_pulso` (1.63 m): Heroína parceira
 - `heroi_impacto` (1.81 m): Herói forte e bem-humorado
+- `aracnildo` (1.69 m): Herói-aranha atrapalhado e simpático
+- `major_cometa` (1.79 m): Herói voador, forte e um pouco exibido
+- `coruja_noturna` (1.72 m): Vigilante noturna séria (mas dorminhoca de dia)
+- `capitao_tampa` (1.77 m): Capitão destemido com capacete de panela e escudo-tampa
 Opções em `overrides`: skin, height, build, headScale, top{color,stripe,sleeves}, bottom{color,type}, shoes, hair{style,color}, hat{type,color}, face{glasses,mustache,beard}, held{R,L}, stoop.
 Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none, hardhat, cap. Itens: none, hammer, clipboard, shovel.
 
@@ -51,7 +55,33 @@ Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none,
 - `heroi_pose` (loop, torso/head/arms/legs/face): Pose heroica de apresentação com braços abertos, cabeça erguida e atitude
 - `salto_heroico` (segura a pose, torso/head/arms/legs): Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado
 - `aterrissagem_heroica` (segura a pose, torso/head/arms/legs): Aterrissagem agachada e abertura de braços, seguida de pose heroica
+- `lancar_teia` (segura a pose, torso/head/arms/legs/face) params: side="R": Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório "fio")
+- `escalar` (loop, torso/head/arms/legs): Escalar uma parede: braços e pernas alternados, corpo colado na parede (vire o personagem para a parede e suba com anim.pos)
+- `balancar` (loop, torso/head/arms/legs) params: fio=4.5: Balançar pendurado num fio (pêndulo): braço esticado para cima segurando o fio, pernas juntas
+- `sentir_perigo` (segura a pose, torso/head/arms/legs/face): Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados
+- `voar` (loop, torso/head/arms/legs/face) params: punhos=1: Voar: corpo deitado no ar, punho à frente, pernas esticadas para trás, capa tremulando
+- `levantar_peso` (segura a pose, torso/head/arms/legs/face): Levantar algo muito pesado: agacha, firma e ergue os braços acima da cabeça
+- `visao_calor` (segura a pose, torso/head/arms/legs/face) params: alcance=7: Visão de calor: firma a base, cerra os punhos e dois feixes saem dos olhos (acessório "feixes_olhos")
+- `sopro_congelante` (segura a pose, torso/head/arms/legs/face): Sopro congelante: enche o peito inclinando para trás e sopra um jato gelado à frente (acessório "sopro")
+- `lancar_gancho` (segura a pose, torso/head/arms/legs/face) params: side="R", alcance=9: Disparar um gancho para o alto (acessório "fio" com ponta de gancho): mira, recua com o tranco e o cabo estica
+- `planar` (loop, torso/head/arms/legs): Planar com a capa aberta como asas: corpo inclinado, braços abertos segurando a capa
+- `lutar` (loop, torso/head/arms/legs/face): Lutar: guarda alta com jab, cruzado e passo de base, em ciclo
+- `lancar_dispositivo` (segura a pose, torso/head/arms/legs) params: side="R": Arremessar um dispositivo por cima do ombro (bumerangue, bomba de fumaça): recua o braço e lança à frente
+- `soltar_fumaca` (segura a pose, torso/head/arms/legs/face): Bomba de fumaça: agacha, bate a mão no chão e some numa nuvem (acessório "nuvem")
+- `arremessar_escudo` (segura a pose, torso/head/arms/legs): Arremessar o escudo do antebraço esquerdo de lado, como disco: gira o tronco, solta e o escudo some do braço (o voo é um objeto "escudo_heroi" com anim)
+- `defender` (segura a pose, torso/head/arms/legs/face): Defender com o escudo: base baixa e o antebraço esquerdo erguido à frente do corpo
 Expressões: neutral, happy, laugh, sad, angry, surprised, worried, thinking, sleepy. Máscaras: torso, head, face, armL, armR, arms, legs, legL, legR.
+
+## Heróis e poderes (galeria: `preview/herois.html`)
+- `heroi_vertice`: Pose heroica → `heroi_pose`; Correr → `run`; Salto heroico → `salto_heroico`; Aterrissagem → `aterrissagem_heroica`; Lutar → `lutar`
+- `heroina_pulso`: Pose heroica → `heroi_pose`; Correr → `run`; Salto heroico → `salto_heroico`; Aterrissagem → `aterrissagem_heroica`; Lutar → `lutar`
+- `heroi_impacto`: Pose heroica → `heroi_pose`; Correr → `run`; Salto heroico → `salto_heroico`; Aterrissagem → `aterrissagem_heroica`; Lutar → `lutar`
+- `aracnildo`: Lançar fio → `lancar_teia`; Escalar parede → `escalar`; Saltar → `salto_heroico`; Balançar → `balancar`; Sentir perigo → `sentir_perigo`
+- `major_cometa`: Voar → `voar`; Levantar peso → `levantar_peso`; Supervelocidade → `run` (velocidade 2.4); Visão de calor → `visao_calor`; Sopro congelante → `sopro_congelante`
+- `coruja_noturna`: Gancho → `lancar_gancho`; Planar → `planar`; Lutar → `lutar`; Lançar dispositivo → `lancar_dispositivo`; Fumaça → `soltar_fumaca`
+- `capitao_tampa`: Arremessar escudo → `arremessar_escudo`; Defender → `defender`; Correr → `run`; Saltar → `salto_heroico`; Lutar → `lutar`
+Os efeitos dos poderes vêm dos **acessórios** do herói e são animados pela própria pose (chaves `capa`, `fioR`, `fioL`, `feixe`, `sopro`, `escudo`, `nuvem`): quem não tem o acessório faz só o movimento. Acessórios: emblema, capa, cinto, capacete, tufos_coruja, olhos_extras, lancadores, fio, feixes_olhos, sopro, nuvem, escudo. Emblemas: raio, cometa, espiral, aranha_fofa, coruja, brilho.
+Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyframes [t,[x,y,z]], `suave: false` para trilhas densas). Herói novo: `criarHeroi({...})` em `assets/characters/presets.js`.
 
 ## Cenário (`asset`, `variante`, `params`)
 ### Casas
@@ -118,6 +148,7 @@ Expressões: neutral, happy, laugh, sad, angry, surprised, worried, thinking, sl
 ### Formas e peças livres (para montar qualquer coisa)
 - `forma` 1×1×1 m variantes: tanque, bola, lampada | params: tipo="caixa", tamanho=[1,1,1], cor="#8a95a3", brilho=false, emissivo=false, apoiada=true: Peça básica para montar qualquer coisa (tanque, bloco, pilar, bola, lâmpada, quadro...)
 - `tubo` 3.3×0.3×2.3 m variantes: vermelho, azul, cobre | params: pontos=[[0,0,0],[0,2,0],[3,2,0]], raio=0.15, cor="#9aa7b5": Tubulação por pontos [x,y,z] (cano, fio, mangueira, veia)
+- `escudo_heroi` 0.7×0.2×0.7 m variantes: cometa | params: cor="#b9c2cc", borda="#c8893a", miolo="#d5dbe2", simbolo="espiral", corSimbolo="#c8893a": Escudo redondo com aro e emblema próprio, igual ao do Capitão Tampa
 
 ### Máquinas e processos animados
 - `engrenagem` 2.4×0.4×2.4 m variantes: prata, vermelha | params: dentes=12, raio=1, cor="#c9a227", velocidade=60, fase=0 | gira sozinho: Engrenagem que gira sozinha (eixo para a câmera, +Z)

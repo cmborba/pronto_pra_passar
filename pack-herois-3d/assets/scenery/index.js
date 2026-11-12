@@ -8,6 +8,7 @@ import './vehicles.js';
 import './props.js';
 import './construction.js';
 import './generico.js';
+import './herois.js';
 
 export {
   SCENERY, CATEGORIES, PAL, SKIES, makeScenery, setProgress, updateScenery, rollWheels, sceneryBox, setupEnvironment,

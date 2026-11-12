@@ -17,17 +17,21 @@ export const JOINTS = [
   'legR', 'shinR', 'footR',
 ];
 
+// Chaves de acessórios animados (capa, fio, feixe dos olhos...): valor [n, n, n] como as juntas.
+// Ver assets/characters/acessorios.js. Sem a chave na pose, o acessório fica no repouso.
+export const ACCESSORY_KEYS = ['capa', 'fioR', 'fioL', 'feixe', 'sopro', 'escudo', 'nuvem'];
+
 // Chaves extras que uma pose pode ter além das juntas.
-export const EXTRA_KEYS = ['hipsPos', 'face'];
+export const EXTRA_KEYS = ['hipsPos', 'face', ...ACCESSORY_KEYS];
 
 // Grupos para máscaras (ex.: tocar "talk" só na cabeça/rosto enquanto o corpo anda).
 export const GROUPS = {
-  torso: ['hips', 'spine', 'chest', 'hipsPos'],
-  head: ['neck', 'head'],
+  torso: ['hips', 'spine', 'chest', 'hipsPos', 'capa', 'nuvem'],
+  head: ['neck', 'head', 'feixe', 'sopro'],
   face: ['face'],
-  armL: ['armL', 'forearmL', 'handL'],
-  armR: ['armR', 'forearmR', 'handR'],
-  arms: ['armL', 'forearmL', 'handL', 'armR', 'forearmR', 'handR'],
+  armL: ['armL', 'forearmL', 'handL', 'fioL', 'escudo'],
+  armR: ['armR', 'forearmR', 'handR', 'fioR'],
+  arms: ['armL', 'forearmL', 'handL', 'armR', 'forearmR', 'handR', 'fioL', 'fioR', 'escudo'],
   legs: ['legL', 'shinL', 'footL', 'legR', 'shinR', 'footR'],
   legL: ['legL', 'shinL', 'footL'],
   legR: ['legR', 'shinR', 'footR'],

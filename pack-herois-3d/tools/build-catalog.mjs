@@ -11,6 +11,7 @@ import { MATERIAIS } from '../engine/fluxos.js';
 import {
   PRESETS, PRESET_NAMES, CLIPS, CLIP_NAMES, EXPRESSIONS, HAIR_STYLES, HAT_TYPES, HELD_ITEMS,
   DEFAULT_CONFIG, JOINTS, GROUPS, SCENERY, SCENERY_IDS, CATEGORIES, makeScenery, sceneryBox,
+  ACESSORIOS, EMBLEMAS, ACCESSORY_KEYS,
 } from '../assets/index.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -262,6 +263,11 @@ Cabelos: ${HAIR_STYLES.join(', ')}. Chapéus: ${HAT_TYPES.join(', ')}. Itens: ${
 ## Animações (\`clip\` e \`params\`)
 ${clips.map((c) => `- \`${c.id}\` (${c.loop ? 'loop' : 'segura a pose'}, ${c.affects.join('/')})${Object.keys(c.params).length ? ` params: ${Object.entries(c.params).map(([k, v]) => `${k}=${JSON.stringify(v.default)}`).join(', ')}` : ''}: ${curto(c.description)}${c.metersPerSecond ? ` [desloca ${c.metersPerSecond} m/s]` : ''}`).join('\n')}
 Expressões: ${Object.keys(EXPRESSIONS).join(', ')}. Máscaras: ${Object.keys(GROUPS).join(', ')}.
+
+## Heróis e poderes (galeria: \`preview/herois.html\`)
+${PRESET_NAMES.filter((n) => PRESETS[n].poderes?.length).map((n) => `- \`${n}\`: ${PRESETS[n].poderes.map((p) => `${p.nome} → \`${p.clip}\`${p.velocidade ? ` (velocidade ${p.velocidade})` : ''}`).join('; ')}`).join('\n')}
+Os efeitos dos poderes vêm dos **acessórios** do herói e são animados pela própria pose (chaves ${ACCESSORY_KEYS.map((k) => `\`${k}\``).join(', ')}): quem não tem o acessório faz só o movimento. Acessórios: ${Object.keys(ACESSORIOS).join(', ')}. Emblemas: ${Object.keys(EMBLEMAS).join(', ')}.
+Voo, balanço, planar e arco de salto: mova o personagem com \`anim.pos\` (keyframes [t,[x,y,z]], \`suave: false\` para trilhas densas). Herói novo: \`criarHeroi({...})\` em \`assets/characters/presets.js\`.
 
 ## Cenário (\`asset\`, \`variante\`, \`params\`)
 ${Object.entries(CATEGORIES).map(([cat, title]) => {

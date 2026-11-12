@@ -148,6 +148,7 @@ export function applyPose(character, pose, { t = 0, blink = true } = {}) {
   }
   const hp = pose.hipsPos || [0, 0, 0];
   character.joints.hips.position.set(hp[0], HIP_HEIGHT + hp[1], hp[2]);
+  for (const ctrl of character.controles || []) ctrl.aplicar(pose[ctrl.chave], t);
   const face = { ...(pose.face || {}) };
   if (blink) face.eyeOpen = (face.eyeOpen ?? 1) * blinkFactor(t, character.seed);
   applyFaceState(character, face);

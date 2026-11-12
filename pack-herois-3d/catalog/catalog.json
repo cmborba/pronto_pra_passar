@@ -32,11 +32,15 @@
       "hips",
       "spine",
       "chest",
-      "hipsPos"
+      "hipsPos",
+      "capa",
+      "nuvem"
     ],
     "head": [
       "neck",
-      "head"
+      "head",
+      "feixe",
+      "sopro"
     ],
     "face": [
       "face"
@@ -44,12 +48,15 @@
     "armL": [
       "armL",
       "forearmL",
-      "handL"
+      "handL",
+      "fioL",
+      "escudo"
     ],
     "armR": [
       "armR",
       "forearmR",
-      "handR"
+      "handR",
+      "fioR"
     ],
     "arms": [
       "armL",
@@ -57,7 +64,10 @@
       "handL",
       "armR",
       "forearmR",
-      "handR"
+      "handR",
+      "fioL",
+      "fioR",
+      "escudo"
     ],
     "legs": [
       "legL",
@@ -246,6 +256,54 @@
       "hat": null,
       "hair": "none",
       "top": "#40244c",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "aracnildo",
+      "role": "Herói-aranha atrapalhado e simpático. Lança fios, escala paredes, salta, balança entre prédios e sente perigos.",
+      "approxHeightM": 1.69,
+      "hat": null,
+      "hair": "none",
+      "top": "#8fd14f",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "major_cometa",
+      "role": "Herói voador, forte e um pouco exibido. Voa, levanta peso, corre muito rápido, tem visão de calor e sopro congelante.",
+      "approxHeightM": 1.79,
+      "hat": null,
+      "hair": "none",
+      "top": "#f5f3ee",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "coruja_noturna",
+      "role": "Vigilante noturna séria (mas dorminhoca de dia). Usa gancho, plana com a capa, luta, lança dispositivos e some na fumaça.",
+      "approxHeightM": 1.72,
+      "hat": null,
+      "hair": "none",
+      "top": "#4a3e5c",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "capitao_tampa",
+      "role": "Capitão destemido com capacete de panela e escudo-tampa. Arremessa o escudo, defende, corre, salta e luta.",
+      "approxHeightM": 1.77,
+      "hat": null,
+      "hair": "none",
+      "top": "#2f7d4a",
       "sleeves": "long",
       "bottom": "pants",
       "held": {},
@@ -631,6 +689,275 @@
         "head",
         "arms",
         "legs"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "lancar_teia",
+      "description": "Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório \"fio\"). Segura a pose",
+      "loop": false,
+      "durationS": 0.9,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {
+        "side": {
+          "default": "R",
+          "description": "'R' ou 'L': braço que lança"
+        }
+      }
+    },
+    {
+      "id": "escalar",
+      "description": "Escalar uma parede: braços e pernas alternados, corpo colado na parede (vire o personagem para a parede e suba com anim.pos)",
+      "loop": true,
+      "durationS": 1.1,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": false,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "balancar",
+      "description": "Balançar pendurado num fio (pêndulo): braço esticado para cima segurando o fio, pernas juntas. Mova o personagem em arco com anim.pos",
+      "loop": true,
+      "durationS": 2.4,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": false,
+      "metersPerSecond": null,
+      "params": {
+        "fio": {
+          "default": 4.5,
+          "description": "comprimento do fio (m), para quem tem o acessório \"fio\""
+        }
+      }
+    },
+    {
+      "id": "sentir_perigo",
+      "description": "Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados. Segura a pose",
+      "loop": false,
+      "durationS": 1.2,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "voar",
+      "description": "Voar: corpo deitado no ar, punho à frente, pernas esticadas para trás, capa tremulando. Mova com anim.pos",
+      "loop": true,
+      "durationS": 1.6,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": false,
+      "metersPerSecond": null,
+      "params": {
+        "punhos": {
+          "default": 1,
+          "description": "1 = um punho à frente; 2 = os dois"
+        }
+      }
+    },
+    {
+      "id": "levantar_peso",
+      "description": "Levantar algo muito pesado: agacha, firma e ergue os braços acima da cabeça. Segura a pose (o objeto sobe junto com anim.pos)",
+      "loop": false,
+      "durationS": 1.6,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "visao_calor",
+      "description": "Visão de calor: firma a base, cerra os punhos e dois feixes saem dos olhos (acessório \"feixes_olhos\"). Segura a pose",
+      "loop": false,
+      "durationS": 1.4,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {
+        "alcance": {
+          "default": 7,
+          "description": "comprimento dos feixes (m)"
+        }
+      }
+    },
+    {
+      "id": "sopro_congelante",
+      "description": "Sopro congelante: enche o peito inclinando para trás e sopra um jato gelado à frente (acessório \"sopro\"). Segura a pose",
+      "loop": false,
+      "durationS": 1.6,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "lancar_gancho",
+      "description": "Disparar um gancho para o alto (acessório \"fio\" com ponta de gancho): mira, recua com o tranco e o cabo estica. Segura a pose",
+      "loop": false,
+      "durationS": 1,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {
+        "side": {
+          "default": "R",
+          "description": "'R' ou 'L': braço que dispara"
+        },
+        "alcance": {
+          "default": 9,
+          "description": "comprimento do cabo (m)"
+        }
+      }
+    },
+    {
+      "id": "planar",
+      "description": "Planar com a capa aberta como asas: corpo inclinado, braços abertos segurando a capa. Mova em descida com anim.pos",
+      "loop": true,
+      "durationS": 2,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": false,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "lutar",
+      "description": "Lutar: guarda alta com jab, cruzado e passo de base, em ciclo",
+      "loop": true,
+      "durationS": 1.1,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "lancar_dispositivo",
+      "description": "Arremessar um dispositivo por cima do ombro (bumerangue, bomba de fumaça): recua o braço e lança à frente. Segura a pose",
+      "loop": false,
+      "durationS": 0.9,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {
+        "side": {
+          "default": "R",
+          "description": "'R' ou 'L': braço que arremessa"
+        }
+      }
+    },
+    {
+      "id": "soltar_fumaca",
+      "description": "Bomba de fumaça: agacha, bate a mão no chão e some numa nuvem (acessório \"nuvem\"). Segura a pose",
+      "loop": false,
+      "durationS": 1.3,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "arremessar_escudo",
+      "description": "Arremessar o escudo do antebraço esquerdo de lado, como disco: gira o tronco, solta e o escudo some do braço (o voo é um objeto \"escudo_heroi\" com anim)",
+      "loop": false,
+      "durationS": 1.1,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "defender",
+      "description": "Defender com o escudo: base baixa e o antebraço esquerdo erguido à frente do corpo. Segura a pose",
+      "loop": false,
+      "durationS": 0.5,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
       ],
       "grounded": true,
       "metersPerSecond": null,
@@ -2502,6 +2829,47 @@
       "update": true,
       "wheels": false,
       "stages": null
+    },
+    {
+      "id": "escudo_heroi",
+      "category": "formas",
+      "label": "Escudo de herói",
+      "description": "Escudo redondo com aro e emblema próprio, igual ao do Capitão Tampa. Em pé (face para +Z); para o voo do arremesso use anim (pos + gira com eixo \"z\" ou \"y\"). 0,6 m.",
+      "sizeM": {
+        "x": 0.7,
+        "y": 0.7,
+        "z": 0.2
+      },
+      "meshes": 6,
+      "params": {
+        "cor": {
+          "default": "#b9c2cc",
+          "description": "cor do escudo"
+        },
+        "borda": {
+          "default": "#c8893a",
+          "description": "cor do aro"
+        },
+        "miolo": {
+          "default": "#d5dbe2",
+          "description": "cor do centro"
+        },
+        "simbolo": {
+          "default": "espiral",
+          "description": "emblema (raio, cometa, espiral, aranha_fofa, coruja, brilho)"
+        },
+        "corSimbolo": {
+          "default": "#c8893a",
+          "description": "cor do emblema"
+        }
+      },
+      "variants": [
+        "cometa"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
     }
   ],
   "expressions": [
@@ -2574,6 +2942,7 @@
         "L": "none"
       },
       "hero": null,
+      "acessorios": [],
       "stoop": 0
     }
   }

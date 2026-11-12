@@ -5,7 +5,10 @@
 export { makeCharacter, DEFAULT_CONFIG, applyFaceState } from './characters/makeCharacter.js';
 export { PRESETS, PRESET_NAMES, makePreset } from './characters/presets.js';
 export { HAIR_STYLES, HAT_TYPES, HELD_ITEMS } from './characters/parts.js';
-export { JOINTS, GROUPS, DIMS } from './characters/skeleton.js';
+export { JOINTS, GROUPS, DIMS, EXTRA_KEYS, ACCESSORY_KEYS } from './characters/skeleton.js';
+export {
+  ACESSORIOS, EMBLEMAS, registrarAcessorio, registrarEmblema, montarAcessorios, montarEscudo, malhaEmblema,
+} from './characters/acessorios.js';
 export { CLIPS, CLIP_NAMES, EXPRESSIONS, curve } from './animations/clips.js';
 export {
   sampleClip, playClip, animate, evaluateTimeline, applyPose,

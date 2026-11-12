@@ -4,7 +4,7 @@
 
 import * as THREE from 'three';
 import {
-  PRESET_NAMES, makePreset, CLIPS, CLIP_NAMES, JOINTS, sampleClip, playClip, animate, moveSpeed,
+  PRESET_NAMES, PRESETS, makePreset, CLIPS, CLIP_NAMES, JOINTS, EXTRA_KEYS, ACCESSORY_KEYS, applyPose, sampleClip, playClip, animate, moveSpeed,
   SCENERY, SCENERY_IDS, makeScenery, setProgress, updateScenery, rollWheels, sceneryBox,
 } from '../assets/index.js';
 
@@ -27,7 +27,7 @@ ok(`${Object.keys(chars).length}/${PRESET_NAMES.length} presets montados com o m
 
 // 2) poses válidas
 console.log('Animações');
-const valid = new Set([...JOINTS, 'hipsPos', 'face']);
+const valid = new Set([...JOINTS, ...EXTRA_KEYS]);
 for (const name of CLIP_NAMES) {
   for (let i = 0; i <= 20; i++) {
     const t = (i / 20) * CLIPS[name].duration * 1.5;
@@ -40,6 +40,37 @@ for (const name of CLIP_NAMES) {
   }
 }
 ok(`${CLIP_NAMES.length} clips geram poses válidas`);
+
+// 2b) heróis: cada poder aplicado no próprio herói, com os acessórios, sem NaN
+console.log('Heróis e poderes');
+{
+  const herois = PRESET_NAMES.filter((n) => PRESETS[n].poderes?.length);
+  let nPoderes = 0;
+  const v = new THREE.Vector3();
+  for (const n of herois) {
+    const ch = makePreset(n);
+    const chaves = new Set(ch.controles.map((c) => c.chave));
+    for (const p of PRESETS[n].poderes) {
+      if (!CLIPS[p.clip]) { fail(`${n}: poder "${p.nome}" usa o clip "${p.clip}", que não existe`); continue; }
+      nPoderes++;
+      const clip = CLIPS[p.clip];
+      for (let i = 0; i <= 12; i++) {
+        const t = (i / 12) * clip.duration * 1.2;
+        const pose = sampleClip(p.clip, t, p.params || {});
+        for (const k of ACCESSORY_KEYS) {
+          const val = pose[k]?.[0];
+          if (val && k !== 'escudo' && !chaves.has(k)) { fail(`${n}: "${p.nome}" anima "${k}", mas o herói não tem esse acessório`); break; }
+        }
+        applyPose(ch, pose, { t });
+        ch.root.updateMatrixWorld(true);
+        let ruim = false;
+        ch.root.traverse((o) => { if (o.isMesh && !ruim) { o.getWorldPosition(v); if (![v.x, v.y, v.z].every(Number.isFinite)) ruim = true; } });
+        if (ruim) { fail(`${n}: "${p.nome}" gera posição inválida em t=${t.toFixed(2)}`); break; }
+      }
+    }
+  }
+  ok(`${herois.length} heróis, ${nPoderes} poderes aplicados com acessórios (sem NaN, efeitos com acessório)`);
+}
 
 // 3) pés no chão e patinação
 const c = chars.construtor;

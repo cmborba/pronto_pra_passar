@@ -62,6 +62,10 @@ guia.root.position.x = moveSpeed(guia, 'walk') * Math.min(t, 3);
 | `heroi_vertice` | Protagonista mascarado. Apresenta curiosidades, corre, salta, explica e reage diante da câmera. | 1.75 m | — | none | #182c53 (manga longa) | pants | — |
 | `heroina_pulso` | Heroína parceira. Explica ciência, reações e energia com ação acrobática. | 1.63 m | — | none | #0a4248 (manga longa) | pants | — |
 | `heroi_impacto` | Herói forte e bem-humorado. Entra em cena para demonstrar forças e mecanismos. | 1.81 m | — | none | #40244c (manga longa) | pants | — |
+| `aracnildo` | Herói-aranha atrapalhado e simpático. Lança fios, escala paredes, salta, balança entre prédios e sente perigos. | 1.69 m | — | none | #8fd14f (manga longa) | pants | — |
+| `major_cometa` | Herói voador, forte e um pouco exibido. Voa, levanta peso, corre muito rápido, tem visão de calor e sopro congelante. | 1.79 m | — | none | #f5f3ee (manga longa) | pants | — |
+| `coruja_noturna` | Vigilante noturna séria (mas dorminhoca de dia). Usa gancho, plana com a capa, luta, lança dispositivos e some na fumaça. | 1.72 m | — | none | #4a3e5c (manga longa) | pants | — |
+| `capitao_tampa` | Capitão destemido com capacete de panela e escudo-tampa. Arremessa o escudo, defende, corre, salta e luta. | 1.77 m | — | none | #2f7d4a (manga longa) | pants | — |
 
 Dicas de elenco: `construtor` é o protagonista/narrador; `engenheiro`/`engenheira` explicam o técnico; `servente` faz o braçal; `homem`, `mulher`, `velhinho`, `velhinha`, `crianca`, `menina` são moradores/curiosos que fazem as perguntas; `motorista` dirige. Mantenha o MESMO personagem para o MESMO papel durante o vídeo inteiro (consistência).
 
@@ -111,6 +115,21 @@ Todas funcionam em QUALQUER personagem. "Loop" repete; os demais tocam uma vez e
 | `heroi_pose` | Pose heroica de apresentação com braços abertos, cabeça erguida e atitude. | sim | 2.2s | torso, head, arms, legs, face | — |
 | `salto_heroico` | Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado. | não | 1.8s | torso, head, arms, legs | — |
 | `aterrissagem_heroica` | Aterrissagem agachada e abertura de braços, seguida de pose heroica. | não | 1.2s | torso, head, arms, legs | — |
+| `lancar_teia` | Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório "fio"). Segura a pose | não | 0.9s | torso, head, arms, legs, face | `side` (padrão "R"): 'R' ou 'L': braço que lança |
+| `escalar` | Escalar uma parede: braços e pernas alternados, corpo colado na parede (vire o personagem para a parede e suba com anim.pos) | sim | 1.1s | torso, head, arms, legs | — |
+| `balancar` | Balançar pendurado num fio (pêndulo): braço esticado para cima segurando o fio, pernas juntas. Mova o personagem em arco com anim.pos | sim | 2.4s | torso, head, arms, legs | `fio` (padrão 4.5): comprimento do fio (m), para quem tem o acessório "fio" |
+| `sentir_perigo` | Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados. Segura a pose | não | 1.2s | torso, head, arms, legs, face | — |
+| `voar` | Voar: corpo deitado no ar, punho à frente, pernas esticadas para trás, capa tremulando. Mova com anim.pos | sim | 1.6s | torso, head, arms, legs, face | `punhos` (padrão 1): 1 = um punho à frente; 2 = os dois |
+| `levantar_peso` | Levantar algo muito pesado: agacha, firma e ergue os braços acima da cabeça. Segura a pose (o objeto sobe junto com anim.pos) | não | 1.6s | torso, head, arms, legs, face | — |
+| `visao_calor` | Visão de calor: firma a base, cerra os punhos e dois feixes saem dos olhos (acessório "feixes_olhos"). Segura a pose | não | 1.4s | torso, head, arms, legs, face | `alcance` (padrão 7): comprimento dos feixes (m) |
+| `sopro_congelante` | Sopro congelante: enche o peito inclinando para trás e sopra um jato gelado à frente (acessório "sopro"). Segura a pose | não | 1.6s | torso, head, arms, legs, face | — |
+| `lancar_gancho` | Disparar um gancho para o alto (acessório "fio" com ponta de gancho): mira, recua com o tranco e o cabo estica. Segura a pose | não | 1s | torso, head, arms, legs, face | `side` (padrão "R"): 'R' ou 'L': braço que dispara<br>`alcance` (padrão 9): comprimento do cabo (m) |
+| `planar` | Planar com a capa aberta como asas: corpo inclinado, braços abertos segurando a capa. Mova em descida com anim.pos | sim | 2s | torso, head, arms, legs | — |
+| `lutar` | Lutar: guarda alta com jab, cruzado e passo de base, em ciclo | sim | 1.1s | torso, head, arms, legs, face | — |
+| `lancar_dispositivo` | Arremessar um dispositivo por cima do ombro (bumerangue, bomba de fumaça): recua o braço e lança à frente. Segura a pose | não | 0.9s | torso, head, arms, legs | `side` (padrão "R"): 'R' ou 'L': braço que arremessa |
+| `soltar_fumaca` | Bomba de fumaça: agacha, bate a mão no chão e some numa nuvem (acessório "nuvem"). Segura a pose | não | 1.3s | torso, head, arms, legs, face | — |
+| `arremessar_escudo` | Arremessar o escudo do antebraço esquerdo de lado, como disco: gira o tronco, solta e o escudo some do braço (o voo é um objeto "escudo_heroi" com anim) | não | 1.1s | torso, head, arms, legs | — |
+| `defender` | Defender com o escudo: base baixa e o antebraço esquerdo erguido à frente do corpo. Segura a pose | não | 0.5s | torso, head, arms, legs, face | — |
 
 Regras da linha do tempo (`animate`):
 - Cada **camada** é uma lista de segmentos `{ clip, start, end?, speed?, params?, fade?, mask?, expression? }` em ordem de início.
@@ -238,6 +257,7 @@ updateScenery(betoneira, t);                                  // tambor da beton
 |---|---|---|---|---|---|
 | `forma` | Peça básica para montar qualquer coisa (tanque, bloco, pilar, bola, lâmpada, quadro...). Empilhe várias para criar máquinas, diagramas e cenários novos. Combine com "anim", "opacidade" e "fluxos". | 1 × 1 × 1 m | `tipo` ("caixa"): 'caixa' | 'cilindro' | 'esfera' | 'cone' | 'toro' | 'capsula'<br>`tamanho` ([1,1,1]): [largura, altura, profundidade] em metros<br>`cor` ("#8a95a3"): cor<br>`brilho` (false): superfície metálica/brilhante<br>`emissivo` (false): brilha sozinha (lâmpada, brasa, tela)<br>`apoiada` (true): true: a base fica no chão (y=0); false: centrada em y=0 | `tanque`, `bola`, `lampada` | — |
 | `tubo` | Tubulação por pontos [x,y,z] (cano, fio, mangueira, veia). Use junto de um fluxo com "caminho" igual aos pontos para mostrar o que passa dentro, e "opacidade" 0.35 para enxergar o fluxo. | 3.3 × 0.3 × 2.3 m | `pontos` ([[0,0,0],[0,2,0],[3,2,0]]): lista de pontos [x,y,z] (relativos ao objeto)<br>`raio` (0.15): raio do tubo<br>`cor` ("#9aa7b5"): cor | `vermelho`, `azul`, `cobre` | — |
+| `escudo_heroi` | Escudo redondo com aro e emblema próprio, igual ao do Capitão Tampa. Em pé (face para +Z); para o voo do arremesso use anim (pos + gira com eixo "z" ou "y"). 0,6 m. | 0.7 × 0.2 × 0.7 m | `cor` ("#b9c2cc"): cor do escudo<br>`borda` ("#c8893a"): cor do aro<br>`miolo` ("#d5dbe2"): cor do centro<br>`simbolo` ("espiral"): emblema (raio, cometa, espiral, aranha_fofa, coruja, brilho)<br>`corSimbolo` ("#c8893a"): cor do emblema | `cometa` | — |
 
 ### Máquinas e processos animados
 
