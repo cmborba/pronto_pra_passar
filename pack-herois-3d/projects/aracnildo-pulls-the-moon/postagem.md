@@ -14,8 +14,8 @@ Would you pull it? Tell me in the comments! 👇
 
 #shorts #moon #space #science #animation
 
-## Tags (YouTube)
-moon, what if the moon came closer, moon closer to earth, tides, roche limit, saturn rings, moon breaks apart, space facts, science animation, 3d animation, funny animation, shorts, aracnildo
+## Tags (YouTube; vidIQ research)
+what happens if, what if the moon, what if, moon, space, astronomy, earth, solar system, moon closer to earth, what if the moon came closer, roche limit, saturn rings, tides, giant wave, scifi, science animation, 3d animation, funny animation, shorts, aracnildo
 
 ## Pinned comment
 Would you pull the Moon to see it up close? 🌕👇 (Spoiler: it turns into a ring!)
