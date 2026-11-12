@@ -1,16 +1,18 @@
 # Post — Aracnildo pulls the Moon (English channel)
 
-## Title (pick one)
-1. PULLING THE MOON WITH A WEB: TOTAL DISASTER 🕸️🌕 #shorts
-2. THE MOON BREAKS INTO A RING! 🪐😱 #shorts
-3. He pulled the MOON closer to Earth… bad idea 🌕 #shorts
+## Title (vidIQ, short format, US)
+1. What Happens If You Pull the Moon? 😱 #physics #shorts #space (98)
+2. I Pulled the Moon and Broke the World 🌕💥 #shorts #animation #science (98)
+3. Aracnildo vs The Moon: Who Wins? 🕸️🌕 #shorts #funny #animation (98)
+4. The Moon Turned Into a Ring of Rocks! 🪐 #disaster #shorts #science (97)
 
-## Description
-Aracnildo just wanted to see the Moon up close… so he pulled it with a web! 🕸️🌕
-Closer, the Moon pulls the ocean way harder: giant tides, everything floods. And too close, Earth's gravity tears the Moon apart and it becomes a ring of rocks, just like Saturn (that's the Roche limit).
+## Description (keywords from vidIQ research: "what happens if", "what if", "moon", "space", "astronomy")
+What happens if you pull the Moon closer to Earth? 🌕🕸️
+Aracnildo shot a web at the Moon and pulled. Closer, the Moon pulls the ocean way harder: giant tides, a giant wave, everything floods. And too close, Earth's gravity tears the Moon apart (the Roche limit) and it turns into a ring of rocks, just like Saturn. 🪐
+A "what if" space and astronomy story in 30 seconds.
 Would you pull it? Tell me in the comments! 👇
 
-#shorts #moon #science #animation #space
+#shorts #moon #space #science #animation
 
 ## Tags (YouTube)
 moon, what if the moon came closer, moon closer to earth, tides, roche limit, saturn rings, moon breaks apart, space facts, science animation, 3d animation, funny animation, shorts, aracnildo
