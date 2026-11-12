@@ -32,16 +32,20 @@ export const CLIPS_PODERES = {
   lancar_teia: {
     description: 'Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório "fio"). Segura a pose',
     loop: false, duration: 0.9, affects: ['torso', 'head', 'arms', 'legs', 'face'], mirrorable: true,
-    params: { side: { default: 'R', description: "'R' ou 'L': braço que lança" } },
-    pose(ph) {
+    params: {
+      side: { default: 'R', description: "'R' ou 'L': braço que lança" },
+      mira: { default: 0, description: 'graus acima da horizontal (0 = para a frente; 60 = para o céu)' },
+      alcance: { default: 7, description: 'comprimento do fio (m)' },
+    },
+    pose(ph, t, p) {
       const tiro = k(ph, [[0, 0], [0.28, 0], [0.4, 1]]);
       return {
         ...base(6),
-        armR: R(k(ph, [[0, -10], [0.25, -55], [0.4, -92]]), 0, -8), forearmR: R(k(ph, [[0, -20], [0.25, -95], [0.4, -4]])),
+        armR: R(k(ph, [[0, -10], [0.25, -55], [0.4, -92 - p.mira]]), 0, -8), forearmR: R(k(ph, [[0, -20], [0.25, -95], [0.4, -4]])),
         handR: R(k(ph, [[0.3, 0], [0.42, 25], [0.6, 0]])),
         armL: R(-35, 0, 22), forearmL: R(-85),
-        chest: R(4, -14 * tiro, 0), head: R(-4, -6 * tiro, 0),
-        fioR: R(k(ph, [[0.3, 0], [0.62, 7], [1, 7]])),
+        chest: R(4 - p.mira * 0.15 * tiro, -14 * tiro, 0), head: R(-4 - p.mira * 0.5 * tiro, -6 * tiro, 0),
+        fioR: R(k(ph, [[0.3, 0], [0.62, p.alcance], [1, p.alcance]])),
         face: { eyeOpen: 1.1 },
       };
     },
@@ -74,6 +78,24 @@ export const CLIPS_PODERES = {
         legL: R(-25 + 20 * s, 0, 3), shinL: R(55), legR: R(-15 + 20 * s, 0, -3), shinR: R(70),
         head: R(-10 + 6 * s), chest: R(-4),
         fioR: R(p.fio),
+      };
+    },
+  },
+  puxar_fio: {
+    description: 'Puxar um fio/corda com as duas mãos, com toda a força: inclina para trás, braços estendidos para cima à frente e os pés escorregando (cabo de guerra)',
+    loop: true, duration: 0.9, affects: ['torso', 'head', 'arms', 'legs', 'face'],
+    params: { mira: { default: 35, description: 'graus acima da horizontal para onde o fio vai' } },
+    pose(ph, t, p) {
+      const s = Math.sin(ph * TAU);
+      const puxa = 0.5 + 0.5 * Math.sin(ph * TAU - 1);
+      const arm = -90 - p.mira * 0.9 + 10 * puxa;
+      return {
+        hips: R(-14 - 4 * puxa), spine: R(-6), chest: R(-4 + 4 * puxa), head: R(-p.mira * 0.4),
+        armR: R(arm, 0, -6), forearmR: R(-10 - 30 * puxa), handR: R(0),
+        armL: R(arm + 6, 0, 6), forearmL: R(-14 - 30 * puxa), handL: R(0),
+        legL: R(-30 + 6 * s, 0, 8), shinL: R(40 + 8 * s), legR: R(6 - 8 * s, 0, -8), shinR: R(22 - 6 * s),
+        hipsPos: R(0, -0.05, -0.04 * puxa),
+        face: { eyeOpen: 0.7 + 0.2 * puxa, browTilt: 1 },
       };
     },
   },

@@ -25,7 +25,7 @@ Todos os tempos são em **segundos desde o início do vídeo** (não desde o in�
 | `duracao` | segundos; use a duração do áudio + 0,3 a 1 s de folga (`voz.json` e `frases.json` ajudam) |
 | `audio` / `palavras` | nomes dos arquivos gerados por `node tools/voz.mjs gerar` (ficam na pasta do projeto) |
 | `legendas` | padrão: **uma palavra por vez**, branca com contorno preto, pequena, no terço inferior (como nos Shorts de referência). Opções: `palavrasPorBloco` (1 a 3), `maiusculas` (false), `corDestaque` (cor da palavra falada; padrão branca), `posicaoY` (0.68), `tamanho` (1) |
-| `ambiente.horario` | `dia`, `tarde`, `nublado` |
+| `ambiente.horario` | `dia`, `tarde`, `nublado`, `noite` (céu escuro com estrelas, luar e janelas da cidade acesas; nuvens desligadas, a não ser com `nuvens: true`) |
 | `ambiente.chao` | `grama`, `terra`, `areia`, `concreto`, `asfalto`, `madeira`, `piso` (padrão pelo `fundo`; não existe chão vazio) |
 | `ambiente.clima` | `limpo` (padrão) ou `chuva` (céu escuro, riscos de chuva e menos luz) |
 | `ambiente.fundo` | **sempre existe um cenário de fundo** (nunca cor sólida): `campo` (padrão: colinas com pinheiros), `cidade` (prédios com janelas), `floresta`, `deserto`, `litoral`, `industrial`, `interior` (sala). Veja a tabela de escolha em `docs/processos.md` |

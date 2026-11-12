@@ -712,6 +712,14 @@
         "side": {
           "default": "R",
           "description": "'R' ou 'L': braço que lança"
+        },
+        "mira": {
+          "default": 0,
+          "description": "graus acima da horizontal (0 = para a frente; 60 = para o céu)"
+        },
+        "alcance": {
+          "default": 7,
+          "description": "comprimento do fio (m)"
         }
       }
     },
@@ -747,6 +755,27 @@
         "fio": {
           "default": 4.5,
           "description": "comprimento do fio (m), para quem tem o acessório \"fio\""
+        }
+      }
+    },
+    {
+      "id": "puxar_fio",
+      "description": "Puxar um fio/corda com as duas mãos, com toda a força: inclina para trás, braços estendidos para cima à frente e os pés escorregando (cabo de guerra)",
+      "loop": true,
+      "durationS": 0.9,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {
+        "mira": {
+          "default": 35,
+          "description": "graus acima da horizontal para onde o fio vai"
         }
       }
     },
@@ -2868,6 +2897,191 @@
       ],
       "setProgress": false,
       "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "agua_nivel",
+      "category": "agua",
+      "label": "Nível de água",
+      "description": "Bloco de água com superfície ondulando sozinha. setProgress(0..1) faz o NÍVEL SUBIR de 0 até \"altura\" (maré alta, enchente, alagamento). Translúcida: casas e pernas aparecem por baixo.",
+      "sizeM": {
+        "x": 20,
+        "y": 2.3,
+        "z": 20
+      },
+      "meshes": 31,
+      "params": {
+        "tamanho": {
+          "default": [
+            20,
+            20
+          ],
+          "description": "[largura x, comprimento z] em metros"
+        },
+        "altura": {
+          "default": 2,
+          "description": "altura máxima do nível (m)"
+        },
+        "cor": {
+          "default": "#2f8fd6",
+          "description": "cor da água"
+        },
+        "espuma": {
+          "default": true,
+          "description": "pontinhos de espuma na superfície"
+        },
+        "progress": {
+          "default": 1,
+          "description": "nível 0..1"
+        }
+      },
+      "variants": [
+        "enchente",
+        "mar"
+      ],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "onda",
+      "category": "agua",
+      "label": "Onda gigante",
+      "description": "Crista de onda com espuma, voltada para +Z (avança para a frente). Mova com \"movimentos\" ou anim.pos; a espuma borbulha sozinha. Combine com agua_nivel subindo atrás e um fluxo de \"agua\" na crista.",
+      "sizeM": {
+        "x": 16.4,
+        "y": 4.7,
+        "z": 13.2
+      },
+      "meshes": 49,
+      "params": {
+        "largura": {
+          "default": 16,
+          "description": "largura da onda (m)"
+        },
+        "altura": {
+          "default": 4,
+          "description": "altura da crista (m)"
+        },
+        "cor": {
+          "default": "#2f8fd6",
+          "description": "cor da água"
+        }
+      },
+      "variants": [
+        "pequena"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "lua",
+      "category": "ceu",
+      "label": "Lua",
+      "description": "Lua low-poly brilhante com crateras. setProgress(0..1) RACHA a Lua em 3 pedaços que se afastam girando (0 = inteira). Para o céu use apoiada: false, ponha alta e longe e use anim.escala para ela \"chegar perto\".",
+      "sizeM": {
+        "x": 8.7,
+        "y": 8.7,
+        "z": 8.7
+      },
+      "meshes": 25,
+      "params": {
+        "raio": {
+          "default": 3,
+          "description": "raio em metros"
+        },
+        "cor": {
+          "default": "#efe8d2",
+          "description": "cor da superfície"
+        },
+        "brilho": {
+          "default": 0.55,
+          "description": "quanto brilha sozinha (0..1.5)"
+        },
+        "halo": {
+          "default": true,
+          "description": "halo de luz em volta"
+        },
+        "apoiada": {
+          "default": true,
+          "description": "true: base no chão; false: centro na origem (céu)"
+        },
+        "progress": {
+          "default": 0,
+          "description": "quanto já rachou 0..1"
+        }
+      },
+      "variants": [
+        "cheia",
+        "rachada"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "anel_pedras",
+      "category": "ceu",
+      "label": "Anel de pedras",
+      "description": "Anel de pedras e poeira (como os de Saturno), girando devagar. setProgress(0..1) FORMA o anel: as pedras se espalham a partir do ponto \"origem\" (graus) até fechar a volta. Use apoiada: false para pôr o centro onde quiser.",
+      "sizeM": {
+        "x": 129.6,
+        "y": 123.2,
+        "z": 49.6
+      },
+      "meshes": 2,
+      "params": {
+        "raio": {
+          "default": 60,
+          "description": "raio do anel (m)"
+        },
+        "largura": {
+          "default": 8,
+          "description": "largura da faixa (m)"
+        },
+        "inclinacao": {
+          "default": 70,
+          "description": "inclinação do plano do anel (graus; 0 = deitado)"
+        },
+        "origem": {
+          "default": 90,
+          "description": "ângulo (graus) de onde as pedras partem"
+        },
+        "pedras": {
+          "default": 700,
+          "description": "quantidade de pedras"
+        },
+        "tamanhoPedra": {
+          "default": 1,
+          "description": "multiplica o tamanho das pedras (anéis grandes e distantes: 3 a 5)"
+        },
+        "cor": {
+          "default": "#cfc4a8",
+          "description": "cor das pedras"
+        },
+        "velocidade": {
+          "default": 2,
+          "description": "giro (graus/s)"
+        },
+        "apoiada": {
+          "default": true,
+          "description": "true: ponto mais baixo no chão; false: centro na origem"
+        },
+        "progress": {
+          "default": 1,
+          "description": "quanto do anel já se formou 0..1"
+        }
+      },
+      "variants": [
+        "formando"
+      ],
+      "setProgress": true,
+      "update": true,
       "wheels": false,
       "stages": null
     }

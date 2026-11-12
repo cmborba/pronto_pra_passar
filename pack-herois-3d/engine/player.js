@@ -104,6 +104,7 @@ scene.environmentIntensity = 0.32;
 // céu em degradê (cores por horário/clima)
 const CEUS = {
   dia: ['#2f86e0', '#bfe3fb'], tarde: ['#4a68b0', '#f6bf94'], nublado: ['#7f90a6', '#d0d9e1'], chuva: ['#4c5e78', '#9fadbd'],
+  noite: ['#050a1c', '#26375f'],
 };
 const domo = new THREE.Mesh(
   new THREE.SphereGeometry(600, 24, 16),
@@ -121,6 +122,28 @@ const domo = new THREE.Mesh(
 domo.renderOrder = -10;
 domo.frustumCulled = false;
 scene.add(domo);
+
+// estrelas (só à noite): pontos fixos na cúpula, acima do horizonte
+const estrelas = (() => {
+  const rnd = semente(31);
+  const n = 900;
+  const pos = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) {
+    const a = rnd() * Math.PI * 2;
+    const h = 0.06 + Math.pow(rnd(), 0.7) * 0.94; // seno da altura
+    const r = 560;
+    const c = Math.sqrt(1 - h * h);
+    pos.set([Math.cos(a) * c * r, h * r, Math.sin(a) * c * r], i * 3);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(g, new THREE.PointsMaterial({ color: '#fff7e0', size: 2.2, sizeAttenuation: false, fog: false, transparent: true, opacity: 0.95, depthWrite: false }));
+  pts.renderOrder = -9;
+  pts.frustumCulled = false;
+  pts.visible = false;
+  scene.add(pts);
+  return pts;
+})();
 
 // chão com variação de cor (textura procedural), para não parecer um plano liso
 const CHAO = { grama: '#86c15f', terra: '#8a5f3a', areia: '#e6d3a1', concreto: '#bdbdb7', asfalto: '#3b3d42', madeira: '#b98a56', piso: '#d8d2c4' };
@@ -268,6 +291,22 @@ const FUNDOS = { campo: colinas };
   const texJanelas = new THREE.CanvasTexture(cj);
   texJanelas.wrapS = texJanelas.wrapT = THREE.RepeatWrapping;
   texJanelas.colorSpace = THREE.SRGBColorSpace;
+  // à noite as mesmas janelas acendem (mapa de brilho: só as janelas, parede preta)
+  const cn = document.createElement('canvas');
+  cn.width = cn.height = 128;
+  {
+    const g = cn.getContext('2d');
+    g.fillStyle = '#000000';
+    g.fillRect(0, 0, 128, 128);
+    for (let y = 0; y < 4; y++) for (let x = 0; x < 4; x++) {
+      g.fillStyle = (x * 7 + y * 3) % 4 === 0 ? '#1c2440' : '#ffd98a';
+      g.fillRect(x * 32 + 7, y * 32 + 7, 18, 20);
+    }
+  }
+  const texJanelasNoite = new THREE.CanvasTexture(cn);
+  texJanelasNoite.wrapS = texJanelasNoite.wrapT = THREE.RepeatWrapping;
+  texJanelasNoite.colorSpace = THREE.SRGBColorSpace;
+  window.__janelasNoite = { tex: texJanelasNoite, mats: [] };
 
   // cidade: anel de prédios coloridos com janelas
   {
@@ -288,7 +327,8 @@ const FUNDOS = { campo: colinas };
         if (face >= 4) { uv.setXY(v, 0, 0); continue; }
         uv.setXY(v, (uv.getX(v) * lado) / 12, (uv.getY(v) * hh) / 12);
       }
-      const b = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: cores[i % cores.length], map: texJanelas, roughness: 1, flatShading: true, fog: false }));
+      const b = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: cores[i % cores.length], map: texJanelas, roughness: 1, flatShading: true, fog: false, emissive: '#ffffff', emissiveMap: texJanelasNoite, emissiveIntensity: 0 }));
+      window.__janelasNoite.mats.push(b.material);
       b.position.set(Math.cos(a) * r, hh / 2 - 1, Math.sin(a) * r);
       b.rotation.y = rnd() * 3;
       g.add(b);
@@ -977,6 +1017,10 @@ window.renderAt = (t) => {
     decoracao.visible = decorar;
     chuva.linhas.visible = clima === 'chuva';
     nuvens.visible = (amb.nuvens ?? sb.ambiente?.nuvens) !== false;
+    const noite = horario === 'noite' && clima !== 'chuva';
+    estrelas.visible = noite;
+    for (const m of window.__janelasNoite.mats) m.emissiveIntensity = noite ? 1.1 : 0;
+    if (noite) { scene.fog.near = 90; nuvens.visible = (amb.nuvens ?? sb.ambiente?.nuvens) === true; }
   }
 
   // entidades

@@ -30,6 +30,8 @@ export const CATEGORIES = {
   objetos: 'Objetos de rua e obra',
   formas: 'Formas e peças livres (para montar qualquer coisa)',
   maquinas: 'Máquinas e processos animados',
+  agua: 'Água (nível subindo, ondas)',
+  ceu: 'Céu e espaço (Lua, anéis)',
 };
 
 export function register(id, def) {
@@ -212,6 +214,8 @@ export const SKIES = {
   dia: { sky: '#9fd3f2', fog: 18, ground: '#8fa077', sun: '#fff4e0', sunI: 2.2, hemi: 1.1 },
   tarde: { sky: '#f4b98a', fog: 16, ground: '#8a7a62', sun: '#ffd0a0', sunI: 2.4, hemi: 0.8 },
   nublado: { sky: '#c4cdd6', fog: 14, ground: '#8a9288', sun: '#e6ecf2', sunI: 1.2, hemi: 1.5 },
+  // noite de desenho animado: azul-marinho, luar frio e forte o bastante para ler os personagens
+  noite: { sky: '#1a2748', fog: 14, ground: '#232c46', sun: '#a9c0ff', sunI: 1.15, hemi: 0.75 },
 };
 
 // Luz, sombra e céu padrão do kit (para todos os vídeos ficarem com a mesma cara).

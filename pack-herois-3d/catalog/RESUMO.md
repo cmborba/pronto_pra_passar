@@ -55,9 +55,10 @@ Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none,
 - `heroi_pose` (loop, torso/head/arms/legs/face): Pose heroica de apresentação com braços abertos, cabeça erguida e atitude
 - `salto_heroico` (segura a pose, torso/head/arms/legs): Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado
 - `aterrissagem_heroica` (segura a pose, torso/head/arms/legs): Aterrissagem agachada e abertura de braços, seguida de pose heroica
-- `lancar_teia` (segura a pose, torso/head/arms/legs/face) params: side="R": Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório "fio")
+- `lancar_teia` (segura a pose, torso/head/arms/legs/face) params: side="R", mira=0, alcance=7: Lança um fio pelo pulso: prepara, estica o braço e o fio dispara à frente (use com o acessório "fio")
 - `escalar` (loop, torso/head/arms/legs): Escalar uma parede: braços e pernas alternados, corpo colado na parede (vire o personagem para a parede e suba com anim.pos)
 - `balancar` (loop, torso/head/arms/legs) params: fio=4.5: Balançar pendurado num fio (pêndulo): braço esticado para cima segurando o fio, pernas juntas
+- `puxar_fio` (loop, torso/head/arms/legs/face) params: mira=35: Puxar um fio/corda com as duas mãos, com toda a força: inclina para trás, braços estendidos para cima à frente e os pés escorregando (cabo de guerra)
 - `sentir_perigo` (segura a pose, torso/head/arms/legs/face): Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados
 - `voar` (loop, torso/head/arms/legs/face) params: punhos=1: Voar: corpo deitado no ar, punho à frente, pernas esticadas para trás, capa tremulando
 - `levantar_peso` (segura a pose, torso/head/arms/legs/face): Levantar algo muito pesado: agacha, firma e ergue os braços acima da cabeça
@@ -159,3 +160,11 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 - `misturador` 2.8×2.8×2.3 m variantes: tinta, concreto, massa | params: raio=1.4, conteudo="#9a8f7a", pas="#f2c94c", velocidade=90 | gira sozinho: Tanque aberto com pás girando e o conteúdo sendo misturado (massa, tinta, concreto, comida)
 - `escavadeira` 3.6×10.2×3.9 m variantes: laranja, rapida | params: cor="#f2c94c", ciclo=6, fase=0 | gira sozinho: Escavadeira que cava, gira e despeja em ciclo (update)
 - `fabrica_processo` 25.2×15×22 m variantes: graos, areia | params: material="pedra", carregando=true, velocidade=1 | gira sozinho: Linha de processamento animada: 3 silos de matéria-prima, esteira subindo até um tambor rotativo aquecido (com chama), chaminé soltando fumaça e torre com bica de descarga
+
+### Água (nível subindo, ondas)
+- `agua_nivel` 20×20×2.3 m variantes: enchente, mar | params: tamanho=[20,20], altura=2, cor="#2f8fd6", espuma=true, progress=1 | ETAPAS (etapa) | gira sozinho: Bloco de água com superfície ondulando sozinha
+- `onda` 16.4×13.2×4.7 m variantes: pequena | params: largura=16, altura=4, cor="#2f8fd6" | gira sozinho: Crista de onda com espuma, voltada para +Z (avança para a frente)
+
+### Céu e espaço (Lua, anéis)
+- `lua` 8.7×8.7×8.7 m variantes: cheia, rachada | params: raio=3, cor="#efe8d2", brilho=0.55, halo=true, apoiada=true, progress=0 | ETAPAS (etapa): Lua low-poly brilhante com crateras
+- `anel_pedras` 129.6×49.6×123.2 m variantes: formando | params: raio=60, largura=8, inclinacao=70, origem=90, pedras=700, tamanhoPedra=1, cor="#cfc4a8", velocidade=2, apoiada=true, progress=1 | ETAPAS (etapa) | gira sozinho: Anel de pedras e poeira (como os de Saturno), girando devagar

@@ -1,0 +1,387 @@
+[
+ {
+  "palavra": "O",
+  "inicio": 0,
+  "fim": 0.081
+ },
+ {
+  "palavra": "Aracnildo",
+  "inicio": 0.163,
+  "fim": 0.848
+ },
+ {
+  "palavra": "puxou",
+  "inicio": 0.917,
+  "fim": 1.393
+ },
+ {
+  "palavra": "a",
+  "inicio": 1.463,
+  "fim": 1.474
+ },
+ {
+  "palavra": "Lua",
+  "inicio": 1.533,
+  "fim": 1.765
+ },
+ {
+  "palavra": "pra",
+  "inicio": 1.8,
+  "fim": 1.939
+ },
+ {
+  "palavra": "perto",
+  "inicio": 2.043,
+  "fim": 2.38
+ },
+ {
+  "palavra": "da",
+  "inicio": 2.426,
+  "fim": 2.496
+ },
+ {
+  "palavra": "Terra!",
+  "inicio": 2.566,
+  "fim": 3.111
+ },
+ {
+  "palavra": "Jogou",
+  "inicio": 3.379,
+  "fim": 3.727
+ },
+ {
+  "palavra": "a",
+  "inicio": 3.796,
+  "fim": 3.808
+ },
+ {
+  "palavra": "teia,",
+  "inicio": 3.901,
+  "fim": 4.377
+ },
+ {
+  "palavra": "grudou",
+  "inicio": 4.551,
+  "fim": 5.062
+ },
+ {
+  "palavra": "e",
+  "inicio": 5.224,
+  "fim": 5.341
+ },
+ {
+  "palavra": "puxou",
+  "inicio": 5.399,
+  "fim": 5.677
+ },
+ {
+  "palavra": "com",
+  "inicio": 5.7,
+  "fim": 5.828
+ },
+ {
+  "palavra": "toda",
+  "inicio": 5.921,
+  "fim": 6.223
+ },
+ {
+  "palavra": "a",
+  "inicio": 6.246,
+  "fim": 6.258
+ },
+ {
+  "palavra": "força.",
+  "inicio": 6.327,
+  "fim": 6.931
+ },
+ {
+  "palavra": "A",
+  "inicio": 7.198,
+  "fim": 7.233
+ },
+ {
+  "palavra": "Lua",
+  "inicio": 7.326,
+  "fim": 7.488
+ },
+ {
+  "palavra": "veio",
+  "inicio": 7.558,
+  "fim": 7.837
+ },
+ {
+  "palavra": "vindo...",
+  "inicio": 7.895,
+  "fim": 8.464
+ },
+ {
+  "palavra": "e",
+  "inicio": 8.684,
+  "fim": 8.766
+ },
+ {
+  "palavra": "ficou",
+  "inicio": 8.8,
+  "fim": 9.125
+ },
+ {
+  "palavra": "gigante!",
+  "inicio": 9.183,
+  "fim": 10.17
+ },
+ {
+  "palavra": "Só",
+  "inicio": 10.368,
+  "fim": 10.53
+ },
+ {
+  "palavra": "que",
+  "inicio": 10.565,
+  "fim": 10.635
+ },
+ {
+  "palavra": "a",
+  "inicio": 10.67,
+  "fim": 10.681
+ },
+ {
+  "palavra": "Lua",
+  "inicio": 10.751,
+  "fim": 10.983
+ },
+ {
+  "palavra": "puxa",
+  "inicio": 11.064,
+  "fim": 11.447
+ },
+ {
+  "palavra": "o",
+  "inicio": 11.459,
+  "fim": 11.482
+ },
+ {
+  "palavra": "mar.",
+  "inicio": 11.564,
+  "fim": 12.063
+ },
+ {
+  "palavra": "Mais",
+  "inicio": 12.237,
+  "fim": 12.469
+ },
+ {
+  "palavra": "perto,",
+  "inicio": 12.574,
+  "fim": 13.096
+ },
+ {
+  "palavra": "ela",
+  "inicio": 13.154,
+  "fim": 13.363
+ },
+ {
+  "palavra": "puxa",
+  "inicio": 13.398,
+  "fim": 13.723
+ },
+ {
+  "palavra": "muito",
+  "inicio": 13.793,
+  "fim": 14.269
+ },
+ {
+  "palavra": "mais!",
+  "inicio": 14.338,
+  "fim": 14.896
+ },
+ {
+  "palavra": "O",
+  "inicio": 15.093,
+  "fim": 15.139
+ },
+ {
+  "palavra": "mar",
+  "inicio": 15.221,
+  "fim": 15.348
+ },
+ {
+  "palavra": "subiu,",
+  "inicio": 15.418,
+  "fim": 15.999
+ },
+ {
+  "palavra": "a",
+  "inicio": 16.219,
+  "fim": 16.277
+ },
+ {
+  "palavra": "onda",
+  "inicio": 16.347,
+  "fim": 16.579
+ },
+ {
+  "palavra": "cobriu",
+  "inicio": 16.614,
+  "fim": 16.997
+ },
+ {
+  "palavra": "a",
+  "inicio": 17.055,
+  "fim": 17.09
+ },
+ {
+  "palavra": "praia",
+  "inicio": 17.16,
+  "fim": 17.612
+ },
+ {
+  "palavra": "e",
+  "inicio": 17.728,
+  "fim": 17.833
+ },
+ {
+  "palavra": "tudo",
+  "inicio": 17.972,
+  "fim": 18.286
+ },
+ {
+  "palavra": "alagou!",
+  "inicio": 18.309,
+  "fim": 18.832
+ },
+ {
+  "palavra": "E",
+  "inicio": 19.133,
+  "fim": 19.238
+ },
+ {
+  "palavra": "perto",
+  "inicio": 19.366,
+  "fim": 19.702
+ },
+ {
+  "palavra": "demais,",
+  "inicio": 19.749,
+  "fim": 20.364
+ },
+ {
+  "palavra": "a",
+  "inicio": 20.469,
+  "fim": 20.515
+ },
+ {
+  "palavra": "gravidade",
+  "inicio": 20.573,
+  "fim": 21.061
+ },
+ {
+  "palavra": "da",
+  "inicio": 21.107,
+  "fim": 21.188
+ },
+ {
+  "palavra": "Terra",
+  "inicio": 21.258,
+  "fim": 21.525
+ },
+ {
+  "palavra": "rasga",
+  "inicio": 21.653,
+  "fim": 22.117
+ },
+ {
+  "palavra": "a",
+  "inicio": 22.14,
+  "fim": 22.164
+ },
+ {
+  "palavra": "Lua.",
+  "inicio": 22.198,
+  "fim": 22.698
+ },
+ {
+  "palavra": "Ela",
+  "inicio": 23.058,
+  "fim": 23.301
+ },
+ {
+  "palavra": "vira",
+  "inicio": 23.383,
+  "fim": 23.673
+ },
+ {
+  "palavra": "um",
+  "inicio": 23.719,
+  "fim": 23.777
+ },
+ {
+  "palavra": "anel",
+  "inicio": 23.847,
+  "fim": 24.068
+ },
+ {
+  "palavra": "de",
+  "inicio": 24.114,
+  "fim": 24.195
+ },
+ {
+  "palavra": "pedras,",
+  "inicio": 24.323,
+  "fim": 24.962
+ },
+ {
+  "palavra": "igual",
+  "inicio": 24.985,
+  "fim": 25.345
+ },
+ {
+  "palavra": "Saturno!",
+  "inicio": 25.414,
+  "fim": 26.378
+ },
+ {
+  "palavra": "Lua",
+  "inicio": 26.808,
+  "fim": 27.098
+ },
+ {
+  "palavra": "é",
+  "inicio": 27.121,
+  "fim": 27.144
+ },
+ {
+  "palavra": "pra",
+  "inicio": 27.214,
+  "fim": 27.365
+ },
+ {
+  "palavra": "olhar,",
+  "inicio": 27.388,
+  "fim": 27.969
+ },
+ {
+  "palavra": "não",
+  "inicio": 28.201,
+  "fim": 28.41
+ },
+ {
+  "palavra": "pra",
+  "inicio": 28.433,
+  "fim": 28.549
+ },
+ {
+  "palavra": "puxar.",
+  "inicio": 28.584,
+  "fim": 29.199
+ },
+ {
+  "palavra": "Você",
+  "inicio": 29.559,
+  "fim": 29.791
+ },
+ {
+  "palavra": "puxaria?",
+  "inicio": 29.838,
+  "fim": 30.976
+ }
+]
