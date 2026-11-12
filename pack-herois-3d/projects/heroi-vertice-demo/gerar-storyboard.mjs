@@ -54,8 +54,8 @@ add(0, 2, {
   }],
   fluxos: [
     // brilho de energia subindo em volta do herói (aura de apresentação)
-    { material: 'luz', origem: { ancora: 'heroi', desloca: [0, 0.1, -0.2] }, destino: { ancora: 'heroi', desloca: [0, 2.4, -0.2] },
-      taxa: 16, dispersao: 0.7, espalha: 0.9, tamanho: 0.04, de: 0.3, ate: 2 },
+    { material: 'luz', origem: { ancora: 'heroi', desloca: [0, 0.1, -0.55] }, destino: { ancora: 'heroi', desloca: [0, 2.4, -0.55] },
+      taxa: 12, dispersao: 0.4, espalha: 0.6, tamanho: 0.025, de: 0.3, ate: 2 },
   ],
   camera: { tipo: 'enquadrar', alvo: 'heroi', plano: 'geral', angulo: 12, elevacao: 3, deriva: -14, aproxima: 0.82, fov: 40 },
   textos: [{ texto: 'HERÓI VÉRTICE', de: 0.25, ate: 2, estilo: 'titulo' }],
@@ -127,8 +127,8 @@ add(7, 10, {
     { material: 'poeira', origem: { ancora: 'heroi', desloca: [0, 0.05, -0.3] }, taxa: 45, tamanho: 0.24, vida: 0.8, dispersao: 1.3, de: 7, ate: 7.3 },
     { material: 'fagulha', origem: { ancora: 'heroi', desloca: [0, 0.1, 0] }, destino: { ancora: 'heroi', desloca: [0, 0.7, 0] },
       taxa: 60, espalha: 2.4, de: 7, ate: 7.3 },
-    { material: 'luz', origem: { ancora: 'heroi', desloca: [0, 0.1, -0.2] }, destino: { ancora: 'heroi', desloca: [0, 2.4, -0.2] },
-      taxa: 14, dispersao: 0.7, espalha: 0.9, tamanho: 0.04, de: 8.4, ate: 10 },
+    { material: 'luz', origem: { ancora: 'heroi', desloca: [0, 0.1, -0.55] }, destino: { ancora: 'heroi', desloca: [0, 2.4, -0.55] },
+      taxa: 12, dispersao: 0.4, espalha: 0.6, tamanho: 0.025, de: 8.4, ate: 10 },
   ],
   efeitos: [{ tipo: 'tremor', de: 7, ate: 7.45, intensidade: 0.7 }],
   camera: { tipo: 'enquadrar', alvo: 'heroi', plano: 'geral', angulo: -18, elevacao: 4, deriva: 22, aproxima: 0.8, fov: 40 },

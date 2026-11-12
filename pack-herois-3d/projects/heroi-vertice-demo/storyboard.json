@@ -307,7 +307,7 @@
             "desloca": [
               0,
               0.1,
-              -0.2
+              -0.55
             ]
           },
           "destino": {
@@ -315,13 +315,13 @@
             "desloca": [
               0,
               2.4,
-              -0.2
+              -0.55
             ]
           },
-          "taxa": 16,
-          "dispersao": 0.7,
-          "espalha": 0.9,
-          "tamanho": 0.04,
+          "taxa": 12,
+          "dispersao": 0.4,
+          "espalha": 0.6,
+          "tamanho": 0.025,
           "de": 0.3,
           "ate": 2
         }
@@ -1588,7 +1588,7 @@
             "desloca": [
               0,
               0.1,
-              -0.2
+              -0.55
             ]
           },
           "destino": {
@@ -1596,13 +1596,13 @@
             "desloca": [
               0,
               2.4,
-              -0.2
+              -0.55
             ]
           },
-          "taxa": 14,
-          "dispersao": 0.7,
-          "espalha": 0.9,
-          "tamanho": 0.04,
+          "taxa": 12,
+          "dispersao": 0.4,
+          "espalha": 0.6,
+          "tamanho": 0.025,
           "de": 8.4,
           "ate": 10
         }

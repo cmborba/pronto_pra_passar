@@ -141,6 +141,64 @@ function buildHeroDetails(joints, hero) {
     { pos: [0, 0.03, 0], parent: joints.hips });
 }
 
+// ---- acabamento de desenho animado (padrão nos heróis; nos demais, `contorno: true` liga) ----
+// Sombreamento liso com leve brilho de "boneco de vinil" + contorno escuro por casca invertida
+// (cópia da peça, inflada ao longo da normal e desenhada só por dentro). Lentes dos olhos ganham luz própria.
+const CONTORNO_M = 0.011; // espessura do contorno em metros (antes da escala de altura)
+const lisoCache = new Map();
+const contornoCache = new Map();
+
+function matLiso(color, emissivo = 0) {
+  const key = `${color}:${emissivo}`;
+  let m = lisoCache.get(key);
+  if (!m) {
+    m = new THREE.MeshStandardMaterial({ color, roughness: 0.5, metalness: 0.04, emissive: color, emissiveIntensity: emissivo });
+    lisoCache.set(key, m);
+  }
+  return m;
+}
+
+function matContorno(color, esp) {
+  const key = `${color}:${esp.toFixed(4)}`;
+  let m = contornoCache.get(key);
+  if (!m) {
+    m = new THREE.ShaderMaterial({
+      uniforms: { cor: { value: new THREE.Color(color) }, esp: { value: esp } },
+      vertexShader: 'uniform float esp; void main(){ vec3 p = position + normalize(normal) * esp; gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0); }',
+      fragmentShader: 'uniform vec3 cor; void main(){ gl_FragColor = vec4(cor, 1.0); }',
+      side: THREE.BackSide,
+    });
+    contornoCache.set(key, m);
+  }
+  return m;
+}
+
+function acabamentoDesenho(root, faceRig, c) {
+  const corContorno = c.hero?.outline || c.contornoCor || '#14161c';
+  const lente = c.hero?.eyes ? `#${new THREE.Color(c.hero.eyes).getHexString()}` : null;
+  const rosto = new Set();
+  for (const g of [...faceRig.eyes, ...faceRig.brows, faceRig.mouthLine, faceRig.mouthArc, faceRig.mouthOpen]) {
+    g?.traverse((o) => rosto.add(o));
+  }
+  const pecas = [];
+  root.traverse((o) => { if (o.isMesh) pecas.push(o); });
+  for (const m of pecas) {
+    const hex = `#${m.material.color.getHexString()}`;
+    const ehLente = rosto.has(m) && hex === lente;
+    if (c.hero) m.material = matLiso(hex, ehLente ? 0.35 : 0);
+    // sem contorno no rosto (lentes já têm borda) nem em peças planas (símbolo do peito)
+    if (rosto.has(m) || m.geometry.type === 'ShapeGeometry') continue;
+    const esc = new THREE.Vector3(1, 1, 1);
+    for (let n = m; n && n !== root; n = n.parent) esc.multiply(n.scale);
+    const s = (Math.abs(esc.x) + Math.abs(esc.y) + Math.abs(esc.z)) / 3;
+    const casca = new THREE.Mesh(m.geometry, matContorno(corContorno, CONTORNO_M / Math.max(1e-3, s)));
+    casca.castShadow = false;
+    casca.receiveShadow = false;
+    casca.name = 'contorno';
+    m.add(casca);
+  }
+}
+
 // Aplica um estado de rosto: { eyeOpen, browRaise, browTilt, smile, mouthOpen, look:[x,y] }
 export function applyFaceState(character, state = {}) {
   const f = { ...FACE_DEFAULT, ...state };
@@ -235,6 +293,7 @@ export function makeCharacter(userConfig = {}) {
   }
 
   root.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  if (c.contorno ?? !!c.hero) acabamentoDesenho(root, faceRig, c);
 
   const character = {
     name: c.name,
