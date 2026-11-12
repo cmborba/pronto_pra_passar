@@ -214,6 +214,42 @@
       "bottom": "pants",
       "held": {},
       "stoop": 0
+    },
+    {
+      "id": "heroi_vertice",
+      "role": "Protagonista mascarado. Apresenta curiosidades, corre, salta, explica e reage diante da câmera.",
+      "approxHeightM": 1.75,
+      "hat": null,
+      "hair": "none",
+      "top": "#182c53",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "heroina_pulso",
+      "role": "Heroína parceira. Explica ciência, reações e energia com ação acrobática.",
+      "approxHeightM": 1.63,
+      "hat": null,
+      "hair": "none",
+      "top": "#0a4248",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
+    },
+    {
+      "id": "heroi_impacto",
+      "role": "Herói forte e bem-humorado. Entra em cena para demonstrar forças e mecanismos.",
+      "approxHeightM": 1.81,
+      "hat": null,
+      "hair": "none",
+      "top": "#40244c",
+      "sleeves": "long",
+      "bottom": "pants",
+      "held": {},
+      "stoop": 0
     }
   ],
   "clips": [
@@ -549,6 +585,52 @@
         "head",
         "torso",
         "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "heroi_pose",
+      "description": "Pose heroica de apresentação com braços abertos, cabeça erguida e atitude.",
+      "loop": true,
+      "durationS": 2.2,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "salto_heroico",
+      "description": "Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado.",
+      "loop": false,
+      "durationS": 1.8,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "aterrissagem_heroica",
+      "description": "Aterrissagem agachada e abertura de braços, seguida de pose heroica.",
+      "loop": false,
+      "durationS": 1.2,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs"
       ],
       "grounded": true,
       "metersPerSecond": null,
@@ -2491,6 +2573,7 @@
         "R": "none",
         "L": "none"
       },
+      "hero": null,
       "stoop": 0
     }
   }

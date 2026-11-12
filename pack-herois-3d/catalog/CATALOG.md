@@ -59,6 +59,9 @@ guia.root.position.x = moveSpeed(guia, 'walk') * Math.min(t, 3);
 | `crianca` | Criança curiosa (menino). Faz as perguntas ingênuas que puxam a explicação. | 1.1 m | cap | short | #f2d13a (manga curta) | shorts | — |
 | `menina` | Criança curiosa (menina). Faz perguntas e reage com surpresa. | 1.07 m | — | ponytail | #e8586a (manga curta) | skirt | — |
 | `motorista` | Motorista (carro, ônibus, caminhão, metrô). Use com a animação sit (params: { arms: "wheel" }). | 1.72 m | cap | short | #34495e (manga curta) | pants | — |
+| `heroi_vertice` | Protagonista mascarado. Apresenta curiosidades, corre, salta, explica e reage diante da câmera. | 1.75 m | — | none | #182c53 (manga longa) | pants | — |
+| `heroina_pulso` | Heroína parceira. Explica ciência, reações e energia com ação acrobática. | 1.63 m | — | none | #0a4248 (manga longa) | pants | — |
+| `heroi_impacto` | Herói forte e bem-humorado. Entra em cena para demonstrar forças e mecanismos. | 1.81 m | — | none | #40244c (manga longa) | pants | — |
 
 Dicas de elenco: `construtor` é o protagonista/narrador; `engenheiro`/`engenheira` explicam o técnico; `servente` faz o braçal; `homem`, `mulher`, `velhinho`, `velhinha`, `crianca`, `menina` são moradores/curiosos que fazem as perguntas; `motorista` dirige. Mantenha o MESMO personagem para o MESMO papel durante o vídeo inteiro (consistência).
 
@@ -105,6 +108,9 @@ Todas funcionam em QUALQUER personagem. "Loop" repete; os demais tocam uma vez e
 | `crouch` | Agachar para olhar/mexer em algo no chão (inspecionar fundação, fiação, encanamento). | não | 0.6s | torso, head, arms, legs | — |
 | `sit` | Sentar (cadeira, banco, banco do carro). Ajuste seatHeight à altura do assento e arms ao uso. | não | 0.5s | torso, head, arms, legs | `seatHeight` (padrão 0.34): Altura do assento em metros (unidades do personagem, antes da escala). 0.34 = pés tocam o chão.<br>`arms` (padrão "lap"): 'lap' (mãos no colo), 'wheel' (mãos no volante, para dirigir) ou 'table' (braços sobre a mesa) |
 | `read_clipboard` | Ler/anotar na prancheta (use com engenheiro, que já tem prancheta na mão esquerda). | sim | 3s | arms, head, torso, face | — |
+| `heroi_pose` | Pose heroica de apresentação com braços abertos, cabeça erguida e atitude. | sim | 2.2s | torso, head, arms, legs, face | — |
+| `salto_heroico` | Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado. | não | 1.8s | torso, head, arms, legs | — |
+| `aterrissagem_heroica` | Aterrissagem agachada e abertura de braços, seguida de pose heroica. | não | 1.2s | torso, head, arms, legs | — |
 
 Regras da linha do tempo (`animate`):
 - Cada **camada** é uma lista de segmentos `{ clip, start, end?, speed?, params?, fade?, mask?, expression? }` em ordem de início.

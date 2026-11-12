@@ -21,6 +21,9 @@
 - `crianca` (1.1 m): Criança curiosa (menino)
 - `menina` (1.07 m): Criança curiosa (menina)
 - `motorista` (1.72 m): Motorista (carro, ônibus, caminhão, metrô)
+- `heroi_vertice` (1.75 m): Protagonista mascarado
+- `heroina_pulso` (1.63 m): Heroína parceira
+- `heroi_impacto` (1.81 m): Herói forte e bem-humorado
 Opções em `overrides`: skin, height, build, headScale, top{color,stripe,sleeves}, bottom{color,type}, shoes, hair{style,color}, hat{type,color}, face{glasses,mustache,beard}, held{R,L}, stoop.
 Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none, hardhat, cap. Itens: none, hammer, clipboard, shovel.
 
@@ -45,6 +48,9 @@ Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none,
 - `crouch` (segura a pose, torso/head/arms/legs): Agachar para olhar/mexer em algo no chão (inspecionar fundação, fiação, encanamento)
 - `sit` (segura a pose, torso/head/arms/legs) params: seatHeight=0.34, arms="lap": Sentar (cadeira, banco, banco do carro)
 - `read_clipboard` (loop, arms/head/torso/face): Ler/anotar na prancheta (use com engenheiro, que já tem prancheta na mão esquerda)
+- `heroi_pose` (loop, torso/head/arms/legs/face): Pose heroica de apresentação com braços abertos, cabeça erguida e atitude
+- `salto_heroico` (segura a pose, torso/head/arms/legs): Impulso, voo e aterrissagem estilizada em um ciclo de 1,8 s; salto parado
+- `aterrissagem_heroica` (segura a pose, torso/head/arms/legs): Aterrissagem agachada e abertura de braços, seguida de pose heroica
 Expressões: neutral, happy, laugh, sad, angry, surprised, worried, thinking, sleepy. Máscaras: torso, head, face, armL, armR, arms, legs, legL, legR.
 
 ## Cenário (`asset`, `variante`, `params`)
@@ -122,11 +128,3 @@ Expressões: neutral, happy, laugh, sad, angry, surprised, worried, thinking, sl
 - `misturador` 2.8×2.8×2.3 m variantes: tinta, concreto, massa | params: raio=1.4, conteudo="#9a8f7a", pas="#f2c94c", velocidade=90 | gira sozinho: Tanque aberto com pás girando e o conteúdo sendo misturado (massa, tinta, concreto, comida)
 - `escavadeira` 3.6×10.2×3.9 m variantes: laranja, rapida | params: cor="#f2c94c", ciclo=6, fase=0 | gira sozinho: Escavadeira que cava, gira e despeja em ciclo (update)
 - `fabrica_processo` 25.2×15×22 m variantes: graos, areia | params: material="pedra", carregando=true, velocidade=1 | gira sozinho: Linha de processamento animada: 3 silos de matéria-prima, esteira subindo até um tambor rotativo aquecido (com chama), chaminé soltando fumaça e torre com bica de descarga
-
-## Extensão: heróis de HQ originais
-
- - `heroi_vertice`
- - `heroina_pulso`
- - `heroi_impacto`
-
-Clips novos: `heroi_pose`, `salto_heroico`, `aterrissagem_heroica`. Rode `npm run catalog` para atualizar todas as informações.
