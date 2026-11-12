@@ -522,6 +522,16 @@ const GRADE = {
       float d = distance(vUv, vec2(0.5)); col *= 1.0 - vinheta * smoothstep(0.38, 0.9, d);
       gl_FragColor = vec4(col, c.a); }`,
 };
+// Zera pixels inválidos (NaN/infinito) antes do brilho: um único pixel assim era espalhado pelo bloom
+// e deixava o quadro inteiro preto (acontecia com câmera baixa, perto do chão).
+const SANEAR = {
+  uniforms: { tDiffuse: { value: null } },
+  vertexShader: GRADE.vertexShader,
+  fragmentShader: `uniform sampler2D tDiffuse; varying vec2 vUv;
+    void main(){ vec4 c = texture2D(tDiffuse, vUv); vec3 col = c.rgb;
+      bool ok = col.r >= 0.0 && col.g >= 0.0 && col.b >= 0.0 && col.r < 1e4 && col.g < 1e4 && col.b < 1e4;
+      gl_FragColor = vec4(ok ? min(col, vec3(64.0)) : vec3(0.0), c.a); }`,
+};
 let composer = null;
 if (qualidade !== 'basica') {
   composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 4 }));
@@ -532,6 +542,7 @@ if (qualidade !== 'basica') {
   gtao.updateGtaoMaterial({ radius: 0.7, distanceExponent: 1.4, thickness: 1.2, scale: 1.1, samples: 16, distanceFallOff: 1, screenSpaceRadius: false });
   gtao.blendIntensity = 0.9;
   composer.addPass(gtao);
+  composer.addPass(new ShaderPass(SANEAR));
   composer.addPass(new UnrealBloomPass(new THREE.Vector2(W, H), 0.1, 0.5, 0.92));
   composer.addPass(new OutputPass());
   composer.addPass(new ShaderPass(GRADE));
@@ -884,6 +895,26 @@ function chaves(ks, t) {
     }
   }
   return ks[ks.length - 1][1];
+}
+// keyframes de vetor [[t, [x,y,z]], ...] (usado por anim.pos). suave = curva Catmull-Rom; senão, linear.
+function chavesVec(ks, t, suave = true) {
+  const v3 = (v) => norm3(v, 0);
+  if (t <= ks[0][0]) return v3(ks[0][1]);
+  const n = ks.length;
+  if (t >= ks[n - 1][0]) return v3(ks[n - 1][1]);
+  let i = 1;
+  while (t > ks[i][0]) i++;
+  const [t0, a] = ks[i - 1];
+  const [t1, b] = ks[i];
+  const k = (t - t0) / Math.max(1e-6, t1 - t0);
+  const p1 = v3(a);
+  const p2 = v3(b);
+  if (!suave) return p1.map((x, j) => lerp(x, p2[j], k));
+  const p0 = v3(ks[Math.max(0, i - 2)][1]);
+  const p3 = v3(ks[Math.min(n - 1, i + 1)][1]);
+  const k2 = k * k;
+  const k3 = k2 * k;
+  return p1.map((x, j) => 0.5 * (2 * x + (-p0[j] + p2[j]) * k + (2 * p0[j] - 5 * x + 4 * p2[j] - p3[j]) * k2 + (-p0[j] + 3 * x - 3 * p2[j] + p3[j]) * k3));
 }
 const popBack = (x) => { const c = 1.70158; const k = x - 1; return 1 + (c + 1) * k * k * k + c * k * k; };
 
