@@ -59,3 +59,13 @@ Depois ajuste `duracao` e `audio` no storyboard. Se o ritmo ficou lento ou rápi
 | ElevenLabs 401 | chave errada no `.env` |
 | ElevenLabs 402 | créditos acabaram |
 | Voz robótica no Kokoro | ajuste `--velocidade` ou pontuação; ou use a voz paga |
+
+## Na nuvem do Claude Code (chave salva como segredo de rede)
+
+Se a chave do ElevenLabs foi salva como **segredo de rede** do ambiente de nuvem (em vez do arquivo `.env`), o proxy coloca a chave verdadeira em cada pedido para `api.elevenlabs.io`. Rode os comandos de voz com um marcador no lugar da chave e com o Node usando o proxy:
+
+```bash
+ELEVENLABS_API_KEY=proxy-injected NODE_USE_ENV_PROXY=1 node tools/voz.mjs gerar projects/<nome>
+```
+
+O marcador `proxy-injected` não é a chave; a chave nunca aparece no pack, no chat nem no Git.

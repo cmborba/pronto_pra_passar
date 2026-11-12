@@ -1,0 +1,32 @@
+[
+ {
+  "n": 1,
+  "texto": "Aracnildo vive no fio.",
+  "inicio": 0,
+  "fim": 1.602
+ },
+ {
+  "n": 2,
+  "texto": "Major Cometa voa e esquenta tudo.",
+  "inicio": 1.846,
+  "fim": 4.354
+ },
+ {
+  "n": 3,
+  "texto": "Coruja Noturna plana e some.",
+  "inicio": 4.598,
+  "fim": 6.548
+ },
+ {
+  "n": 4,
+  "texto": "Capitão Tampa joga a tampa.",
+  "inicio": 6.792,
+  "fim": 8.429
+ },
+ {
+  "n": 5,
+  "texto": "Qual é o seu favorito?",
+  "inicio": 8.638,
+  "fim": 9.892
+ }
+]

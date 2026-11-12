@@ -41,7 +41,6 @@ const transito = (de, ate) => [
   { id: 'carro2', asset: 'carro_sedan', variante: 'taxi', pos: [1.7, ASF, -46 + de * 4], giro: 0, movimentos: [{ de, ate, para: [1.7, -46 + ate * 4] }] },
 ];
 const NA_RUA = { fundo: 'cidade', horario: 'dia' };
-const nome = (texto, de, ate) => ({ texto, de, ate, estilo: 'rodape' });
 
 // ---- 1. 0–2,4 s: ARACNILDO balança no fio, aterrissa e lança um fio ----
 {
@@ -70,7 +69,7 @@ const nome = (texto, de, ate) => ({ texto, de, ate, estilo: 'rodape' });
     }],
     fluxos: [{ material: 'poeira', origem: [POUSO[0], ASF, 0], taxa: 40, tamanho: 0.25, vida: 0.8, dispersao: 0.6, de: 1.82, ate: 2.05 }],
     camera: { tipo: 'travelling', de: { pos: [-0.6, 2.2, 9.2], olha: [-1.6, 3.0, 0] }, para: { pos: [0.6, 1.5, 8.2], olha: [0.8, 1.3, 0] }, fov: 52 },
-    textos: [{ texto: '4 HERÓIS, 4 PODERES', de: 0.15, ate: 2.4, estilo: 'titulo' }, nome('ARACNILDO', 0.4, 2.4)],
+    textos: [{ texto: '4 HERÓIS, 4 PODERES', de: 0.15, ate: 2.4, estilo: 'titulo' }],
   });
 }
 
@@ -85,8 +84,7 @@ add(2.4, 3.5, {
     acoes: [{ clip: 'voar', de: 2.4, ate: 3.5 }],
   }],
   camera: { tipo: 'travelling', de: { pos: [0.4, 1.1, 8.0], olha: [0.8, 3.4, 1] }, para: { pos: [-0.4, 1.1, 8.0], olha: [-1.4, 3.0, 1] }, fov: 50 },
-  textos: [nome('MAJOR COMETA', 2.5, 3.5)],
-});
+  });
 
 // ---- 3. 3,5–4,8 s: MAJOR COMETA usa a visão de calor no muro ----
 add(3.5, 4.8, {
@@ -103,8 +101,7 @@ add(3.5, 4.8, {
     { material: 'fagulha', origem: [-3.05, 1.55, 3.3], destino: [-2.2, 1.0, 3.6], taxa: 40, espalha: 1.2, de: 3.95, ate: 4.8 },
   ],
   camera: { tipo: 'travelling', de: { pos: [0.25, 1.8, 11.4], olha: [-1.3, 1.35, 2.0] }, para: { pos: [0.2, 1.8, 11.1], olha: [-1.3, 1.35, 2.0] }, fov: 52 },
-  textos: [nome('MAJOR COMETA', 3.5, 4.8)],
-});
+  });
 
 // ---- 4. 4,8–7,2 s: CORUJA NOTURNA plana do prédio e some na fumaça ----
 {
@@ -125,8 +122,7 @@ add(3.5, 4.8, {
     }],
     fluxos: [{ material: 'fumaca', origem: [POUSO[0], 0.4, POUSO[2]], taxa: 14, tamanho: 0.7, dispersao: 0.6, de: 6.35, ate: 7.2 }],
     camera: { tipo: 'travelling', de: { pos: [2.4, 1.6, 12], olha: [-2.6, 3.3, 0] }, para: { pos: [1.8, 1.4, 10.5], olha: [0, 1.1, 2] }, fov: 50 },
-    textos: [nome('CORUJA NOTURNA', 4.9, 7.2)],
-  });
+      });
 }
 
 // ---- 5. 7,2–9,0 s: CAPITÃO TAMPA arremessa o escudo, derruba o cone e defende ----
@@ -159,8 +155,7 @@ add(3.5, 4.8, {
     ],
     efeitos: [{ tipo: 'tremor', de: 8.1, ate: 8.3, intensidade: 0.4 }],
     camera: { tipo: 'fixa', pos: [1.2, 1.5, 9.4], olha: [-1.6, 0.95, 0.9], fov: 52 },
-    textos: [nome('CAPITÃO TAMPA', 7.3, 9.0)],
-  });
+      });
 }
 
 // ---- 6. 9,0–10 s: os quatro juntos (três na frente, o Cometa flutuando atrás) ----
@@ -184,14 +179,51 @@ add(9.0, 10, {
   textos: [{ texto: 'QUAL É O SEU FAVORITO?', de: 9.1, ate: 10, estilo: 'pergunta' }],
 });
 
+// ---- alinhamento com a narração ----
+// As cenas acima foram desenhadas numa grade de tempo própria (ANTES). Cada trecho é esticado ou
+// encolhido para começar quando a frase do herói começa (frases.json da voz), e as velocidades dos
+// clipes acompanham, para a animação não mudar de forma.
+const ANTES = [0, 2.4, 3.5, 4.8, 7.2, 9.0, 10];
+let DEPOIS = ANTES;
+const frasesUrl = new URL('./frases.json', import.meta.url);
+if (fs.existsSync(frasesUrl)) {
+  const f = JSON.parse(fs.readFileSync(frasesUrl, 'utf8'));
+  // frase 1 Aracnildo, 2 Cometa (voo + visão de calor), 3 Coruja, 4 Capitão, 5 pergunta final
+  const meio = (a, b) => r2((a + b) / 2);
+  DEPOIS = [0, meio(f[0].fim, f[1].inicio), r2(f[1].inicio + (f[1].fim - f[1].inicio) * 0.42), meio(f[1].fim, f[2].inicio), meio(f[2].fim, f[3].inicio), meio(f[3].fim, f[4].inicio), 10];
+}
+const seg = (t) => Math.max(0, Math.min(ANTES.length - 2, ANTES.findIndex((a, i) => t < ANTES[i + 1] - 1e-9) === -1 ? ANTES.length - 2 : ANTES.findIndex((a, i) => t < ANTES[i + 1] - 1e-9)));
+const escala = (i) => (DEPOIS[i + 1] - DEPOIS[i]) / (ANTES[i + 1] - ANTES[i]);
+const T = (t) => { const i = seg(t); return r2(DEPOIS[i] + (t - ANTES[i]) * escala(i)); };
+function realinhar(c) {
+  const i = seg(c.inicio);
+  const k = escala(i);
+  const tt = (o, ...ch) => { for (const x of ch) if (typeof o[x] === 'number') o[x] = T(o[x]); };
+  tt(c, 'inicio', 'fim');
+  for (const o of [...(c.objetos || []), ...(c.personagens || [])]) {
+    tt(o, 'aparece', 'some');
+    for (const m of o.movimentos || []) tt(m, 'de', 'ate');
+    for (const v of o.viraPara || []) tt(v, 'em');
+    for (const a of o.acoes || []) { tt(a, 'de', 'ate'); a.velocidade = r2((a.velocidade ?? 1) / k); }
+    if (o.anim?.pos) o.anim.pos = o.anim.pos.map(([t, v]) => [T(t), v]);
+    if (o.anim?.giro) o.anim.giro = o.anim.giro.map(([t, v]) => [T(t), v]);
+    if (o.anim?.gira) o.anim.gira = r2(o.anim.gira / k);
+  }
+  for (const x of [...(c.fluxos || []), ...(c.efeitos || []), ...(c.textos || [])]) tt(x, 'de', 'ate');
+  return c;
+}
+S.forEach(realinhar);
+
+const temVoz = fs.existsSync(new URL('./narracao.mp3', import.meta.url));
 const sb = {
   versao: 1,
   titulo: 'Heróis de humor — demonstração de poderes',
   formato: { largura: 1080, altura: 1920, fps: 30 },
   duracao: 10,
-  legendas: { ativo: false },
+  ...(temVoz ? { audio: 'narracao.mp3', palavras: 'palavras.json' } : {}),
+  legendas: { ativo: temVoz, palavrasPorBloco: 1 },
   ambiente: { horario: 'dia', fundo: 'cidade', chao: 'asfalto' },
   cenas: S,
 };
 fs.writeFileSync(new URL('./storyboard.json', import.meta.url), JSON.stringify(sb, null, 2) + '\n');
-console.log(`storyboard.json: ${S.length} cenas, ${sb.duracao} s`);
+console.log(`storyboard.json: ${S.length} cenas, ${sb.duracao} s, cortes em ${DEPOIS.join(' / ')} s${temVoz ? ', com narração' : ''}`);
