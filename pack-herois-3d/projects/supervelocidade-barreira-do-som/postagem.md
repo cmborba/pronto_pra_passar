@@ -1,19 +1,22 @@
 # Postagem — Supervelocidade: a barreira do som
 
-## Título (escolha um)
-1. O que acontece se você romper a barreira do som correndo? 💥
-2. Ele correu a 1.235 km/h… e isso aconteceu 😱
-3. Supervelocidade na vida real: o BUM que ninguém te contou 💥
+## Título (vidIQ, formato Short, Brasil)
+1. O perigo real de correr mais rápido que o som 🏃‍♂️💨 #física #curiosidades #shorts (85) ← recomendado
+2. Major Cometa vs Barreira do Som: quem vence? 🚀 #animação #física #ciência (88)
+3. A física por trás do estrondo sônico humano #ciência #física #shorts (87)
+4. Romper a barreira do som: o que seu corpo sente? 💥 #ciência #shorts #física (83)
 
-## Descrição
-E se um herói corresse mais rápido que o som? 💥🏃
-O Usain Bolt chega a 12 m/s. O som anda a 343 m/s (1.235 km/h): 28 vezes mais rápido! Perto de Mach 1, as ondas de som se empilham num cone de ar, a umidade vira nuvem e vem o estrondo sônico, que acompanha o herói o caminho todo. E ainda: o ar esquenta quase 60 °C e frear em 1 segundo dá 35 G.
+## Descrição (palavras do vidIQ: curiosidades 1,2 mi/mês, fatos desconhecidos 608 mil/mês, velocidade, jato)
+O que acontece se alguém correr mais rápido que o som? 💥🏃‍♂️
+O Usain Bolt chega a 12 m/s. O som anda a 343 m/s (1.235 km/h): 28 vezes mais rápido! Perto de Mach 1, as ondas de som se empilham num cone de ar, a umidade vira nuvem (a mesma que aparece em volta de jatos supersônicos) e vem o estrondo sônico, que segue o herói o caminho todo.
+E tem mais: o ar no rosto esquenta quase 60 °C e frear em 1 segundo dá 35 G!
+Curiosidades e fatos desconhecidos de física e velocidade, em 40 segundos.
 Você ainda ia querer supervelocidade? Comenta! 👇
 
-#shorts #física #ciência #curiosidades #animação3d
+#shorts #curiosidades #fatosdesconhecidos #física #ciência
 
 ## Tags (YouTube)
-barreira do som, velocidade do som, mach 1, estrondo sônico, supervelocidade, e se, o que aconteceria se, física, curiosidades, ciência, usain bolt, animação 3d, shorts
+curiosidades, fatos desconhecidos, barreira do som, velocidade do som, rompendo a barreira do som, quebrar a barreira do som, estrondo sônico, mach 1, supersônico, avião supersônico, jato, velocidade, supervelocidade, física, aula de física, ciência, usain bolt, animação 3d, shorts
 
 ## Comentário fixado
 Você ainda ia querer supervelocidade depois de saber dos 35 G? 💥👇
