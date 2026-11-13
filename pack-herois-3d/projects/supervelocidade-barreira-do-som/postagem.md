@@ -27,3 +27,36 @@ render/capa.png (câmera lenta com as ondas de som empilhadas e "MACH 1 = 343 m/
 ## Observações
 - Narração com voz de IA: marque o aviso de conteúdo alterado ou sintético se a plataforma pedir.
 - Personagem original.
+
+---
+
+# Instagram (Reels)
+
+## Legenda
+Ele correu mais rápido que o som… e olha o que aconteceu 💥🏃‍♂️
+
+O Usain Bolt chega a 12 m/s.
+O som anda a 343 m/s (1.235 km/h): 28x mais rápido!
+
+Perto de Mach 1, as ondas de som se empilham num cone de ar, a umidade vira nuvem e vem o estrondo sônico 💨
+E ainda: o ar no rosto esquenta quase 60 °C e frear em 1 segundo dá 35 G 😵
+
+Você ainda ia querer supervelocidade? Comenta 👇
+Salva pra mostrar pro seu professor de física 📚
+
+#curiosidades #fatosdesconhecidos #física #ciência #animação3d
+
+## Capa e dicas
+- Capa do Reels: quadro das ondas em câmera lenta (~16 s). Texto opcional: "CORREU MAIS RÁPIDO QUE O SOM 💥".
+- 3 a 5 hashtags. Rótulo "Feito com IA" se aparecer (narração com voz de IA).
+
+# TikTok
+
+## Legenda
+O que acontece se você correr mais rápido que o som? 💥 343 m/s, estrondo sônico e 35 G na freada 😵 Você ainda ia querer supervelocidade? #curiosidades #física #fatosdesconhecidos #ciência #aprendanotiktok
+
+## Capa e dicas
+- Capa: quadro do BUM (~24 s) ou das ondas, com o texto "MACH 1 💥".
+- Sem música por cima (ou bem baixa, ~10%): a narração e a legenda carregam o vídeo.
+- Ativar "Conteúdo gerado por IA" nas configurações da publicação.
+- Comentário fixado: "Você ainda ia querer supervelocidade depois dos 35 G? 💥"
