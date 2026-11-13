@@ -1,0 +1,5998 @@
+{
+  "versao": 1,
+  "titulo": "Supervelocidade: a barreira do som",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 38.84,
+  "audio": "narracao.mp3",
+  "palavras": "palavras.json",
+  "legendas": {
+    "ativo": true,
+    "palavrasPorBloco": 1
+  },
+  "ambiente": {
+    "fundo": "cidade",
+    "horario": "dia",
+    "chao": "asfalto"
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 3.66,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "params": {
+            "length": 160
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -55
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            -22
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            0
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            11
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            0
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            55
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE6",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE6",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            77
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD6",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            66
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abD6",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            77
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 6
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            80
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 0,
+              "ate": 3.66,
+              "para": [
+                -1.7,
+                58.04
+              ]
+            }
+          ]
+        },
+        {
+          "id": "largada",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.06,
+            0.7
+          ],
+          "params": {
+            "tamanho": [
+              6.6,
+              0.02,
+              0.35
+            ],
+            "cor": "#ffffff"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 0,
+              "ate": 3.66,
+              "expressao": "angry"
+            },
+            {
+              "clip": "nod",
+              "de": 2.46,
+              "ate": 3.66,
+              "camada": 1,
+              "mascara": [
+                "head"
+              ]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            0,
+            0.06,
+            -0.2
+          ],
+          "taxa": 6,
+          "tamanho": 0.2,
+          "vida": 1.2,
+          "de": 0.4,
+          "ate": 3.66
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 22,
+        "elevacao": 3,
+        "deriva": -12,
+        "aproxima": 0.78,
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "MACH 1?",
+          "de": 0.15,
+          "ate": 3.66,
+          "estilo": "titulo"
+        }
+      ]
+    },
+    {
+      "inicio": 3.66,
+      "fim": 7.24,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            50
+          ],
+          "params": {
+            "length": 200
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            77
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE6",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            88
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE6",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            99
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD6",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            88
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abD6",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            99
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 6
+          }
+        },
+        {
+          "id": "bE7",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            110
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bD7",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            110
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD7",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            121
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE8",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            132
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE8",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            143
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD8",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            132
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            118.04
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 3.66,
+              "ate": 7.24,
+              "para": [
+                -1.7,
+                96.56
+              ]
+            }
+          ]
+        },
+        {
+          "id": "largada",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.06,
+            0.7
+          ],
+          "params": {
+            "tamanho": [
+              6.6,
+              0.02,
+              0.35
+            ],
+            "cor": "#ffffff"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "corredor",
+          "preset": "homem",
+          "pos": [
+            -1,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "overrides": {
+            "top": {
+              "color": "#f2c94c",
+              "sleeves": "short"
+            },
+            "bottom": {
+              "color": "#2f7d4a",
+              "type": "shorts"
+            },
+            "hair": {
+              "style": "short"
+            },
+            "shoes": "#ffffff"
+          },
+          "movimentos": [
+            {
+              "de": 3.66,
+              "ate": 7.24,
+              "para": [
+                -1,
+                42.96
+              ],
+              "clip": "run"
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0.9,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "movimentos": [
+            {
+              "de": 3.66,
+              "ate": 6.64,
+              "para": [
+                0.9,
+                35.76
+              ],
+              "clip": "run"
+            },
+            {
+              "de": 6.64,
+              "ate": 7.24,
+              "para": [
+                0.9,
+                67.76
+              ],
+              "clip": "run"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 3.66,
+              "ate": 6.64,
+              "camada": 1,
+              "mascara": [
+                "face"
+              ],
+              "expressao": "happy"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              0.05,
+              -0.4
+            ]
+          },
+          "taxa": 30,
+          "tamanho": 0.3,
+          "vida": 0.8,
+          "de": 6.64,
+          "ate": 7.24
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "12 m/s · 43 km/h",
+          "tamanho": 1.15,
+          "ponto": "#ff7a1a",
+          "ancora": "corredor",
+          "alturaRel": 1.25,
+          "de": 4.78,
+          "ate": 7.24
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "RECORDE HUMANO",
+          "tamanho": 0.9,
+          "ponto": "#2f7d4a",
+          "ancora": "corredor",
+          "alturaRel": 1.6,
+          "de": 3.98,
+          "ate": 7.24
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "corredor",
+        "plano": "geral",
+        "angulo": 62,
+        "elevacao": 6,
+        "deriva": 8,
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 7.24,
+      "fim": 12.15,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            170.96
+          ],
+          "params": {
+            "length": 287
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            55
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            77
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            88
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            99
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            88
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            110
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            121
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            110
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            121
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            132
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            143
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            132
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            154
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            154
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            165
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE6",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            176
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE6",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            187
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD6",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            176
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abD6",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            187
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 6
+          }
+        },
+        {
+          "id": "bE7",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            198
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bD7",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            198
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD7",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            209
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE8",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            220
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE8",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            231
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD8",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            220
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE9",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            242
+          ],
+          "giro": 90
+        },
+        {
+          "id": "abE9",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            253
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 9
+          }
+        },
+        {
+          "id": "bD9",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            242
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD9",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            253
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE10",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            264
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE10",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            275
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD10",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            264
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bE11",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            286
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bD11",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            286
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD11",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            297
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE12",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            308
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE12",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            319
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD12",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            308
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD12",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            319
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 12
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            260.72
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 7.24,
+              "ate": 12.15,
+              "para": [
+                -1.7,
+                231.26
+              ]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            1.3,
+            0.06,
+            67.76
+          ],
+          "giro": 0,
+          "movimentos": [
+            {
+              "de": 7.24,
+              "ate": 12.15,
+              "para": [
+                1.3,
+                264.16
+              ],
+              "clip": "run"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 7.24,
+              "ate": 12.15,
+              "camada": 1,
+              "mascara": [
+                "face"
+              ],
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.2,
+              2.2
+            ]
+          },
+          "destino": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1,
+              -5
+            ]
+          },
+          "taxa": 60,
+          "dispersao": 0.9,
+          "espalha": 1.2,
+          "vida": 0.35
+        },
+        {
+          "material": "poeira",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              0.05,
+              -0.6
+            ]
+          },
+          "taxa": 20,
+          "tamanho": 0.25,
+          "vida": 0.6
+        }
+      ],
+      "rastros": [
+        {
+          "seguir": "cometa",
+          "largura": 0.5,
+          "altura": 0.03,
+          "cor": "#9fe3ff",
+          "brilho": true,
+          "recuo": 0.8
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "50 m/s",
+          "tamanho": 1.15,
+          "ponto": "#ff7a1a",
+          "ancora": "cometa",
+          "alturaRel": 1.3,
+          "de": 7.24,
+          "ate": 7.58
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "150 m/s",
+          "tamanho": 1.15,
+          "ponto": "#ff7a1a",
+          "ancora": "cometa",
+          "alturaRel": 1.3,
+          "de": 7.58,
+          "ate": 8.28
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "250 m/s",
+          "tamanho": 1.15,
+          "ponto": "#ff7a1a",
+          "ancora": "cometa",
+          "alturaRel": 1.3,
+          "de": 8.28,
+          "ate": 8.98
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "343 m/s · 1.235 km/h",
+          "tamanho": 1.15,
+          "ponto": "#3d8bfd",
+          "ancora": "cometa",
+          "alturaRel": 1.3,
+          "de": 8.98,
+          "ate": 12.15
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "28× MAIS RÁPIDO",
+          "tamanho": 1.3,
+          "ponto": "#ff3b1f",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 10.1,
+          "ate": 12.15
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 75,
+        "elevacao": 5,
+        "deriva": 10,
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 12.15,
+      "fim": 13.33,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            5
+          ],
+          "params": {
+            "length": 130
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -12.9
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 12.15,
+              "ate": 13.33,
+              "para": [
+                -1.7,
+                -19.98
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pedrinha0",
+          "asset": "forma",
+          "pos": [
+            -0.4,
+            0.25,
+            -0.5
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.07,
+              0.07,
+              0.07
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha1",
+          "asset": "forma",
+          "pos": [
+            0.3,
+            0.4,
+            -0.9
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha2",
+          "asset": "forma",
+          "pos": [
+            0.1,
+            0.15,
+            -1.4
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.09,
+              0.09,
+              0.09
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha3",
+          "asset": "forma",
+          "pos": [
+            -0.2,
+            0.55,
+            -1.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.04,
+              0.04,
+              0.04
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha4",
+          "asset": "forma",
+          "pos": [
+            0.5,
+            0.3,
+            -0.3
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "ondas",
+          "asset": "ondas_som",
+          "pos": [
+            0,
+            0,
+            0.1
+          ],
+          "params": {
+            "raio": 1.8,
+            "ondas": 6,
+            "altura": 1.2,
+            "progress": 0.3
+          },
+          "etapa": [
+            [
+              12.15,
+              0.3
+            ],
+            [
+              13.33,
+              0.35
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 12.15,
+              "ate": 13.33,
+              "velocidade": 0.02,
+              "fase": 0.17,
+              "suavizacao": 0.01,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 12.15,
+          "ate": 13.33,
+          "para": 1.08
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 90,
+        "elevacao": 8,
+        "deriva": 20,
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 13.33,
+      "fim": 18.04,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            5
+          ],
+          "params": {
+            "length": 130
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -19.98
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 13.33,
+              "ate": 18.04,
+              "para": [
+                -1.7,
+                -48.24
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pedrinha0",
+          "asset": "forma",
+          "pos": [
+            -0.4,
+            0.25,
+            -0.5
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.07,
+              0.07,
+              0.07
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha1",
+          "asset": "forma",
+          "pos": [
+            0.3,
+            0.4,
+            -0.9
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha2",
+          "asset": "forma",
+          "pos": [
+            0.1,
+            0.15,
+            -1.4
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.09,
+              0.09,
+              0.09
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha3",
+          "asset": "forma",
+          "pos": [
+            -0.2,
+            0.55,
+            -1.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.04,
+              0.04,
+              0.04
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha4",
+          "asset": "forma",
+          "pos": [
+            0.5,
+            0.3,
+            -0.3
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "ondas",
+          "asset": "ondas_som",
+          "pos": [
+            0,
+            0,
+            0.1
+          ],
+          "params": {
+            "raio": 1.8,
+            "ondas": 6,
+            "altura": 1.2,
+            "progress": 0.35
+          },
+          "etapa": [
+            [
+              13.33,
+              0.35
+            ],
+            [
+              17.64,
+              0.8
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 13.33,
+              "ate": 18.04,
+              "velocidade": 0.02,
+              "fase": 0.19,
+              "suavizacao": 0.01,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            0,
+            1.2,
+            4.5
+          ],
+          "destino": [
+            0,
+            1.2,
+            0.5
+          ],
+          "taxa": 8,
+          "dispersao": 0.6,
+          "espalha": 0.3,
+          "vida": 3.5
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "MACH 1 = 343 m/s",
+          "tamanho": 1.3,
+          "ponto": "#3d8bfd",
+          "pos": [
+            0.5,
+            0.22
+          ],
+          "de": 15.42,
+          "ate": 18.04
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 110,
+        "elevacao": 9,
+        "deriva": 100,
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 18.04,
+      "fim": 21.3,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            5
+          ],
+          "params": {
+            "length": 130
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -48.24
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 18.04,
+              "ate": 21.3,
+              "para": [
+                -1.7,
+                -67.8
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pedrinha0",
+          "asset": "forma",
+          "pos": [
+            -0.4,
+            0.25,
+            -0.5
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.07,
+              0.07,
+              0.07
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha1",
+          "asset": "forma",
+          "pos": [
+            0.3,
+            0.4,
+            -0.9
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha2",
+          "asset": "forma",
+          "pos": [
+            0.1,
+            0.15,
+            -1.4
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.09,
+              0.09,
+              0.09
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha3",
+          "asset": "forma",
+          "pos": [
+            -0.2,
+            0.55,
+            -1.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.04,
+              0.04,
+              0.04
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha4",
+          "asset": "forma",
+          "pos": [
+            0.5,
+            0.3,
+            -0.3
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "ondas",
+          "asset": "ondas_som",
+          "pos": [
+            0,
+            0,
+            0.1
+          ],
+          "params": {
+            "raio": 1.8,
+            "ondas": 6,
+            "altura": 1.2,
+            "progress": 0.8
+          },
+          "etapa": [
+            [
+              18.04,
+              0.8
+            ],
+            [
+              21.3,
+              0.84
+            ]
+          ]
+        },
+        {
+          "id": "vapor",
+          "asset": "cone_vapor",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "comprimento": 2.1,
+            "raio": 0.95,
+            "altura": 1.15,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              18.24,
+              0
+            ],
+            [
+              20.7,
+              1
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 18.04,
+              "ate": 21.3,
+              "velocidade": 0.02,
+              "fase": 0.29,
+              "suavizacao": 0.01,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            0,
+            1.2,
+            -0.6
+          ],
+          "taxa": 6,
+          "tamanho": 0.35,
+          "vida": 3,
+          "de": 18.64,
+          "ate": 21.3
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "pressão cai → vapor vira nuvem",
+          "tamanho": 1.1,
+          "ponto": "#8fd3ff",
+          "pos": [
+            0.5,
+            0.22
+          ],
+          "de": 18.52,
+          "ate": 21.3
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 210,
+        "elevacao": 10,
+        "deriva": 90,
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 21.3,
+      "fim": 23.4,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            5
+          ],
+          "params": {
+            "length": 130
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -67.8
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 21.3,
+              "ate": 23.4,
+              "para": [
+                -1.7,
+                -80.4
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pedrinha0",
+          "asset": "forma",
+          "pos": [
+            -0.4,
+            0.25,
+            -0.5
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.07,
+              0.07,
+              0.07
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha1",
+          "asset": "forma",
+          "pos": [
+            0.3,
+            0.4,
+            -0.9
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha2",
+          "asset": "forma",
+          "pos": [
+            0.1,
+            0.15,
+            -1.4
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.09,
+              0.09,
+              0.09
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha3",
+          "asset": "forma",
+          "pos": [
+            -0.2,
+            0.55,
+            -1.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.04,
+              0.04,
+              0.04
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "pedrinha4",
+          "asset": "forma",
+          "pos": [
+            0.5,
+            0.3,
+            -0.3
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.05,
+              0.05,
+              0.05
+            ],
+            "cor": "#b9b2a4",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.01,
+              "freq": 0.2
+            }
+          }
+        },
+        {
+          "id": "ondas",
+          "asset": "ondas_som",
+          "pos": [
+            0,
+            0,
+            0.1
+          ],
+          "params": {
+            "raio": 1.8,
+            "ondas": 6,
+            "altura": 1.2,
+            "progress": 0.84
+          },
+          "etapa": [
+            [
+              21.3,
+              0.84
+            ],
+            [
+              23.4,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "vapor",
+          "asset": "cone_vapor",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "comprimento": 2.1,
+            "raio": 0.95,
+            "altura": 1.15,
+            "progress": 1
+          },
+          "etapa": [
+            [
+              21.3,
+              1
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 21.3,
+              "ate": 23.4,
+              "velocidade": 0.02,
+              "fase": 0.35,
+              "suavizacao": 0.01,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "geral",
+        "angulo": 300,
+        "elevacao": 24,
+        "deriva": 40,
+        "aproxima": 1.35,
+        "fov": 52
+      }
+    },
+    {
+      "inicio": 23.4,
+      "fim": 28.25,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            105
+          ],
+          "params": {
+            "length": 330
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            33
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            77
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE6",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            88
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE6",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            99
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD6",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            88
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abD6",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            99
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 6
+          }
+        },
+        {
+          "id": "bE7",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            110
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bD7",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            110
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD7",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            121
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE8",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            132
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE8",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            143
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD8",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            132
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE9",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            154
+          ],
+          "giro": 90
+        },
+        {
+          "id": "abE9",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            165
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 9
+          }
+        },
+        {
+          "id": "bD9",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            154
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD9",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            165
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE10",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            176
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE10",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            187
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD10",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            176
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bE11",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            198
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bD11",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            198
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD11",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            209
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE12",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            220
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE12",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            231
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD12",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            220
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD12",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            231
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 12
+          }
+        },
+        {
+          "id": "bE13",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            242
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD13",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            242
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD13",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            253
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE14",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            264
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE14",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            275
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD14",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            264
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            119.6
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 23.4,
+              "ate": 28.25,
+              "para": [
+                -1.7,
+                90.5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "choque0",
+          "asset": "anel_choque",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "params": {
+            "raio": 26,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              23.52,
+              0
+            ],
+            [
+              24.92,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "choque1",
+          "asset": "anel_choque",
+          "pos": [
+            0,
+            0.06,
+            70
+          ],
+          "params": {
+            "raio": 22,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              24.95,
+              0
+            ],
+            [
+              26.35,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "choque2",
+          "asset": "anel_choque",
+          "pos": [
+            0,
+            0.06,
+            140
+          ],
+          "params": {
+            "raio": 22,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              26.3,
+              0
+            ],
+            [
+              27.7,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "vapor",
+          "asset": "cone_vapor",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "comprimento": 2.1,
+            "raio": 0.95,
+            "altura": 1.15
+          },
+          "movimentos": [
+            {
+              "de": 23.6,
+              "ate": 27.85,
+              "para": [
+                0,
+                220
+              ]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0
+          ],
+          "giro": 0,
+          "movimentos": [
+            {
+              "de": 23.6,
+              "ate": 27.85,
+              "para": [
+                0,
+                220
+              ],
+              "clip": "run"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 23.4,
+              "ate": 23.6,
+              "velocidade": 0.02,
+              "fase": 0.4
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            0,
+            0.06,
+            0
+          ],
+          "taxa": 120,
+          "tamanho": 0.9,
+          "vida": 1.6,
+          "dispersao": 3,
+          "espalha": 6,
+          "de": 23.52,
+          "ate": 24.02
+        },
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.4,
+            0
+          ],
+          "destino": [
+            0,
+            1.5,
+            3
+          ],
+          "taxa": 90,
+          "espalha": 5,
+          "de": 23.52,
+          "ate": 23.87
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 23.52,
+          "ate": 24.32,
+          "intensidade": 1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.6,
+            1.7,
+            -6.5
+          ],
+          "olha": [
+            0,
+            1.3,
+            6
+          ]
+        },
+        "para": {
+          "pos": [
+            3.4,
+            2.1,
+            -7.5
+          ],
+          "olha": [
+            0,
+            1.5,
+            40
+          ]
+        },
+        "fov": 54
+      },
+      "textos": [
+        {
+          "texto": "BUM!",
+          "de": 23.52,
+          "ate": 25.12,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 28.25,
+      "fim": 31.37,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            5
+          ],
+          "params": {
+            "length": 290
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -132
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -121
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -132
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -121
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -110
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -110
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -99
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            -88
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -77
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            -88
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            -66
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            -55
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            -66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -55
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE6",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            0
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE6",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD6",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            0
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abD6",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            11
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 6
+          }
+        },
+        {
+          "id": "bE7",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            22
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bD7",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD7",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE8",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE8",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD8",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE9",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "abE9",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            77
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 9
+          }
+        },
+        {
+          "id": "bD9",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD9",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            77
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE10",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            88
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE10",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            99
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD10",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            88
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "bE11",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            110
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bD11",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            110
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD11",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            121
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE12",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            132
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE12",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            143
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD12",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            132
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD12",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            143
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 12
+          }
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -29.5
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 28.25,
+              "ate": 31.37,
+              "para": [
+                -1.7,
+                -48.22
+              ]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            -100
+          ],
+          "giro": 0,
+          "movimentos": [
+            {
+              "de": 28.25,
+              "ate": 31.37,
+              "para": [
+                0,
+                100
+              ],
+              "clip": "run"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 28.25,
+              "ate": 31.37,
+              "camada": 1,
+              "mascara": [
+                "face"
+              ],
+              "expressao": "worried"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.95,
+              -0.1
+            ]
+          },
+          "taxa": 18,
+          "tamanho": 0.25,
+          "vida": 0.7,
+          "subida": 1
+        },
+        {
+          "material": "ar",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.7,
+              1.6
+            ]
+          },
+          "destino": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.5,
+              -3
+            ]
+          },
+          "taxa": 50,
+          "dispersao": 0.5,
+          "espalha": 0.8,
+          "vida": 0.3
+        },
+        {
+          "material": "fagulha",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.75,
+              0.3
+            ]
+          },
+          "destino": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              2.2,
+              -0.8
+            ]
+          },
+          "taxa": 25,
+          "espalha": 0.6,
+          "de": 29.22,
+          "ate": 31.37
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "+58 °C",
+          "tamanho": 1.4,
+          "ponto": "#ff3b1f",
+          "ancora": "cometa",
+          "alturaRel": 1.12,
+          "dx": 0.17,
+          "de": 29.62,
+          "ate": 31.37
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "medio",
+        "angulo": 18,
+        "elevacao": 4,
+        "deriva": -10,
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 31.37,
+      "fim": 34.36,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            -5
+          ],
+          "params": {
+            "length": 150
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -55
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            -22
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            0
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            11
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            0
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            55
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -128.22
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 31.37,
+              "ate": 34.36,
+              "para": [
+                -1.7,
+                -146.16
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lixeira",
+          "asset": "lixeira",
+          "pos": [
+            0.15,
+            0.06,
+            1
+          ],
+          "giro": 180,
+          "anim": {
+            "giro": [
+              [
+                33.61,
+                0
+              ],
+              [
+                33.91,
+                -85
+              ]
+            ],
+            "eixo": "x"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            -34
+          ],
+          "giro": 0,
+          "anim": {
+            "pos": [
+              [
+                31.37,
+                [
+                  0,
+                  0.06,
+                  -34
+                ]
+              ],
+              [
+                31.43,
+                [
+                  0,
+                  0.06,
+                  -32.02
+                ]
+              ],
+              [
+                31.49,
+                [
+                  0,
+                  0.06,
+                  -30.1
+                ]
+              ],
+              [
+                31.55,
+                [
+                  0,
+                  0.06,
+                  -28.25
+                ]
+              ],
+              [
+                31.61,
+                [
+                  0,
+                  0.06,
+                  -26.46
+                ]
+              ],
+              [
+                31.67,
+                [
+                  0,
+                  0.06,
+                  -24.74
+                ]
+              ],
+              [
+                31.73,
+                [
+                  0,
+                  0.06,
+                  -23.08
+                ]
+              ],
+              [
+                31.79,
+                [
+                  0,
+                  0.06,
+                  -21.48
+                ]
+              ],
+              [
+                31.85,
+                [
+                  0,
+                  0.06,
+                  -19.94
+                ]
+              ],
+              [
+                31.91,
+                [
+                  0,
+                  0.06,
+                  -18.46
+                ]
+              ],
+              [
+                31.97,
+                [
+                  0,
+                  0.06,
+                  -17.05
+                ]
+              ],
+              [
+                32.03,
+                [
+                  0,
+                  0.06,
+                  -15.69
+                ]
+              ],
+              [
+                32.09,
+                [
+                  0,
+                  0.06,
+                  -14.4
+                ]
+              ],
+              [
+                32.15,
+                [
+                  0,
+                  0.06,
+                  -13.17
+                ]
+              ],
+              [
+                32.21,
+                [
+                  0,
+                  0.06,
+                  -11.99
+                ]
+              ],
+              [
+                32.27,
+                [
+                  0,
+                  0.06,
+                  -10.88
+                ]
+              ],
+              [
+                32.33,
+                [
+                  0,
+                  0.06,
+                  -9.82
+                ]
+              ],
+              [
+                32.39,
+                [
+                  0,
+                  0.06,
+                  -8.82
+                ]
+              ],
+              [
+                32.45,
+                [
+                  0,
+                  0.06,
+                  -7.88
+                ]
+              ],
+              [
+                32.51,
+                [
+                  0,
+                  0.06,
+                  -6.99
+                ]
+              ],
+              [
+                32.57,
+                [
+                  0,
+                  0.06,
+                  -6.16
+                ]
+              ],
+              [
+                32.63,
+                [
+                  0,
+                  0.06,
+                  -5.39
+                ]
+              ],
+              [
+                32.69,
+                [
+                  0,
+                  0.06,
+                  -4.67
+                ]
+              ],
+              [
+                32.75,
+                [
+                  0,
+                  0.06,
+                  -4.01
+                ]
+              ],
+              [
+                32.81,
+                [
+                  0,
+                  0.06,
+                  -3.4
+                ]
+              ],
+              [
+                32.87,
+                [
+                  0,
+                  0.06,
+                  -2.84
+                ]
+              ],
+              [
+                32.93,
+                [
+                  0,
+                  0.06,
+                  -2.33
+                ]
+              ],
+              [
+                32.99,
+                [
+                  0,
+                  0.06,
+                  -1.87
+                ]
+              ],
+              [
+                33.05,
+                [
+                  0,
+                  0.06,
+                  -1.47
+                ]
+              ],
+              [
+                33.11,
+                [
+                  0,
+                  0.06,
+                  -1.11
+                ]
+              ],
+              [
+                33.17,
+                [
+                  0,
+                  0.06,
+                  -0.8
+                ]
+              ],
+              [
+                33.23,
+                [
+                  0,
+                  0.06,
+                  -0.54
+                ]
+              ],
+              [
+                33.29,
+                [
+                  0,
+                  0.06,
+                  -0.32
+                ]
+              ],
+              [
+                33.35,
+                [
+                  0,
+                  0.06,
+                  -0.15
+                ]
+              ],
+              [
+                33.41,
+                [
+                  0,
+                  0.06,
+                  -0.02
+                ]
+              ],
+              [
+                33.47,
+                [
+                  0,
+                  0.06,
+                  0.07
+                ]
+              ],
+              [
+                33.53,
+                [
+                  0,
+                  0.06,
+                  0.13
+                ]
+              ],
+              [
+                33.59,
+                [
+                  0,
+                  0.06,
+                  0.15
+                ]
+              ]
+            ],
+            "suave": false
+          },
+          "acoes": [
+            {
+              "clip": "derrapar",
+              "de": 31.37,
+              "ate": 33.61,
+              "expressao": "surprised"
+            },
+            {
+              "clip": "surprised",
+              "de": 33.61,
+              "ate": 34.36
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.12,
+            -33.6
+          ],
+          "destino": [
+            0,
+            0.4,
+            -35.6
+          ],
+          "taxa": 80,
+          "espalha": 1.2,
+          "de": 31.37,
+          "ate": 31.93
+        },
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.12,
+            -18.060000000000002
+          ],
+          "destino": [
+            0,
+            0.4,
+            -20.060000000000002
+          ],
+          "taxa": 80,
+          "espalha": 1.2,
+          "de": 31.93,
+          "ate": 32.49
+        },
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.12,
+            -7.4799999999999995
+          ],
+          "destino": [
+            0,
+            0.4,
+            -9.48
+          ],
+          "taxa": 80,
+          "espalha": 1.2,
+          "de": 32.49,
+          "ate": 33.05
+        },
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.12,
+            -1.0699999999999998
+          ],
+          "destino": [
+            0,
+            0.4,
+            -3.0700000000000003
+          ],
+          "taxa": 80,
+          "espalha": 1.2,
+          "de": 33.05,
+          "ate": 33.61
+        },
+        {
+          "material": "fumaca",
+          "origem": [
+            0,
+            0.1,
+            -34
+          ],
+          "taxa": 10,
+          "tamanho": 0.45,
+          "vida": 1.6,
+          "de": 31.37,
+          "ate": 31.93
+        },
+        {
+          "material": "fumaca",
+          "origem": [
+            0,
+            0.1,
+            -18.46
+          ],
+          "taxa": 10,
+          "tamanho": 0.45,
+          "vida": 1.6,
+          "de": 31.93,
+          "ate": 32.49
+        },
+        {
+          "material": "fumaca",
+          "origem": [
+            0,
+            0.1,
+            -7.88
+          ],
+          "taxa": 10,
+          "tamanho": 0.45,
+          "vida": 1.6,
+          "de": 32.49,
+          "ate": 33.05
+        },
+        {
+          "material": "fumaca",
+          "origem": [
+            0,
+            0.1,
+            -1.47
+          ],
+          "taxa": 10,
+          "tamanho": 0.45,
+          "vida": 1.6,
+          "de": 33.05,
+          "ate": 33.61
+        },
+        {
+          "material": "poeira",
+          "origem": [
+            0,
+            0.06,
+            0.6
+          ],
+          "taxa": 70,
+          "tamanho": 0.4,
+          "vida": 1,
+          "dispersao": 1,
+          "de": 33.61,
+          "ate": 33.91
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 33.61,
+          "ate": 34.06,
+          "intensidade": 0.7
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "35 G",
+          "tamanho": 1.6,
+          "ponto": "#ff3b1f",
+          "pos": [
+            0.72,
+            0.3
+          ],
+          "de": 32.9,
+          "ate": 34.36
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -2.6,
+          2.1,
+          6.4
+        ],
+        "olha": [
+          0.2,
+          0.8,
+          -8
+        ],
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 34.36,
+      "fim": 38.84,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [
+            0,
+            0,
+            -5
+          ],
+          "params": {
+            "length": 150
+          }
+        },
+        {
+          "id": "bE0",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -66
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE0",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -55
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD0",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            -66
+          ],
+          "giro": -90
+        },
+        {
+          "id": "abD0",
+          "asset": "arvore_redonda",
+          "pos": [
+            4.7,
+            0.2,
+            -55
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 0
+          }
+        },
+        {
+          "id": "bE1",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            -44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD1",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            -44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD1",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            -33
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE2",
+          "asset": "loja",
+          "pos": [
+            -11,
+            0,
+            -22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE2",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            -11
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD2",
+          "asset": "predio_apartamentos",
+          "pos": [
+            12.4,
+            0,
+            -22
+          ],
+          "giro": -90,
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "bE3",
+          "asset": "predio_apartamentos",
+          "pos": [
+            -12.4,
+            0,
+            0
+          ],
+          "giro": 90,
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "abE3",
+          "asset": "arvore_redonda",
+          "pos": [
+            -4.7,
+            0.2,
+            11
+          ],
+          "escala": 0.7,
+          "params": {
+            "seed": 3
+          }
+        },
+        {
+          "id": "bD3",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            11,
+            0,
+            0
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD3",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            11
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE4",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            22
+          ],
+          "giro": 90
+        },
+        {
+          "id": "pbE4",
+          "asset": "poste_luz",
+          "pos": [
+            -4.9,
+            0.2,
+            33
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD4",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            11,
+            0,
+            22
+          ],
+          "giro": -90
+        },
+        {
+          "id": "bE5",
+          "asset": "loja",
+          "variante": "mercado",
+          "pos": [
+            -11,
+            0,
+            44
+          ],
+          "giro": 90
+        },
+        {
+          "id": "bD5",
+          "asset": "loja",
+          "pos": [
+            11,
+            0,
+            44
+          ],
+          "giro": -90
+        },
+        {
+          "id": "pbD5",
+          "asset": "poste_luz",
+          "pos": [
+            4.9,
+            0.2,
+            55
+          ],
+          "giro": -90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "vermelho",
+          "pos": [
+            -1.7,
+            0.06,
+            -146.16
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 34.36,
+              "ate": 38.84,
+              "para": [
+                -1.7,
+                -173.04
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lixeira",
+          "asset": "lixeira",
+          "pos": [
+            0.95,
+            0.06,
+            0.9
+          ],
+          "giro": 180,
+          "anim": {
+            "giro": [
+              [
+                34.36,
+                -85
+              ]
+            ],
+            "eixo": "x"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "pos": [
+            0,
+            0.06,
+            0.2
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "tonto_no_chao",
+              "de": 34.36,
+              "ate": 38.84,
+              "suavizacao": 0.01
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fumaca",
+          "origem": [
+            0.1,
+            0.15,
+            0.7
+          ],
+          "taxa": 4,
+          "tamanho": 0.4,
+          "vida": 2.2
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "estrela",
+          "ancora": "cometa",
+          "alturaRel": 0.95,
+          "dx": -0.12,
+          "tamanho": 0.08,
+          "pulsa": true
+        },
+        {
+          "tipo": "icone",
+          "icone": "estrela",
+          "ancora": "cometa",
+          "alturaRel": 1,
+          "dx": 0.12,
+          "tamanho": 0.07,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cometa",
+        "plano": "medio",
+        "angulo": 0,
+        "elevacao": 12,
+        "aproxima": 0.85,
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "VOCÊ AINDA IA QUERER SUPERVELOCIDADE?",
+          "de": 34.56,
+          "ate": 38.84,
+          "estilo": "pergunta"
+        }
+      ]
+    }
+  ]
+}

@@ -59,6 +59,8 @@ Cabelos: bald, short, fringe, long, ponytail, bun, curly, sides. Chapéus: none,
 - `escalar` (loop, torso/head/arms/legs): Escalar uma parede: braços e pernas alternados, corpo colado na parede (vire o personagem para a parede e suba com anim.pos)
 - `balancar` (loop, torso/head/arms/legs) params: fio=4.5: Balançar pendurado num fio (pêndulo): braço esticado para cima segurando o fio, pernas juntas
 - `puxar_fio` (loop, torso/head/arms/legs/face) params: mira=35: Puxar um fio/corda com as duas mãos, com toda a força: inclina para trás, braços estendidos para cima à frente e os pés escorregando (cabo de guerra)
+- `derrapar` (loop, torso/head/arms/legs/face): Frear derrapando depois de correr muito rápido: tronco jogado para trás, uma perna esticada à frente travando, braços girando
+- `tonto_no_chao` (loop, torso/head/arms/legs/face): Sentado no chão, tonto depois de uma batida: pernas esticadas à frente, apoiado nos braços, cabeça rodando em círculo
 - `sentir_perigo` (segura a pose, torso/head/arms/legs/face): Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados
 - `voar` (loop, torso/head/arms/legs/face) params: punhos=1: Voar: corpo deitado no ar, punho à frente, pernas esticadas para trás, capa tremulando
 - `levantar_peso` (segura a pose, torso/head/arms/legs/face): Levantar algo muito pesado: agacha, firma e ergue os braços acima da cabeça
@@ -168,3 +170,8 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 ### Céu e espaço (Lua, anéis)
 - `lua` 8.7×8.7×8.7 m variantes: cheia, rachada | params: raio=3, cor="#efe8d2", brilho=0.55, halo=true, apoiada=true, progress=0 | ETAPAS (etapa): Lua low-poly brilhante com crateras
 - `anel_pedras` 129.6×49.6×123.2 m variantes: formando | params: raio=60, largura=8, inclinacao=70, origem=90, pedras=700, tamanhoPedra=1, cor="#cfc4a8", velocidade=2, apoiada=true, progress=1 | ETAPAS (etapa) | gira sozinho: Anel de pedras e poeira (como os de Saturno), girando devagar
+
+### Física (ondas sonoras, choque, vapor)
+- `ondas_som` 6.1×6.1×6.1 m variantes: subsonico, supersonico | params: raio=3, ondas=7, altura=3, cor="#8fd3ff", progress=0.8 | ETAPAS (etapa) | gira sozinho: Frentes de onda do som emitidas por algo que anda para +Z (o diagrama clássico da aula de física, em 3D)
+- `cone_vapor` 2.7×3.3×2.6 m variantes: pequeno | params: comprimento=2.4, raio=1.1, altura=1.2, progress=1 | ETAPAS (etapa) | gira sozinho: Nuvem branca em forma de cone em volta de algo perto da velocidade do som (a umidade do ar condensa quando a pressão cai)
+- `anel_choque` 14.9×14.9×2.5 m variantes: pequeno | params: raio=20, cor="#ffffff", progress=0.4 | ETAPAS (etapa): Onda de choque que se espalha pelo chão a partir do centro (estrondo sônico, explosão, impacto)

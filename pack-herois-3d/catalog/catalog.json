@@ -780,6 +780,38 @@
       }
     },
     {
+      "id": "derrapar",
+      "description": "Frear derrapando depois de correr muito rápido: tronco jogado para trás, uma perna esticada à frente travando, braços girando. Mova o personagem desacelerando (anim.pos) e ponha fagulhas/fumaça nos pés",
+      "loop": true,
+      "durationS": 0.5,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": true,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
+      "id": "tonto_no_chao",
+      "description": "Sentado no chão, tonto depois de uma batida: pernas esticadas à frente, apoiado nos braços, cabeça rodando em círculo",
+      "loop": true,
+      "durationS": 1.6,
+      "affects": [
+        "torso",
+        "head",
+        "arms",
+        "legs",
+        "face"
+      ],
+      "grounded": false,
+      "metersPerSecond": null,
+      "params": {}
+    },
+    {
       "id": "sentir_perigo",
       "description": "Sentir perigo: agacha em alerta, olha rápido para um lado e para o outro, olhos arregalados. Segura a pose",
       "loop": false,
@@ -3082,6 +3114,118 @@
       ],
       "setProgress": true,
       "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "ondas_som",
+      "category": "fisica",
+      "label": "Ondas sonoras (Mach)",
+      "description": "Frentes de onda do som emitidas por algo que anda para +Z (o diagrama clássico da aula de física, em 3D). setProgress(0..1) muda a velocidade: Mach = 1,25 × progress. Abaixo de Mach 1 as ondas ficam espaçadas na frente; em 0,8 (Mach 1) todas se tocam na frente (a barreira do som); acima, formam o cone de Mach. A fonte fica em y = \"altura\".",
+      "sizeM": {
+        "x": 6.1,
+        "y": 6.1,
+        "z": 6.1
+      },
+      "meshes": 22,
+      "params": {
+        "raio": {
+          "default": 3,
+          "description": "raio da onda mais antiga (m)"
+        },
+        "ondas": {
+          "default": 7,
+          "description": "quantidade de frentes de onda"
+        },
+        "altura": {
+          "default": 3,
+          "description": "altura da fonte (o centro das ondas) acima da base"
+        },
+        "cor": {
+          "default": "#8fd3ff",
+          "description": "cor das ondas"
+        },
+        "progress": {
+          "default": 0.8,
+          "description": "velocidade: Mach = 1,25 × progress"
+        }
+      },
+      "variants": [
+        "subsonico",
+        "supersonico"
+      ],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "cone_vapor",
+      "category": "fisica",
+      "label": "Cone de vapor",
+      "description": "Nuvem branca em forma de cone em volta de algo perto da velocidade do som (a umidade do ar condensa quando a pressão cai). Bico para +Z. setProgress(0..1) faz a nuvem aparecer e crescer; ela tremula sozinha. O eixo fica em y = \"altura\".",
+      "sizeM": {
+        "x": 2.7,
+        "y": 2.6,
+        "z": 3.3
+      },
+      "meshes": 3,
+      "params": {
+        "comprimento": {
+          "default": 2.4,
+          "description": "comprimento do cone (m)"
+        },
+        "raio": {
+          "default": 1.1,
+          "description": "raio da boca (m)"
+        },
+        "altura": {
+          "default": 1.2,
+          "description": "altura do eixo acima da base"
+        },
+        "progress": {
+          "default": 1,
+          "description": "quanto já se formou 0..1"
+        }
+      },
+      "variants": [
+        "pequeno"
+      ],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "anel_choque",
+      "category": "fisica",
+      "label": "Anel de choque (estrondo)",
+      "description": "Onda de choque que se espalha pelo chão a partir do centro (estrondo sônico, explosão, impacto). setProgress(0..1) faz o anel e a cúpula translúcida crescerem até \"raio\" e sumirem.",
+      "sizeM": {
+        "x": 14.9,
+        "y": 2.5,
+        "z": 14.9
+      },
+      "meshes": 2,
+      "params": {
+        "raio": {
+          "default": 20,
+          "description": "raio final (m)"
+        },
+        "cor": {
+          "default": "#ffffff",
+          "description": "cor"
+        },
+        "progress": {
+          "default": 0.4,
+          "description": "quanto já se espalhou 0..1"
+        }
+      },
+      "variants": [
+        "pequeno"
+      ],
+      "setProgress": true,
+      "update": false,
       "wheels": false,
       "stages": null
     }

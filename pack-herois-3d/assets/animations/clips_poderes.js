@@ -4,6 +4,8 @@
 // Chaves de acessório: capa [abertura°, tremulação, envergadura], fioR/fioL [m], feixe [m], sopro [0..1],
 // escudo [visível 0/1], nuvem [0..1]. Ver assets/characters/acessorios.js.
 
+import { DIMS } from '../characters/skeleton.js';
+
 const TAU = Math.PI * 2;
 const smooth = (x) => x * x * (3 - 2 * x);
 const R = (x = 0, y = 0, z = 0) => [x, y, z];
@@ -96,6 +98,39 @@ export const CLIPS_PODERES = {
         legL: R(-30 + 6 * s, 0, 8), shinL: R(40 + 8 * s), legR: R(6 - 8 * s, 0, -8), shinR: R(22 - 6 * s),
         hipsPos: R(0, -0.05, -0.04 * puxa),
         face: { eyeOpen: 0.7 + 0.2 * puxa, browTilt: 1 },
+      };
+    },
+  },
+  derrapar: {
+    description: 'Frear derrapando depois de correr muito rápido: tronco jogado para trás, uma perna esticada à frente travando, braços girando. Mova o personagem desacelerando (anim.pos) e ponha fagulhas/fumaça nos pés',
+    loop: true, duration: 0.5, affects: ['torso', 'head', 'arms', 'legs', 'face'],
+    params: {},
+    pose(ph) {
+      const s = Math.sin(ph * TAU);
+      const c = Math.cos(ph * TAU);
+      return {
+        hips: R(-24), spine: R(-10), chest: R(-6), head: R(10, 6 * s, 0),
+        legR: R(-55, 0, -6), shinR: R(8), legL: R(10, 0, 8), shinL: R(70),
+        hipsPos: R(0, -0.16, 0),
+        armR: R(-150 + 60 * s, 0, -30 - 30 * c), forearmR: R(-20), armL: R(-150 - 60 * s, 0, 30 + 30 * c), forearmL: R(-20),
+        face: { eyeOpen: 1.3, browRaise: 1, mouthOpen: 0.8 },
+      };
+    },
+  },
+  tonto_no_chao: {
+    description: 'Sentado no chão, tonto depois de uma batida: pernas esticadas à frente, apoiado nos braços, cabeça rodando em círculo',
+    loop: true, duration: 1.6, affects: ['torso', 'head', 'arms', 'legs', 'face'], grounded: false,
+    params: {},
+    pose(ph) {
+      const s = Math.sin(ph * TAU);
+      const c = Math.cos(ph * TAU);
+      return {
+        hipsPos: R(0, -(DIMS.thigh + DIMS.shin + DIMS.foot) + 0.12, 0),
+        legL: R(-88, 0, 10), shinL: R(4), legR: R(-84, 0, -12), shinR: R(8),
+        spine: R(-8 + 3 * s), chest: R(-6),
+        armL: R(40, 0, 25), forearmL: R(-10), armR: R(40, 0, -25), forearmR: R(-10),
+        head: R(8 * c, 0, 12 * s), neck: R(4 * c, 0, 6 * s),
+        face: { eyeOpen: 0.55, look: [s, c] },
       };
     },
   },

@@ -164,7 +164,7 @@ export function playClip(character, name, t, opts = {}) {
 
 // ---------- linha do tempo ----------
 // `camadas` é uma lista de camadas; cada camada é uma lista de segmentos ordenados por início:
-//   { clip, start, end?, speed?, params?, fade?, mask?, expression? }
+//   { clip, start, end?, speed?, params?, fade?, mask?, expression?, offset? }  (offset: segundos do clip já andados no início)
 // A camada 0 é o corpo base (se nada estiver ativo, o personagem fica em "idle").
 // Camadas seguintes sobrepõem SÓ as juntas/grupos do clip (use `mask` para limitar, ex.: ['head','face']).
 // Entre segmentos seguidos da mesma camada há transição suave de `fade` segundos (padrão 0.3).
@@ -178,7 +178,7 @@ function segmentPose(seg, t) {
   const speed = seg.speed ?? 1;
   const tt = Math.min(t, seg.end ?? t);
   const params = { ...(seg.params || {}), ...(seg.expression ? { expression: seg.expression } : {}) };
-  return maskPose(sampleClip(seg.clip, (tt - seg.start) * speed, params), seg.mask);
+  return maskPose(sampleClip(seg.clip, (tt - seg.start) * speed + (seg.offset ?? 0), params), seg.mask);
 }
 
 function evaluateLayer(layer, t) {

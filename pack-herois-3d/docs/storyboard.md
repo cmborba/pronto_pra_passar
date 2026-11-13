@@ -99,6 +99,7 @@ As **cenas** devem cobrir o vídeo inteiro sem buracos: a primeira começa em `0
 | `acoes[].fala` | só com `clip: "talk"`: a boca abre e fecha **no ritmo das palavras da narração** (use no personagem que "está falando") |
 | `acoes[].camada` | `0` = corpo base (padrão). `1` ou mais sobrepõem só as partes da `mascara` (ex.: falar com a cabeça e uma mão enquanto o corpo faz outra coisa) |
 | `acoes[].mascara` | grupos: `head`, `face`, `arms`, `armL`, `armR`, `legs`, `torso` |
+| `acoes[].velocidade` / `acoes[].fase` | `velocidade` multiplica o ritmo do clip (0.03 = **câmera lenta / tempo congelado**); `fase` = segundos do clip já andados no início (ex.: congelar o `run` no meio da passada com `velocidade: 0.02, fase: 0.17`) |
 | `acoes[].expressao` | `neutral`, `happy`, `laugh`, `sad`, `angry`, `surprised`, `worried`, `thinking`, `sleepy` |
 
 Sem nenhuma ação num trecho, o personagem fica em `idle` (respirando). As animações disponíveis e seus parâmetros estão em `catalog/RESUMO.md`.

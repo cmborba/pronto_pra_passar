@@ -144,6 +144,7 @@ cenas.forEach((c, i) => {
       if (a.expressao && !(a.expressao in EXPRESSIONS)) E(`${P}: expressão "${a.expressao}" não existe (opções: ${Object.keys(EXPRESSIONS).join(', ')}).`);
       for (const m of a.mascara || []) if (!maskOk.has(m)) E(`${P}: máscara "${m}" inválida (grupos: ${Object.keys(GROUPS).join(', ')}).`);
       if (a.camada !== undefined && !(Number.isInteger(a.camada) && a.camada >= 0)) E(`${P}: "camada" deve ser inteiro ≥ 0.`);
+      if (a.fase !== undefined && !(num(a.fase) && a.fase >= 0)) E(`${P}: "fase" deve ser um número ≥ 0 (segundos do clip já andados no início).`);
     }
     for (const m of p.movimentos || []) {
       if (!vec(m.para, [2]) || !dentro(m.de, m.ate, `movimento de "${p.id}"`)) { E(`${P}: movimento de "${p.id}" inválido (precisa de de, ate e para:[x,z]).`); continue; }

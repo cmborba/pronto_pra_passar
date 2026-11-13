@@ -1,0 +1,557 @@
+[
+ {
+  "palavra": "O",
+  "inicio": 0,
+  "fim": 0.081
+ },
+ {
+  "palavra": "que",
+  "inicio": 0.139,
+  "fim": 0.209
+ },
+ {
+  "palavra": "acontece",
+  "inicio": 0.244,
+  "fim": 0.848
+ },
+ {
+  "palavra": "quando",
+  "inicio": 0.906,
+  "fim": 1.149
+ },
+ {
+  "palavra": "o",
+  "inicio": 1.173,
+  "fim": 1.196
+ },
+ {
+  "palavra": "Major",
+  "inicio": 1.265,
+  "fim": 1.602
+ },
+ {
+  "palavra": "Cometa",
+  "inicio": 1.66,
+  "fim": 1.997
+ },
+ {
+  "palavra": "rompe",
+  "inicio": 2.055,
+  "fim": 2.322
+ },
+ {
+  "palavra": "a",
+  "inicio": 2.345,
+  "fim": 2.368
+ },
+ {
+  "palavra": "barreira",
+  "inicio": 2.403,
+  "fim": 2.752
+ },
+ {
+  "palavra": "do",
+  "inicio": 2.798,
+  "fim": 2.868
+ },
+ {
+  "palavra": "som?",
+  "inicio": 2.926,
+  "fim": 3.344
+ },
+ {
+  "palavra": "O",
+  "inicio": 3.982,
+  "fim": 4.029
+ },
+ {
+  "palavra": "Usain",
+  "inicio": 4.052,
+  "fim": 4.47
+ },
+ {
+  "palavra": "Bolt",
+  "inicio": 4.54,
+  "fim": 4.969
+ },
+ {
+  "palavra": "chega",
+  "inicio": 5.074,
+  "fim": 5.352
+ },
+ {
+  "palavra": "a",
+  "inicio": 5.387,
+  "fim": 5.41
+ },
+ {
+  "palavra": "doze",
+  "inicio": 5.515,
+  "fim": 5.851
+ },
+ {
+  "palavra": "metros",
+  "inicio": 5.909,
+  "fim": 6.246
+ },
+ {
+  "palavra": "por",
+  "inicio": 6.304,
+  "fim": 6.409
+ },
+ {
+  "palavra": "segundo.",
+  "inicio": 6.467,
+  "fim": 7.094
+ },
+ {
+  "palavra": "O",
+  "inicio": 7.384,
+  "fim": 7.442
+ },
+ {
+  "palavra": "som",
+  "inicio": 7.546,
+  "fim": 7.732
+ },
+ {
+  "palavra": "anda",
+  "inicio": 7.79,
+  "fim": 7.964
+ },
+ {
+  "palavra": "a",
+  "inicio": 8.011,
+  "fim": 8.034
+ },
+ {
+  "palavra": "trezentos",
+  "inicio": 8.092,
+  "fim": 8.719
+ },
+ {
+  "palavra": "e",
+  "inicio": 8.777,
+  "fim": 8.8
+ },
+ {
+  "palavra": "quarenta",
+  "inicio": 8.847,
+  "fim": 9.183
+ },
+ {
+  "palavra": "e",
+  "inicio": 9.207,
+  "fim": 9.23
+ },
+ {
+  "palavra": "três.",
+  "inicio": 9.276,
+  "fim": 9.81
+ },
+ {
+  "palavra": "Vinte",
+  "inicio": 10.101,
+  "fim": 10.449
+ },
+ {
+  "palavra": "e",
+  "inicio": 10.472,
+  "fim": 10.495
+ },
+ {
+  "palavra": "oito",
+  "inicio": 10.53,
+  "fim": 10.786
+ },
+ {
+  "palavra": "vezes",
+  "inicio": 10.844,
+  "fim": 11.146
+ },
+ {
+  "palavra": "mais",
+  "inicio": 11.204,
+  "fim": 11.366
+ },
+ {
+  "palavra": "rápido!",
+  "inicio": 11.424,
+  "fim": 12.04
+ },
+ {
+  "palavra": "Congela!",
+  "inicio": 12.26,
+  "fim": 13.235
+ },
+ {
+  "palavra": "As",
+  "inicio": 13.421,
+  "fim": 13.595
+ },
+ {
+  "palavra": "ondas",
+  "inicio": 13.653,
+  "fim": 13.897
+ },
+ {
+  "palavra": "de",
+  "inicio": 13.92,
+  "fim": 13.978
+ },
+ {
+  "palavra": "som",
+  "inicio": 14.036,
+  "fim": 14.211
+ },
+ {
+  "palavra": "não",
+  "inicio": 14.269,
+  "fim": 14.42
+ },
+ {
+  "palavra": "conseguem",
+  "inicio": 14.466,
+  "fim": 14.919
+ },
+ {
+  "palavra": "fugir",
+  "inicio": 14.965,
+  "fim": 15.267
+ },
+ {
+  "palavra": "da",
+  "inicio": 15.313,
+  "fim": 15.395
+ },
+ {
+  "palavra": "frente",
+  "inicio": 15.453,
+  "fim": 15.778
+ },
+ {
+  "palavra": "dele",
+  "inicio": 15.836,
+  "fim": 16.126
+ },
+ {
+  "palavra": "e",
+  "inicio": 16.196,
+  "fim": 16.277
+ },
+ {
+  "palavra": "se",
+  "inicio": 16.335,
+  "fim": 16.416
+ },
+ {
+  "palavra": "empilham",
+  "inicio": 16.439,
+  "fim": 16.846
+ },
+ {
+  "palavra": "num",
+  "inicio": 16.881,
+  "fim": 16.997
+ },
+ {
+  "palavra": "cone",
+  "inicio": 17.078,
+  "fim": 17.357
+ },
+ {
+  "palavra": "de",
+  "inicio": 17.403,
+  "fim": 17.496
+ },
+ {
+  "palavra": "ar.",
+  "inicio": 17.554,
+  "fim": 17.867
+ },
+ {
+  "palavra": "A",
+  "inicio": 18.216,
+  "fim": 18.274
+ },
+ {
+  "palavra": "pressão",
+  "inicio": 18.332,
+  "fim": 18.692
+ },
+ {
+  "palavra": "cai",
+  "inicio": 18.727,
+  "fim": 18.912
+ },
+ {
+  "palavra": "tão",
+  "inicio": 18.982,
+  "fim": 19.226
+ },
+ {
+  "palavra": "rápido",
+  "inicio": 19.284,
+  "fim": 19.667
+ },
+ {
+  "palavra": "que",
+  "inicio": 19.713,
+  "fim": 19.783
+ },
+ {
+  "palavra": "a",
+  "inicio": 19.806,
+  "fim": 19.83
+ },
+ {
+  "palavra": "umidade",
+  "inicio": 19.853,
+  "fim": 20.201
+ },
+ {
+  "palavra": "do",
+  "inicio": 20.236,
+  "fim": 20.317
+ },
+ {
+  "palavra": "ar",
+  "inicio": 20.375,
+  "fim": 20.445
+ },
+ {
+  "palavra": "vira",
+  "inicio": 20.503,
+  "fim": 20.689
+ },
+ {
+  "palavra": "nuvem.",
+  "inicio": 20.747,
+  "fim": 21.211
+ },
+ {
+  "palavra": "E",
+  "inicio": 21.397,
+  "fim": 21.478
+ },
+ {
+  "palavra": "quando",
+  "inicio": 21.548,
+  "fim": 21.826
+ },
+ {
+  "palavra": "o",
+  "inicio": 21.85,
+  "fim": 21.873
+ },
+ {
+  "palavra": "cone",
+  "inicio": 21.943,
+  "fim": 22.244
+ },
+ {
+  "palavra": "bate",
+  "inicio": 22.291,
+  "fim": 22.558
+ },
+ {
+  "palavra": "no",
+  "inicio": 22.604,
+  "fim": 22.697
+ },
+ {
+  "palavra": "chão...",
+  "inicio": 22.755,
+  "fim": 23.231
+ },
+ {
+  "palavra": "BUM!",
+  "inicio": 23.522,
+  "fim": 24.021
+ },
+ {
+  "palavra": "É",
+  "inicio": 24.183,
+  "fim": 24.241
+ },
+ {
+  "palavra": "o",
+  "inicio": 24.323,
+  "fim": 24.357
+ },
+ {
+  "palavra": "estrondo",
+  "inicio": 24.392,
+  "fim": 24.845
+ },
+ {
+  "palavra": "sônico,",
+  "inicio": 24.961,
+  "fim": 25.704
+ },
+ {
+  "palavra": "e",
+  "inicio": 25.96,
+  "fim": 26.064
+ },
+ {
+  "palavra": "ele",
+  "inicio": 26.099,
+  "fim": 26.261
+ },
+ {
+  "palavra": "segue",
+  "inicio": 26.331,
+  "fim": 26.645
+ },
+ {
+  "palavra": "o",
+  "inicio": 26.679,
+  "fim": 26.714
+ },
+ {
+  "palavra": "herói",
+  "inicio": 26.749,
+  "fim": 27.005
+ },
+ {
+  "palavra": "o",
+  "inicio": 27.039,
+  "fim": 27.074
+ },
+ {
+  "palavra": "caminho",
+  "inicio": 27.109,
+  "fim": 27.515
+ },
+ {
+  "palavra": "todo.",
+  "inicio": 27.573,
+  "fim": 28.073
+ },
+ {
+  "palavra": "O",
+  "inicio": 28.421,
+  "fim": 28.479
+ },
+ {
+  "palavra": "ar",
+  "inicio": 28.642,
+  "fim": 28.734
+ },
+ {
+  "palavra": "na",
+  "inicio": 28.792,
+  "fim": 28.862
+ },
+ {
+  "palavra": "cara",
+  "inicio": 28.909,
+  "fim": 29.106
+ },
+ {
+  "palavra": "dele",
+  "inicio": 29.164,
+  "fim": 29.338
+ },
+ {
+  "palavra": "esquenta",
+  "inicio": 29.361,
+  "fim": 29.768
+ },
+ {
+  "palavra": "quase",
+  "inicio": 29.849,
+  "fim": 30.243
+ },
+ {
+  "palavra": "sessenta",
+  "inicio": 30.301,
+  "fim": 30.696
+ },
+ {
+  "palavra": "graus.",
+  "inicio": 30.731,
+  "fim": 31.242
+ },
+ {
+  "palavra": "E",
+  "inicio": 31.497,
+  "fim": 31.555
+ },
+ {
+  "palavra": "pra",
+  "inicio": 31.613,
+  "fim": 31.73
+ },
+ {
+  "palavra": "frear",
+  "inicio": 31.776,
+  "fim": 32.066
+ },
+ {
+  "palavra": "em",
+  "inicio": 32.101,
+  "fim": 32.159
+ },
+ {
+  "palavra": "um",
+  "inicio": 32.217,
+  "fim": 32.264
+ },
+ {
+  "palavra": "segundo,",
+  "inicio": 32.31,
+  "fim": 32.716
+ },
+ {
+  "palavra": "são",
+  "inicio": 32.74,
+  "fim": 32.902
+ },
+ {
+  "palavra": "trinta",
+  "inicio": 32.96,
+  "fim": 33.343
+ },
+ {
+  "palavra": "e",
+  "inicio": 33.378,
+  "fim": 33.413
+ },
+ {
+  "palavra": "cinco",
+  "inicio": 33.448,
+  "fim": 33.784
+ },
+ {
+  "palavra": "G!",
+  "inicio": 33.831,
+  "fim": 34.156
+ },
+ {
+  "palavra": "Você",
+  "inicio": 34.562,
+  "fim": 34.783
+ },
+ {
+  "palavra": "ainda",
+  "inicio": 34.806,
+  "fim": 35.015
+ },
+ {
+  "palavra": "ia",
+  "inicio": 35.062,
+  "fim": 35.154
+ },
+ {
+  "palavra": "querer",
+  "inicio": 35.201,
+  "fim": 35.398
+ },
+ {
+  "palavra": "supervelocidade?",
+  "inicio": 35.445,
+  "fim": 36.641
+ }
+]

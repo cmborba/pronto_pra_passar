@@ -32,6 +32,7 @@ export const CATEGORIES = {
   maquinas: 'Máquinas e processos animados',
   agua: 'Água (nível subindo, ondas)',
   ceu: 'Céu e espaço (Lua, anéis)',
+  fisica: 'Física (ondas sonoras, choque, vapor)',
 };
 
 export function register(id, def) {

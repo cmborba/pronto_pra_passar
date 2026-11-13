@@ -730,7 +730,7 @@ function construirCena(def) {
     for (const a of c.acoes || []) {
       add(a.camada || 0, {
         clip: a.clip, start: a.de, end: a.ate, speed: a.velocidade, params: { ...(a.params || {}) },
-        expression: a.expressao, mask: a.mascara, fade: a.suavizacao, fala: !!a.fala,
+        expression: a.expressao, mask: a.mascara, fade: a.suavizacao, fala: !!a.fala, offset: a.fase,
       });
     }
     ent.camadas = [];
