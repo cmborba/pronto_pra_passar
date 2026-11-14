@@ -60,3 +60,30 @@ O que acontece se você correr mais rápido que o som? 💥 343 m/s, estrondo s�
 - Sem música por cima (ou bem baixa, ~10%): a narração e a legenda carregam o vídeo.
 - Ativar "Conteúdo gerado por IA" nas configurações da publicação.
 - Comentário fixado: "Você ainda ia querer supervelocidade depois dos 35 G? 💥"
+
+# Facebook (Página, como Reels)
+
+## Descrição
+O que acontece se alguém correr mais rápido que o som? 💥🏃‍♂️
+
+O Major Cometa resolveu testar…
+
+⚡ O Usain Bolt, o homem mais rápido do mundo, chega a 12 metros por segundo.
+🔊 O som anda a 343 metros por segundo (1.235 km/h): 28 vezes mais rápido!
+
+E perto dessa velocidade, coisas incríveis acontecem:
+🌀 As ondas de som não conseguem fugir da frente e se empilham num cone de ar
+☁️ A pressão cai tão rápido que a umidade vira nuvem (é a mesma nuvem que aparece em volta de jatos supersônicos)
+💥 E vem o estrondo sônico, que segue o herói o caminho todo (não acontece só na hora de "romper" a barreira!)
+
+E tem mais:
+🔥 O ar que bate no rosto esquenta quase 60 °C
+😵 E frear em 1 segundo dá 35 G… pilotos de caça desmaiam com 9!
+
+Você ainda ia querer supervelocidade? Comenta aqui 👇
+Marca aquele amigo que se acha o mais rápido da turma 😂
+
+#curiosidades #física #ciência
+
+## Dicas
+- Subir direto (Reels), sem link do YouTube; capa da câmera lenta com as ondas ("MACH 1 = 343 m/s"); responder os primeiros comentários; marcar conteúdo de IA se pedir.
