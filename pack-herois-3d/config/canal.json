@@ -1,0 +1,31 @@
+{
+  "nomeCanal": "Liga dos Meia Boca",
+  "idioma": "pt-BR",
+  "nicho": "super-heróis originais de humor explicando ciência, natureza e curiosidades reais (\"e se...\", superpoderes na vida real, animais raros, histórias reais)",
+  "tom": "cômico mas educativo; frases curtas; números e fatos reais conferidos; fala com o espectador (\"você\")",
+  "estiloNarracao": "narrador único (ElevenLabs, voz Rodrigo em pt-BR; Charlie na versão em inglês), ritmo rápido, sem cumprimentos",
+  "elenco": {
+    "herois": ["major_cometa", "aracnildo", "coruja_noturna", "capitao_tampa", "heroi_vertice", "heroina_pulso", "heroi_impacto"],
+    "regra": "o mesmo herói para o mesmo papel no vídeo inteiro; o herói é a porta de entrada, o assunto real é a estrela"
+  },
+  "comandoMestre": {
+    "resumo": "COMANDO MESTRE do criador, vale para TODOS os vídeos: história encadeada (uma coisa puxa a outra até o final), vídeo grande que caiba nas 3 plataformas (TikTok, YouTube Shorts e Instagram/Facebook Reels) e plot twists com outras histórias e curiosidades.",
+    "encadeamento": "cada bloco termina abrindo a pergunta ou o gancho do próximo (\"mas por que...?\", \"e o mais estranho...\", \"só que...\"); nenhuma parte pode ser só lista de fatos solta",
+    "plotTwists": "pelo menos 2 viradas por vídeo: uma curiosidade que contradiz o que o espectador acha, uma história real (notícia, recorde, caso verdadeiro) e, quando couber, folclore/cultura ligado ao tema; a maior virada depois da metade",
+    "duracao": "60 a 90 s (ideal ~80 s). Cabe com folga em YouTube Shorts (até 3 min), Instagram Reels (até 3 min) e TikTok (até 10 min); 90 s é o limite seguro para Facebook Reels, que tem informação conflitante sobre o máximo",
+    "final": "fecha o gancho do início e termina com uma pergunta fácil de comentar; quando possível, a última frase conecta de volta com a primeira (loop)",
+    "fatos": "todo número/fato conferido em fontes e registrado em projects/<nome>/ideia.md; ficção (o herói, a ação absurda) sempre separada do fato"
+  },
+  "abertura": "o herói em uma situação absurda ou visual forte e uma pergunta/gancho na tela no instante 0",
+  "fechamento": "paga o gancho + pergunta fácil de responder para comentar (+ chamado para compartilhar)",
+  "capa": "o momento mais visual do vídeo (efeito, virada) com 2 a 5 palavras",
+  "postagem": {
+    "plataformas": ["YouTube Shorts", "TikTok", "Instagram Reels", "Facebook Reels"],
+    "pesquisa": "títulos e palavras-chave pelo vidIQ (pt-BR/BR na versão brasileira; en/US na gringa)",
+    "hashtagsFixas": [],
+    "videoRelacionado": "",
+    "linkFixo": ""
+  },
+  "versoes": "primeiro a versão brasileira (aprovação do criador); depois a versão em inglês para o canal gringo, mantendo os nomes dos heróis",
+  "duracaoPadraoSegundos": 80
+}
