@@ -104,7 +104,7 @@ scene.environmentIntensity = 0.32;
 // céu em degradê (cores por horário/clima)
 const CEUS = {
   dia: ['#2f86e0', '#bfe3fb'], tarde: ['#4a68b0', '#f6bf94'], nublado: ['#7f90a6', '#d0d9e1'], chuva: ['#4c5e78', '#9fadbd'],
-  noite: ['#050a1c', '#26375f'],
+  noite: ['#050a1c', '#26375f'], madrugada: ['#03061a', '#18244a'],
 };
 const domo = new THREE.Mesh(
   new THREE.SphereGeometry(600, 24, 16),
@@ -761,7 +761,12 @@ function construirCena(def) {
   for (const t of def.textos || []) {
     const el = document.createElement('div');
     el.className = `texto ${t.estilo || 'destaque'}`;
-    el.textContent = t.texto;
+    if (t.estilo === 'manchete') {
+      // *palavra* fica em amarelo; "|" quebra a linha
+      const esc = (x) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+      el.innerHTML = esc(t.texto).replace(/\*([^*]+)\*/g, '<span class="hl">$1</span>').replace(/\|/g, '<br>');
+    } else el.textContent = t.texto;
+    if (t.lado === 'direita') el.classList.add('direita');
     el.style.display = 'none';
     textosEl.appendChild(el);
     cena.textos.push({ el, de: t.de ?? def.inicio, ate: t.ate ?? def.fim, estilo: t.estilo || 'destaque' });
@@ -1038,9 +1043,10 @@ window.renderAt = (t) => {
     decoracao.visible = decorar;
     chuva.linhas.visible = clima === 'chuva';
     nuvens.visible = (amb.nuvens ?? sb.ambiente?.nuvens) !== false;
-    const noite = horario === 'noite' && clima !== 'chuva';
+    const noite = (horario === 'noite' || horario === 'madrugada') && clima !== 'chuva';
     estrelas.visible = noite;
     for (const m of window.__janelasNoite.mats) m.emissiveIntensity = noite ? 1.1 : 0;
+    scene.environmentIntensity = horario === 'madrugada' ? 0.07 : 0.32; // madrugada: quase sem luz ambiente
     if (noite) { scene.fog.near = 90; nuvens.visible = (amb.nuvens ?? sb.ambiente?.nuvens) === true; }
   }
 
@@ -1151,10 +1157,10 @@ window.renderAt = (t) => {
     const dentro = t >= x.de && t < x.ate;
     x.el.style.display = dentro ? 'block' : 'none';
     if (dentro) {
-      if (x.estilo === 'titulo' || x.estilo === 'destaque') tituloVisivel = true;
+      if (x.estilo === 'titulo' || x.estilo === 'destaque' || x.estilo === 'manchete') tituloVisivel = true;
       const k = clamp((t - x.de) / 0.25, 0, 1);
       const sai = clamp((x.ate - t) / 0.15, 0, 1);
-      x.el.style.transform = `rotate(${x.estilo === 'destaque' ? -3 : 0}deg) scale(${lerp(0.6, 1, popBack(k))})`;
+      x.el.style.transform = `rotate(${x.estilo === 'destaque' ? -3 : x.estilo === 'selo' ? -2 : 0}deg) scale(${lerp(0.6, 1, popBack(k))})`;
       x.el.style.opacity = String(Math.min(k * 2, sai));
     }
   }

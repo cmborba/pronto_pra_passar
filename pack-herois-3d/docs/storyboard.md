@@ -25,7 +25,7 @@ Todos os tempos são em **segundos desde o início do vídeo** (não desde o in�
 | `duracao` | segundos; use a duração do áudio + 0,3 a 1 s de folga (`voz.json` e `frases.json` ajudam) |
 | `audio` / `palavras` | nomes dos arquivos gerados por `node tools/voz.mjs gerar` (ficam na pasta do projeto) |
 | `legendas` | padrão: **uma palavra por vez**, branca com contorno preto, pequena, no terço inferior (como nos Shorts de referência). Opções: `palavrasPorBloco` (1 a 3), `maiusculas` (false), `corDestaque` (cor da palavra falada; padrão branca), `posicaoY` (0.68), `tamanho` (1) |
-| `ambiente.horario` | `dia`, `tarde`, `nublado`, `noite` (céu escuro com estrelas, luar e janelas da cidade acesas; nuvens desligadas, a não ser com `nuvens: true`) |
+| `ambiente.horario` | `dia`, `tarde`, `nublado`, `noite` (céu escuro com estrelas, luar e janelas da cidade acesas; `madrugada` é a versão mais escura, para suspense; nuvens desligadas, a não ser com `nuvens: true`) |
 | `ambiente.chao` | `grama`, `terra`, `areia`, `concreto`, `asfalto`, `madeira`, `piso` (padrão pelo `fundo`; não existe chão vazio) |
 | `ambiente.clima` | `limpo` (padrão) ou `chuva` (céu escuro, riscos de chuva e menos luz) |
 | `ambiente.fundo` | **sempre existe um cenário de fundo** (nunca cor sólida): `campo` (padrão: colinas com pinheiros), `cidade` (prédios com janelas), `floresta`, `deserto`, `litoral`, `industrial`, `interior` (sala). Veja a tabela de escolha em `docs/processos.md` |
@@ -152,6 +152,8 @@ Três tipos:
 | `destaque` | 16–24%, amarelo, levemente inclinado | uma ideia-chave (até ~30 caracteres) |
 | `pergunta` | 10–22%, painel amarelo | **a pergunta final** para comentar |
 | `rodape` | ~74% | informação curta (fonte, "parte 2") |
+| `manchete` | 13–30%, à esquerda, bem grande | título em bloco estilo capa: `*palavra*` fica em amarelo e `|` quebra a linha (ex.: `"O MISTÉRIO DA|*PEDRA* QUE|CAIU DO *CÉU*"`) |
+| `selo` | ~9%, etiqueta amarela (`"lado": "direita"` põe no canto direito) | série/parte/quadro (ex.: `"PARTE 1/3"`) |
 
 **Use poucos textos**: o gancho no começo, no máximo uma ou duas ideias-chave e a pergunta final. A legenda já mostra o que é falado; o texto de destaque deve **acrescentar** (um número, um rótulo, uma provocação), nunca repetir. Quando há título/destaque na tela, a legenda desce um pouco sozinha.
 

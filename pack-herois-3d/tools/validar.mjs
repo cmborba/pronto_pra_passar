@@ -89,7 +89,7 @@ const checaAmbiente = (amb, rot) => {
 checaAmbiente(sb.ambiente, 'ambiente do vídeo');
 const MOV = new Set(['walk', 'run', 'push', 'carry']);
 const PLANOS = ['geral', 'medio', 'close', 'topo'];
-const ESTILOS = ['titulo', 'destaque', 'pergunta', 'rodape'];
+const ESTILOS = ['titulo', 'destaque', 'pergunta', 'rodape', 'manchete', 'selo'];
 const maskOk = new Set([...Object.keys(GROUPS), ...JOINTS]);
 const ICONES = ['x', 'v', 'alerta', 'interrogacao', 'exclamacao', 'coracao', 'estrela', 'lampada', 'relogio', 'dinheiro', 'fogo', 'proibido', 'raio'];
 const DIRS = ['direita', 'esquerda', 'cima', 'baixo', 'horizontal', 'vertical'];
@@ -214,7 +214,7 @@ cenas.forEach((c, i) => {
   for (const t of c.textos || []) {
     if (!t.texto) E(`${P}: texto vazio.`);
     if (t.estilo && !ESTILOS.includes(t.estilo)) E(`${P}: estilo de texto "${t.estilo}" inválido (${ESTILOS.join(', ')}).`);
-    if (t.texto && t.texto.length > 34 && t.estilo !== 'pergunta') A(`${P}: texto "${t.texto.slice(0, 20)}…" tem ${t.texto.length} caracteres; use no máximo ~30 para ler de relance.`);
+    if (t.texto && t.texto.length > 34 && t.estilo !== 'pergunta' && t.estilo !== 'manchete') A(`${P}: texto "${t.texto.slice(0, 20)}…" tem ${t.texto.length} caracteres; use no máximo ~30 para ler de relance.`);
     dentro(t.de ?? c.inicio, t.ate ?? c.fim, 'texto');
   }
   nTitulos += (c.textos || []).filter((t) => t.estilo === 'titulo' || t.estilo === 'destaque' || !t.estilo).length;

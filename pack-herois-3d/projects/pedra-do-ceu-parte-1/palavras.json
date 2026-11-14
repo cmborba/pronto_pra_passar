@@ -1,0 +1,807 @@
+[
+ {
+  "palavra": "Uma",
+  "inicio": 0,
+  "fim": 0.232
+ },
+ {
+  "palavra": "luz",
+  "inicio": 0.29,
+  "fim": 0.499
+ },
+ {
+  "palavra": "riscou",
+  "inicio": 0.569,
+  "fim": 0.929
+ },
+ {
+  "palavra": "o",
+  "inicio": 0.952,
+  "fim": 0.975
+ },
+ {
+  "palavra": "céu",
+  "inicio": 0.998,
+  "fim": 1.173
+ },
+ {
+  "palavra": "de",
+  "inicio": 1.207,
+  "fim": 1.265
+ },
+ {
+  "palavra": "São",
+  "inicio": 1.312,
+  "fim": 1.498
+ },
+ {
+  "palavra": "Paulo",
+  "inicio": 1.544,
+  "fim": 1.95
+ },
+ {
+  "palavra": "e",
+  "inicio": 2.02,
+  "fim": 2.09
+ },
+ {
+  "palavra": "caiu",
+  "inicio": 2.159,
+  "fim": 2.508
+ },
+ {
+  "palavra": "em",
+  "inicio": 2.566,
+  "fim": 2.612
+ },
+ {
+  "palavra": "algum",
+  "inicio": 2.682,
+  "fim": 2.961
+ },
+ {
+  "palavra": "lugar",
+  "inicio": 3.007,
+  "fim": 3.286
+ },
+ {
+  "palavra": "da",
+  "inicio": 3.344,
+  "fim": 3.413
+ },
+ {
+  "palavra": "zona",
+  "inicio": 3.471,
+  "fim": 3.669
+ },
+ {
+  "palavra": "sul.",
+  "inicio": 3.727,
+  "fim": 4.075
+ },
+ {
+  "palavra": "A",
+  "inicio": 4.435,
+  "fim": 4.505
+ },
+ {
+  "palavra": "Coruja",
+  "inicio": 4.574,
+  "fim": 4.911
+ },
+ {
+  "palavra": "Noturna",
+  "inicio": 4.946,
+  "fim": 5.375
+ },
+ {
+  "palavra": "viu",
+  "inicio": 5.445,
+  "fim": 5.666
+ },
+ {
+  "palavra": "tudo.",
+  "inicio": 5.805,
+  "fim": 6.42
+ },
+ {
+  "palavra": "E",
+  "inicio": 6.722,
+  "fim": 6.792
+ },
+ {
+  "palavra": "arrastou",
+  "inicio": 6.85,
+  "fim": 7.279
+ },
+ {
+  "palavra": "o",
+  "inicio": 7.314,
+  "fim": 7.338
+ },
+ {
+  "palavra": "Aracnildo",
+  "inicio": 7.396,
+  "fim": 7.976
+ },
+ {
+  "palavra": "pra",
+  "inicio": 8.022,
+  "fim": 8.127
+ },
+ {
+  "palavra": "investigar.",
+  "inicio": 8.162,
+  "fim": 8.951
+ },
+ {
+  "palavra": "No",
+  "inicio": 9.253,
+  "fim": 9.381
+ },
+ {
+  "palavra": "caminho,",
+  "inicio": 9.427,
+  "fim": 9.996
+ },
+ {
+  "palavra": "eles",
+  "inicio": 10.077,
+  "fim": 10.321
+ },
+ {
+  "palavra": "deram",
+  "inicio": 10.368,
+  "fim": 10.6
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.67,
+  "fim": 10.774
+ },
+ {
+  "palavra": "cara",
+  "inicio": 10.913,
+  "fim": 11.262
+ },
+ {
+  "palavra": "com",
+  "inicio": 11.32,
+  "fim": 11.459
+ },
+ {
+  "palavra": "um",
+  "inicio": 11.482,
+  "fim": 11.54
+ },
+ {
+  "palavra": "buraco",
+  "inicio": 11.61,
+  "fim": 12.04
+ },
+ {
+  "palavra": "gigante.",
+  "inicio": 12.086,
+  "fim": 12.748
+ },
+ {
+  "palavra": "Um",
+  "inicio": 13.003,
+  "fim": 13.154
+ },
+ {
+  "palavra": "círculo",
+  "inicio": 13.189,
+  "fim": 13.653
+ },
+ {
+  "palavra": "quase",
+  "inicio": 13.723,
+  "fim": 14.129
+ },
+ {
+  "palavra": "perfeito,",
+  "inicio": 14.187,
+  "fim": 14.954
+ },
+ {
+  "palavra": "com",
+  "inicio": 15.058,
+  "fim": 15.244
+ },
+ {
+  "palavra": "três",
+  "inicio": 15.325,
+  "fim": 15.604
+ },
+ {
+  "palavra": "quilômetros",
+  "inicio": 15.662,
+  "fim": 16.254
+ },
+ {
+  "palavra": "e",
+  "inicio": 16.324,
+  "fim": 16.347
+ },
+ {
+  "palavra": "meio",
+  "inicio": 16.452,
+  "fim": 16.73
+ },
+ {
+  "palavra": "de",
+  "inicio": 16.765,
+  "fim": 16.835
+ },
+ {
+  "palavra": "largura!",
+  "inicio": 16.893,
+  "fim": 17.601
+ },
+ {
+  "palavra": "O",
+  "inicio": 17.961,
+  "fim": 18.019
+ },
+ {
+  "palavra": "Aracnildo",
+  "inicio": 18.089,
+  "fim": 18.541
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 18.588,
+  "fim": 18.843
+ },
+ {
+  "palavra": "certeza:",
+  "inicio": 18.901,
+  "fim": 19.923
+ },
+ {
+  "palavra": "foi",
+  "inicio": 20.225,
+  "fim": 20.399
+ },
+ {
+  "palavra": "a",
+  "inicio": 20.434,
+  "fim": 20.457
+ },
+ {
+  "palavra": "luz",
+  "inicio": 20.515,
+  "fim": 20.712
+ },
+ {
+  "palavra": "que",
+  "inicio": 20.747,
+  "fim": 20.817
+ },
+ {
+  "palavra": "fez",
+  "inicio": 20.875,
+  "fim": 21.072
+ },
+ {
+  "palavra": "isso.",
+  "inicio": 21.154,
+  "fim": 21.513
+ },
+ {
+  "palavra": "Só",
+  "inicio": 21.711,
+  "fim": 21.897
+ },
+ {
+  "palavra": "que",
+  "inicio": 21.966,
+  "fim": 22.082
+ },
+ {
+  "palavra": "não.",
+  "inicio": 22.187,
+  "fim": 22.582
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 22.883,
+  "fim": 23.116
+ },
+ {
+  "palavra": "buraco",
+  "inicio": 23.162,
+  "fim": 23.568
+ },
+ {
+  "palavra": "já",
+  "inicio": 23.615,
+  "fim": 23.696
+ },
+ {
+  "palavra": "estava",
+  "inicio": 23.743,
+  "fim": 24.114
+ },
+ {
+  "palavra": "ali",
+  "inicio": 24.137,
+  "fim": 24.346
+ },
+ {
+  "palavra": "há",
+  "inicio": 24.381,
+  "fim": 24.428
+ },
+ {
+  "palavra": "milhões",
+  "inicio": 24.486,
+  "fim": 25.008
+ },
+ {
+  "palavra": "de",
+  "inicio": 25.055,
+  "fim": 25.147
+ },
+ {
+  "palavra": "anos.",
+  "inicio": 25.205,
+  "fim": 25.705
+ },
+ {
+  "palavra": "É",
+  "inicio": 26.007,
+  "fim": 26.076
+ },
+ {
+  "palavra": "a",
+  "inicio": 26.146,
+  "fim": 26.169
+ },
+ {
+  "palavra": "Cratera",
+  "inicio": 26.204,
+  "fim": 26.61
+ },
+ {
+  "palavra": "de",
+  "inicio": 26.645,
+  "fim": 26.703
+ },
+ {
+  "palavra": "Colônia,",
+  "inicio": 26.75,
+  "fim": 27.342
+ },
+ {
+  "palavra": "aberta",
+  "inicio": 27.411,
+  "fim": 27.818
+ },
+ {
+  "palavra": "por",
+  "inicio": 27.864,
+  "fim": 27.98
+ },
+ {
+  "palavra": "uma",
+  "inicio": 28.027,
+  "fim": 28.166
+ },
+ {
+  "palavra": "pedra",
+  "inicio": 28.224,
+  "fim": 28.503
+ },
+ {
+  "palavra": "que",
+  "inicio": 28.549,
+  "fim": 28.619
+ },
+ {
+  "palavra": "veio",
+  "inicio": 28.665,
+  "fim": 28.874
+ },
+ {
+  "palavra": "do",
+  "inicio": 28.909,
+  "fim": 28.967
+ },
+ {
+  "palavra": "espaço.",
+  "inicio": 29.002,
+  "fim": 29.617
+ },
+ {
+  "palavra": "E",
+  "inicio": 29.919,
+  "fim": 30
+ },
+ {
+  "palavra": "o",
+  "inicio": 30.07,
+  "fim": 30.093
+ },
+ {
+  "palavra": "mais",
+  "inicio": 30.151,
+  "fim": 30.36
+ },
+ {
+  "palavra": "estranho:",
+  "inicio": 30.43,
+  "fim": 31.092
+ },
+ {
+  "palavra": "hoje,",
+  "inicio": 31.394,
+  "fim": 31.777
+ },
+ {
+  "palavra": "milhares",
+  "inicio": 31.8,
+  "fim": 32.171
+ },
+ {
+  "palavra": "de",
+  "inicio": 32.195,
+  "fim": 32.253
+ },
+ {
+  "palavra": "pessoas",
+  "inicio": 32.299,
+  "fim": 32.705
+ },
+ {
+  "palavra": "moram",
+  "inicio": 32.775,
+  "fim": 33.17
+ },
+ {
+  "palavra": "dentro",
+  "inicio": 33.24,
+  "fim": 33.53
+ },
+ {
+  "palavra": "dela.",
+  "inicio": 33.588,
+  "fim": 34.11
+ },
+ {
+  "palavra": "Tem",
+  "inicio": 34.412,
+  "fim": 34.621
+ },
+ {
+  "palavra": "rua,",
+  "inicio": 34.691,
+  "fim": 35.236
+ },
+ {
+  "palavra": "tem",
+  "inicio": 35.306,
+  "fim": 35.48
+ },
+ {
+  "palavra": "casa,",
+  "inicio": 35.55,
+  "fim": 36.177
+ },
+ {
+  "palavra": "tem",
+  "inicio": 36.235,
+  "fim": 36.421
+ },
+ {
+  "palavra": "ônibus...",
+  "inicio": 36.525,
+  "fim": 37.315
+ },
+ {
+  "palavra": "tudo",
+  "inicio": 37.512,
+  "fim": 37.802
+ },
+ {
+  "palavra": "dentro",
+  "inicio": 37.86,
+  "fim": 38.081
+ },
+ {
+  "palavra": "de",
+  "inicio": 38.127,
+  "fim": 38.174
+ },
+ {
+  "palavra": "uma",
+  "inicio": 38.197,
+  "fim": 38.325
+ },
+ {
+  "palavra": "cratera!",
+  "inicio": 38.36,
+  "fim": 39.161
+ },
+ {
+  "palavra": "Por",
+  "inicio": 39.811,
+  "fim": 39.973
+ },
+ {
+  "palavra": "décadas,",
+  "inicio": 40.055,
+  "fim": 40.623
+ },
+ {
+  "palavra": "ninguém",
+  "inicio": 40.647,
+  "fim": 41.123
+ },
+ {
+  "palavra": "conseguia",
+  "inicio": 41.192,
+  "fim": 41.657
+ },
+ {
+  "palavra": "provar",
+  "inicio": 41.703,
+  "fim": 42.017
+ },
+ {
+  "palavra": "o",
+  "inicio": 42.051,
+  "fim": 42.075
+ },
+ {
+  "palavra": "que",
+  "inicio": 42.11,
+  "fim": 42.179
+ },
+ {
+  "palavra": "abriu",
+  "inicio": 42.214,
+  "fim": 42.446
+ },
+ {
+  "palavra": "aquele",
+  "inicio": 42.493,
+  "fim": 42.725
+ },
+ {
+  "palavra": "buraco.",
+  "inicio": 42.771,
+  "fim": 43.387
+ },
+ {
+  "palavra": "A",
+  "inicio": 43.747,
+  "fim": 43.816
+ },
+ {
+  "palavra": "prova",
+  "inicio": 43.897,
+  "fim": 44.153
+ },
+ {
+  "palavra": "estava",
+  "inicio": 44.176,
+  "fim": 44.478
+ },
+ {
+  "palavra": "no",
+  "inicio": 44.548,
+  "fim": 44.675
+ },
+ {
+  "palavra": "fundo:",
+  "inicio": 44.78,
+  "fim": 45.418
+ },
+ {
+  "palavra": "grãos",
+  "inicio": 45.674,
+  "fim": 45.952
+ },
+ {
+  "palavra": "de",
+  "inicio": 45.976,
+  "fim": 46.034
+ },
+ {
+  "palavra": "cristal",
+  "inicio": 46.069,
+  "fim": 46.44
+ },
+ {
+  "palavra": "esmagados",
+  "inicio": 46.498,
+  "fim": 47.079
+ },
+ {
+  "palavra": "por",
+  "inicio": 47.137,
+  "fim": 47.241
+ },
+ {
+  "palavra": "um",
+  "inicio": 47.264,
+  "fim": 47.31
+ },
+ {
+  "palavra": "impacto",
+  "inicio": 47.369,
+  "fim": 47.833
+ },
+ {
+  "palavra": "gigante.",
+  "inicio": 47.903,
+  "fim": 48.715
+ },
+ {
+  "palavra": "Mistério",
+  "inicio": 49.017,
+  "fim": 49.424
+ },
+ {
+  "palavra": "resolvido?",
+  "inicio": 49.458,
+  "fim": 50.329
+ },
+ {
+  "palavra": "Ainda",
+  "inicio": 50.735,
+  "fim": 51.177
+ },
+ {
+  "palavra": "não.",
+  "inicio": 51.246,
+  "fim": 51.606
+ },
+ {
+  "palavra": "Porque",
+  "inicio": 51.862,
+  "fim": 52.117
+ },
+ {
+  "palavra": "o",
+  "inicio": 52.152,
+  "fim": 52.175
+ },
+ {
+  "palavra": "sentido",
+  "inicio": 52.222,
+  "fim": 52.593
+ },
+ {
+  "palavra": "de",
+  "inicio": 52.628,
+  "fim": 52.686
+ },
+ {
+  "palavra": "perigo",
+  "inicio": 52.732,
+  "fim": 53.023
+ },
+ {
+  "palavra": "do",
+  "inicio": 53.069,
+  "fim": 53.115
+ },
+ {
+  "palavra": "Aracnildo",
+  "inicio": 53.139,
+  "fim": 53.684
+ },
+ {
+  "palavra": "disparou.",
+  "inicio": 53.754,
+  "fim": 54.404
+ },
+ {
+  "palavra": "No",
+  "inicio": 54.764,
+  "fim": 54.892
+ },
+ {
+  "palavra": "meio",
+  "inicio": 54.95,
+  "fim": 55.159
+ },
+ {
+  "palavra": "da",
+  "inicio": 55.205,
+  "fim": 55.298
+ },
+ {
+  "palavra": "lama,",
+  "inicio": 55.368,
+  "fim": 55.693
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 55.716,
+  "fim": 55.925
+ },
+ {
+  "palavra": "uma",
+  "inicio": 55.948,
+  "fim": 56.088
+ },
+ {
+  "palavra": "pedra",
+  "inicio": 56.157,
+  "fim": 56.471
+ },
+ {
+  "palavra": "brilhando...",
+  "inicio": 56.529,
+  "fim": 57.318
+ },
+ {
+  "palavra": "e",
+  "inicio": 57.574,
+  "fim": 57.678
+ },
+ {
+  "palavra": "ainda",
+  "inicio": 57.713,
+  "fim": 58.061
+ },
+ {
+  "palavra": "quente.",
+  "inicio": 58.119,
+  "fim": 58.7
+ },
+ {
+  "palavra": "Ela",
+  "inicio": 58.955,
+  "fim": 59.176
+ },
+ {
+  "palavra": "não",
+  "inicio": 59.257,
+  "fim": 59.466
+ },
+ {
+  "palavra": "é",
+  "inicio": 59.524,
+  "fim": 59.571
+ },
+ {
+  "palavra": "daqui.",
+  "inicio": 59.617,
+  "fim": 60.081
+ },
+ {
+  "palavra": "Segue",
+  "inicio": 60.279,
+  "fim": 60.557
+ },
+ {
+  "palavra": "pra",
+  "inicio": 60.604,
+  "fim": 60.697
+ },
+ {
+  "palavra": "ver",
+  "inicio": 60.732,
+  "fim": 60.848
+ },
+ {
+  "palavra": "a",
+  "inicio": 60.894,
+  "fim": 60.917
+ },
+ {
+  "palavra": "parte",
+  "inicio": 60.964,
+  "fim": 61.231
+ },
+ {
+  "palavra": "dois.",
+  "inicio": 61.277,
+  "fim": 61.858
+ }
+]

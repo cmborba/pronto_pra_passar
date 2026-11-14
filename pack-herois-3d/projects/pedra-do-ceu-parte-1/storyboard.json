@@ -1,0 +1,2674 @@
+{
+  "versao": 1,
+  "titulo": "O mistério da pedra que caiu do céu — parte 1",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 64.46,
+  "audio": "narracao.mp3",
+  "palavras": "palavras.json",
+  "legendas": {
+    "ativo": true,
+    "palavrasPorBloco": 1
+  },
+  "ambiente": {
+    "fundo": "cidade",
+    "horario": "madrugada",
+    "chao": "grama"
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 4.26,
+      "transicao": "fade",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predio",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -17,
+            0,
+            -3
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            17,
+            0,
+            -5
+          ],
+          "params": {
+            "floors": 4
+          }
+        },
+        {
+          "id": "meteoro",
+          "asset": "meteoro",
+          "pos": [
+            14,
+            62,
+            30
+          ],
+          "giro": 188,
+          "params": {
+            "raio": 1.1,
+            "cauda": 16,
+            "luz": false
+          },
+          "some": 3.36,
+          "anim": {
+            "pos": [
+              [
+                0.25,
+                [
+                  14,
+                  62,
+                  30
+                ]
+              ],
+              [
+                3.36,
+                [
+                  -12,
+                  13,
+                  -175
+                ]
+              ]
+            ],
+            "suave": false,
+            "giro": [
+              [
+                0,
+                -15
+              ]
+            ],
+            "eixo": "x"
+          }
+        },
+        {
+          "id": "clarao",
+          "asset": "forma",
+          "pos": [
+            -12,
+            14,
+            -178
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              34,
+              22,
+              10
+            ],
+            "cor": "#fff0c0",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "aparece": 3.36,
+          "anim": {
+            "escala": [
+              [
+                3.36,
+                0.2
+              ],
+              [
+                3.61,
+                1.5
+              ],
+              [
+                4.26,
+                0.5
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.6,
+            18.6,
+            1.5
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 0,
+              "ate": 1.2
+            },
+            {
+              "clip": "surprised",
+              "de": 1.2,
+              "ate": 4.26
+            }
+          ]
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 3.36,
+          "ate": 3.86,
+          "intensidade": 0.35
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.6,
+            20.3,
+            6.4
+          ],
+          "olha": [
+            -2,
+            27,
+            -30
+          ]
+        },
+        "para": {
+          "pos": [
+            0.2,
+            20.1,
+            5.2
+          ],
+          "olha": [
+            -3,
+            22.5,
+            -30
+          ]
+        },
+        "fov": 52
+      },
+      "textos": [
+        {
+          "texto": "PARTE 1/3",
+          "de": 0.15,
+          "ate": 4.26,
+          "estilo": "selo"
+        },
+        {
+          "texto": "O MISTÉRIO|DA *PEDRA* QUE|CAIU DO *CÉU*",
+          "de": 0.35,
+          "ate": 4.26,
+          "estilo": "manchete"
+        }
+      ]
+    },
+    {
+      "inicio": 4.26,
+      "fim": 6.57,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predio",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -17,
+            0,
+            -3
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            17,
+            0,
+            -5
+          ],
+          "params": {
+            "floors": 4
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.6,
+            18.6,
+            1.5
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 4.26,
+              "ate": 5.36,
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "point",
+              "de": 5.36,
+              "ate": 6.57
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            -1.6,
+            19.2,
+            0.4
+          ],
+          "destino": [
+            -1.6,
+            21.4,
+            0.2
+          ],
+          "taxa": 12,
+          "tamanho": 0.02,
+          "dispersao": 0.5,
+          "espalha": 0.5
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 4.26,
+          "ate": 6.57,
+          "para": 1.12
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "coruja",
+        "plano": "medio",
+        "angulo": 24,
+        "elevacao": 2,
+        "deriva": -14,
+        "aproxima": 0.8,
+        "fov": 42
+      }
+    },
+    {
+      "inicio": 6.57,
+      "fim": 9.1,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "asfalto"
+      },
+      "objetos": [
+        {
+          "id": "predio",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "floors": 6,
+            "wall": "#cfd6e6"
+          }
+        },
+        {
+          "id": "predioE",
+          "asset": "predio_apartamentos",
+          "variante": "rosa",
+          "pos": [
+            -17,
+            0,
+            -3
+          ],
+          "params": {
+            "floors": 5
+          }
+        },
+        {
+          "id": "predioD",
+          "asset": "predio_apartamentos",
+          "variante": "azul",
+          "pos": [
+            17,
+            0,
+            -5
+          ],
+          "params": {
+            "floors": 4
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            18.6,
+            3.1
+          ],
+          "giro": 0,
+          "anim": {
+            "pos": [
+              [
+                6.57,
+                [
+                  -0.9,
+                  18.6,
+                  3.1
+                ]
+              ],
+              [
+                7.32,
+                [
+                  -0.9,
+                  18.6,
+                  3.1
+                ]
+              ],
+              [
+                8.02,
+                [
+                  0.1,
+                  25.6,
+                  8.1
+                ]
+              ],
+              [
+                9.1,
+                [
+                  1.1,
+                  40.6,
+                  16.1
+                ]
+              ]
+            ],
+            "suave": true
+          },
+          "acoes": [
+            {
+              "clip": "lancar_gancho",
+              "de": 6.57,
+              "ate": 7.32,
+              "velocidade": 1.5,
+              "params": {
+                "alcance": 12
+              },
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "balancar",
+              "de": 7.32,
+              "ate": 9.1,
+              "params": {
+                "fio": 8
+              }
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.3,
+            19.07,
+            4.95
+          ],
+          "giro": 0,
+          "anim": {
+            "pos": [
+              [
+                6.57,
+                [
+                  1.3,
+                  19.07,
+                  4.95
+                ]
+              ],
+              [
+                7.47,
+                [
+                  1.3,
+                  19.07,
+                  4.95
+                ]
+              ],
+              [
+                8.17,
+                [
+                  1.5,
+                  25.27,
+                  9.95
+                ]
+              ],
+              [
+                9.1,
+                [
+                  1.9,
+                  40.07,
+                  17.95
+                ]
+              ]
+            ],
+            "suave": true
+          },
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 6.57,
+              "ate": 7.47,
+              "params": {
+                "seatHeight": 0.34
+              },
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "derrapar",
+              "de": 7.47,
+              "ate": 9.1,
+              "expressao": "surprised",
+              "suavizacao": 0.12
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            1.3,
+            19.5,
+            4.95
+          ],
+          "taxa": 40,
+          "tamanho": 0.2,
+          "vida": 0.6,
+          "de": 7.47,
+          "ate": 7.77
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            2.8,
+            20.7,
+            9.2
+          ],
+          "olha": [
+            0.3,
+            19.75,
+            3.8
+          ]
+        },
+        "para": {
+          "pos": [
+            3.2,
+            20.4,
+            10.5
+          ],
+          "olha": [
+            0.6,
+            23,
+            5
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 9.1,
+      "fim": 12.88,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            9.8,
+            63.4
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 9.1,
+              "ate": 10.6,
+              "para": [
+                -0.9,
+                60
+              ],
+              "clip": "walk"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 10.6,
+              "ate": 12.88
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.9,
+            9.8,
+            63.8
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 9.3,
+              "ate": 10.8,
+              "para": [
+                0.9,
+                60.2
+              ],
+              "clip": "walk"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 10.8,
+              "ate": 12.88
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            2.4,
+            11,
+            66.6
+          ],
+          "olha": [
+            0,
+            10.6,
+            60
+          ]
+        },
+        "para": {
+          "pos": [
+            5,
+            36,
+            92
+          ],
+          "olha": [
+            0,
+            0,
+            8
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 12.88,
+      "fim": 17.78,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "seta",
+          "direcao": "horizontal",
+          "pos": [
+            0.5,
+            0.5
+          ],
+          "tamanho": 0.8,
+          "cor": "#ffd60a",
+          "balanca": false,
+          "de": 14.6,
+          "ate": 17.78
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "≈ 3,6 km",
+          "tamanho": 1.7,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.5,
+            0.415
+          ],
+          "de": 15,
+          "ate": 17.78
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            0,
+            12,
+            0
+          ],
+          "destino": [
+            0,
+            40,
+            0
+          ],
+          "taxa": 14,
+          "tamanho": 0.5,
+          "dispersao": 40,
+          "espalha": 30
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 12.88,
+          "ate": 17.78,
+          "para": 1.08
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            120,
+            110
+          ],
+          "olha": [
+            0,
+            0,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            250,
+            10
+          ],
+          "olha": [
+            0,
+            0,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 17.78,
+      "fim": 21.61,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            9.8,
+            60
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 17.78,
+              "ate": 21.61
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.9,
+            9.8,
+            60.2
+          ],
+          "giro": 180,
+          "viraPara": [
+            {
+              "em": 19.38,
+              "alvo": "coruja"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 17.78,
+              "ate": 19.38
+            },
+            {
+              "clip": "cheer",
+              "de": 19.38,
+              "ate": 21.61,
+              "expressao": "happy"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "lampada",
+          "ancora": "aranha",
+          "alturaRel": 1.32,
+          "tamanho": 0.13,
+          "pulsa": true,
+          "de": 18.28,
+          "ate": 21.61
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.9,
+            11.25,
+            54.2
+          ],
+          "olha": [
+            0,
+            10.85,
+            60.1
+          ]
+        },
+        "para": {
+          "pos": [
+            0.5,
+            11.2,
+            55.2
+          ],
+          "olha": [
+            0.1,
+            10.9,
+            60.1
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 21.61,
+      "fim": 22.73,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            9.8,
+            60
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "shake_head",
+              "de": 21.61,
+              "ate": 22.73,
+              "velocidade": 1.4,
+              "suavizacao": 0.01
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.9,
+            9.8,
+            60.2
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 21.61,
+              "ate": 22.73,
+              "suavizacao": 0.01
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "x",
+          "pos": [
+            0.74,
+            0.3
+          ],
+          "tamanho": 0.2,
+          "de": 21.71,
+          "ate": 22.73
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 21.61,
+          "ate": 22.73,
+          "para": 1.1
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "coruja",
+        "plano": "medio",
+        "angulo": -16,
+        "elevacao": 2,
+        "fov": 40
+      }
+    },
+    {
+      "inicio": 22.73,
+      "fim": 25.86,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "campo",
+        "horario": "tarde",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "recente",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "progress": 0
+          },
+          "etapa": [
+            [
+              24.58,
+              0
+            ],
+            [
+              25.68,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "meteoro",
+          "asset": "meteoro",
+          "variante": "gigante",
+          "pos": [
+            8,
+            150,
+            150
+          ],
+          "giro": 183,
+          "some": 24.58,
+          "anim": {
+            "pos": [
+              [
+                22.73,
+                [
+                  8,
+                  150,
+                  150
+                ]
+              ],
+              [
+                24.58,
+                [
+                  0,
+                  3,
+                  0
+                ]
+              ]
+            ],
+            "suave": false,
+            "giro": [
+              [
+                0,
+                -45
+              ]
+            ],
+            "eixo": "x"
+          }
+        },
+        {
+          "id": "choque",
+          "asset": "anel_choque",
+          "pos": [
+            0,
+            0.2,
+            0
+          ],
+          "params": {
+            "raio": 130,
+            "progress": 0
+          },
+          "etapa": [
+            [
+              24.58,
+              0
+            ],
+            [
+              26.08,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "clarao",
+          "asset": "forma",
+          "pos": [
+            0,
+            6,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              40,
+              40,
+              40
+            ],
+            "cor": "#fff3c9",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "aparece": 24.58,
+          "some": 25.28,
+          "anim": {
+            "escala": [
+              [
+                24.58,
+                0.2
+              ],
+              [
+                24.93,
+                1.6
+              ],
+              [
+                25.28,
+                0.4
+              ]
+            ]
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 90,
+          "tamanho": 6,
+          "dispersao": 30,
+          "vida": 2.4,
+          "subida": 6,
+          "de": 24.58,
+          "ate": 25.86
+        },
+        {
+          "material": "pedra",
+          "origem": [
+            0,
+            3,
+            0
+          ],
+          "destino": [
+            0,
+            40,
+            60
+          ],
+          "taxa": 120,
+          "tamanho": 1.2,
+          "espalha": 50,
+          "arco": 30,
+          "de": 24.58,
+          "ate": 25.18
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 24.58,
+          "ate": 25.86,
+          "intensidade": 1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            46,
+            9,
+            185
+          ],
+          "olha": [
+            4,
+            48,
+            60
+          ]
+        },
+        "para": {
+          "pos": [
+            44,
+            12,
+            180
+          ],
+          "olha": [
+            0,
+            12,
+            0
+          ]
+        },
+        "fov": 52
+      },
+      "textos": [
+        {
+          "texto": "MILHÕES DE ANOS ATRÁS",
+          "de": 23.03,
+          "ate": 25.86,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 25.86,
+      "fim": 29.77,
+      "ambiente": {
+        "fundo": "campo",
+        "horario": "tarde",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "recente",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fumaca",
+          "origem": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 10,
+          "tamanho": 7,
+          "dispersao": 22,
+          "vida": 4,
+          "subida": 5
+        },
+        {
+          "material": "fogo",
+          "origem": [
+            0,
+            1,
+            0
+          ],
+          "taxa": 20,
+          "tamanho": 3.5,
+          "dispersao": 16,
+          "de": 25.86,
+          "ate": 27.86
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "CRATERA DE COLÔNIA · SÃO PAULO",
+          "tamanho": 1.2,
+          "ponto": "#ff8a2a",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 26.31,
+          "ate": 29.77
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            60,
+            16,
+            150
+          ],
+          "olha": [
+            0,
+            8,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            18,
+            110,
+            150
+          ],
+          "olha": [
+            0,
+            0,
+            0
+          ]
+        },
+        "fov": 52
+      }
+    },
+    {
+      "inicio": 29.77,
+      "fim": 34.26,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bus",
+          "asset": "onibus",
+          "pos": [
+            -34,
+            0.12,
+            0
+          ],
+          "giro": 90,
+          "escala": 0.5,
+          "movimentos": [
+            {
+              "de": 29.77,
+              "ate": 34.26,
+              "para": [
+                30,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "milhares de moradores",
+          "tamanho": 1.3,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.5,
+            0.22
+          ],
+          "de": 31.72,
+          "ate": 34.26
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            70,
+            140
+          ],
+          "olha": [
+            0,
+            0,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            9,
+            12,
+            44
+          ],
+          "olha": [
+            0,
+            1.5,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 34.26,
+      "fim": 39.49,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bus",
+          "asset": "onibus",
+          "variante": "azul",
+          "pos": [
+            0.2,
+            0.12,
+            -30
+          ],
+          "giro": 0,
+          "escala": 0.5,
+          "movimentos": [
+            {
+              "de": 34.26,
+              "ate": 39.09,
+              "para": [
+                0.2,
+                26
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carro",
+          "asset": "carro_hatch",
+          "variante": "amarelo",
+          "pos": [
+            -28,
+            0.12,
+            0.3
+          ],
+          "giro": 90,
+          "escala": 0.6,
+          "movimentos": [
+            {
+              "de": 34.86,
+              "ate": 39.49,
+              "para": [
+                26,
+                0.3
+              ]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "m1",
+          "preset": "mulher",
+          "pos": [
+            -0.9,
+            0.1,
+            6
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 34.26,
+              "ate": 39.49,
+              "para": [
+                -0.9,
+                12
+              ],
+              "clip": "walk"
+            }
+          ]
+        },
+        {
+          "id": "c1",
+          "preset": "crianca",
+          "pos": [
+            1.1,
+            0.1,
+            13.5
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 35.06,
+              "ate": 39.49,
+              "expressao": "happy"
+            }
+          ]
+        },
+        {
+          "id": "v1",
+          "preset": "velhinho",
+          "pos": [
+            -1.2,
+            0.1,
+            15.5
+          ],
+          "giro": 60,
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 34.26,
+              "ate": 39.49
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            1.4,
+            1.5,
+            19.5
+          ],
+          "olha": [
+            0,
+            1.3,
+            8
+          ]
+        },
+        "para": {
+          "pos": [
+            2.6,
+            9.5,
+            27
+          ],
+          "olha": [
+            0,
+            3,
+            -14
+          ]
+        },
+        "fov": 50
+      },
+      "textos": [
+        {
+          "texto": "DENTRO DA CRATERA!",
+          "de": 37.51,
+          "ate": 39.49,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 39.49,
+      "fim": 43.57,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "sonda",
+          "asset": "sonda",
+          "pos": [
+            -8,
+            0.06,
+            38.8
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "geo",
+          "preset": "engenheira",
+          "pos": [
+            -5.8,
+            0.06,
+            39.7
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "read_clipboard",
+              "de": 39.49,
+              "ate": 41.29
+            },
+            {
+              "clip": "think",
+              "de": 41.29,
+              "ate": 43.57
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            -8,
+            0.2,
+            38.8
+          ],
+          "taxa": 14,
+          "tamanho": 0.3,
+          "vida": 0.9
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "interrogacao",
+          "ancora": "geo",
+          "alturaRel": 1.3,
+          "tamanho": 0.13,
+          "pulsa": true,
+          "de": 40.49,
+          "ate": 43.57
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -4.6,
+            4,
+            46.6
+          ],
+          "olha": [
+            -7.1,
+            1.7,
+            39.2
+          ]
+        },
+        "para": {
+          "pos": [
+            -5,
+            3.7,
+            45.6
+          ],
+          "olha": [
+            -7,
+            1.7,
+            39.2
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 43.57,
+      "fim": 48.87,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "sonda",
+          "asset": "sonda",
+          "pos": [
+            -8,
+            0.06,
+            38.8
+          ],
+          "params": {
+            "progress": 0
+          },
+          "etapa": [
+            [
+              43.57,
+              0
+            ],
+            [
+              45.65,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "cristal",
+          "asset": "forma",
+          "pos": [
+            -7.3,
+            2.81,
+            39.2
+          ],
+          "params": {
+            "tipo": "cone",
+            "tamanho": [
+              0.16,
+              0.3,
+              0.16
+            ],
+            "cor": "#c79bff",
+            "brilho": true,
+            "emissivo": true,
+            "apoiada": true
+          },
+          "aparece": 45.65,
+          "anim": {
+            "gira": 140,
+            "pulsa": 0.08
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "geo",
+          "preset": "engenheira",
+          "pos": [
+            -5.8,
+            0.06,
+            39.7
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 45.65,
+              "ate": 46.85
+            },
+            {
+              "clip": "cheer",
+              "de": 46.85,
+              "ate": 48.87,
+              "expressao": "happy"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [
+            -8,
+            0.2,
+            38.8
+          ],
+          "taxa": 14,
+          "tamanho": 0.3,
+          "vida": 0.9,
+          "de": 43.57,
+          "ate": 45.65
+        },
+        {
+          "material": "luz",
+          "origem": [
+            -7.3,
+            2.81,
+            39.2
+          ],
+          "destino": [
+            -7.3,
+            3.71,
+            39.2
+          ],
+          "taxa": 20,
+          "tamanho": 0.02,
+          "dispersao": 0.15,
+          "espalha": 0.5,
+          "de": 45.65,
+          "ate": 48.87
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "lente",
+          "pos": [
+            0.5,
+            0.42
+          ],
+          "tamanho": 0.36,
+          "cor": "#c79bff",
+          "de": 46.15,
+          "ate": 48.87
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "zircão deformado = prova do impacto",
+          "tamanho": 1.02,
+          "ponto": "#c79bff",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 46.55,
+          "ate": 48.87
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -5,
+            3.7,
+            45.6
+          ],
+          "olha": [
+            -7,
+            1.7,
+            39.2
+          ]
+        },
+        "para": {
+          "pos": [
+            -6.3,
+            3.06,
+            40.9
+          ],
+          "olha": [
+            -7.3,
+            2.93,
+            39.2
+          ]
+        },
+        "fov": 44
+      }
+    },
+    {
+      "inicio": 48.87,
+      "fim": 51.73,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            9.8,
+            60
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 48.87,
+              "ate": 50.64,
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "shake_head",
+              "de": 50.64,
+              "ate": 51.73,
+              "velocidade": 1.3
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.9,
+            9.8,
+            60.2
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 48.87,
+              "ate": 50.64,
+              "expressao": "happy",
+              "suavizacao": 0.01
+            },
+            {
+              "clip": "shrug",
+              "de": 50.64,
+              "ate": 51.73
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -1,
+            11.2,
+            54.8
+          ],
+          "olha": [
+            0,
+            10.85,
+            60.1
+          ]
+        },
+        "para": {
+          "pos": [
+            -0.6,
+            11.15,
+            55.6
+          ],
+          "olha": [
+            0,
+            10.9,
+            60.1
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 51.73,
+      "fim": 54.58,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "mirante",
+          "asset": "forma",
+          "pos": [
+            0,
+            9.2,
+            61.5
+          ],
+          "params": {
+            "tamanho": [
+              7,
+              0.6,
+              6
+            ],
+            "cor": "#6f7a70"
+          }
+        },
+        {
+          "id": "luzverde",
+          "asset": "pedra_brilhante",
+          "pos": [
+            0.9,
+            8,
+            58.3
+          ],
+          "params": {
+            "tamanho": 0.3
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.9,
+            9.8,
+            60.2
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "sentir_perigo",
+              "de": 51.73,
+              "ate": 54.58,
+              "suavizacao": 0.01
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.9,
+            9.8,
+            60
+          ],
+          "giro": 180,
+          "viraPara": [
+            {
+              "em": 52.33,
+              "alvo": "aranha"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 52.33,
+              "ate": 54.58
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "exclamacao",
+          "ancora": "aranha",
+          "alturaRel": 1.28,
+          "dx": -0.14,
+          "tamanho": 0.11,
+          "pulsa": true,
+          "de": 52.03,
+          "ate": 54.58
+        },
+        {
+          "tipo": "icone",
+          "icone": "exclamacao",
+          "ancora": "aranha",
+          "alturaRel": 1.34,
+          "dx": 0.14,
+          "tamanho": 0.13,
+          "pulsa": true,
+          "de": 52.23,
+          "ate": 54.58
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 51.73,
+          "ate": 54.58,
+          "para": 1.22
+        },
+        {
+          "tipo": "tremor",
+          "de": 52.03,
+          "ate": 52.63,
+          "intensidade": 0.3
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "aranha",
+        "plano": "medio",
+        "angulo": 14,
+        "elevacao": 0,
+        "deriva": -10,
+        "fov": 40
+      }
+    },
+    {
+      "inicio": 54.58,
+      "fim": 58.83,
+      "transicao": "fade",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "lama",
+          "asset": "chao",
+          "variante": "terra",
+          "pos": [
+            0,
+            -0.2,
+            41
+          ],
+          "params": {
+            "size": 9,
+            "seed": 4
+          }
+        },
+        {
+          "id": "rocha",
+          "asset": "pedra_brilhante",
+          "pos": [
+            0,
+            0.02,
+            41
+          ],
+          "params": {
+            "tamanho": 0.45
+          },
+          "etapa": [
+            [
+              54.58,
+              0.45
+            ],
+            [
+              58.83,
+              1
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.3,
+            0.1,
+            46.5
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 54.58,
+              "ate": 56.78,
+              "para": [
+                -1.1,
+                43.6
+              ],
+              "clip": "walk"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 56.78,
+              "ate": 58.83
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1,
+            0.1,
+            47.6
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 55.08,
+              "ate": 57.38,
+              "para": [
+                0.9,
+                44.8
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 57.38,
+              "ate": 58.83,
+              "expressao": "worried"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            0,
+            0.52,
+            41
+          ],
+          "taxa": 6,
+          "tamanho": 0.045,
+          "vida": 1.4,
+          "subida": 1
+        },
+        {
+          "material": "fagulha",
+          "origem": [
+            0,
+            0.42,
+            41
+          ],
+          "destino": [
+            0.2,
+            1.62,
+            41.2
+          ],
+          "taxa": 10,
+          "espalha": 0.9,
+          "de": 57.37,
+          "ate": 58.83
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.7,
+            0.42,
+            36.6
+          ],
+          "olha": [
+            0,
+            0.75,
+            41.4
+          ]
+        },
+        "para": {
+          "pos": [
+            0.35,
+            0.4,
+            38.5
+          ],
+          "olha": [
+            0,
+            0.8,
+            41.8
+          ]
+        },
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "AINDA QUENTE?!",
+          "de": 57.57,
+          "ate": 58.83,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 58.83,
+      "fim": 60.18,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "lama",
+          "asset": "chao",
+          "variante": "terra",
+          "pos": [
+            0,
+            -0.2,
+            41
+          ],
+          "params": {
+            "size": 9,
+            "seed": 4
+          }
+        },
+        {
+          "id": "rocha",
+          "asset": "pedra_brilhante",
+          "pos": [
+            0,
+            0.02,
+            41
+          ],
+          "params": {
+            "tamanho": 0.45
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            0,
+            0.52,
+            41
+          ],
+          "taxa": 6,
+          "tamanho": 0.04,
+          "vida": 1.3,
+          "subida": 1
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 58.83,
+          "ate": 60.18,
+          "para": 1.18
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            2.3,
+            1.3,
+            37.6
+          ],
+          "olha": [
+            0,
+            0.3,
+            41
+          ]
+        },
+        "para": {
+          "pos": [
+            1.7,
+            1,
+            38.4
+          ],
+          "olha": [
+            0,
+            0.3,
+            41
+          ]
+        },
+        "fov": 34
+      },
+      "textos": [
+        {
+          "texto": "ELA NÃO É DAQUI",
+          "de": 58.96,
+          "ate": 60.18,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 60.18,
+      "fim": 64.46,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "madrugada",
+        "chao": "grama"
+      },
+      "objetos": [
+        {
+          "id": "cratera",
+          "asset": "cratera",
+          "variante": "colonia",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "lama",
+          "asset": "chao",
+          "variante": "terra",
+          "pos": [
+            0,
+            -0.2,
+            41
+          ],
+          "params": {
+            "size": 9,
+            "seed": 4
+          }
+        },
+        {
+          "id": "brilho",
+          "asset": "pedra_brilhante",
+          "pos": [
+            0,
+            -0.75,
+            41.9
+          ],
+          "params": {
+            "tamanho": 0.5
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.45,
+            0.1,
+            43
+          ],
+          "giro": 180,
+          "viraPara": [
+            {
+              "em": 60.18,
+              "alvo": [
+                0,
+                41
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 60.18,
+              "ate": 64.46,
+              "suavizacao": 0.01
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.5,
+            0.1,
+            43.15
+          ],
+          "giro": 180,
+          "viraPara": [
+            {
+              "em": 60.18,
+              "alvo": [
+                0,
+                41
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 60.18,
+              "ate": 64.46,
+              "suavizacao": 0.01,
+              "expressao": "worried"
+            },
+            {
+              "clip": "sentir_perigo",
+              "de": 61.78,
+              "ate": 64.46,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face"
+              ]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            0,
+            0.15,
+            41.6
+          ],
+          "destino": [
+            0,
+            1.6,
+            42.2
+          ],
+          "taxa": 16,
+          "tamanho": 0.018,
+          "dispersao": 0.3,
+          "espalha": 0.8
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 60.18,
+          "ate": 64.46,
+          "para": 1.1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.02,
+            0.3,
+            40.1
+          ],
+          "olha": [
+            0,
+            0.9,
+            43
+          ]
+        },
+        "para": {
+          "pos": [
+            0.02,
+            0.28,
+            40.6
+          ],
+          "olha": [
+            0,
+            0.95,
+            43
+          ]
+        },
+        "fov": 56
+      },
+      "textos": [
+        {
+          "texto": "CONTINUA…",
+          "de": 60.18,
+          "ate": 64.46,
+          "estilo": "selo"
+        },
+        {
+          "texto": "O que é essa pedra? 👇",
+          "de": 62.16,
+          "ate": 64.46,
+          "estilo": "rodape"
+        },
+        {
+          "texto": "SEGUE PRA|VER A|*PARTE 2*",
+          "de": 60.38,
+          "ate": 64.46,
+          "estilo": "manchete"
+        }
+      ]
+    }
+  ]
+}

@@ -34,6 +34,7 @@ export const CATEGORIES = {
   ceu: 'Céu e espaço (Lua, anéis)',
   fisica: 'Física (ondas sonoras, choque, vapor)',
   animais: 'Animais, natureza e cultura (boto, sonar, festa junina)',
+  espaco: 'Espaço e impactos (cratera, meteoro, pedra que brilha)',
 };
 
 export function register(id, def) {
@@ -76,9 +77,26 @@ export function rollWheels(vehicle, distance) {
   });
 }
 
+// Caixa do objeto (tamanho real). Peças marcadas com userData.foraDaCaixa (halos, brilhos, caudas de luz) não contam.
 export function sceneryBox(obj) {
   obj.updateMatrixWorld(true);
-  return new THREE.Box3().setFromObject(obj);
+  const caixa = new THREE.Box3();
+  const tmp = new THREE.Box3();
+  const visitar = (o) => {
+    if (o.userData.foraDaCaixa) return;
+    if (o.isMesh && o.geometry) {
+      if (!o.geometry.boundingBox) o.geometry.computeBoundingBox();
+      if (o.isInstancedMesh) {
+        tmp.setFromObject(o);
+      } else {
+        tmp.copy(o.geometry.boundingBox).applyMatrix4(o.matrixWorld);
+      }
+      caixa.union(tmp);
+    }
+    for (const f of o.children) visitar(f);
+  };
+  visitar(obj);
+  return caixa.isEmpty() ? new THREE.Box3().setFromObject(obj) : caixa;
 }
 
 // ---------- aleatório com semente (formas variadas mas reproduzíveis) ----------
@@ -218,6 +236,8 @@ export const SKIES = {
   nublado: { sky: '#c4cdd6', fog: 14, ground: '#8a9288', sun: '#e6ecf2', sunI: 1.2, hemi: 1.5 },
   // noite de desenho animado: azul-marinho, luar frio e forte o bastante para ler os personagens
   noite: { sky: '#1a2748', fog: 14, ground: '#232c46', sun: '#a9c0ff', sunI: 1.15, hemi: 0.75 },
+  // madrugada: noite mais escura (luzes, janelas e brilhos se destacam; bom para suspense)
+  madrugada: { sky: '#0f1730', fog: 14, ground: '#121a30', sun: '#8fa8ff', sunI: 0.5, hemi: 0.3 },
 };
 
 // Luz, sombra e céu padrão do kit (para todos os vídeos ficarem com a mesma cara).

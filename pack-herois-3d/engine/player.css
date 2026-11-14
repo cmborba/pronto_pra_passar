@@ -31,6 +31,21 @@ html, body { margin: 0; height: 100%; background: #111; overflow: hidden;
   box-shadow: 0 calc(var(--u) * 10) 0 rgba(0, 0, 0, .35); filter: none;
 }
 .texto.rodape { top: 74%; font-size: calc(var(--u) * 44); }
+/* manchete: título grande em bloco, alinhado à esquerda, com palavras em amarelo (*assim*) */
+.texto.manchete {
+  top: 13.5%; left: 6%; right: 6%; text-align: left; font-size: calc(var(--u) * 118); line-height: 1.02;
+  letter-spacing: calc(var(--u) * -1); -webkit-text-stroke: calc(var(--u) * 18) #000; transform-origin: left top;
+  filter: drop-shadow(0 calc(var(--u) * 8) 0 rgba(0, 0, 0, .55));
+}
+.texto.manchete .hl { color: #ffd60a; }
+/* selo: etiqueta amarela pequena (série, parte, quadro) */
+.texto.selo {
+  top: 8.2%; left: 6%; right: auto; text-align: left; font-size: calc(var(--u) * 56); color: #111; background: #ffd60a;
+  -webkit-text-stroke: 0; padding: calc(var(--u) * 10) calc(var(--u) * 24); border-radius: calc(var(--u) * 14);
+  box-shadow: 0 calc(var(--u) * 7) 0 rgba(0, 0, 0, .55); filter: none; transform-origin: left center;
+}
+.texto.selo.direita { left: auto; right: 6%; transform-origin: right center; }
+
 
 /* Elementos opcionais: setas, ícones e etiquetas */
 .elemento { position: absolute; display: none; align-items: center; justify-content: center; transform-origin: center; }

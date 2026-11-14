@@ -3443,6 +3443,151 @@
       "update": false,
       "wheels": false,
       "stages": null
+    },
+    {
+      "id": "cratera",
+      "category": "espaco",
+      "label": "Cratera de impacto",
+      "description": "Cratera redonda com borda elevada (anel de morros) e fundo plano. Com \"casas\" > 0 ganha um bairro inteiro dentro (casinhas com janelas acesas, ruas e postes), como a Cratera de Colônia, em São Paulo. setProgress(0..1) FORMA a cratera (a borda sobe). Vista de cima mostra o círculo perfeito.",
+      "sizeM": {
+        "x": 180,
+        "y": 9.4,
+        "z": 180
+      },
+      "meshes": 1,
+      "params": {
+        "raio": {
+          "default": 60,
+          "description": "raio até o topo da borda (m)"
+        },
+        "altura": {
+          "default": 8,
+          "description": "altura da borda (m)"
+        },
+        "casas": {
+          "default": 0,
+          "description": "quantas casinhas dentro (0 = cratera vazia)"
+        },
+        "cor": {
+          "default": "#3f7a48",
+          "description": "cor da borda (vegetação)"
+        },
+        "fundo": {
+          "default": "#5d7a4c",
+          "description": "cor do fundo"
+        },
+        "progress": {
+          "default": 1,
+          "description": "quanto a cratera já se formou 0..1"
+        }
+      },
+      "variants": [
+        "colonia",
+        "recente"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "meteoro",
+      "category": "espaco",
+      "label": "Meteoro (bola de fogo)",
+      "description": "Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás). Tremula sozinha e ilumina em volta. Mova com movimentos ou anim.pos; gire com \"giro\" e anim (eixo x) para descer inclinada.",
+      "sizeM": {
+        "x": 3.1,
+        "y": 3.1,
+        "z": 9.5
+      },
+      "meshes": 5,
+      "params": {
+        "raio": {
+          "default": 0.6,
+          "description": "raio do núcleo (m)"
+        },
+        "cauda": {
+          "default": 14,
+          "description": "comprimento da cauda (em raios)"
+        },
+        "cor": {
+          "default": "#ff8a2a",
+          "description": "cor do fogo"
+        },
+        "luz": {
+          "default": true,
+          "description": "ilumina o cenário em volta"
+        }
+      },
+      "variants": [
+        "verde",
+        "gigante"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "pedra_brilhante",
+      "category": "espaco",
+      "label": "Pedra que brilha (meteorito misterioso)",
+      "description": "Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta. setProgress(0..1) controla o brilho (0 = apagada).",
+      "sizeM": {
+        "x": 2,
+        "y": 1.6,
+        "z": 1.8
+      },
+      "meshes": 4,
+      "params": {
+        "tamanho": {
+          "default": 0.5,
+          "description": "raio aproximado (m)"
+        },
+        "cor": {
+          "default": "#5dffc8",
+          "description": "cor do brilho"
+        },
+        "progress": {
+          "default": 1,
+          "description": "brilho 0..1"
+        }
+      },
+      "variants": [
+        "laranja",
+        "grande"
+      ],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "sonda",
+      "category": "espaco",
+      "label": "Sonda de perfuração",
+      "description": "Tripé de perfuração geológica com broca girando sozinha. setProgress(0..1) faz subir o testemunho (o cilindro de rocha tirado do fundo), com camadas coloridas.",
+      "sizeM": {
+        "x": 2.9,
+        "y": 4.2,
+        "z": 2.6
+      },
+      "meshes": 12,
+      "params": {
+        "altura": {
+          "default": 4,
+          "description": "altura do tripé (m)"
+        },
+        "progress": {
+          "default": 0,
+          "description": "quanto do testemunho já subiu 0..1"
+        }
+      },
+      "variants": [],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
     }
   ],
   "expressions": [
@@ -3515,6 +3660,7 @@
         "L": "none"
       },
       "hero": null,
+      "contornoEspessura": 1,
       "acessorios": [],
       "stoop": 0
     }

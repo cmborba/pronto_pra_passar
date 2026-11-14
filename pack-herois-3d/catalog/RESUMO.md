@@ -183,3 +183,9 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 - `bandeirinhas` 10.2×0.2×3.9 m variantes: curto | params: comprimento=10, altura=3.6, cores=["#e5322d","#f2c94c","#2f80ed","#27ae60","#f2994a","#bb6bd9"] | gira sozinho: Varal de bandeirinhas coloridas entre dois postes (ao longo de X), balançando sozinho com o vento
 - `fogueira` 1.4×1.4×1.1 m variantes: grande | params: tamanho=1 | gira sozinho: Fogueira de toras cruzadas com brasa que pulsa sozinha
 - `chapeu_panama` 0.6×0.6×0.2 m variantes: palha | params: cor="#f4f1e8", fita="#1e1e1e", tamanho=1: Chapéu branco de aba com fita preta (o chapéu do moço da lenda do boto)
+
+### Espaço e impactos (cratera, meteoro, pedra que brilha)
+- `cratera` 180×180×9.4 m variantes: colonia, recente | params: raio=60, altura=8, casas=0, cor="#3f7a48", fundo="#5d7a4c", progress=1 | ETAPAS (etapa): Cratera redonda com borda elevada (anel de morros) e fundo plano
+- `meteoro` 3.1×9.5×3.1 m variantes: verde, gigante | params: raio=0.6, cauda=14, cor="#ff8a2a", luz=true | gira sozinho: Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás)
+- `pedra_brilhante` 2×1.8×1.6 m variantes: laranja, grande | params: tamanho=0.5, cor="#5dffc8", progress=1 | ETAPAS (etapa) | gira sozinho: Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta
+- `sonda` 2.9×2.6×4.2 m | params: altura=4, progress=0 | ETAPAS (etapa) | gira sozinho: Tripé de perfuração geológica com broca girando sozinha

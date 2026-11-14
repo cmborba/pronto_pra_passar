@@ -308,6 +308,15 @@ updateScenery(betoneira, t);                                  // tambor da beton
 | `fogueira` | Fogueira de toras cruzadas com brasa que pulsa sozinha. Junte um fluxo de "fogo" e de "fagulha" saindo do centro (y ~0,3). | 1.4 × 1.4 × 1.1 m | `tamanho` (1): escala | `grande` | tempo (`updateScenery`) |
 | `chapeu_panama` | Chapéu branco de aba com fita preta (o chapéu do moço da lenda do boto). Use anim.pos para tirá-lo da cabeça de um personagem. | 0.6 × 0.6 × 0.2 m | `cor` ("#f4f1e8"): cor do chapéu<br>`fita` ("#1e1e1e"): cor da fita<br>`tamanho` (1): escala | `palha` | — |
 
+### Espaço e impactos (cratera, meteoro, pedra que brilha)
+
+| id | o que é | tamanho (x × z × altura) | parâmetros | variantes | animação |
+|---|---|---|---|---|---|
+| `cratera` | Cratera redonda com borda elevada (anel de morros) e fundo plano. Com "casas" > 0 ganha um bairro inteiro dentro (casinhas com janelas acesas, ruas e postes), como a Cratera de Colônia, em São Paulo. setProgress(0..1) FORMA a cratera (a borda sobe). Vista de cima mostra o círculo perfeito. | 180 × 180 × 9.4 m | `raio` (60): raio até o topo da borda (m)<br>`altura` (8): altura da borda (m)<br>`casas` (0): quantas casinhas dentro (0 = cratera vazia)<br>`cor` ("#3f7a48"): cor da borda (vegetação)<br>`fundo` ("#5d7a4c"): cor do fundo<br>`progress` (1): quanto a cratera já se formou 0..1 | `colonia`, `recente` | etapas (`setProgress`) |
+| `meteoro` | Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás). Tremula sozinha e ilumina em volta. Mova com movimentos ou anim.pos; gire com "giro" e anim (eixo x) para descer inclinada. | 3.1 × 9.5 × 3.1 m | `raio` (0.6): raio do núcleo (m)<br>`cauda` (14): comprimento da cauda (em raios)<br>`cor` ("#ff8a2a"): cor do fogo<br>`luz` (true): ilumina o cenário em volta | `verde`, `gigante` | tempo (`updateScenery`) |
+| `pedra_brilhante` | Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta. setProgress(0..1) controla o brilho (0 = apagada). | 2 × 1.8 × 1.6 m | `tamanho` (0.5): raio aproximado (m)<br>`cor` ("#5dffc8"): cor do brilho<br>`progress` (1): brilho 0..1 | `laranja`, `grande` | etapas (`setProgress`), tempo (`updateScenery`) |
+| `sonda` | Tripé de perfuração geológica com broca girando sozinha. setProgress(0..1) faz subir o testemunho (o cilindro de rocha tirado do fundo), com camadas coloridas. | 2.9 × 2.6 × 4.2 m | `altura` (4): altura do tripé (m)<br>`progress` (0): quanto do testemunho já subiu 0..1 | — | etapas (`setProgress`), tempo (`updateScenery`) |
+
 - `rua_camadas` empilha, de baixo para cima: solo compactado (subleito) → sub-base de brita → base de brita graduada → asfalto base (binder) → capa de rolamento (asfalto).
 - `corte_terreno` empilha, de baixo para cima: rocha → argila → terra → grama.
 - `casa_obra`: fundação (0–0.1) → pilares (–0.25) → paredes de tijolo (–0.55) → laje (–0.65) → madeiramento (–0.82) → telhas (–1).

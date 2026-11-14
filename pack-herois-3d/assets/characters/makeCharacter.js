@@ -23,6 +23,7 @@ export const DEFAULT_CONFIG = {
   face: { brow: '#2b1d14', mustache: false, beard: false, glasses: false, facialHairColor: '#2b1d14' },
   held: { R: 'none', L: 'none' },                              // ver HELD_ITEMS
   hero: null,        // {mask, eyes, outline, accent, gloves, boots, simbolo, corSimbolo, lentes} ativa a estética heroica
+  contornoEspessura: 1, // multiplica a espessura do contorno de desenho (1,6 = traço grosso de cartoon)
   acessorios: [],    // peças extras: [{ tipo: 'capa', cor: '#...' }, ...] (ver acessorios.js)
   stoop: 0,         // graus de curvatura das costas em repouso (idosos ≈ 10)
 };
@@ -194,7 +195,7 @@ function acabamentoDesenho(root, faceRig, c) {
     const esc = new THREE.Vector3(1, 1, 1);
     for (let n = m; n && n !== root; n = n.parent) esc.multiply(n.scale);
     const s = (Math.abs(esc.x) + Math.abs(esc.y) + Math.abs(esc.z)) / 3;
-    const casca = new THREE.Mesh(m.geometry, matContorno(corContorno, CONTORNO_M / Math.max(1e-3, s)));
+    const casca = new THREE.Mesh(m.geometry, matContorno(corContorno, (CONTORNO_M * (c.contornoEspessura ?? 1)) / Math.max(1e-3, s)));
     casca.castShadow = false;
     casca.receiveShadow = false;
     casca.name = 'contorno';
