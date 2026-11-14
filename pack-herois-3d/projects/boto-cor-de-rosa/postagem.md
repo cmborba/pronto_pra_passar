@@ -38,3 +38,64 @@ render/capa.png (o boto saltando no ar, ~8,4 s).
 
 ## Observações
 - Narração com voz de IA: marque o aviso de conteúdo alterado ou sintético se a plataforma pedir.
+
+---
+
+# Instagram (Reels)
+
+## Legenda
+Ele não nasce rosa… e isso é só a primeira surpresa 🐬
+
+O boto-cor-de-rosa é o maior golfinho de rio do mundo (até 2,5 m)!
+🩶 Nasce cinza e vai ficando rosa com a idade
+🔄 Vira o pescoço 90°, coisa que golfinho do mar não faz
+🌳 Na cheia, nada no meio das árvores
+🔊 Na água barrenta, caça com sonar
+
+Mas em 2023 o Lago Tefé passou de 39 °C… e 209 botos e tucuxis morreram 💔
+Hoje ele está em perigo de extinção.
+
+E a lenda? Dizem que ele vira um moço de branco nas festas juninas 🎉
+
+Você já ouviu essa lenda? Comenta de que cidade você é 👇
+Salva e manda pra quem ama a Amazônia 💚
+
+#botocorderosa #amazonia #curiosidades #folclorebrasileiro #animais
+
+## Dicas
+- Capa do Reels: boto saltando (~8 s); texto opcional "ELE NÃO NASCE ROSA 🐬".
+- Rótulo "Feito com IA" se aparecer.
+
+# TikTok
+
+## Legenda
+O boto-cor-de-rosa nasce CINZA 🐬 E isso é só a primeira surpresa… até a lenda da festa junina 😳 #botocorderosa #amazonia #curiosidades #folclorebrasileiro #aprendanotiktok
+
+## Dicas
+- Capa: boto saltando com o texto "ELE NÃO NASCE ROSA?!".
+- Comentário fixado: "Você já ouviu a lenda do boto? Comenta de que cidade você é 🐬👇"
+- Ativar "Conteúdo gerado por IA"; sem música por cima (ou ~10%).
+
+# Facebook (Página, como Reels)
+
+## Descrição
+O animal raro que o Major Cometa achou na Amazônia 🐬
+
+O boto-cor-de-rosa é o maior golfinho de rio do mundo, chega a 2,5 metros! E tem cada curiosidade:
+
+🩶 Ele nasce cinza e vai ficando rosa com a idade (os machos são os mais rosados por causa das cicatrizes de briga)
+🔄 Vira o pescoço quase 90°, coisa que golfinho do mar não consegue
+🌳 Na cheia, a floresta inunda e ele nada no meio das árvores
+🔊 Como a água é barrenta, ele caça com sonar
+
+💔 Mas tem uma história real triste: na seca de 2023, a água do Lago Tefé, no Amazonas, passou de 39 °C e 209 botos e tucuxis morreram. Numa reserva do Amazonas, a população cai pela metade a cada 10 anos. Hoje ele está em perigo de extinção.
+
+🎉 E pensar que, na lenda, é ele que dá medo: dizem que vira um moço de branco nas festas juninas e usa chapéu pra esconder o furo de respirar!
+
+Você já ouviu essa lenda? Conta aqui de que cidade você é 👇
+Compartilha com quem ama a Amazônia 💚
+
+#botocorderosa #amazonia #folclorebrasileiro
+
+## Dicas
+- Subir o vídeo direto (Reels), não link do YouTube; responder os primeiros comentários; marcar conteúdo de IA se pedir.
