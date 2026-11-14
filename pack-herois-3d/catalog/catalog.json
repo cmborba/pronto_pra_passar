@@ -3228,6 +3228,221 @@
       "update": false,
       "wheels": false,
       "stages": null
+    },
+    {
+      "id": "boto",
+      "category": "animais",
+      "label": "Boto (golfinho de rio)",
+      "description": "Boto-cor-de-rosa da Amazônia: corpo rosado com brilho de pele molhada, testa redonda (melão), bico comprido, nadadeiras grandes e cauda que bate sozinha. Frente para +Z. setProgress(0..1) VIRA O PESCOÇO (0,5 = reto; 1 = 90° para a esquerda dele; 0 = 90° para a direita). Para nadar/saltar use movimentos ou anim (pos + giro no eixo x).",
+      "sizeM": {
+        "x": 1.5,
+        "y": 0.8,
+        "z": 3.3
+      },
+      "meshes": 17,
+      "params": {
+        "comprimento": {
+          "default": 2.4,
+          "description": "comprimento total (m); filhote ~0,9"
+        },
+        "cor": {
+          "default": "#ef9fb3",
+          "description": "cor das costas"
+        },
+        "barriga": {
+          "default": "#f8c9d4",
+          "description": "cor da barriga"
+        },
+        "cicatrizes": {
+          "default": false,
+          "description": "marcas de briga (machos mais rosados)"
+        },
+        "batida": {
+          "default": 1.2,
+          "description": "batidas da cauda por segundo"
+        },
+        "progress": {
+          "default": 0.5,
+          "description": "pescoço: 0,5 reto, 0/1 = 90° para cada lado"
+        }
+      },
+      "variants": [
+        "filhote",
+        "macho",
+        "cinza"
+      ],
+      "setProgress": true,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "sonar",
+      "category": "animais",
+      "label": "Ondas de sonar (ecolocalização)",
+      "description": "Cliques em arco saindo para a frente (+Z) e o eco voltando (amarelo), em ciclo. Para boto, morcego, submarino ou radar. Ponha na cabeça do animal (ou siga com a mesma anim/movimento).",
+      "sizeM": {
+        "x": 2.9,
+        "y": 2.9,
+        "z": 6.6
+      },
+      "meshes": 12,
+      "params": {
+        "alcance": {
+          "default": 3,
+          "description": "até onde vão os cliques (m)"
+        },
+        "cor": {
+          "default": "#8fe3ff",
+          "description": "cor dos cliques"
+        },
+        "eco": {
+          "default": true,
+          "description": "mostra o eco voltando"
+        },
+        "ritmo": {
+          "default": 1.4,
+          "description": "ciclos por segundo"
+        },
+        "altura": {
+          "default": 0.5,
+          "description": "altura do centro acima da base"
+        }
+      },
+      "variants": [
+        "radar"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "termometro",
+      "category": "animais",
+      "label": "Termômetro gigante",
+      "description": "Termômetro de vidro com bulbo e coluna vermelha. setProgress(0..1) SOBE a coluna (de \"minimo\" a \"maximo\" °C nas marcas). Bom para calor, febre, seca, aquecimento.",
+      "sizeM": {
+        "x": 0.6,
+        "y": 2.5,
+        "z": 0.5
+      },
+      "meshes": 13,
+      "params": {
+        "altura": {
+          "default": 2.4,
+          "description": "altura (m)"
+        },
+        "progress": {
+          "default": 0.5,
+          "description": "nível 0..1"
+        }
+      },
+      "variants": [
+        "pequeno"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "bandeirinhas",
+      "category": "animais",
+      "label": "Bandeirinhas de festa junina",
+      "description": "Varal de bandeirinhas coloridas entre dois postes (ao longo de X), balançando sozinho com o vento.",
+      "sizeM": {
+        "x": 10.2,
+        "y": 3.9,
+        "z": 0.2
+      },
+      "meshes": 27,
+      "params": {
+        "comprimento": {
+          "default": 10,
+          "description": "distância entre os postes (m)"
+        },
+        "altura": {
+          "default": 3.6,
+          "description": "altura do varal"
+        },
+        "cores": {
+          "default": [
+            "#e5322d",
+            "#f2c94c",
+            "#2f80ed",
+            "#27ae60",
+            "#f2994a",
+            "#bb6bd9"
+          ],
+          "description": "cores das bandeiras"
+        }
+      },
+      "variants": [
+        "curto"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "fogueira",
+      "category": "animais",
+      "label": "Fogueira",
+      "description": "Fogueira de toras cruzadas com brasa que pulsa sozinha. Junte um fluxo de \"fogo\" e de \"fagulha\" saindo do centro (y ~0,3).",
+      "sizeM": {
+        "x": 1.4,
+        "y": 1.1,
+        "z": 1.4
+      },
+      "meshes": 16,
+      "params": {
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        }
+      },
+      "variants": [
+        "grande"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "chapeu_panama",
+      "category": "animais",
+      "label": "Chapéu panamá",
+      "description": "Chapéu branco de aba com fita preta (o chapéu do moço da lenda do boto). Use anim.pos para tirá-lo da cabeça de um personagem.",
+      "sizeM": {
+        "x": 0.6,
+        "y": 0.2,
+        "z": 0.6
+      },
+      "meshes": 3,
+      "params": {
+        "cor": {
+          "default": "#f4f1e8",
+          "description": "cor do chapéu"
+        },
+        "fita": {
+          "default": "#1e1e1e",
+          "description": "cor da fita"
+        },
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        }
+      },
+      "variants": [
+        "palha"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
     }
   ],
   "expressions": [

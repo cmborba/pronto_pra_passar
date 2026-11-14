@@ -221,7 +221,8 @@ cenas.forEach((c, i) => {
 
   for (const el of c.elementos || []) {
     nElementos++;
-    if (!['seta', 'icone', 'etiqueta'].includes(el.tipo)) { E(`${P}: elemento com "tipo" inválido (seta, icone ou etiqueta).`); continue; }
+    if (!['seta', 'icone', 'etiqueta', 'lente'].includes(el.tipo)) { E(`${P}: elemento com "tipo" inválido (seta, icone, etiqueta ou lente).`); continue; }
+    if (el.tipo === 'lente') { if (el.pos && !(vec(el.pos, [2]) && el.pos.every((v) => v >= 0 && v <= 1))) E(`${P}: lente com "pos" inválida.`); continue; }
     if (el.tipo === 'seta' && el.direcao && !DIRS.includes(el.direcao)) E(`${P}: seta com direcao "${el.direcao}" inválida (${DIRS.join(', ')}).`);
     if (el.tipo === 'icone' && !ICONES.includes(el.icone)) E(`${P}: ícone "${el.icone}" não existe (${ICONES.join(', ')}).`);
     if (el.tipo === 'etiqueta' && !el.texto) E(`${P}: etiqueta sem "texto".`);

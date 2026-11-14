@@ -83,7 +83,7 @@ Expressões: neutral, happy, laugh, sad, angry, surprised, worried, thinking, sl
 - `major_cometa`: Voar → `voar`; Levantar peso → `levantar_peso`; Supervelocidade → `run` (velocidade 2.4); Visão de calor → `visao_calor`; Sopro congelante → `sopro_congelante`
 - `coruja_noturna`: Gancho → `lancar_gancho`; Planar → `planar`; Lutar → `lutar`; Lançar dispositivo → `lancar_dispositivo`; Fumaça → `soltar_fumaca`
 - `capitao_tampa`: Arremessar escudo → `arremessar_escudo`; Defender → `defender`; Correr → `run`; Saltar → `salto_heroico`; Lutar → `lutar`
-Os efeitos dos poderes vêm dos **acessórios** do herói e são animados pela própria pose (chaves `capa`, `fioR`, `fioL`, `feixe`, `sopro`, `escudo`, `nuvem`): quem não tem o acessório faz só o movimento. Acessórios: emblema, capa, cinto, capacete, tufos_coruja, olhos_extras, lancadores, fio, feixes_olhos, sopro, nuvem, escudo. Emblemas: raio, cometa, espiral, aranha_fofa, coruja, brilho.
+Os efeitos dos poderes vêm dos **acessórios** do herói e são animados pela própria pose (chaves `capa`, `fioR`, `fioL`, `feixe`, `sopro`, `escudo`, `nuvem`): quem não tem o acessório faz só o movimento. Acessórios: emblema, furo_boto, capa, cinto, capacete, tufos_coruja, olhos_extras, lancadores, fio, feixes_olhos, sopro, nuvem, escudo. Emblemas: raio, cometa, espiral, aranha_fofa, coruja, brilho.
 Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyframes [t,[x,y,z]], `suave: false` para trilhas densas). Herói novo: `criarHeroi({...})` em `assets/characters/presets.js`.
 
 ## Cenário (`asset`, `variante`, `params`)
@@ -175,3 +175,11 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 - `ondas_som` 6.1×6.1×6.1 m variantes: subsonico, supersonico | params: raio=3, ondas=7, altura=3, cor="#8fd3ff", progress=0.8 | ETAPAS (etapa) | gira sozinho: Frentes de onda do som emitidas por algo que anda para +Z (o diagrama clássico da aula de física, em 3D)
 - `cone_vapor` 2.7×3.3×2.6 m variantes: pequeno | params: comprimento=2.4, raio=1.1, altura=1.2, progress=1 | ETAPAS (etapa) | gira sozinho: Nuvem branca em forma de cone em volta de algo perto da velocidade do som (a umidade do ar condensa quando a pressão cai)
 - `anel_choque` 14.9×14.9×2.5 m variantes: pequeno | params: raio=20, cor="#ffffff", progress=0.4 | ETAPAS (etapa): Onda de choque que se espalha pelo chão a partir do centro (estrondo sônico, explosão, impacto)
+
+### Animais, natureza e cultura (boto, sonar, festa junina)
+- `boto` 1.5×3.3×0.8 m variantes: filhote, macho, cinza | params: comprimento=2.4, cor="#ef9fb3", barriga="#f8c9d4", cicatrizes=false, batida=1.2, progress=0.5 | ETAPAS (etapa) | gira sozinho: Boto-cor-de-rosa da Amazônia: corpo rosado com brilho de pele molhada, testa redonda (melão), bico comprido, nadadeiras grandes e cauda que bate sozinha
+- `sonar` 2.9×6.6×2.9 m variantes: radar | params: alcance=3, cor="#8fe3ff", eco=true, ritmo=1.4, altura=0.5 | gira sozinho: Cliques em arco saindo para a frente (+Z) e o eco voltando (amarelo), em ciclo
+- `termometro` 0.6×0.5×2.5 m variantes: pequeno | params: altura=2.4, progress=0.5 | ETAPAS (etapa): Termômetro de vidro com bulbo e coluna vermelha
+- `bandeirinhas` 10.2×0.2×3.9 m variantes: curto | params: comprimento=10, altura=3.6, cores=["#e5322d","#f2c94c","#2f80ed","#27ae60","#f2994a","#bb6bd9"] | gira sozinho: Varal de bandeirinhas coloridas entre dois postes (ao longo de X), balançando sozinho com o vento
+- `fogueira` 1.4×1.4×1.1 m variantes: grande | params: tamanho=1 | gira sozinho: Fogueira de toras cruzadas com brasa que pulsa sozinha
+- `chapeu_panama` 0.6×0.6×0.2 m variantes: palha | params: cor="#f4f1e8", fita="#1e1e1e", tamanho=1: Chapéu branco de aba com fita preta (o chapéu do moço da lenda do boto)

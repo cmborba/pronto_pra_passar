@@ -636,6 +636,27 @@ function criarElemento(e) {
     el.innerHTML = `<svg viewBox="0 0 100 100">${f ? f(e.cor) : ''}</svg>`;
   } else if (e.tipo === 'etiqueta') {
     el.innerHTML = `<span class="ponto" style="background:${e.ponto || '#ffd60a'}"></span><span>${e.texto}</span>`;
+  } else if (e.tipo === 'lente') {
+    // visão de super-herói / binóculo / mira: escurece fora de um círculo, anéis, marcas e um rótulo
+    const [cx, cy] = [(e.pos ? e.pos[0] : 0.5) * 1080, (e.pos ? e.pos[1] : 0.45) * 1920];
+    const r = (e.tamanho ?? 0.42) * 1080;
+    const cor = e.cor || '#7dd8ff';
+    const marcas = [0, 90, 180, 270].map((a) => {
+      const c = Math.cos((a * Math.PI) / 180);
+      const s2 = Math.sin((a * Math.PI) / 180);
+      return `<line x1="${cx + c * r * 0.82}" y1="${cy + s2 * r * 0.82}" x2="${cx + c * r * 0.96}" y2="${cy + s2 * r * 0.96}" stroke="${cor}" stroke-width="7" stroke-linecap="round"/>`;
+    }).join('');
+    el.innerHTML = `<svg viewBox="0 0 1080 1920" preserveAspectRatio="none" style="filter:none">
+      <defs><mask id="furo${cx}${cy}"><rect width="1080" height="1920" fill="#fff"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="#000"/></mask>
+      <radialGradient id="borda${cx}${cy}" cx="${cx}" cy="${cy}" r="${r}" gradientUnits="userSpaceOnUse"><stop offset="0.82" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#001a2a" stop-opacity="0.55"/></radialGradient></defs>
+      <rect width="1080" height="1920" fill="#02111c" fill-opacity="0.78" mask="url(#furo${cx}${cy})"/>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#borda${cx}${cy})"/>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${cor}" stroke-width="9"/>
+      <circle cx="${cx}" cy="${cy}" r="${r * 0.7}" fill="none" stroke="${cor}" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="14 18"/>
+      ${marcas}
+      <circle cx="${cx}" cy="${cy}" r="9" fill="${cor}"/>
+      ${e.texto ? `<text x="${cx}" y="${cy + r + 70}" text-anchor="middle" font-size="52" font-weight="900" fill="${cor}" stroke="#001a2a" stroke-width="8" paint-order="stroke" ${fonteSvg}>${e.texto}</text>` : ''}
+    </svg>`;
   }
   el.style.display = 'none';
   document.getElementById('elementos').appendChild(el);
@@ -1162,6 +1183,16 @@ window.renderAt = (t) => {
       const b = Math.sin(t * 8) * 0.014 * W;
       ox = o.dirSeta[0] * b;
       oy = o.dirSeta[1] * b;
+    }
+    if (e.tipo === 'lente') {
+      // cobre a tela inteira; entra fechando (zoom do anel)
+      o.el.style.width = `${W}px`;
+      o.el.style.height = `${H}px`;
+      o.el.style.left = `${W / 2}px`;
+      o.el.style.top = `${H / 2}px`;
+      o.el.style.transform = `translate(-50%, -50%) scale(${1 + 0.6 * (1 - smooth(k))})`;
+      o.el.style.opacity = String(Math.min(k * 2, sai));
+      continue;
     }
     const larg = (e.tamanho ?? (e.tipo === 'etiqueta' ? 1 : 0.22)) * W;
     if (e.tipo === 'etiqueta') { o.el.style.fontSize = `${(e.tamanho ?? 1) * 40 * (H / 1920)}px`; o.el.style.width = 'auto'; }

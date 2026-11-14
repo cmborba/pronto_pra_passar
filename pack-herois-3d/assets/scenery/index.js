@@ -12,6 +12,7 @@ import './herois.js';
 import './agua.js';
 import './ceu.js';
 import './fisica.js';
+import './animais.js';
 
 export {
   SCENERY, CATEGORIES, PAL, SKIES, makeScenery, setProgress, updateScenery, rollWheels, sceneryBox, setupEnvironment,

@@ -33,6 +33,7 @@ export const CATEGORIES = {
   agua: 'Água (nível subindo, ondas)',
   ceu: 'Céu e espaço (Lua, anéis)',
   fisica: 'Física (ondas sonoras, choque, vapor)',
+  animais: 'Animais, natureza e cultura (boto, sonar, festa junina)',
 };
 
 export function register(id, def) {

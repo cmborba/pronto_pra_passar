@@ -124,6 +124,14 @@ registrarAcessorio('emblema', ({ joints }, o) => {
   joints[o.junta || 'chest'].add(m);
 });
 
+// FURO DE RESPIRAR no alto da cabeça (lenda do boto: o chapéu esconde o espiráculo)
+registrarAcessorio('furo_boto', ({ head }, o) => {
+  const { cy, ry } = DIMS.head;
+  const furo = mesh(new THREE.SphereGeometry(1, 16, 10), o.cor || '#2a1b22', { pos: [0, cy + ry * 0.985, -0.01], scale: [0.05, 0.012, 0.035], parent: head });
+  const borda = mesh(new THREE.TorusGeometry(0.055, 0.012, 6, 20), o.borda || '#c98a8f', { pos: [0, cy + ry * 0.975, -0.01], rot: [Math.PI / 2, 0, 0], scale: [1, 0.7, 1], parent: head });
+  marcar(furo); marcar(borda);
+});
+
 // CAPA: três painéis finos articulados presos nas costas (ondulam em cadeia).
 // Pose: capa: [abertura°, tremulação, envergadura 0..1]. formato: 'reta' (padrão) ou 'asa' (planar).
 registrarAcessorio('capa', ({ joints, c }, o) => {

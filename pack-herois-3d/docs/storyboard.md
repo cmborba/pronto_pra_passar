@@ -200,7 +200,7 @@ Só use **quando o vídeo exigir** (mostrar direção ou força, contrastar cert
 
 | Campo | O que faz |
 |---|---|
-| `tipo` | `seta` (azul, contorno preto), `icone` (cartoon com contorno preto), `etiqueta` (pílula branca com bolinha colorida, para rótulos e dados) |
+| `tipo` | `seta` (azul, contorno preto), `icone` (cartoon com contorno preto), `etiqueta` (pílula branca com bolinha colorida, para rótulos e dados), `lente` (visão de super-herói/binóculo: escurece fora de um círculo com anéis e mira; `pos` = centro, `tamanho` = raio em fração da largura, `texto` = rótulo embaixo, ex.: "SUPERVISÃO ×40"; entra com zoom) |
 | `direcao` (seta) | `direita`, `esquerda`, `cima`, `baixo`, `horizontal` (dupla), `vertical` (dupla) |
 | `icone` | `x` (vermelho: errado), `v` (verde: certo), `alerta`, `interrogacao`, `exclamacao`, `coracao`, `estrela`, `lampada`, `relogio`, `dinheiro`, `fogo`, `proibido`, `raio` |
 | `pos` | `[x, y]` em fração da tela (0 a 1); por exemplo `[0.5, 0.4]` é o centro, um pouco acima do meio |
