@@ -177,8 +177,8 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 - `anel_choque` 14.9×14.9×2.5 m variantes: pequeno | params: raio=20, cor="#ffffff", progress=0.4 | ETAPAS (etapa): Onda de choque que se espalha pelo chão a partir do centro (estrondo sônico, explosão, impacto)
 
 ### Animais, natureza e cultura (boto, sonar, festa junina)
-- `boto` 1.5×3.3×0.8 m variantes: filhote, macho, cinza | params: comprimento=2.4, cor="#ef9fb3", barriga="#f8c9d4", cicatrizes=false, batida=1.2, progress=0.5 | ETAPAS (etapa) | gira sozinho: Boto-cor-de-rosa da Amazônia: corpo rosado com brilho de pele molhada, testa redonda (melão), bico comprido, nadadeiras grandes e cauda que bate sozinha
-- `sonar` 2.9×6.6×2.9 m variantes: radar | params: alcance=3, cor="#8fe3ff", eco=true, ritmo=1.4, altura=0.5 | gira sozinho: Cliques em arco saindo para a frente (+Z) e o eco voltando (amarelo), em ciclo
+- `boto` 1.5×3×0.7 m variantes: filhote, macho, cinza | params: comprimento=2.4, cor="#ef9fb3", barriga="#f8c9d4", cicatrizes=false, batida=1.2, progress=0.5 | ETAPAS (etapa) | gira sozinho: Boto-cor-de-rosa da Amazônia: corpo rosado com brilho de pele molhada, testa redonda (melão), bico comprido, nadadeiras grandes e cauda que bate sozinha
+- `sonar` 2.9×3.3×2.9 m variantes: radar | params: alcance=3, cor="#8fe3ff", eco=true, ritmo=1.4, altura=3.1 | gira sozinho: Cliques em arco saindo para a frente (+Z) e o eco voltando (amarelo), em ciclo
 - `termometro` 0.6×0.5×2.5 m variantes: pequeno | params: altura=2.4, progress=0.5 | ETAPAS (etapa): Termômetro de vidro com bulbo e coluna vermelha
 - `bandeirinhas` 10.2×0.2×3.9 m variantes: curto | params: comprimento=10, altura=3.6, cores=["#e5322d","#f2c94c","#2f80ed","#27ae60","#f2994a","#bb6bd9"] | gira sozinho: Varal de bandeirinhas coloridas entre dois postes (ao longo de X), balançando sozinho com o vento
 - `fogueira` 1.4×1.4×1.1 m variantes: grande | params: tamanho=1 | gira sozinho: Fogueira de toras cruzadas com brasa que pulsa sozinha

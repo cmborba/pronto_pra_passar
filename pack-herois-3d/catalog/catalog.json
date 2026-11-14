@@ -3236,10 +3236,10 @@
       "description": "Boto-cor-de-rosa da Amazônia: corpo rosado com brilho de pele molhada, testa redonda (melão), bico comprido, nadadeiras grandes e cauda que bate sozinha. Frente para +Z. setProgress(0..1) VIRA O PESCOÇO (0,5 = reto; 1 = 90° para a esquerda dele; 0 = 90° para a direita). Para nadar/saltar use movimentos ou anim (pos + giro no eixo x).",
       "sizeM": {
         "x": 1.5,
-        "y": 0.8,
-        "z": 3.3
+        "y": 0.7,
+        "z": 3
       },
-      "meshes": 17,
+      "meshes": 15,
       "params": {
         "comprimento": {
           "default": 2.4,
@@ -3284,7 +3284,7 @@
       "sizeM": {
         "x": 2.9,
         "y": 2.9,
-        "z": 6.6
+        "z": 3.3
       },
       "meshes": 12,
       "params": {
@@ -3305,8 +3305,8 @@
           "description": "ciclos por segundo"
         },
         "altura": {
-          "default": 0.5,
-          "description": "altura do centro acima da base"
+          "default": 3.1,
+          "description": "altura do centro acima da base (no animal, use a altura da cabeça)"
         }
       },
       "variants": [
