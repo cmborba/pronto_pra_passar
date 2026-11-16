@@ -35,6 +35,7 @@ export const CATEGORIES = {
   fisica: 'Física (ondas sonoras, choque, vapor)',
   animais: 'Animais, natureza e cultura (boto, sonar, festa junina)',
   espaco: 'Espaço e impactos (cratera, meteoro, pedra que brilha)',
+  golpe: 'Golpes, dinheiro, escritório e polícia (extrato, cofre, placa, viatura)',
 };
 
 export function register(id, def) {

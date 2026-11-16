@@ -5,7 +5,7 @@
 
 ## Motor: o que o storyboard sabe fazer (detalhes em docs/storyboard.md e docs/processos.md)
 - **Fundos reais (sempre um):** campo, cidade, floresta, deserto, litoral, industrial, interior. Chão: grama, terra, areia, concreto, asfalto, madeira, piso. Clima: limpo, chuva. Horário: dia, tarde, nublado.
-- **fluxos** (partículas do processo), materiais: pedra, brita, areia, terra, concreto, asfalto, agua, fumaca, vapor, poeira, ar, bolha, neve, eletricidade, luz, fagulha, fogo. Origem/destino por ponto ou `ancora`; `caminho` para canos/fios.
+- **fluxos** (partículas do processo), materiais: pedra, brita, areia, terra, concreto, asfalto, agua, fumaca, vapor, poeira, ar, bolha, neve, eletricidade, luz, fagulha, fogo, moeda, nota, papel. Origem/destino por ponto ou `ancora`; `caminho` para canos/fios.
 - **rastros** (faixa atrás de máquina), **anim** (pos/giro/gira/escala/oscila/pulsa), **opacidade**, **etapa**, **aparece/some**, **movimentos**, **viraPara**.
 - **elementos** (seta, icone, etiqueta), **efeitos** (pretoebranco, zoom, tremor) e **textos** (titulo, destaque, pergunta).
 
@@ -186,6 +186,21 @@ Voo, balanço, planar e arco de salto: mova o personagem com `anim.pos` (keyfram
 
 ### Espaço e impactos (cratera, meteoro, pedra que brilha)
 - `cratera` 180×180×9.4 m variantes: colonia, recente | params: raio=60, altura=8, casas=0, cor="#3f7a48", fundo="#5d7a4c", progress=1 | ETAPAS (etapa): Cratera redonda com borda elevada (anel de morros) e fundo plano
-- `meteoro` 3.1×9.5×3.1 m variantes: verde, gigante | params: raio=0.6, cauda=14, cor="#ff8a2a", luz=true | gira sozinho: Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás)
-- `pedra_brilhante` 2×1.8×1.6 m variantes: laranja, grande | params: tamanho=0.5, cor="#5dffc8", progress=1 | ETAPAS (etapa) | gira sozinho: Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta
+- `meteoro` 1.2×1.2×1.2 m variantes: verde, gigante | params: raio=0.6, cauda=14, cor="#ff8a2a", luz=true | gira sozinho: Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás)
+- `pedra_brilhante` 1.4×1.4×1.1 m variantes: laranja, grande | params: tamanho=0.5, cor="#5dffc8", progress=1 | ETAPAS (etapa) | gira sozinho: Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta
 - `sonda` 2.9×2.6×4.2 m | params: altura=4, progress=0 | ETAPAS (etapa) | gira sozinho: Tripé de perfuração geológica com broca girando sozinha
+
+### Golpes, dinheiro, escritório e polícia (extrato, cofre, placa, viatura)
+- `bengala` 0.2×0.1×1 m variantes: escura | params: altura=0.9, cor="#7a4a26": Bengala de madeira com cabo curvo
+- `guarda_chuva` 0.2×0.1×1.1 m variantes: azul, xadrez, aberto | params: cor="#e5322d", comprimento=0.95, progress=0 | ETAPAS (etapa): Guarda-chuva de cabo em J
+- `bolsa` 0.4×0.2×0.4 m variantes: marrom, preta | params: cor="#b23a5a", tamanho=1: Bolsa de senhora com alça e fecho dourado
+- `carteira` 0.2×0.1×0 m variantes: grande | params: cor="#6b4423", tamanho=1: Carteira de couro com notas aparecendo
+- `celular` 0.1×0×0.2 m variantes: gigante | params: tamanho=1, tela="#d9fdd3", texto="Vó, troquei de número": Celular com tela acesa (bolha de mensagem)
+- `extrato` 2.5×0.1×3.8 m variantes: vazio | params: largura=2.4, altura=3.2, titulo="EXTRATO DO BENEFÍCIO", linhas=["Aposentadoria ........ + R$ 1.518,00","Empréstimo ........... − R$ 120,00","MENSALIDADE ASSOCIATIVA − R$ 45,00","Saldo ................ R$ 1.353,00"], destaque=2, progress=1 | ETAPAS (etapa): Painel grande de extrato (papel em pé num suporte), com título, linhas de lançamento e UMA linha em destaque vermelho
+- `placa` 3×0.1×2.4 m variantes: reu, inss | params: texto="ASSOCIAÇÃO", sub="", largura=3, altura=1, fundo="#1f4e9c", cor="#ffffff", poste=true, alturaPoste=1.4: Placa retangular com texto (e subtítulo), em dois postes ou solta (poste:false, para segurar à frente do peito ou pendurar)
+- `cofre` 1.4×2.6×1.3 m variantes: cheio, vazio | params: tamanho=1.3, cor="#59606b", porta=0.75, progress=0.5 | ETAPAS (etapa): Cofre de aço com porta aberta e pilhas de moedas/notas lá dentro
+- `pilha_papeis` 0.7×0.6×0.6 m variantes: alta | params: largura=0.6, progress=0.6 | ETAPAS (etapa): Pilha de documentos/formulários sobre a base (y=0)
+- `carimbo` 0.1×0.1×0.2 m variantes: grande | params: tamanho=1, cor="#c81e1e": Carimbo de madeira com base de borracha vermelha
+- `mesa` 1.8×0.9×0.8 m variantes: escura, branca | params: largura=1.8, profundidade=0.9, cor="#a9743f": Mesa de escritório de madeira com tampo a 0,76 m (ponha objetos em cima com y=0,78)
+- `viatura` 2.2×4.6×1.8 m variantes: parada | params: texto="POLÍCIA FEDERAL", faixa="#1f4e9c", sirene=true | gira sozinho | rodas giram ao mover: Viatura branca com faixa azul, texto na lateral e giroflex que pisca sozinho (vermelho/azul)
+- `saco_lixo` 0.8×0.7×1.1 m variantes: aberto | params: tamanho=1, progress=0 | ETAPAS (etapa): Saco de lixo preto amarrado

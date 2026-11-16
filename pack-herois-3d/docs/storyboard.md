@@ -166,7 +166,7 @@ Receitas prontas e o vocabulário completo estão em **`docs/processos.md`**. Aq
 "fluxos": [{ "material": "pedra", "origem": { "ancora": "cam", "desloca": [0,1.6,-4.6] }, "destino": [-5,0.5,0],
              "taxa": 45, "de": 28, "ate": 30.5, "dispersao": 0.3, "espalha": 0.6 }]
 ```
-- `material`: `pedra`, `brita`, `areia`, `terra`, `concreto`, `asfalto`, `agua`, `fumaca`, `vapor`, `poeira`, `fogo`, `fagulha`, `ar`, `bolha`, `neve`, `eletricidade`, `luz`.
+- `material`: `pedra`, `brita`, `areia`, `terra`, `concreto`, `asfalto`, `agua`, `fumaca`, `vapor`, `poeira`, `fogo`, `fagulha`, `ar`, `bolha`, `neve`, `eletricidade`, `luz`, `moeda`, `nota`, `papel` (dinheiro e papelada).
 - `origem`/`destino`: `[x,y,z]` no mundo **ou** `{ "ancora": "id", "desloca": [dx,dy,dz] }` (segue o objeto/personagem e gira junto com ele; `desloca` é relativo ao centro da base do objeto).
 - `caminho`: lista de pontos `[x,y,z]` (no lugar de origem/destino) para o fluxo **percorrer um cano, fio ou veia**; `velocidade` em m/s.
 - Opcionais: `taxa` (partículas/s), `tamanho`, `dispersao` (espalhamento na origem), `espalha` (no destino), `vida` (s), `arco` (curva do jato), `subida`/`vento` (fumaça, vapor).
@@ -182,7 +182,7 @@ O objeto seguido precisa ter `movimentos` (a faixa vai do ponto inicial até ond
 ```json
 "anim": { "pos": [[0,[0,3,0]],[4,[0,0.5,0]]], "gira": 90, "eixo": "z", "oscila": { "eixo": "y", "amp": 0.4, "freq": 0.5 }, "escala": [[0,1],[3,1.4]], "pulsa": 0.05 }
 ```
-`pos` (keyframes `[tempo,[x,y,z]]`, suaves), `giro` (keyframes em graus), `gira` (graus/s contínuo), `eixo` (`x`,`y`,`z` do giro), `escala` (keyframes), `oscila`, `pulsa`.
+`pos` (keyframes `[tempo,[x,y,z]]`, suaves), `giro` (keyframes em graus), `gira` (graus/s contínuo), `eixo` (`x`,`y`,`z` do giro), `escala` (keyframes), `oscila`, `pulsa`. `opacidade` (keyframes `[tempo, 0..1]`, vale para objetos e personagens: invisibilidade, fantasma, sumir aos poucos).
 
 **`opacidade`** (0 a 1, em qualquer objeto) — deixa transparente para ver por dentro (tubos, máquinas, tanques).
 

@@ -1,144 +1,7457 @@
 {
   "versao": 1,
-  "titulo": "Quer roubar um aposentado",
+  "titulo": "Não roube um aposentado sem ver esse vídeo",
   "formato": {
     "largura": 1080,
     "altura": 1920,
     "fps": 30
   },
-  "duracao": 10,
-  "audio": "narracao.wav",
+  "duracao": 91.53,
+  "audio": "narracao.mp3",
   "palavras": "palavras.json",
   "legendas": {
     "ativo": true,
-    "palavrasPorBloco": 3
+    "palavrasPorBloco": 1
   },
   "ambiente": {
+    "fundo": "cidade",
     "horario": "dia",
-    "chao": "grama"
+    "chao": "concreto"
   },
   "cenas": [
     {
       "inicio": 0,
-      "fim": 5,
+      "fim": 2.17,
+      "transicao": "fade",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
       "objetos": [
         {
           "id": "casa",
           "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            2.8,
+            0,
+            0.6
+          ],
+          "giro": -90,
+          "movimentos": [
+            {
+              "de": 0,
+              "ate": 2.17,
+              "para": [
+                0.6,
+                0.6
+              ],
+              "clip": "walk",
+              "velocidade": 0.8
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.25,
+            0,
+            0.75
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "sentir_perigo",
+              "de": 0,
+              "ate": 2.17
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -5.2,
+            0,
+            -1.2
+          ],
+          "giro": 70,
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 0,
+              "ate": 2.17
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -6.6,
+            0,
+            -2.4
+          ],
+          "giro": 60,
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 0,
+              "ate": 2.17
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.5,
+            1,
+            8.6
+          ],
+          "olha": [
+            -2.6,
+            0.6,
+            -0.6
+          ]
+        },
+        "para": {
+          "pos": [
+            -0.4,
+            1,
+            7.4
+          ],
+          "olha": [
+            -2.4,
+            0.6,
+            -0.6
+          ]
+        },
+        "fov": 50
+      },
+      "textos": [
+        {
+          "texto": "⚠️ TUTORIAL PROIBIDO",
+          "de": 0.1,
+          "ate": 2.17,
+          "estilo": "selo"
+        },
+        {
+          "texto": "NÃO *ROUBE*|UM *APOSENTADO*|SEM VER ISSO",
+          "de": 0.2,
+          "ate": 2.17,
+          "estilo": "manchete"
+        }
+      ]
+    },
+    {
+      "inicio": 2.17,
+      "fim": 4.25,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.25,
+            0,
+            0.75
+          ],
+          "giro": 30,
+          "acoes": [
+            {
+              "clip": "heroi_pose",
+              "de": 2.17,
+              "ate": 4.25
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            -3.25,
+            1.1,
+            0.75
+          ],
+          "destino": [
+            -3.25,
+            2.6,
+            0.75
+          ],
+          "taxa": 14,
+          "tamanho": 0.03,
+          "espalha": 0.7
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "aranha",
+        "plano": "medio",
+        "angulo": -25,
+        "deriva": 40,
+        "elevacao": -4,
+        "fov": 44
+      },
+      "textos": [
+        {
+          "texto": "DICA 1",
+          "de": 2.17,
+          "ate": 4.25,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 4.25,
+      "fim": 6.72,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.25,
+            0,
+            0.75
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 4.25,
+              "ate": 5.49,
+              "suavizacao": 0.05
+            },
+            {
+              "clip": "lancar_teia",
+              "de": 5.49,
+              "ate": 6.72,
+              "params": {
+                "alcance": 3.6,
+                "mira": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 4.25,
+              "ate": 6.72
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            -2.85,
+            1.25,
+            0.75
+          ],
+          "destino": [
+            0.92,
+            0.62,
+            0.68
+          ],
+          "taxa": 24,
+          "tamanho": 0.04,
+          "de": 5.49,
+          "ate": 6.72
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -5.9,
+            1.5,
+            2.3
+          ],
+          "olha": [
+            -0.4,
+            0.8,
+            0.5
+          ]
+        },
+        "para": {
+          "pos": [
+            -5.6,
+            1.4,
+            2
+          ],
+          "olha": [
+            -0.2,
+            0.8,
+            0.5
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 6.72,
+      "fim": 7.92,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          },
+          "anim": {
+            "pos": [
+              [
+                6.72,
+                [
+                  0.92,
+                  0.37,
+                  0.68
+                ]
+              ],
+              [
+                7.92,
+                [
+                  -1.65,
+                  0.6,
+                  0.75
+                ]
+              ]
+            ],
+            "giro": [
+              [
+                6.72,
+                0
+              ],
+              [
+                7.92,
+                200
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.25,
+            0,
+            0.75
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "puxar_fio",
+              "de": 6.72,
+              "ate": 7.92,
+              "expressao": "happy"
+            }
+          ]
+        },
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": -90,
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 6.72,
+              "ate": 7.92
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": {
+            "ancora": "bolsa",
+            "desloca": [
+              0.3,
+              0.1,
+              0
+            ]
+          },
+          "destino": [
+            1.42,
+            0.62,
+            0.68
+          ],
+          "taxa": 18
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -1.2,
+            1.2,
+            7.8
+          ],
+          "olha": [
+            -1.2,
+            0.8,
+            0.6
+          ]
+        },
+        "para": {
+          "pos": [
+            -1.4,
+            1.1,
+            7
+          ],
+          "olha": [
+            -1.4,
+            0.8,
+            0.6
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 7.92,
+      "fim": 9.55,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.67,
+            0.42,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": -90,
+          "acoes": [
+            {
+              "clip": "puxar_fio",
+              "de": 7.92,
+              "ate": 9.55,
+              "expressao": "angry"
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.25,
+            0,
+            0.75
+          ],
+          "giro": 90,
+          "anim": {
+            "pos": [
+              [
+                7.92,
+                [
+                  -3.25,
+                  0,
+                  0.75
+                ]
+              ],
+              [
+                9.55,
+                [
+                  -0.55,
+                  0,
+                  0.65
+                ]
+              ]
+            ]
+          },
+          "acoes": [
+            {
+              "clip": "derrapar",
+              "de": 7.92,
+              "ate": 9.55,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": {
+            "ancora": "aranha",
+            "desloca": [
+              0,
+              0.1,
+              0
+            ]
+          },
+          "taxa": 16,
+          "tamanho": 0.3,
+          "vida": 0.8
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "medio",
+        "angulo": 50,
+        "deriva": -20,
+        "elevacao": 4,
+        "fov": 44
+      }
+    },
+    {
+      "inicio": 9.55,
+      "fim": 11.05,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.67,
+            0.42,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.28,
+            0.62,
+            0.7
+          ],
+          "anim": {
+            "giro": [
+              [
+                9.55,
+                0
+              ],
+              [
+                9.64,
+                -35
+              ],
+              [
+                10.09,
+                95
+              ],
+              [
+                11.05,
+                80
+              ]
+            ],
+            "eixo": "z"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": -90,
+          "acoes": [
+            {
+              "clip": "lutar",
+              "de": 9.55,
+              "ate": 11.05,
+              "expressao": "angry",
+              "velocidade": 1.4
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.55,
+            0,
+            0.65
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 9.55,
+              "ate": 10.09
+            },
+            {
+              "clip": "tonto_no_chao",
+              "de": 10.09,
+              "ate": 11.05,
+              "suavizacao": 0.08
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            -0.55,
+            1,
+            0.65
+          ],
+          "destino": [
+            -0.55,
+            1.6,
+            0.65
+          ],
+          "taxa": 30,
+          "tamanho": 0.06,
+          "espalha": 1,
+          "de": 10.09,
+          "ate": 11.05
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 10.09,
+          "ate": 10.54,
+          "intensidade": 0.7
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "estrela",
+          "ancora": "aranha",
+          "alturaRel": 0.8,
+          "tamanho": 0.16,
+          "de": 10.09,
+          "ate": 11.05
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -0.2,
+            1.3,
+            4.6
+          ],
+          "olha": [
+            -0.2,
+            0.9,
+            0.6
+          ]
+        },
+        "para": {
+          "pos": [
+            -0.25,
+            1.1,
+            3.8
+          ],
+          "olha": [
+            -0.35,
+            0.8,
+            0.6
+          ]
+        },
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 11.05,
+      "fim": 12.7,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -4.4,
+            0,
+            2.2
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "heroi_pose",
+              "de": 11.05,
+              "ate": 12.7
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.55,
+            0,
+            0.65
+          ],
+          "giro": 90,
+          "acoes": [
+            {
+              "clip": "tonto_no_chao",
+              "de": 11.05,
+              "ate": 12.7
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            -4.4,
+            1,
+            2.2
+          ],
+          "destino": [
+            -4.4,
+            2.4,
+            2.2
+          ],
+          "taxa": 14,
+          "tamanho": 0.03,
+          "espalha": 0.8
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "coruja",
+        "plano": "medio",
+        "angulo": 10,
+        "deriva": -35,
+        "elevacao": -6,
+        "fov": 42
+      },
+      "textos": [
+        {
+          "texto": "DICA 2",
+          "de": 11.05,
+          "ate": 12.7,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 12.7,
+      "fim": 15.84,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -4.4,
+            0,
+            2.2
+          ],
+          "giro": 90,
+          "anim": {
+            "opacidade": [
+              [
+                12.7,
+                1
+              ],
+              [
+                13.9,
+                0.18
+              ]
+            ]
+          },
+          "movimentos": [
+            {
+              "de": 13,
+              "ate": 15.84,
+              "para": [
+                -0.4,
+                1.2
+              ],
+              "clip": "walk",
+              "velocidade": 0.6
+            }
+          ]
+        },
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 12.7,
+              "ate": 15.84
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": {
+            "ancora": "coruja",
+            "desloca": [
+              0,
+              1,
+              0
+            ]
+          },
+          "taxa": 10,
+          "tamanho": 0.04,
+          "espalha": 0.6,
+          "de": 12.7,
+          "ate": 14.1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            -3.5,
+            1.2,
+            6.2
+          ],
+          "olha": [
+            -2.8,
+            1,
+            1.4
+          ]
+        },
+        "para": {
+          "pos": [
+            -1.6,
+            1.2,
+            5.6
+          ],
+          "olha": [
+            -0.8,
+            1,
+            1.2
+          ]
+        },
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "MODO INVISÍVEL 👻",
+          "de": 13.5,
+          "ate": 15.84,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 15.84,
+      "fim": 18.07,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        },
+        {
+          "id": "guarda",
+          "asset": "guarda_chuva",
+          "pos": [
+            0.92,
+            0.02,
+            0.78
+          ],
+          "params": {
+            "progress": 0
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "sentir_perigo",
+              "de": 15.84,
+              "ate": 18.07,
+              "expressao": "angry"
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.4,
+            0,
+            1.2
+          ],
+          "giro": 60,
+          "anim": {
+            "opacidade": [
+              [
+                15.84,
+                0.18
+              ]
+            ]
+          },
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 15.84,
+              "ate": 18.07
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            -0.4,
+            1.3,
+            1.2
+          ],
+          "destino": [
+            0.6,
+            1.45,
+            0.75
+          ],
+          "taxa": 14,
+          "tamanho": 0.06
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 15.84,
+          "ate": 18.07,
+          "para": 1.15
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "alerta",
+          "ancora": "vovo",
+          "alturaRel": 1.05,
+          "tamanho": 0.15,
+          "de": 16.44,
+          "ate": 18.07,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "close",
+        "angulo": 10,
+        "elevacao": 3,
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 18.07,
+      "fim": 19.31,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "bolsa",
+          "asset": "bolsa",
+          "pos": [
+            0.92,
+            0.37,
+            0.68
+          ],
+          "params": {
+            "tamanho": 1.4
+          }
+        },
+        {
+          "id": "bengala",
+          "asset": "bengala",
+          "pos": [
+            0.22,
+            0,
+            0.72
+          ]
+        },
+        {
+          "id": "guarda",
+          "asset": "guarda_chuva",
+          "pos": [
+            0.28,
+            0.62,
+            0.7
+          ],
+          "params": {
+            "progress": 0
+          },
+          "anim": {
+            "giro": [
+              [
+                18.07,
+                0
+              ],
+              [
+                18.39,
+                -40
+              ],
+              [
+                18.79,
+                100
+              ],
+              [
+                19.31,
+                90
+              ]
+            ],
+            "eixo": "z"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            0.6
+          ],
+          "giro": -90,
+          "acoes": [
+            {
+              "clip": "lutar",
+              "de": 18.07,
+              "ate": 19.31,
+              "expressao": "angry",
+              "velocidade": 1.3
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.45,
+            0,
+            0.7
+          ],
+          "giro": 90,
+          "anim": {
+            "opacidade": [
+              [
+                18.07,
+                0.18
+              ],
+              [
+                18.79,
+                0.18
+              ],
+              [
+                18.94,
+                1
+              ]
+            ]
+          },
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 18.07,
+              "ate": 18.79
+            },
+            {
+              "clip": "tonto_no_chao",
+              "de": 18.89,
+              "ate": 19.31,
+              "suavizacao": 0.08
+            }
+          ]
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 18.79,
+          "ate": 19.19,
+          "intensidade": 0.7
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "estrela",
+          "ancora": "coruja",
+          "alturaRel": 0.8,
+          "tamanho": 0.16,
+          "de": 18.79,
+          "ate": 19.31
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "medio",
+        "angulo": -60,
+        "deriva": 15,
+        "elevacao": 8,
+        "fov": 44,
+        "olhaDesloca": [
+          -0.5,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "inicio": 19.31,
+      "fim": 22.04,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.8,
+            0,
+            1.4
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "tonto_no_chao",
+              "de": 19.31,
+              "ate": 22.04
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.6,
+            0,
+            1.6
+          ],
+          "giro": -30,
+          "acoes": [
+            {
+              "clip": "tonto_no_chao",
+              "de": 19.31,
+              "ate": 22.04,
+              "fase": 0.4
+            }
+          ]
+        },
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            1.6,
+            0,
+            0.4
+          ],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 19.31,
+              "ate": 22.04,
+              "para": [
+                5,
+                0.2
+              ],
+              "clip": "walk"
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            3.2,
+            4.6
+          ],
+          "olha": [
+            0,
+            0.3,
+            1.2
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            7.5,
+            6.5
+          ],
+          "olha": [
+            0.4,
+            0,
+            1
+          ]
+        },
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "DICA 3",
+          "de": 19.31,
+          "ate": 22.04,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 22.04,
+      "fim": 23.28,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -2
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            2.6
+          ],
+          "aparece": 22.5,
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.2,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.6
+          }
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            -6,
+            0,
+            -1
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -2.4,
+            0,
+            3.4
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 22.5,
+              "ate": 23.28
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            2.4,
+            0,
+            3.4
+          ],
+          "giro": -20,
+          "acoes": [
+            {
+              "clip": "nod",
+              "de": 22.5,
+              "ate": 23.28
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            0,
+            2.3,
+            2.7
+          ],
+          "destino": [
+            0,
+            4,
+            3
+          ],
+          "taxa": 30,
+          "tamanho": 0.05,
+          "espalha": 1.5,
+          "de": 22.5,
+          "ate": 23.1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            1.4,
+            11
+          ],
+          "olha": [
+            0,
+            1.8,
+            1
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            1.6,
+            9.2
+          ],
+          "olha": [
+            0,
+            2,
+            1
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 23.28,
+      "fim": 26.32,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -2
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            2.6
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.2,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.6
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -9,
+            7,
+            8.2
+          ],
+          "giro": 120,
+          "anim": {
+            "pos": [
+              [
+                23.28,
+                [
+                  -9,
+                  7,
+                  8.2
+                ]
+              ],
+              [
+                24.58,
+                [
+                  -0.3,
+                  0.6,
+                  4.4
+                ]
+              ],
+              [
+                24.88,
+                [
+                  0,
+                  0,
+                  4.2
+                ]
+              ]
+            ]
+          },
+          "acoes": [
+            {
+              "clip": "voar",
+              "de": 23.28,
+              "ate": 24.58
+            },
+            {
+              "clip": "aterrissagem_heroica",
+              "de": 24.58,
+              "ate": 26.32
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1,
+              -0.8
+            ]
+          },
+          "taxa": 22,
+          "de": 23.28,
+          "ate": 24.58
+        },
+        {
+          "material": "poeira",
+          "origem": [
+            0,
+            0.1,
+            4.2
+          ],
+          "taxa": 40,
+          "tamanho": 0.5,
+          "de": 24.78,
+          "ate": 25.18
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "tremor",
+          "de": 24.83,
+          "ate": 25.18,
+          "intensidade": 0.5
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.5,
+            1.4,
+            12.5
+          ],
+          "olha": [
+            -1.5,
+            2.5,
+            4
+          ]
+        },
+        "para": {
+          "pos": [
+            2.5,
+            1.3,
+            10.5
+          ],
+          "olha": [
+            0,
+            1.2,
+            4
+          ]
+        },
+        "fov": 52
+      }
+    },
+    {
+      "inicio": 26.32,
+      "fim": 29.28,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
           "pos": [
             0,
             0,
             0
+          ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            2.6,
+            0,
+            -0.6
+          ],
+          "giro": -20,
+          "params": {
+            "progress": 0.15
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "contrato",
+          "asset": "placa",
+          "pos": [
+            -0.2,
+            0.78,
+            0.05
+          ],
+          "params": {
+            "texto": "ACORDO",
+            "sub": "INSS  ✕  Associação",
+            "largura": 0.9,
+            "altura": 0.6,
+            "fundo": "#ffffff",
+            "cor": "#1f4e9c",
+            "poste": false
+          }
+        },
+        {
+          "id": "carimbo",
+          "asset": "carimbo",
+          "pos": [
+            0.55,
+            0.78,
+            0.2
+          ],
+          "params": {
+            "tamanho": 2.2
+          },
+          "anim": {
+            "pos": [
+              [
+                26.52,
+                [
+                  0.55,
+                  1.1800000000000002,
+                  0.2
+                ]
+              ],
+              [
+                26.72,
+                [
+                  0,
+                  1.38,
+                  0.2
+                ]
+              ],
+              [
+                26.87,
+                [
+                  -0.2,
+                  0.78,
+                  0.25
+                ]
+              ],
+              [
+                27.12,
+                [
+                  0.55,
+                  1.08,
+                  0.2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.2,
+            0,
+            -0.95
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "hammer",
+              "de": 26.32,
+              "ate": 29.28,
+              "velocidade": 1.4
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            3.2,
+            3.2,
+            -0.6
+          ],
+          "destino": [
+            2.6,
+            1.3,
+            -0.5
+          ],
+          "taxa": 14,
+          "de": 27.72,
+          "ate": 29.28,
+          "arco": 0.2
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "dinheiro",
+          "ancora": "cofre",
+          "alturaRel": 1.3,
+          "tamanho": 0.14,
+          "de": 27.92,
+          "ate": 29.28,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "mesa",
+        "plano": "medio",
+        "angulo": 15,
+        "deriva": 20,
+        "elevacao": 22,
+        "fov": 44
+      }
+    },
+    {
+      "inicio": 29.28,
+      "fim": 31.91,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            2.6,
+            0,
+            -0.6
+          ],
+          "giro": -20,
+          "params": {
+            "progress": 0.15
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "regra",
+          "asset": "placa",
+          "pos": [
+            0,
+            0.78,
+            0.1
+          ],
+          "aparece": 29.48,
+          "params": {
+            "texto": "REGRA",
+            "sub": "só com autorização do aposentado",
+            "largura": 1.6,
+            "altura": 0.8,
+            "fundo": "#c81e1e",
+            "poste": false
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.5,
+            0,
+            0.9
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 29.28,
+              "ate": 31.91
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.5,
+            0,
+            0.9
+          ],
+          "giro": -20,
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 29.28,
+              "ate": 31.91
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "proibido",
+          "pos": [
+            0.5,
+            0.3
+          ],
+          "tamanho": 0.18,
+          "de": 29.78,
+          "ate": 31.91
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.4,
+            1.6,
+            4.6
+          ],
+          "olha": [
+            0,
+            1,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.1,
+            1.5,
+            3.8
+          ],
+          "olha": [
+            0,
+            1,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 31.91,
+      "fim": 33.35,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -4.5
           ]
         },
         {
           "id": "arvore",
           "asset": "arvore_redonda",
           "pos": [
-            -8,
+            -5,
             0,
-            -3
+            -2
+          ]
+        },
+        {
+          "id": "cel",
+          "asset": "celular",
+          "pos": [
+            0.45,
+            0.95,
+            1.1
+          ],
+          "params": {
+            "tamanho": 3,
+            "texto": "Assinatura e biometria",
+            "tela": "#dbe9ff"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.03,
+              "freq": 0.7
+            }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0,
+            0,
+            0.8
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 31.91,
+              "ate": 33.35,
+              "params": {
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "✍️ assinatura",
+          "tamanho": 1.2,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.3,
+            0.27
+          ],
+          "de": 31.97
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "🖐️ biometria",
+          "tamanho": 1.2,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.7,
+            0.33
+          ],
+          "de": 32.72
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "medio",
+        "angulo": 20,
+        "deriva": -10,
+        "elevacao": 6,
+        "fov": 42
+      }
+    },
+    {
+      "inicio": 33.35,
+      "fim": 34.76,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            2.6,
+            0,
+            -0.6
+          ],
+          "giro": -20,
+          "params": {
+            "progress": 0.15
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "pilha",
+          "asset": "pilha_papeis",
+          "pos": [
+            0,
+            0.78,
+            0
+          ],
+          "etapa": [
+            [
+              33.35,
+              0.1
+            ],
+            [
+              34.76,
+              0.6
+            ]
           ]
         }
       ],
       "personagens": [
         {
-          "id": "guia",
-          "preset": "construtor",
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
           "pos": [
-            3.5,
             0,
-            6.5
+            0,
+            1.6
           ],
-          "viraPara": [
+          "giro": 0,
+          "anim": {
+            "pos": [
+              [
+                33.35,
+                [
+                  1.6,
+                  0,
+                  1.4
+                ]
+              ],
+              [
+                33.75,
+                [
+                  -1.6,
+                  0,
+                  1.4
+                ]
+              ],
+              [
+                34.15,
+                [
+                  1.6,
+                  0,
+                  1
+                ]
+              ],
+              [
+                34.76,
+                [
+                  -1.6,
+                  0,
+                  1.4
+                ]
+              ]
+            ],
+            "suave": false
+          },
+          "acoes": [
             {
-              "em": 0,
-              "alvo": "camera"
+              "clip": "run",
+              "de": 33.35,
+              "ate": 34.76,
+              "velocidade": 2.4
             }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "papel",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1.2,
+              0
+            ]
+          },
+          "taxa": 30,
+          "espalha": 1.2,
+          "dispersao": 0.5
+        },
+        {
+          "material": "ar",
+          "origem": {
+            "ancora": "cometa",
+            "desloca": [
+              0,
+              1,
+              -0.5
+            ]
+          },
+          "taxa": 20
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "mesa",
+        "plano": "geral",
+        "angulo": 0,
+        "elevacao": 18,
+        "fov": 50
+      },
+      "textos": [
+        {
+          "texto": "DICA 4",
+          "de": 33.35,
+          "ate": 34.76,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 34.76,
+      "fim": 37.76,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
+          "pos": [
+            0,
+            0,
+            0
           ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            2.6,
+            0,
+            -0.6
+          ],
+          "giro": -20,
+          "params": {
+            "progress": 0.15
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "pilha",
+          "asset": "pilha_papeis",
+          "pos": [
+            -0.3,
+            0.78,
+            0
+          ],
+          "etapa": [
+            [
+              34.76,
+              0.6
+            ],
+            [
+              37.76,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "carimbo",
+          "asset": "carimbo",
+          "pos": [
+            0.4,
+            0.78,
+            0.15
+          ],
+          "params": {
+            "tamanho": 2.2
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.12,
+              "freq": 4
+            }
+          }
+        },
+        {
+          "id": "som",
+          "asset": "ondas_som",
+          "pos": [
+            1,
+            0.88,
+            0.2
+          ],
+          "aparece": 36.99,
+          "params": {
+            "raio": 0.35,
+            "ondas": 5,
+            "altura": 0.25
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "papel",
+          "origem": [
+            -0.3,
+            2.2800000000000002,
+            0
+          ],
+          "destino": [
+            -0.3,
+            1.28,
+            0
+          ],
+          "taxa": 12,
+          "espalha": 0.4
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "assinatura falsa",
+          "tamanho": 1.2,
+          "ponto": "#e5322d",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 34.82
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "documento falso",
+          "tamanho": 1.2,
+          "ponto": "#e5322d",
+          "pos": [
+            0.5,
+            0.27
+          ],
+          "de": 35.86
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "áudio falso 🎙️",
+          "tamanho": 1.2,
+          "ponto": "#e5322d",
+          "pos": [
+            0.5,
+            0.34
+          ],
+          "de": 36.99
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.9,
+            1.6,
+            1.6
+          ],
+          "olha": [
+            0,
+            0.95,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.5,
+            1.4,
+            1.2
+          ],
+          "olha": [
+            0,
+            0.95,
+            0
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 37.76,
+      "fim": 40.81,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -3
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "p1",
+          "asset": "placa",
+          "pos": [
+            -2.4,
+            0,
+            0.5
+          ],
+          "giro": 15,
+          "aparece": 38.78,
+          "params": {
+            "texto": "🏋️ ACADEMIA",
+            "largura": 1.8,
+            "altura": 0.6,
+            "fundo": "#ff8a1f",
+            "alturaPoste": 1.1
+          }
+        },
+        {
+          "id": "p2",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "aparece": 39.29,
+          "params": {
+            "texto": "⚖️ ADVOGADO",
+            "largura": 1.8,
+            "altura": 0.6,
+            "fundo": "#6b3fa0",
+            "alturaPoste": 1.6
+          }
+        },
+        {
+          "id": "p3",
+          "asset": "placa",
+          "pos": [
+            2.4,
+            0,
+            0.5
+          ],
+          "giro": -15,
+          "aparece": 40.03,
+          "params": {
+            "texto": "🏥 PLANO DE SAÚDE",
+            "largura": 2,
+            "altura": 0.6,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.1
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            2.2
+          ],
+          "giro": 0,
           "acoes": [
             {
               "clip": "talk",
-              "de": 0,
-              "ate": 5,
+              "de": 37.76,
+              "ate": 40.81,
               "fala": true
             }
           ]
         }
       ],
       "camera": {
-        "tipo": "enquadrar",
-        "alvo": "casa",
-        "plano": "geral",
-        "angulo": 25,
-        "elevacao": 14,
-        "deriva": -18
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            1.2,
+            9.5
+          ],
+          "olha": [
+            0,
+            1.4,
+            0.5
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            1.4,
+            7.5
+          ],
+          "olha": [
+            0,
+            1.5,
+            0.5
+          ]
+        },
+        "fov": 48
       },
       "textos": [
         {
-          "texto": "A PERGUNTA DO GANCHO?",
-          "de": 0.2,
-          "ate": 4.8,
-          "estilo": "titulo"
+          "texto": "DICA 5",
+          "de": 37.76,
+          "ate": 40.81,
+          "estilo": "selo"
         }
       ]
     },
     {
-      "inicio": 5,
-      "fim": 10,
-      "transicao": "flash",
+      "inicio": 40.81,
+      "fim": 42.5,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
       "objetos": [
         {
-          "id": "casa",
-          "asset": "casa_simples",
+          "id": "sofa",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.3
+          ],
+          "params": {
+            "tamanho": [
+              2,
+              0.45,
+              0.9
+            ],
+            "cor": "#7b5ea8"
+          }
+        },
+        {
+          "id": "encosto",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.75
+          ],
+          "params": {
+            "tamanho": [
+              2,
+              1,
+              0.2
+            ],
+            "cor": "#6a4f94"
+          }
+        },
+        {
+          "id": "tv",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            3.2
+          ],
+          "params": {
+            "tamanho": [
+              1.2,
+              0.9,
+              0.3
+            ],
+            "cor": "#22252b"
+          }
+        },
+        {
+          "id": "mesinha",
+          "asset": "forma",
+          "pos": [
+            1.5,
+            0,
+            0.1
+          ],
+          "params": {
+            "tamanho": [
+              0.6,
+              0.5,
+              0.6
+            ],
+            "cor": "#a9743f"
+          }
+        },
+        {
+          "id": "xicara",
+          "asset": "forma",
+          "pos": [
+            1.5,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              0.16,
+              0.14,
+              0.16
+            ],
+            "cor": "#ffffff"
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            1.5,
+            0.66,
+            0.1
+          ],
+          "taxa": 5,
+          "tamanho": 0.08,
+          "subida": 0.6
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0,
+            0.11,
+            -0.25
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 40.81,
+              "ate": 42.5
+            },
+            {
+              "clip": "shake_head",
+              "de": 41.21,
+              "ate": 42.5,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face"
+              ]
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "x",
+          "pos": [
+            0.25,
+            0.28
+          ],
+          "tamanho": 0.14,
+          "de": 41.11
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "academia? nunca fui",
+          "tamanho": 1.2,
+          "ponto": "#e5322d",
+          "pos": [
+            0.6,
+            0.25
+          ],
+          "de": 41.11
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "medio",
+        "angulo": -20,
+        "deriva": 15,
+        "elevacao": 8,
+        "fov": 44
+      }
+    },
+    {
+      "inicio": 42.5,
+      "fim": 43.97,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "sofa",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.3
+          ],
+          "params": {
+            "tamanho": [
+              2,
+              0.45,
+              0.9
+            ],
+            "cor": "#7b5ea8"
+          }
+        },
+        {
+          "id": "encosto",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.75
+          ],
+          "params": {
+            "tamanho": [
+              2,
+              1,
+              0.2
+            ],
+            "cor": "#6a4f94"
+          }
+        },
+        {
+          "id": "carteirinha",
+          "asset": "placa",
+          "pos": [
+            0.75,
+            1.05,
+            0.5
+          ],
+          "giro": -10,
+          "aparece": 42.8,
+          "params": {
+            "texto": "SÓCIA Nº 4.817.302",
+            "sub": "Associação dos Aposentados Felizes",
+            "largura": 0.9,
+            "altura": 0.5,
+            "fundo": "#ffffff",
+            "cor": "#1f8a5b",
+            "poste": false
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0,
+            0.11,
+            -0.25
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 42.5,
+              "ate": 43.97
+            },
+            {
+              "clip": "shrug",
+              "de": 42.8,
+              "ate": 43.97,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face",
+                "armL",
+                "armR"
+              ]
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "interrogacao",
+          "ancora": "vovo",
+          "alturaRel": 1.2,
+          "tamanho": 0.15,
+          "de": 42.8,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "vovo",
+        "plano": "close",
+        "angulo": 25,
+        "deriva": -10,
+        "elevacao": 4,
+        "fov": 40
+      }
+    },
+    {
+      "inicio": 43.97,
+      "fim": 46.8,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "extrato",
+          "asset": "extrato",
           "pos": [
             0,
             0,
             0
+          ],
+          "params": {
+            "linhas": [
+              "Aposentadoria ........ + R$ 1.518,00",
+              "Remédio .............. − R$ 89,90",
+              "MENSALIDADE ASSOCIATIVA  − R$ 45,00",
+              "Saldo ................ R$ 1.383,10"
+            ],
+            "destaque": 2
+          },
+          "etapa": [
+            [
+              43.97,
+              0.25
+            ],
+            [
+              45.57,
+              1
+            ]
           ]
         }
       ],
       "personagens": [
         {
-          "id": "guia",
-          "preset": "construtor",
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.9,
+            0,
+            0.8
+          ],
+          "giro": 30,
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 43.97,
+              "ate": 46.8
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            1,
+            1.95,
+            0.1
+          ],
+          "destino": [
+            2.6,
+            0.2,
+            0.8
+          ],
+          "taxa": 6,
+          "de": 45.47,
+          "ate": 46.8
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.6,
+            2.4,
+            6.2
+          ],
+          "olha": [
+            0,
+            2.2,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.3,
+            2.3,
+            5.2
+          ],
+          "olha": [
+            0,
+            2.2,
+            0
+          ]
+        },
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "DICA 6",
+          "de": 43.97,
+          "ate": 46.8,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 46.8,
+      "fim": 48.04,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "extrato",
+          "asset": "extrato",
           "pos": [
             0,
             0,
-            7
+            0
           ],
-          "giro": 0,
+          "params": {
+            "linhas": [
+              "Aposentadoria ........ + R$ 1.518,00",
+              "Remédio .............. − R$ 89,90",
+              "MENSALIDADE ASSOCIATIVA  − R$ 45,00",
+              "Saldo ................ R$ 1.383,10"
+            ],
+            "destaque": 2
+          },
+          "etapa": [
+            [
+              46.8,
+              0.75
+            ],
+            [
+              47.15,
+              1
+            ]
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            1.05,
+            1.95,
+            0.1
+          ],
+          "destino": [
+            3,
+            1.4,
+            0.8
+          ],
+          "taxa": 10
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "seta",
+          "direcao": "direita",
+          "pos": [
+            0.14,
+            0.5
+          ],
+          "tamanho": 0.14,
+          "cor": "#e5322d"
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 46.8,
+          "ate": 48.04,
+          "para": 1.18
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.1,
+            1.95,
+            2.3
+          ],
+          "olha": [
+            0,
+            1.95,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.05,
+            1.95,
+            1.9
+          ],
+          "olha": [
+            0,
+            1.95,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 48.04,
+      "fim": 50.24,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "tamanho": 2.2,
+            "progress": 0.3
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "v0",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            6,
+            0,
+            0
+          ],
           "viraPara": [
             {
-              "em": 5,
-              "alvo": "camera"
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                4.8,
+                0
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v1",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            6.85,
+            0,
+            3.3
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                5.48,
+                2.64
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            5.74,
+            0,
+            7.19
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                4.59,
+                5.75
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.34,
+            0,
+            5.85
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                1.07,
+                4.68
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.69,
+            0,
+            7.41
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -1.35,
+                5.93
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -5.74,
+            0,
+            7.19
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -4.59,
+                5.75
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v6",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -5.41,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -4.33,
+                2.08
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v7",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -7.6,
+            0,
+            0
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -6.08,
+                0
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v8",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -8.29,
+            0,
+            -3.99
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -6.63,
+                -3.19
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v9",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3.74,
+            0,
+            -4.69
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -2.99,
+                -3.75
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v10",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.69,
+            0,
+            -7.41
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                -1.35,
+                -5.93
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v11",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            2.05,
+            0,
+            -8.97
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                1.64,
+                -7.18
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v12",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            3.74,
+            0,
+            -4.69
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                2.99,
+                -3.75
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        },
+        {
+          "id": "v13",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            6.85,
+            0,
+            -3.3
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                0
+              ]
+            }
+          ],
+          "acoes": [],
+          "movimentos": [
+            {
+              "de": 48.04,
+              "ate": 50.24,
+              "para": [
+                5.48,
+                -2.64
+              ],
+              "clip": "walk",
+              "velocidade": 0.7
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            6,
+            1.1,
+            0
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            5.74,
+            1.1,
+            7.19
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            -1.69,
+            1.1,
+            7.41
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            -5.41,
+            1.1,
+            2.6
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            -8.29,
+            1.1,
+            -3.99
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            -1.69,
+            1.1,
+            -7.41
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            3.74,
+            1.1,
+            -4.69
+          ],
+          "destino": [
+            0,
+            2,
+            0
+          ],
+          "taxa": 5,
+          "arco": 0.6
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            9,
+            14
+          ],
+          "olha": [
+            0,
+            0.8,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            5,
+            16,
+            13
+          ],
+          "olha": [
+            0,
+            0.5,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 50.24,
+      "fim": 54.27,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "tamanho": 1.6
+          },
+          "etapa": [
+            [
+              50.24,
+              0.3
+            ],
+            [
+              54.27,
+              0.9
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.6,
+            0,
+            1.6
+          ],
+          "giro": 40,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 50.24,
+              "ate": 54.27
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.6,
+            0,
+            1.6
+          ],
+          "giro": -40,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 50.24,
+              "ate": 54.27,
+              "fase": 0.3
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            0,
+            3.2,
+            0.6
+          ],
+          "destino": [
+            0,
+            1.4,
+            0.7
+          ],
+          "taxa": 20,
+          "espalha": 0.3
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "2019 → 2024",
+          "tamanho": 1.4,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.5,
+            0.2
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cofre",
+        "plano": "geral",
+        "angulo": 0,
+        "deriva": 25,
+        "elevacao": 14,
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 54.27,
+      "fim": 56.46,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "tamanho": 1.6,
+            "progress": 1
+          },
+          "anim": {
+            "pulsa": 0.03
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "nota",
+          "origem": [
+            0,
+            3.5,
+            0.9
+          ],
+          "destino": [
+            0,
+            0.2,
+            1.6
+          ],
+          "taxa": 26,
+          "espalha": 1.6
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            0,
+            1.4,
+            1.3
+          ],
+          "destino": [
+            0.6,
+            0.1,
+            2.4
+          ],
+          "taxa": 14
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 54.27,
+          "ate": 56.46,
+          "para": 1.12
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.4,
+            0.5,
+            5.6
+          ],
+          "olha": [
+            0,
+            1.3,
+            0.6
+          ]
+        },
+        "para": {
+          "pos": [
+            0.2,
+            0.45,
+            4.6
+          ],
+          "olha": [
+            0,
+            1.4,
+            0.6
+          ]
+        },
+        "fov": 50
+      },
+      "textos": [
+        {
+          "texto": "R$ *6,3*|*BILHÕES*",
+          "de": 54.47,
+          "ate": 56.46,
+          "estilo": "manchete"
+        }
+      ]
+    },
+    {
+      "inicio": 56.46,
+      "fim": 57.74,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "mesa",
+          "asset": "mesa",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "largura": 2.2
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.2,
+            -2.2
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.4,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "poste": false
+          }
+        },
+        {
+          "id": "estante",
+          "asset": "forma",
+          "pos": [
+            -2.8,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              1.4,
+              2.2,
+              0.5
+            ],
+            "cor": "#8a5a34"
+          }
+        },
+        {
+          "id": "cofre",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "tamanho": 1.6,
+            "progress": 1
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.4,
+            0,
+            1.8
+          ],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 56.46,
+              "ate": 56.96
+            },
+            {
+              "clip": "surprised",
+              "de": 56.96,
+              "ate": 57.74
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            2.2
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 56.86,
+              "ate": 57.74
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.4,
+            0,
+            1.8
+          ],
+          "giro": -20,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 56.46,
+              "ate": 57.06
+            },
+            {
+              "clip": "surprised",
+              "de": 57.06,
+              "ate": 57.74
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "nota",
+          "origem": [
+            0,
+            3.2,
+            1
+          ],
+          "destino": [
+            0,
+            0.1,
+            2
+          ],
+          "taxa": 10,
+          "espalha": 1.8,
+          "de": 56.46,
+          "ate": 57.06
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "pretoebranco",
+          "de": 56.86,
+          "ate": 57.74,
+          "zoom": 1.12
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "alerta",
+          "pos": [
+            0.5,
+            0.24
+          ],
+          "tamanho": 0.18,
+          "de": 56.86,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "coruja",
+        "plano": "medio",
+        "angulo": 0,
+        "elevacao": 4,
+        "fov": 50,
+        "aproxima": 0.8
+      }
+    },
+    {
+      "inicio": 57.74,
+      "fim": 62.61,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -4.5
+          ]
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            -5,
+            0,
+            -2
+          ]
+        },
+        {
+          "id": "cerca",
+          "asset": "cerca",
+          "pos": [
+            3.5,
+            0,
+            0
+          ],
+          "params": {
+            "length": 4
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "cgu",
+          "preset": "engenheira",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "hat": {
+              "type": "none"
+            },
+            "top": {
+              "color": "#1f4e9c",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            -1.6,
+            0,
+            1.8
+          ],
+          "giro": 0,
+          "movimentos": [
+            {
+              "de": 57.74,
+              "ate": 59.34,
+              "para": [
+                -0.7,
+                0.2
+              ],
+              "clip": "walk"
+            }
+          ],
+          "viraPara": [
+            {
+              "em": 59.34,
+              "alvo": [
+                0.5,
+                0
+              ]
             }
           ],
           "acoes": [
             {
+              "clip": "read_clipboard",
+              "de": 59.34,
+              "ate": 61.56
+            },
+            {
               "clip": "talk",
-              "de": 5,
-              "ate": 10,
-              "fala": true,
-              "expressao": "happy"
+              "de": 61.56,
+              "ate": 62.61
+            }
+          ]
+        },
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            -0.8
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 59.34,
+              "alvo": [
+                -0.7,
+                0.2
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 57.74,
+              "ate": 61.56
+            },
+            {
+              "clip": "shake_head",
+              "de": 61.96,
+              "ate": 62.61,
+              "expressao": "angry"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "CGU · 1.300 entrevistas",
+          "tamanho": 1.2,
+          "ponto": "#1f4e9c",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 59.43
+        },
+        {
+          "tipo": "icone",
+          "icone": "x",
+          "pos": [
+            0.75,
+            0.32
+          ],
+          "tamanho": 0.13,
+          "de": 62.16
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.6,
+            1.5,
+            5.2
+          ],
+          "olha": [
+            -0.2,
+            1.1,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            2.4,
+            1.4,
+            3.6
+          ],
+          "olha": [
+            -0.1,
+            1.2,
+            -0.2
+          ]
+        },
+        "fov": 46
+      }
+    },
+    {
+      "inicio": 62.61,
+      "fim": 64.21,
+      "transicao": "flash",
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "tarde",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -4
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.2,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.6
+          }
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            -6,
+            0,
+            -2
+          ]
+        },
+        {
+          "id": "viatura",
+          "asset": "viatura",
+          "pos": [
+            -16,
+            0,
+            3.6
+          ],
+          "giro": 90,
+          "anim": {
+            "pos": [
+              [
+                62.61,
+                [
+                  -16,
+                  0,
+                  3.6
+                ]
+              ],
+              [
+                64.01,
+                [
+                  -1.2,
+                  0,
+                  3.6
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": {
+            "ancora": "viatura",
+            "desloca": [
+              0,
+              0.2,
+              -2.2
+            ]
+          },
+          "taxa": 14,
+          "tamanho": 0.5
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3,
+            0.6,
+            9.5
+          ],
+          "olha": [
+            -4,
+            0.9,
+            3.6
+          ]
+        },
+        "para": {
+          "pos": [
+            2.5,
+            0.7,
+            8.5
+          ],
+          "olha": [
+            -1.5,
+            1,
+            3.6
+          ]
+        },
+        "fov": 48
+      },
+      "textos": [
+        {
+          "texto": "ABRIL DE 2025",
+          "de": 62.77,
+          "ate": 64.21,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 64.21,
+      "fim": 65.25,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "tarde",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -4
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.2,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.6
+          }
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            -6,
+            0,
+            -2
+          ]
+        },
+        {
+          "id": "viatura",
+          "asset": "viatura",
+          "pos": [
+            -1.2,
+            0,
+            3.6
+          ],
+          "giro": 90
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fumaca",
+          "origem": [
+            -3.6,
+            0.3,
+            3.6
+          ],
+          "taxa": 4,
+          "tamanho": 0.5
+        }
+      ],
+      "personagens": [
+        {
+          "id": "pf1",
+          "preset": "homem",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "top": {
+              "color": "#1d2433",
+              "sleeves": "long"
+            },
+            "bottom": {
+              "color": "#1d2433",
+              "type": "pants"
+            },
+            "hat": {
+              "type": "cap",
+              "color": "#1d2433"
+            }
+          },
+          "pos": [
+            -0.2,
+            0,
+            5.4
+          ],
+          "giro": 180,
+          "movimentos": [
+            {
+              "de": 64.21,
+              "ate": 65.25,
+              "para": [
+                -0.2,
+                1.8
+              ],
+              "clip": "run"
+            }
+          ]
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 64.21,
+          "ate": 65.25,
+          "para": 1.1
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "viatura",
+        "plano": "medio",
+        "angulo": 200,
+        "deriva": -30,
+        "elevacao": 6,
+        "fov": 48
+      },
+      "textos": [
+        {
+          "texto": "OPERAÇÃO|*SEM DESCONTO*",
+          "de": 64.26,
+          "ate": 65.25,
+          "estilo": "manchete"
+        }
+      ]
+    },
+    {
+      "inicio": 65.25,
+      "fim": 68.2,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "tarde",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "loja",
+          "asset": "loja",
+          "pos": [
+            0,
+            0,
+            -4
+          ],
+          "params": {
+            "wall": "#f4f1e8",
+            "awning": "#1f8a5b",
+            "sign": "#1f8a5b"
+          }
+        },
+        {
+          "id": "placaAssoc",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            0.6
+          ],
+          "params": {
+            "texto": "ASSOCIAÇÃO",
+            "sub": "dos Aposentados Felizes",
+            "largura": 3.2,
+            "altura": 1.1,
+            "fundo": "#1f8a5b",
+            "alturaPoste": 1.6
+          },
+          "anim": {
+            "giro": [
+              [
+                66.36,
+                0
+              ],
+              [
+                66.86,
+                -80
+              ]
+            ],
+            "eixo": "z"
+          }
+        },
+        {
+          "id": "b1",
+          "asset": "barreira",
+          "pos": [
+            -2.2,
+            0,
+            2.4
+          ],
+          "aparece": 67.41
+        },
+        {
+          "id": "b2",
+          "asset": "barreira",
+          "pos": [
+            2.2,
+            0,
+            2.4
+          ],
+          "aparece": 67.41
+        },
+        {
+          "id": "bloq",
+          "asset": "placa",
+          "pos": [
+            0,
+            0,
+            2.6
+          ],
+          "aparece": 67.61,
+          "params": {
+            "texto": "BLOQUEADO",
+            "largura": 2.2,
+            "altura": 0.6,
+            "fundo": "#c81e1e",
+            "alturaPoste": 0.9
+          }
+        },
+        {
+          "id": "viatura",
+          "asset": "viatura",
+          "pos": [
+            -7,
+            0,
+            5.5
+          ],
+          "giro": 60
+        }
+      ],
+      "personagens": [
+        {
+          "id": "pf1",
+          "preset": "homem",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "top": {
+              "color": "#1d2433",
+              "sleeves": "long"
+            },
+            "bottom": {
+              "color": "#1d2433",
+              "type": "pants"
+            },
+            "hat": {
+              "type": "cap",
+              "color": "#1d2433"
+            }
+          },
+          "pos": [
+            -0.9,
+            0,
+            -1.2
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 65.25,
+              "ate": 68.2
+            }
+          ]
+        },
+        {
+          "id": "pf2",
+          "preset": "homem",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "top": {
+              "color": "#1d2433",
+              "sleeves": "long"
+            },
+            "bottom": {
+              "color": "#1d2433",
+              "type": "pants"
+            },
+            "hat": {
+              "type": "cap",
+              "color": "#1d2433"
+            }
+          },
+          "pos": [
+            0.9,
+            0,
+            -1.4
+          ],
+          "giro": 180,
+          "acoes": [
+            {
+              "clip": "hammer",
+              "de": 65.25,
+              "ate": 68.2,
+              "velocidade": 1.6
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "acordos suspensos",
+          "tamanho": 1.2,
+          "ponto": "#e5322d",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 66.36
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            3.5,
+            1.6,
+            8
+          ],
+          "olha": [
+            0,
+            1.4,
+            -1
+          ]
+        },
+        "para": {
+          "pos": [
+            1.8,
+            1.5,
+            6.5
+          ],
+          "olha": [
+            0,
+            1.3,
+            -0.5
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 68.2,
+      "fim": 70.61,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "saco",
+          "asset": "saco_lixo",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "tamanho": 1.3
+          },
+          "etapa": [
+            [
+              69.65,
+              0
+            ],
+            [
+              70.75,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "saco2",
+          "asset": "saco_lixo",
+          "pos": [
+            -1.1,
+            0,
+            -0.6
+          ]
+        },
+        {
+          "id": "armario",
+          "asset": "forma",
+          "pos": [
+            0.4,
+            0,
+            -1.6
+          ],
+          "params": {
+            "tamanho": [
+              2.4,
+              2,
+              0.6
+            ],
+            "cor": "#b9a27f"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "pf1",
+          "preset": "homem",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "top": {
+              "color": "#1d2433",
+              "sleeves": "long"
+            },
+            "bottom": {
+              "color": "#1d2433",
+              "type": "pants"
+            },
+            "hat": {
+              "type": "cap",
+              "color": "#1d2433"
+            }
+          },
+          "pos": [
+            1.3,
+            0,
+            0.6
+          ],
+          "giro": -110,
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 68.2,
+              "ate": 70.61
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "nota",
+          "origem": [
+            0,
+            1.2,
+            0.1
+          ],
+          "destino": [
+            0.3,
+            0.1,
+            1
+          ],
+          "taxa": 18,
+          "espalha": 1.4,
+          "de": 69.95,
+          "ate": 70.61
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "dinheiro",
+          "ancora": "saco",
+          "alturaRel": 1.4,
+          "tamanho": 0.15,
+          "de": 69.95,
+          "pulsa": true
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            1.6,
+            2,
+            4.4
+          ],
+          "olha": [
+            0.2,
+            0.6,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.9,
+            1.7,
+            3.6
+          ],
+          "olha": [
+            0.2,
+            0.5,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 70.61,
+      "fim": 71.86,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "tarde",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "muro",
+          "asset": "muro",
+          "variante": "cinza",
+          "pos": [
+            0,
+            0,
+            -0.6
+          ],
+          "params": {
+            "length": 6,
+            "height": 2.6
+          }
+        },
+        {
+          "id": "viatura",
+          "asset": "viatura",
+          "pos": [
+            5.5,
+            0,
+            2.5
+          ],
+          "giro": -30
+        },
+        {
+          "id": "r1",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            -1.2,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        },
+        {
+          "id": "r2",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            0,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        },
+        {
+          "id": "r3",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            1.2,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -1.2,
+            0,
+            1
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 70.61,
+              "ate": 71.86,
+              "expressao": "sad"
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            1
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 70.61,
+              "ate": 71.86,
+              "expressao": "sad",
+              "fase": 0.3
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            1.2,
+            0,
+            1
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "idle",
+              "de": 70.61,
+              "ate": 71.86,
+              "expressao": "sad",
+              "fase": 0.6
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [
+            5.5,
+            2,
+            2.5
+          ],
+          "destino": [
+            5.5,
+            3.2,
+            2.5
+          ],
+          "taxa": 8,
+          "tamanho": 0.06
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 70.61,
+          "ate": 71.86,
+          "para": 1.1
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            1.4,
+            8.6
+          ],
+          "olha": [
+            0,
+            1.1,
+            1
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            1.35,
+            7.4
+          ],
+          "olha": [
+            0,
+            1.1,
+            1
+          ]
+        },
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 71.86,
+      "fim": 75.28,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "inss",
+          "asset": "placa",
+          "variante": "inss",
+          "pos": [
+            0,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "predio",
+          "asset": "predio_apartamentos",
+          "pos": [
+            0,
+            0,
+            -14
+          ],
+          "params": {
+            "floors": 4
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "v0",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -4,
+            0,
+            1
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 0
+            }
+          ]
+        },
+        {
+          "id": "v1",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -2,
+            0,
+            1
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 0.2
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            1
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 0.4
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            2,
+            0,
+            1
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 0.6000000000000001
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            4,
+            0,
+            1
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 0.8
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -4,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 1
+            }
+          ]
+        },
+        {
+          "id": "v6",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -2,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 1.2000000000000002
+            }
+          ]
+        },
+        {
+          "id": "v7",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 1.4000000000000001
+            }
+          ]
+        },
+        {
+          "id": "v8",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            2,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 1.6
+            }
+          ]
+        },
+        {
+          "id": "v9",
+          "preset": "velhinho",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            4,
+            0,
+            2.6
+          ],
+          "viraPara": [
+            {
+              "em": 71.86,
+              "alvo": [
+                0,
+                -3
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 71.86,
+              "ate": 75.28,
+              "fase": 1.8
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "papel",
+          "origem": [
+            0,
+            2,
+            2
+          ],
+          "destino": [
+            0,
+            2.2,
+            -3
+          ],
+          "taxa": 14,
+          "espalha": 3
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "+ de 6 milhões pediram de volta",
+          "tamanho": 1.3,
+          "ponto": "#ffd60a",
+          "pos": [
+            0.5,
+            0.22
+          ],
+          "de": 73.45
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            2.2,
+            9.5
+          ],
+          "olha": [
+            0,
+            1.4,
+            -1
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            3.2,
+            8.5
+          ],
+          "olha": [
+            0,
+            1.2,
+            -1
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 75.28,
+      "fim": 77.45,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "gov",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            -1.2
+          ],
+          "params": {
+            "tamanho": 2,
+            "progress": 1
+          }
+        },
+        {
+          "id": "rot",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.1,
+            -1.4
+          ],
+          "params": {
+            "texto": "GOVERNO",
+            "largura": 2.2,
+            "altura": 0.6,
+            "fundo": "#1f4e9c",
+            "poste": false
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            1.6,
+            0,
+            1.4
+          ],
+          "giro": -40,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 75.28,
+              "ate": 77.45
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            0.2,
+            1.2,
+            -0.4
+          ],
+          "destino": [
+            1.6,
+            1.3,
+            1.4
+          ],
+          "taxa": 18
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "etiqueta",
+          "texto": "R$ 3,6 bilhões devolvidos",
+          "tamanho": 1.3,
+          "ponto": "#5fbf6a",
+          "pos": [
+            0.5,
+            0.22
+          ],
+          "de": 76.15
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "gov",
+        "plano": "geral",
+        "angulo": 25,
+        "deriva": -15,
+        "elevacao": 10,
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 77.45,
+      "fim": 79.65,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "gov",
+          "asset": "cofre",
+          "pos": [
+            0,
+            0,
+            -1.2
+          ],
+          "params": {
+            "tamanho": 2
+          },
+          "etapa": [
+            [
+              77.45,
+              0.4
+            ],
+            [
+              78.44,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "rot",
+          "asset": "placa",
+          "pos": [
+            0,
+            2.1,
+            -1.4
+          ],
+          "params": {
+            "texto": "IMPOSTOS",
+            "largura": 2.2,
+            "altura": 0.6,
+            "fundo": "#c81e1e",
+            "poste": false
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "h1",
+          "preset": "homem",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -3,
+            0,
+            2.5
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                -1.2
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 77.45,
+              "ate": 79.65
+            }
+          ]
+        },
+        {
+          "id": "m1",
+          "preset": "mulher",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            3,
+            0,
+            2.5
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                -1.2
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 77.45,
+              "ate": 79.65
+            }
+          ]
+        },
+        {
+          "id": "c1",
+          "preset": "motorista",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            3.6
+          ],
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": [
+                0,
+                -1.2
+              ]
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 77.45,
+              "ate": 79.65
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "moeda",
+          "origem": [
+            -3,
+            1.2,
+            2.5
+          ],
+          "destino": [
+            0,
+            2.1,
+            -1
+          ],
+          "taxa": 10
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            3,
+            1.2,
+            2.5
+          ],
+          "destino": [
+            0,
+            2.1,
+            -1
+          ],
+          "taxa": 10
+        },
+        {
+          "material": "moeda",
+          "origem": [
+            0,
+            1.2,
+            3.6
+          ],
+          "destino": [
+            0,
+            2.1,
+            -1
+          ],
+          "taxa": 10
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            4,
+            9.5
+          ],
+          "olha": [
+            0,
+            1,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            2.2,
+            8
+          ],
+          "olha": [
+            0,
+            1.2,
+            0
+          ]
+        },
+        "fov": 50
+      }
+    },
+    {
+      "inicio": 79.65,
+      "fim": 80.78,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "tarde",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "muro",
+          "asset": "muro",
+          "variante": "cinza",
+          "pos": [
+            0,
+            0,
+            -1.2
+          ],
+          "params": {
+            "length": 6,
+            "height": 2.6
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 79.75,
+              "ate": 80.78,
+              "params": {
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            0.35,
+            1.35,
+            0.5
+          ],
+          "destino": [
+            0.4,
+            1.4,
+            2.2
+          ],
+          "taxa": 10,
+          "tamanho": 0.05
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "zoom",
+          "de": 79.65,
+          "ate": 80.78,
+          "para": 1.2
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "coruja",
+        "plano": "close",
+        "angulo": 0,
+        "elevacao": 2,
+        "fov": 44
+      },
+      "textos": [
+        {
+          "texto": "VOCÊ 🫵",
+          "de": 80.23,
+          "ate": 80.78,
+          "estilo": "destaque"
+        }
+      ]
+    },
+    {
+      "inicio": 80.78,
+      "fim": 84.31,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "sofa",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.3
+          ],
+          "params": {
+            "tamanho": [
+              2.2,
+              0.45,
+              0.9
+            ],
+            "cor": "#7b5ea8"
+          }
+        },
+        {
+          "id": "encosto",
+          "asset": "forma",
+          "pos": [
+            0,
+            0,
+            -0.75
+          ],
+          "params": {
+            "tamanho": [
+              2.2,
+              1,
+              0.2
+            ],
+            "cor": "#6a4f94"
+          }
+        },
+        {
+          "id": "cel",
+          "asset": "celular",
+          "pos": [
+            0.05,
+            0.85,
+            0.35
+          ],
+          "params": {
+            "tamanho": 2.6,
+            "texto": "Extrato: confere os descontos",
+            "tela": "#ffe1e1"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.02,
+              "freq": 0.8
+            }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            -0.5,
+            0.11,
+            -0.25
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 80.78,
+              "ate": 84.31
+            },
+            {
+              "clip": "nod",
+              "de": 81.98,
+              "ate": 84.31,
+              "camada": 1,
+              "mascara": [
+                "head",
+                "face"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "neto",
+          "preset": "crianca",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            0.6,
+            0.11,
+            -0.2
+          ],
+          "giro": -15,
+          "acoes": [
+            {
+              "clip": "sit",
+              "de": 80.78,
+              "ate": 84.31
+            },
+            {
+              "clip": "point",
+              "de": 81.38,
+              "ate": 84.31,
+              "camada": 1,
+              "mascara": [
+                "armR",
+                "head"
+              ]
             }
           ]
         }
       ],
       "camera": {
         "tipo": "enquadrar",
-        "alvo": "guia",
+        "alvo": "vovo",
         "plano": "medio",
-        "angulo": 0,
-        "elevacao": 6,
-        "aproxima": 0.85
+        "angulo": 15,
+        "deriva": 15,
+        "elevacao": 10,
+        "fov": 46,
+        "olhaDesloca": [
+          0.5,
+          0,
+          0
+        ]
       },
       "textos": [
         {
-          "texto": "E VOCÊ, O QUE ACHA? COMENTA!",
-          "de": 5.3,
-          "ate": 10,
+          "texto": "ÚLTIMA DICA ✅",
+          "de": 80.78,
+          "ate": 84.31,
+          "estilo": "selo"
+        }
+      ]
+    },
+    {
+      "inicio": 84.31,
+      "fim": 86.12,
+      "ambiente": {
+        "fundo": "interior",
+        "horario": "dia",
+        "chao": "piso"
+      },
+      "objetos": [
+        {
+          "id": "extrato",
+          "asset": "extrato",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "params": {
+            "linhas": [
+              "Aposentadoria ........ + R$ 1.518,00",
+              "Remédio .............. − R$ 89,90",
+              "Desconto associativo:  PROIBIDO",
+              "Saldo ................ R$ 1.428,10"
+            ],
+            "destaque": -1
+          },
+          "etapa": [
+            [
+              84.31,
+              0.25
+            ],
+            [
+              85.51,
+              1
+            ]
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            1.7,
+            0,
+            0.9
+          ],
+          "giro": -30,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 84.31,
+              "ate": 86.12
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "v",
+          "pos": [
+            0.78,
+            0.36
+          ],
+          "tamanho": 0.16,
+          "de": 84.61
+        },
+        {
+          "tipo": "etiqueta",
+          "texto": "lei nova proíbe o desconto",
+          "tamanho": 1.2,
+          "ponto": "#5fbf6a",
+          "pos": [
+            0.5,
+            0.2
+          ],
+          "de": 84.51
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0.6,
+            2,
+            7.2
+          ],
+          "olha": [
+            0.3,
+            1.8,
+            0
+          ]
+        },
+        "para": {
+          "pos": [
+            0.4,
+            1.9,
+            6.4
+          ],
+          "olha": [
+            0.3,
+            1.8,
+            0
+          ]
+        },
+        "fov": 48
+      }
+    },
+    {
+      "inicio": 86.12,
+      "fim": 91.53,
+      "ambiente": {
+        "fundo": "cidade",
+        "horario": "dia",
+        "chao": "concreto"
+      },
+      "objetos": [
+        {
+          "id": "casa",
+          "asset": "casa_simples",
+          "variante": "amarela",
+          "pos": [
+            0,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "padaria",
+          "asset": "loja",
+          "variante": "padaria",
+          "pos": [
+            -11,
+            0,
+            -9
+          ]
+        },
+        {
+          "id": "sobrado",
+          "asset": "sobrado",
+          "variante": "salmao",
+          "pos": [
+            11,
+            0,
+            -10
+          ]
+        },
+        {
+          "id": "poste",
+          "asset": "poste_luz",
+          "pos": [
+            -3.2,
+            0,
+            0.2
+          ],
+          "giro": 90
+        },
+        {
+          "id": "arvore",
+          "asset": "arvore_redonda",
+          "pos": [
+            6.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "banco",
+          "asset": "banco",
+          "pos": [
+            3,
+            0,
+            -2.5
+          ]
+        },
+        {
+          "id": "r1",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            -2,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        },
+        {
+          "id": "r2",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            -0.8,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        },
+        {
+          "id": "r3",
+          "asset": "placa",
+          "variante": "reu",
+          "pos": [
+            2,
+            0.95,
+            1.33
+          ],
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.015,
+              "freq": 0.6
+            }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "vovo",
+          "preset": "velhinha",
+          "overrides": {
+            "contornoEspessura": 1.6,
+            "face": {
+              "glasses": true
+            },
+            "top": {
+              "color": "#c86f9b",
+              "sleeves": "long"
+            }
+          },
+          "pos": [
+            0.6,
+            0,
+            1
+          ],
+          "giro": 0,
+          "acoes": [
+            {
+              "clip": "heroi_pose",
+              "de": 86.12,
+              "ate": 91.53
+            }
+          ]
+        },
+        {
+          "id": "aranha",
+          "preset": "aracnildo",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -2,
+            0,
+            1
+          ],
+          "giro": 15,
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 86.12,
+              "ate": 91.53,
+              "expressao": "sad"
+            }
+          ]
+        },
+        {
+          "id": "coruja",
+          "preset": "coruja_noturna",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            -0.8,
+            0,
+            1
+          ],
+          "giro": 10,
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 86.12,
+              "ate": 91.53
+            }
+          ]
+        },
+        {
+          "id": "cometa",
+          "preset": "major_cometa",
+          "overrides": {
+            "contornoEspessura": 1.6
+          },
+          "pos": [
+            2,
+            0,
+            1
+          ],
+          "giro": -15,
+          "acoes": [
+            {
+              "clip": "wave",
+              "de": 86.12,
+              "ate": 91.53,
+              "fase": 0.4
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "travelling",
+        "de": {
+          "pos": [
+            0,
+            1.4,
+            8
+          ],
+          "olha": [
+            0,
+            1.1,
+            1
+          ]
+        },
+        "para": {
+          "pos": [
+            0,
+            1.3,
+            6.6
+          ],
+          "olha": [
+            0,
+            1.1,
+            1
+          ]
+        },
+        "fov": 46
+      },
+      "textos": [
+        {
+          "texto": "Seu avô ou sua avó já teve desconto que não autorizou? 👇",
+          "de": 86.18,
+          "ate": 91.53,
           "estilo": "pergunta"
+        },
+        {
+          "texto": "Ficção inspirada na Op. Sem Desconto",
+          "de": 86.18,
+          "ate": 91.53,
+          "estilo": "rodape"
         }
       ]
     }

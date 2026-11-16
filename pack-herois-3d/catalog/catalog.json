@@ -3496,9 +3496,9 @@
       "label": "Meteoro (bola de fogo)",
       "description": "Bola de fogo com núcleo claro, halo e cauda comprida, voando para +Z (a cauda fica para trás). Tremula sozinha e ilumina em volta. Mova com movimentos ou anim.pos; gire com \"giro\" e anim (eixo x) para descer inclinada.",
       "sizeM": {
-        "x": 3.1,
-        "y": 3.1,
-        "z": 9.5
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.2
       },
       "meshes": 5,
       "params": {
@@ -3534,9 +3534,9 @@
       "label": "Pedra que brilha (meteorito misterioso)",
       "description": "Pedra escura e irregular com rachaduras que brilham e um halo de luz que pulsa e ilumina em volta. setProgress(0..1) controla o brilho (0 = apagada).",
       "sizeM": {
-        "x": 2,
-        "y": 1.6,
-        "z": 1.8
+        "x": 1.4,
+        "y": 1.1,
+        "z": 1.4
       },
       "meshes": 4,
       "params": {
@@ -3586,6 +3586,458 @@
       "variants": [],
       "setProgress": true,
       "update": true,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "bengala",
+      "category": "golpe",
+      "label": "Bengala",
+      "description": "Bengala de madeira com cabo curvo. A base fica no chão (y=0); para dar uma bengalada, gire no eixo x/z com anim.giro e mova com anim.pos (o pivô é a ponta de baixo).",
+      "sizeM": {
+        "x": 0.2,
+        "y": 1,
+        "z": 0.1
+      },
+      "meshes": 3,
+      "params": {
+        "altura": {
+          "default": 0.9,
+          "description": "altura (m)"
+        },
+        "cor": {
+          "default": "#7a4a26",
+          "description": "madeira"
+        }
+      },
+      "variants": [
+        "escura"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "guarda_chuva",
+      "category": "golpe",
+      "label": "Guarda-chuva",
+      "description": "Guarda-chuva de cabo em J. Ponta de baixo no chão (y=0). setProgress: 0 = fechado, 1 = aberto. Gire com anim.giro (eixo x/z) para uma guarda-chuvada.",
+      "sizeM": {
+        "x": 0.2,
+        "y": 1.1,
+        "z": 0.1
+      },
+      "meshes": 4,
+      "params": {
+        "cor": {
+          "default": "#e5322d",
+          "description": "tecido"
+        },
+        "comprimento": {
+          "default": 0.95,
+          "description": "comprimento (m)"
+        },
+        "progress": {
+          "default": 0,
+          "description": "0 fechado, 1 aberto"
+        }
+      },
+      "variants": [
+        "azul",
+        "xadrez",
+        "aberto"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "bolsa",
+      "category": "golpe",
+      "label": "Bolsa de mão",
+      "description": "Bolsa de senhora com alça e fecho dourado. Base em y=0.",
+      "sizeM": {
+        "x": 0.4,
+        "y": 0.4,
+        "z": 0.2
+      },
+      "meshes": 4,
+      "params": {
+        "cor": {
+          "default": "#b23a5a",
+          "description": "couro"
+        },
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        }
+      },
+      "variants": [
+        "marrom",
+        "preta"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "carteira",
+      "category": "golpe",
+      "label": "Carteira de dinheiro",
+      "description": "Carteira de couro com notas aparecendo. Base em y=0. Use tamanho 2–3 para ficar visível em plano aberto.",
+      "sizeM": {
+        "x": 0.2,
+        "y": 0,
+        "z": 0.1
+      },
+      "meshes": 2,
+      "params": {
+        "cor": {
+          "default": "#6b4423",
+          "description": "couro"
+        },
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        }
+      },
+      "variants": [
+        "grande"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "celular",
+      "category": "golpe",
+      "label": "Celular",
+      "description": "Celular com tela acesa (bolha de mensagem). Em pé, base em y=0, tela para +Z. Use tamanho 3–8 para close.",
+      "sizeM": {
+        "x": 0.1,
+        "y": 0.2,
+        "z": 0
+      },
+      "meshes": 2,
+      "params": {
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        },
+        "tela": {
+          "default": "#d9fdd3",
+          "description": "cor da tela"
+        },
+        "texto": {
+          "default": "Vó, troquei de número",
+          "description": "mensagem na tela"
+        }
+      },
+      "variants": [
+        "gigante"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "extrato",
+      "category": "golpe",
+      "label": "Extrato do benefício",
+      "description": "Painel grande de extrato (papel em pé num suporte), com título, linhas de lançamento e UMA linha em destaque vermelho. Frente para +Z, base em y=0. setProgress revela as linhas de cima para baixo (1 = todas).",
+      "sizeM": {
+        "x": 2.5,
+        "y": 3.8,
+        "z": 0.1
+      },
+      "meshes": 4,
+      "params": {
+        "largura": {
+          "default": 2.4,
+          "description": "largura do papel (m)"
+        },
+        "altura": {
+          "default": 3.2,
+          "description": "altura do papel (m)"
+        },
+        "titulo": {
+          "default": "EXTRATO DO BENEFÍCIO",
+          "description": "título"
+        },
+        "linhas": {
+          "default": [
+            "Aposentadoria ........ + R$ 1.518,00",
+            "Empréstimo ........... − R$ 120,00",
+            "MENSALIDADE ASSOCIATIVA − R$ 45,00",
+            "Saldo ................ R$ 1.353,00"
+          ],
+          "description": "linhas de texto"
+        },
+        "destaque": {
+          "default": 2,
+          "description": "índice da linha em destaque (−1 = nenhuma)"
+        },
+        "progress": {
+          "default": 1,
+          "description": "quantas linhas aparecem (0..1)"
+        }
+      },
+      "variants": [
+        "vazio"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "placa",
+      "category": "golpe",
+      "label": "Placa com texto",
+      "description": "Placa retangular com texto (e subtítulo), em dois postes ou solta (poste:false, para segurar à frente do peito ou pendurar). Frente para +Z, base em y=0.",
+      "sizeM": {
+        "x": 3,
+        "y": 2.4,
+        "z": 0.1
+      },
+      "meshes": 4,
+      "params": {
+        "texto": {
+          "default": "ASSOCIAÇÃO",
+          "description": "texto principal"
+        },
+        "sub": {
+          "default": "",
+          "description": "subtítulo (linha menor)"
+        },
+        "largura": {
+          "default": 3,
+          "description": "largura (m)"
+        },
+        "altura": {
+          "default": 1,
+          "description": "altura (m)"
+        },
+        "fundo": {
+          "default": "#1f4e9c",
+          "description": "cor de fundo"
+        },
+        "cor": {
+          "default": "#ffffff",
+          "description": "cor do texto"
+        },
+        "poste": {
+          "default": true,
+          "description": "com dois postes"
+        },
+        "alturaPoste": {
+          "default": 1.4,
+          "description": "altura dos postes (m)"
+        }
+      },
+      "variants": [
+        "reu",
+        "inss"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "cofre",
+      "category": "golpe",
+      "label": "Cofre com dinheiro",
+      "description": "Cofre de aço com porta aberta e pilhas de moedas/notas lá dentro. Frente para +Z, base em y=0. setProgress = quanto dinheiro tem dentro (0 vazio, 1 transbordando). Junte um fluxo \"moeda\" caindo dentro (y ~1).",
+      "sizeM": {
+        "x": 1.4,
+        "y": 1.3,
+        "z": 2.6
+      },
+      "meshes": 20,
+      "params": {
+        "tamanho": {
+          "default": 1.3,
+          "description": "aresta (m)"
+        },
+        "cor": {
+          "default": "#59606b",
+          "description": "aço"
+        },
+        "porta": {
+          "default": 0.75,
+          "description": "abertura da porta 0..1"
+        },
+        "progress": {
+          "default": 0.5,
+          "description": "quantidade de dinheiro"
+        }
+      },
+      "variants": [
+        "cheio",
+        "vazio"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "pilha_papeis",
+      "category": "golpe",
+      "label": "Pilha de papéis",
+      "description": "Pilha de documentos/formulários sobre a base (y=0). setProgress = altura da pilha (0 vazia, 1 = 60 cm). Ótimo com fluxo \"papel\" caindo em cima e o carimbo batendo.",
+      "sizeM": {
+        "x": 0.7,
+        "y": 0.6,
+        "z": 0.6
+      },
+      "meshes": 24,
+      "params": {
+        "largura": {
+          "default": 0.6,
+          "description": "largura da folha (m)"
+        },
+        "progress": {
+          "default": 0.6,
+          "description": "altura da pilha"
+        }
+      },
+      "variants": [
+        "alta"
+      ],
+      "setProgress": true,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "carimbo",
+      "category": "golpe",
+      "label": "Carimbo",
+      "description": "Carimbo de madeira com base de borracha vermelha. Base em y=0. Para carimbar: anim.pos subindo e descendo rápido (ou oscila no eixo y). Use tamanho 2–3 para close.",
+      "sizeM": {
+        "x": 0.1,
+        "y": 0.2,
+        "z": 0.1
+      },
+      "meshes": 4,
+      "params": {
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        },
+        "cor": {
+          "default": "#c81e1e",
+          "description": "tinta"
+        }
+      },
+      "variants": [
+        "grande"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "mesa",
+      "category": "golpe",
+      "label": "Mesa de escritório",
+      "description": "Mesa de escritório de madeira com tampo a 0,76 m (ponha objetos em cima com y=0,78). Base em y=0.",
+      "sizeM": {
+        "x": 1.8,
+        "y": 0.8,
+        "z": 0.9
+      },
+      "meshes": 4,
+      "params": {
+        "largura": {
+          "default": 1.8,
+          "description": "largura (m)"
+        },
+        "profundidade": {
+          "default": 0.9,
+          "description": "profundidade (m)"
+        },
+        "cor": {
+          "default": "#a9743f",
+          "description": "madeira"
+        }
+      },
+      "variants": [
+        "escura",
+        "branca"
+      ],
+      "setProgress": false,
+      "update": false,
+      "wheels": false,
+      "stages": null
+    },
+    {
+      "id": "viatura",
+      "category": "golpe",
+      "label": "Viatura de polícia",
+      "description": "Viatura branca com faixa azul, texto na lateral e giroflex que pisca sozinho (vermelho/azul). Frente para +Z, base em y=0. Rodas giram ao mover.",
+      "sizeM": {
+        "x": 2.2,
+        "y": 1.8,
+        "z": 4.6
+      },
+      "meshes": 16,
+      "params": {
+        "texto": {
+          "default": "POLÍCIA FEDERAL",
+          "description": "texto da lateral"
+        },
+        "faixa": {
+          "default": "#1f4e9c",
+          "description": "cor da faixa"
+        },
+        "sirene": {
+          "default": true,
+          "description": "giroflex piscando"
+        }
+      },
+      "variants": [
+        "parada"
+      ],
+      "setProgress": false,
+      "update": true,
+      "wheels": true,
+      "stages": null
+    },
+    {
+      "id": "saco_lixo",
+      "category": "golpe",
+      "label": "Saco de lixo com dinheiro",
+      "description": "Saco de lixo preto amarrado. setProgress abre o saco e mostra maços de notas saindo (0 fechado, 1 aberto e transbordando). Base em y=0.",
+      "sizeM": {
+        "x": 0.8,
+        "y": 1.1,
+        "z": 0.7
+      },
+      "meshes": 20,
+      "params": {
+        "tamanho": {
+          "default": 1,
+          "description": "escala"
+        },
+        "progress": {
+          "default": 0,
+          "description": "abertura"
+        }
+      },
+      "variants": [
+        "aberto"
+      ],
+      "setProgress": true,
+      "update": false,
       "wheels": false,
       "stages": null
     }

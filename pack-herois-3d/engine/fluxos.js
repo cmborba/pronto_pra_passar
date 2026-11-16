@@ -26,12 +26,18 @@ export const MATERIAIS = {
   luz: { cores: ['#fff6b0', '#ffe066'], forma: 'gota', tam: 0.09, modo: 'jato', vida: 0.9, opac: 0.8, basico: true, arco: 0 },
   fagulha: { cores: ['#ffc14d', '#ff8a1f', '#fff0a0'], forma: 'gota', tam: 0.05, modo: 'jato', vida: 0.6, basico: true },
   fogo: { cores: ['#ffb020', '#ff6a00', '#ffd54a'], forma: 'nuvem', tam: 0.4, modo: 'sobe', vida: 0.7, basico: true, sobe: 1.8, taxa: 24 },
+  // dinheiro e papelada (para golpes, bancos, escritórios)
+  moeda: { cores: ['#ffcf3a', '#f2b51c', '#ffe27a'], forma: 'disco', tam: 0.13, modo: 'jato', vida: 0.9, brilho: true, arco: 0.5 },
+  nota: { cores: ['#5fbf6a', '#7fd68a', '#4aa85a'], forma: 'folha', tam: 0.22, modo: 'queda', vida: 1.4 },
+  papel: { cores: ['#ffffff', '#f2f2ea', '#eef4ff'], forma: 'folha', tam: 0.26, modo: 'queda', vida: 1.4 },
 };
 
 const GEO = {};
 function geometria(forma) {
   if (!GEO[forma]) {
     GEO[forma] = forma === 'gota' ? new THREE.SphereGeometry(1, 6, 4)
+      : forma === 'disco' ? new THREE.CylinderGeometry(1, 1, 0.22, 14)
+      : forma === 'folha' ? new THREE.BoxGeometry(1.6, 0.03, 0.75)
       : forma === 'nuvem' ? new THREE.IcosahedronGeometry(1, 1) : new THREE.IcosahedronGeometry(1, 0);
   }
   return GEO[forma];

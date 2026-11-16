@@ -14,6 +14,7 @@ import './ceu.js';
 import './fisica.js';
 import './animais.js';
 import './espaco.js';
+import './golpe.js';
 
 export {
   SCENERY, CATEGORIES, PAL, SKIES, makeScenery, setProgress, updateScenery, rollWheels, sceneryBox, setupEnvironment,

@@ -1076,6 +1076,22 @@ window.renderAt = (t) => {
         const v = Math.sin(t * (o.freq ?? 1) * Math.PI * 2) * (o.amp ?? 0.2);
         ent.holder.position[o.eixo || 'y'] += v;
       }
+      // anim.opacidade: [[t, 0..1], ...] — some/aparece aos poucos (ex.: invisibilidade de um herói)
+      if (an.opacidade) {
+        const op = clamp(chaves(an.opacidade, t), 0, 1);
+        if (!ent.matsOpacidade) {
+          ent.matsOpacidade = [];
+          ent.holder.traverse((m) => {
+            if (!m.isMesh || !m.material) return;
+            const lista = Array.isArray(m.material) ? m.material : [m.material];
+            const novos = lista.map((mt) => { const c = mt.clone(); c.transparent = true; c.userData.op0 = mt.opacity ?? 1; ent.matsOpacidade.push(c); return c; });
+            m.material = Array.isArray(m.material) ? novos : novos[0];
+          });
+        }
+        for (const mt of ent.matsOpacidade) { mt.opacity = mt.userData.op0 * op; mt.depthWrite = op > 0.95; }
+        ent.holder.traverse((m) => { if (m.isMesh) { m.castShadow = op > 0.5; if (m.name === 'contorno') m.visible = op > 0.9; } });
+        if (op <= 0.01) ent.holder.visible = false;
+      }
     }
     if (ent.tipo === 'objeto') {
       if (d.etapa) setProgress(ent.obj, clamp(chaves(d.etapa, t), 0, 1));
