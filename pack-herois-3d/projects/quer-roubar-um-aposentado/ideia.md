@@ -10,6 +10,14 @@ Formato: "quer roubar…" subindo de nível; os heróis (Aracnildo, Major Cometa
 - Governo devolveu ~R$ 3,6 bi a 5,1 milhões de segurados até out/2026, com recursos públicos, enquanto busca recuperar das entidades (bloqueio de bens) — mixvale 20/10/2026 e 28/10/2026.
 - Lei nº 15.327/2026 proíbe desconto de mensalidades associativas/sindicais direto no benefício.
 
+## Como o esquema funcionava (base da dramatização com os heróis)
+- Entidades assinavam Acordos de Cooperação Técnica (ACT) com o INSS, que permitiam descontar mensalidade direto no benefício.
+- A regra exigia autorização individual (assinatura eletrônica e biometria); segundo a investigação, entidades falsificavam documentos, assinaturas e áudios.
+- Prometiam serviços (assistência jurídica, academia, plano de saúde); muitos só perceberam ao olhar o extrato.
+- CGU auditou 29 entidades e entrevistou ~1.300 aposentados; ACTs suspensos em abril/2025.
+- Em uma fase da operação, R$ 287 mil em espécie em sacos de lixo na casa de um servidor (PE).
+Fontes: https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/04/sem_desconto.pdf · https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/04/governo-suspende-todos-os-acordos-entre-inss-e-associacoes-apos-descontos-ilegais · https://ndmais.com.br/economia/operacao-sem-desconto-bastidores-fraude-no-inss/ · https://www.correiobraziliense.com.br/aqui/2026/09/18/entenda-a-operacao-sem-desconto-e-quem-sao-os-alvos-da-pf/
+
 ## Cuidados
 - Sempre "segundo a PF e a CGU"; "acusados"; citar que a defesa nega.
 - Golpes de rua (bilhete premiado, falso parente) aparecem só como comédia que falha; sem passo a passo.
