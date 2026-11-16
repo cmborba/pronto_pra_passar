@@ -1,224 +1,224 @@
 [
  {
   "n": 1,
-  "texto": "Não roube um aposentado sem antes ver esse vídeo.",
-  "inicio": 0,
-  "fim": 2.09
+  "texto": "Não roube um aposentado sem ver esse vídeo.",
+  "inicio": 0.0,
+  "fim": 2.094
  },
  {
   "n": 2,
-  "texto": "Dica um: se você tem poder de teia, se esconde atrás de um poste e puxa a carteira com a teia.",
-  "inicio": 2.259,
-  "fim": 6.671
+  "texto": "Dica um: com teia, se esconde atrás do poste e puxa a carteira.",
+  "inicio": 2.203,
+  "fim": 5.775
  },
  {
   "n": 3,
   "texto": "O Aracnildo tentou.",
-  "inicio": 6.765,
-  "fim": 7.863
+  "inicio": 5.954,
+  "fim": 6.936
  },
  {
   "n": 4,
-  "texto": "A vovó Dirce puxou de volta.",
-  "inicio": 7.979,
-  "fim": 9.467
+  "texto": "A vovó puxou de volta.",
+  "inicio": 7.045,
+  "fim": 8.405
  },
  {
   "n": 5,
-  "texto": "Bengalada no meio da máscara.",
-  "inicio": 9.636,
-  "fim": 10.966
+  "texto": "Bengalada na máscara.",
+  "inicio": 8.554,
+  "fim": 9.576
  },
  {
   "n": 6,
-  "texto": "Dica dois: não tem teia?",
-  "inicio": 11.135,
-  "fim": 12.613
+  "texto": "Dica dois: sem teia?",
+  "inicio": 9.695,
+  "fim": 11.342
  },
  {
   "n": 7,
-  "texto": "Fica invisível, igual a Coruja Noturna, e chega de mansinho.",
-  "inicio": 12.782,
-  "fim": 15.758
+  "texto": "Fica invisível igual a Coruja e chega de mansinho.",
+  "inicio": 11.462,
+  "fim": 14.17
  },
  {
   "n": 8,
-  "texto": "Só que vovó sente cheiro de golpe de longe.",
-  "inicio": 15.926,
-  "fim": 17.985
+  "texto": "Só que vovó sente golpe de longe.",
+  "inicio": 14.29,
+  "fim": 15.848
  },
  {
   "n": 9,
   "texto": "Guarda-chuva na cabeça.",
-  "inicio": 18.154,
-  "fim": 19.23
+  "inicio": 15.967,
+  "fim": 17.078
  },
  {
   "n": 10,
-  "texto": "Dica três: se nada deu certo, esquece a rua.",
-  "inicio": 19.399,
-  "fim": 21.954
+  "texto": "Dica três: deu tudo errado, esquece a rua.",
+  "inicio": 17.504,
+  "fim": 20.382
  },
  {
   "n": 11,
   "texto": "Abre uma associação.",
-  "inicio": 22.122,
-  "fim": 23.209
+  "inicio": 20.61,
+  "fim": 21.871
  },
  {
   "n": 12,
-  "texto": "Chama o Major Cometa, assina um acordo com o INSS, e pronto: dá pra cobrar mensalidade direto da aposentadoria.",
-  "inicio": 23.346,
-  "fim": 29.235
+  "texto": "Chama o Major Cometa, assina acordo com o INSS, e cobra direto da aposentadoria.",
+  "inicio": 21.903,
+  "fim": 26.378
  },
  {
   "n": 13,
-  "texto": "Mas a regra exige a autorização de cada aposentado.",
-  "inicio": 29.331,
-  "fim": 31.853
+  "texto": "Mas a regra exige autorização do aposentado.",
+  "inicio": 26.656,
+  "fim": 28.799
  },
  {
   "n": 14,
   "texto": "Assinatura e biometria.",
-  "inicio": 31.969,
-  "fim": 33.288
+  "inicio": 29.116,
+  "fim": 30.715
  },
  {
   "n": 15,
   "texto": "Dica quatro: fabrica.",
-  "inicio": 33.405,
-  "fim": 34.703
+  "inicio": 31.081,
+  "fim": 32.788
  },
  {
   "n": 16,
   "texto": "Assinatura falsa, documento falso, até áudio falso.",
-  "inicio": 34.819,
-  "fim": 37.7
+  "inicio": 32.986,
+  "fim": 36.43
  },
  {
   "n": 17,
-  "texto": "Dica cinco: promete academia, advogado e plano de saúde.",
-  "inicio": 37.816,
-  "fim": 40.74
+  "texto": "Dica cinco: promete academia, advogado, plano de saúde.",
+  "inicio": 36.708,
+  "fim": 40.965
  },
  {
   "n": 18,
   "texto": "A vovó nunca vai usar.",
-  "inicio": 40.876,
-  "fim": 42.428
+  "inicio": 41.283,
+  "fim": 42.493
  },
  {
   "n": 19,
-  "texto": "Nem vai saber que é sócia.",
-  "inicio": 42.565,
-  "fim": 43.916
+  "texto": "Nem sabe que é sócia.",
+  "inicio": 42.691,
+  "fim": 43.783
  },
  {
   "n": 20,
-  "texto": "Dica seis: desconta pouquinho todo mês, pra ninguém notar.",
-  "inicio": 44.022,
-  "fim": 46.714
+  "texto": "Dica seis: desconta pouquinho todo mês.",
+  "inicio": 43.892,
+  "fim": 46.314
  },
  {
   "n": 21,
   "texto": "Mensalidade associativa.",
-  "inicio": 46.883,
-  "fim": 47.959
+  "inicio": 46.35,
+  "fim": 47.621
  },
  {
   "n": 22,
   "texto": "Agora multiplica por milhões de aposentados.",
-  "inicio": 48.127,
-  "fim": 50.091
+  "inicio": 47.769,
+  "fim": 49.784
  },
  {
   "n": 23,
-  "texto": "De dois mil e dezenove a dois mil e vinte e quatro, os descontos somaram seis vírgula três bilhões de reais.",
-  "inicio": 50.397,
-  "fim": 56.371
+  "texto": "De dois mil e dezenove a dois mil e vinte e quatro, os descontos somaram seis vírgula três bilhões.",
+  "inicio": 49.893,
+  "fim": 55.063
  },
  {
   "n": 24,
   "texto": "Só esqueceram de um detalhe.",
-  "inicio": 56.54,
-  "fim": 57.616
+  "inicio": 55.291,
+  "fim": 56.68
  },
  {
   "n": 25,
-  "texto": "A CGU foi bater na porta de mil e trezentos aposentados e perguntou: o senhor autorizou isso?",
-  "inicio": 57.869,
-  "fim": 62.46
+  "texto": "A CGU perguntou a mil e trezentos aposentados: o senhor autorizou isso?",
+  "inicio": 56.79,
+  "fim": 60.818
  },
  {
   "n": 26,
   "texto": "Abril de dois mil e vinte e cinco.",
-  "inicio": 62.766,
-  "fim": 64.138
+  "inicio": 61.097,
+  "fim": 62.674
  },
  {
   "n": 27,
   "texto": "Operação Sem Desconto.",
-  "inicio": 64.275,
-  "fim": 65.184
+  "inicio": 62.952,
+  "fim": 64.45
  },
  {
   "n": 28,
   "texto": "Polícia Federal na porta, acordos suspensos, bens bloqueados.",
-  "inicio": 65.321,
-  "fim": 68.128
+  "inicio": 64.48,
+  "fim": 67.804
  },
  {
   "n": 29,
-  "texto": "Numa das casas, dinheiro vivo escondido em saco de lixo.",
-  "inicio": 68.265,
-  "fim": 70.555
+  "texto": "Numa casa, dinheiro vivo em saco de lixo.",
+  "inicio": 67.924,
+  "fim": 70.484
  },
  {
   "n": 30,
   "texto": "Os três heróis viram réus.",
-  "inicio": 70.672,
-  "fim": 71.769
+  "inicio": 70.851,
+  "fim": 72.32
  },
  {
   "n": 31,
-  "texto": "E a parte que quase ninguém conta: mais de seis milhões pediram o dinheiro de volta, e o governo já devolveu três vírgula seis bilhões.",
-  "inicio": 71.959,
-  "fim": 77.321
+  "texto": "E o que ninguém conta: mais de seis milhões pediram de volta, e o governo já devolveu três vírgula seis bilhões.",
+  "inicio": 72.518,
+  "fim": 78.065
  },
  {
   "n": 32,
   "texto": "Com dinheiro público.",
-  "inicio": 77.575,
-  "fim": 78.397
+  "inicio": 78.293,
+  "fim": 79.167
  },
  {
   "n": 33,
-  "texto": "Ou seja, por enquanto, quem pagou foi você.",
-  "inicio": 78.493,
-  "fim": 80.624
+  "texto": "Ou seja, quem pagou foi você.",
+  "inicio": 79.285,
+  "fim": 81.013
  },
  {
   "n": 34,
   "texto": "Última dica, a única que funciona: confere o extrato do seu avô.",
-  "inicio": 80.93,
-  "fim": 84.255
+  "inicio": 81.33,
+  "fim": 85.16
  },
  {
   "n": 35,
-  "texto": "Hoje uma lei já proíbe esse desconto.",
-  "inicio": 84.371,
-  "fim": 86.06
+  "texto": "Hoje uma lei proíbe esse desconto.",
+  "inicio": 85.199,
+  "fim": 86.697
  },
  {
   "n": 36,
   "texto": "Seu avô ou sua avó já teve desconto que não autorizou?",
-  "inicio": 86.175,
-  "fim": 88.931
+  "inicio": 86.926,
+  "fim": 89.992
  },
  {
   "n": 37,
   "texto": "Conta aqui.",
-  "inicio": 89.046,
-  "fim": 89.627
+  "inicio": 90.419,
+  "fim": 91.153
  }
 ]

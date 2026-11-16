@@ -81,7 +81,7 @@ add(0, C(0), {
 });
 
 // =============== DICA 1: teia atrás do poste ===============
-const T1b = W('se', F[1][0] + 1.5);
+const T1b = W('se', F[1][0] + 0.5);
 add(C(0), T1b, {
   ambiente: RUA,
   objetos: rua(),

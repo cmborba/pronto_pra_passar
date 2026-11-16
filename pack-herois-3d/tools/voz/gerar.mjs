@@ -84,7 +84,7 @@ export async function gerarNarracao(raiz, projeto, opcoes = {}) {
     audio = 'narracao.mp3';
     const r = await gerarElevenLabs({
       texto, voiceId: e.voiceId || process.env.ELEVENLABS_VOICE_ID, chave: process.env.ELEVENLABS_API_KEY,
-      modelId: e.modelId, velocidade: opcoes.velocidade || e.velocidade || 1.0, saida: path.join(pasta, audio),
+      modelId: e.modelId, velocidade: opcoes.velocidade || e.velocidade || 1.0, estilo: opcoes.estilo ?? e.estilo ?? 0, saida: path.join(pasta, audio),
     });
     palavras = r.palavras;
     fs.writeFileSync(path.join(pasta, 'palavras.json'), JSON.stringify(palavras, null, 1));

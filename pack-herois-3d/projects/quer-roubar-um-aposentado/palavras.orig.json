@@ -2,1531 +2,1306 @@
  {
   "palavra": "Não",
   "inicio": 0,
-  "fim": 0.163
+  "fim": 0.186
  },
  {
   "palavra": "roube",
-  "inicio": 0.197,
-  "fim": 0.441
+  "inicio": 0.221,
+  "fim": 0.464
  },
  {
   "palavra": "um",
-  "inicio": 0.511,
-  "fim": 0.58
+  "inicio": 0.499,
+  "fim": 0.546
  },
  {
   "palavra": "aposentado",
-  "inicio": 0.627,
-  "fim": 1.138
+  "inicio": 0.592,
+  "fim": 1.231
  },
  {
   "palavra": "sem",
-  "inicio": 1.184,
-  "fim": 1.312
- },
- {
-  "palavra": "antes",
-  "inicio": 1.347,
-  "fim": 1.556
+  "inicio": 1.289,
+  "fim": 1.428
  },
  {
   "palavra": "ver",
-  "inicio": 1.602,
-  "fim": 1.718
+  "inicio": 1.509,
+  "fim": 1.672
  },
  {
   "palavra": "esse",
-  "inicio": 1.765,
-  "fim": 1.892
+  "inicio": 1.718,
+  "fim": 1.858
  },
  {
   "palavra": "vídeo.",
-  "inicio": 1.95,
-  "fim": 2.299
+  "inicio": 1.904,
+  "fim": 2.45
  },
  {
   "palavra": "Dica",
-  "inicio": 2.485,
-  "fim": 2.763
+  "inicio": 2.577,
+  "fim": 2.937
  },
  {
   "palavra": "um:",
-  "inicio": 2.844,
-  "fim": 3.053
+  "inicio": 3.019,
+  "fim": 3.286
  },
  {
-  "palavra": "se",
-  "inicio": 3.204,
-  "fim": 3.297
- },
- {
-  "palavra": "você",
-  "inicio": 3.344,
-  "fim": 3.564
- },
- {
-  "palavra": "tem",
-  "inicio": 3.646,
-  "fim": 3.738
- },
- {
-  "palavra": "poder",
-  "inicio": 3.773,
-  "fim": 4.017
- },
- {
-  "palavra": "de",
-  "inicio": 4.075,
-  "fim": 4.145
+  "palavra": "com",
+  "inicio": 3.46,
+  "fim": 3.611
  },
  {
   "palavra": "teia,",
-  "inicio": 4.214,
-  "fim": 4.551
+  "inicio": 3.68,
+  "fim": 4.145
  },
  {
   "palavra": "se",
-  "inicio": 4.679,
-  "fim": 4.783
+  "inicio": 4.319,
+  "fim": 4.447
  },
  {
   "palavra": "esconde",
-  "inicio": 4.83,
-  "fim": 5.12
+  "inicio": 4.481,
+  "fim": 4.865
  },
  {
   "palavra": "atrás",
-  "inicio": 5.155,
-  "fim": 5.364
- },
- {
-  "palavra": "de",
-  "inicio": 5.387,
-  "fim": 5.433
- },
- {
-  "palavra": "um",
-  "inicio": 5.468,
-  "fim": 5.515
- },
- {
-  "palavra": "poste",
-  "inicio": 5.55,
-  "fim": 5.863
- },
- {
-  "palavra": "e",
-  "inicio": 5.921,
-  "fim": 5.979
- },
- {
-  "palavra": "puxa",
-  "inicio": 6.037,
-  "fim": 6.304
- },
- {
-  "palavra": "a",
-  "inicio": 6.339,
-  "fim": 6.374
- },
- {
-  "palavra": "carteira",
-  "inicio": 6.42,
-  "fim": 6.769
- },
- {
-  "palavra": "com",
-  "inicio": 6.815,
-  "fim": 6.908
- },
- {
-  "palavra": "a",
-  "inicio": 6.943,
-  "fim": 6.966
- },
- {
-  "palavra": "teia.",
-  "inicio": 7.001,
-  "fim": 7.338
- },
- {
-  "palavra": "O",
-  "inicio": 7.442,
-  "fim": 7.488
- },
- {
-  "palavra": "Aracnildo",
-  "inicio": 7.593,
-  "fim": 8.127
- },
- {
-  "palavra": "tentou.",
-  "inicio": 8.197,
-  "fim": 8.649
- },
- {
-  "palavra": "A",
-  "inicio": 8.777,
-  "fim": 8.847
- },
- {
-  "palavra": "vovó",
-  "inicio": 8.916,
-  "fim": 9.16
- },
- {
-  "palavra": "Dirce",
-  "inicio": 9.207,
-  "fim": 9.485
- },
- {
-  "palavra": "puxou",
-  "inicio": 9.532,
-  "fim": 9.834
- },
- {
-  "palavra": "de",
-  "inicio": 9.88,
-  "fim": 9.938
- },
- {
-  "palavra": "volta.",
-  "inicio": 9.985,
-  "fim": 10.414
- },
- {
-  "palavra": "Bengalada",
-  "inicio": 10.6,
-  "fim": 11.157
- },
- {
-  "palavra": "no",
-  "inicio": 11.192,
-  "fim": 11.262
- },
- {
-  "palavra": "meio",
-  "inicio": 11.308,
-  "fim": 11.471
- },
- {
-  "palavra": "da",
-  "inicio": 11.505,
-  "fim": 11.575
- },
- {
-  "palavra": "máscara.",
-  "inicio": 11.622,
-  "fim": 12.063
- },
- {
-  "palavra": "Dica",
-  "inicio": 12.249,
-  "fim": 12.515
- },
- {
-  "palavra": "dois:",
-  "inicio": 12.55,
-  "fim": 12.98
- },
- {
-  "palavra": "não",
-  "inicio": 13.131,
-  "fim": 13.258
- },
- {
-  "palavra": "tem",
-  "inicio": 13.293,
-  "fim": 13.409
- },
- {
-  "palavra": "teia?",
-  "inicio": 13.456,
-  "fim": 13.874
- },
- {
-  "palavra": "Fica",
-  "inicio": 14.06,
-  "fim": 14.338
- },
- {
-  "palavra": "invisível,",
-  "inicio": 14.396,
-  "fim": 15.023
- },
- {
-  "palavra": "igual",
-  "inicio": 15.058,
-  "fim": 15.29
- },
- {
-  "palavra": "a",
-  "inicio": 15.325,
-  "fim": 15.36
- },
- {
-  "palavra": "Coruja",
-  "inicio": 15.406,
-  "fim": 15.685
- },
- {
-  "palavra": "Noturna,",
-  "inicio": 15.72,
-  "fim": 16.219
- },
- {
-  "palavra": "e",
-  "inicio": 16.3,
-  "fim": 16.405
- },
- {
-  "palavra": "chega",
-  "inicio": 16.44,
-  "fim": 16.66
- },
- {
-  "palavra": "de",
-  "inicio": 16.695,
-  "fim": 16.765
- },
- {
-  "palavra": "mansinho.",
-  "inicio": 16.823,
-  "fim": 17.334
- },
- {
-  "palavra": "Só",
-  "inicio": 17.519,
-  "fim": 17.705
- },
- {
-  "palavra": "que",
-  "inicio": 17.752,
-  "fim": 17.821
- },
- {
-  "palavra": "vovó",
-  "inicio": 17.856,
-  "fim": 18.135
- },
- {
-  "palavra": "sente",
-  "inicio": 18.239,
-  "fim": 18.506
- },
- {
-  "palavra": "cheiro",
-  "inicio": 18.541,
-  "fim": 18.785
- },
- {
-  "palavra": "de",
-  "inicio": 18.831,
-  "fim": 18.901
- },
- {
-  "palavra": "golpe",
-  "inicio": 18.947,
-  "fim": 19.214
- },
- {
-  "palavra": "de",
-  "inicio": 19.249,
-  "fim": 19.319
- },
- {
-  "palavra": "longe.",
-  "inicio": 19.365,
-  "fim": 19.783
- },
- {
-  "palavra": "Guarda-chuva",
-  "inicio": 19.969,
-  "fim": 20.538
- },
- {
-  "palavra": "na",
-  "inicio": 20.573,
-  "fim": 20.631
- },
- {
-  "palavra": "cabeça.",
-  "inicio": 20.666,
-  "fim": 21.153
- },
- {
-  "palavra": "Dica",
-  "inicio": 21.339,
-  "fim": 21.594
- },
- {
-  "palavra": "três:",
-  "inicio": 21.629,
-  "fim": 22.024
- },
- {
-  "palavra": "se",
-  "inicio": 22.233,
-  "fim": 22.337
- },
- {
-  "palavra": "nada",
-  "inicio": 22.384,
-  "fim": 22.593
- },
- {
-  "palavra": "deu",
-  "inicio": 22.628,
-  "fim": 22.744
- },
- {
-  "palavra": "certo,",
-  "inicio": 22.79,
-  "fim": 23.208
- },
- {
-  "palavra": "esquece",
-  "inicio": 23.266,
-  "fim": 23.684
- },
- {
-  "palavra": "a",
-  "inicio": 23.719,
-  "fim": 23.742
- },
- {
-  "palavra": "rua.",
-  "inicio": 23.777,
-  "fim": 24.149
- },
- {
-  "palavra": "Abre",
-  "inicio": 24.334,
-  "fim": 24.578
- },
- {
-  "palavra": "uma",
-  "inicio": 24.601,
-  "fim": 24.718
- },
- {
-  "palavra": "associação.",
-  "inicio": 24.752,
-  "fim": 25.53
- },
- {
-  "palavra": "Chama",
-  "inicio": 25.681,
-  "fim": 25.995
- },
- {
-  "palavra": "o",
-  "inicio": 26.029,
-  "fim": 26.053
- },
- {
-  "palavra": "Major",
-  "inicio": 26.088,
-  "fim": 26.319
- },
- {
-  "palavra": "Cometa,",
-  "inicio": 26.354,
-  "fim": 26.842
- },
- {
-  "palavra": "assina",
-  "inicio": 26.9,
-  "fim": 27.225
- },
- {
-  "palavra": "um",
-  "inicio": 27.248,
-  "fim": 27.295
- },
- {
-  "palavra": "acordo",
-  "inicio": 27.341,
-  "fim": 27.689
- },
- {
-  "palavra": "com",
-  "inicio": 27.724,
-  "fim": 27.852
- },
- {
-  "palavra": "o",
-  "inicio": 27.921,
-  "fim": 27.945
- },
- {
-  "palavra": "INSS,",
-  "inicio": 27.991,
-  "fim": 28.839
- },
- {
-  "palavra": "e",
-  "inicio": 28.955,
-  "fim": 29.059
- },
- {
-  "palavra": "pronto:",
-  "inicio": 29.117,
-  "fim": 29.547
- },
- {
-  "palavra": "dá",
-  "inicio": 29.756,
-  "fim": 29.884
- },
- {
-  "palavra": "pra",
-  "inicio": 29.93,
-  "fim": 30.034
- },
- {
-  "palavra": "cobrar",
-  "inicio": 30.069,
-  "fim": 30.371
- },
- {
-  "palavra": "mensalidade",
-  "inicio": 30.418,
-  "fim": 30.917
- },
- {
-  "palavra": "direto",
-  "inicio": 30.952,
-  "fim": 31.335
- },
- {
-  "palavra": "da",
-  "inicio": 31.37,
-  "fim": 31.439
- },
- {
-  "palavra": "aposentadoria.",
-  "inicio": 31.474,
-  "fim": 32.159
- },
- {
-  "palavra": "Mas",
-  "inicio": 32.264,
-  "fim": 32.426
- },
- {
-  "palavra": "a",
-  "inicio": 32.484,
-  "fim": 32.507
- },
- {
-  "palavra": "regra",
-  "inicio": 32.554,
-  "fim": 32.809
- },
- {
-  "palavra": "exige",
-  "inicio": 32.891,
-  "fim": 33.285
- },
- {
-  "palavra": "a",
-  "inicio": 33.308,
-  "fim": 33.332
- },
- {
-  "palavra": "autorização",
-  "inicio": 33.367,
-  "fim": 33.947
- },
- {
-  "palavra": "de",
-  "inicio": 33.982,
-  "fim": 34.04
- },
- {
-  "palavra": "cada",
-  "inicio": 34.121,
-  "fim": 34.353
- },
- {
-  "palavra": "aposentado.",
-  "inicio": 34.377,
-  "fim": 35.038
- },
- {
-  "palavra": "Assinatura",
-  "inicio": 35.166,
-  "fim": 35.77
- },
- {
-  "palavra": "e",
-  "inicio": 35.874,
-  "fim": 35.944
- },
- {
-  "palavra": "biometria.",
-  "inicio": 35.99,
-  "fim": 36.617
- },
- {
-  "palavra": "Dica",
-  "inicio": 36.745,
-  "fim": 37
- },
- {
-  "palavra": "quatro:",
-  "inicio": 37.047,
-  "fim": 37.476
- },
- {
-  "palavra": "fabrica.",
-  "inicio": 37.604,
-  "fim": 38.173
- },
- {
-  "palavra": "Assinatura",
-  "inicio": 38.301,
-  "fim": 38.812
- },
- {
-  "palavra": "falsa,",
-  "inicio": 38.87,
-  "fim": 39.346
- },
- {
-  "palavra": "documento",
-  "inicio": 39.45,
-  "fim": 39.798
- },
- {
-  "palavra": "falso,",
-  "inicio": 39.856,
-  "fim": 40.286
- },
- {
-  "palavra": "até",
-  "inicio": 40.39,
-  "fim": 40.622
- },
- {
-  "palavra": "áudio",
-  "inicio": 40.692,
-  "fim": 40.913
- },
- {
-  "palavra": "falso.",
-  "inicio": 40.971,
-  "fim": 41.47
- },
- {
-  "palavra": "Dica",
-  "inicio": 41.598,
-  "fim": 41.83
- },
- {
-  "palavra": "cinco:",
-  "inicio": 41.865,
-  "fim": 42.224
- },
- {
-  "palavra": "promete",
-  "inicio": 42.329,
-  "fim": 42.631
- },
- {
-  "palavra": "academia,",
-  "inicio": 42.654,
-  "fim": 43.142
- },
- {
-  "palavra": "advogado",
-  "inicio": 43.223,
-  "fim": 43.838
- },
- {
-  "palavra": "e",
-  "inicio": 43.896,
-  "fim": 43.978
- },
- {
-  "palavra": "plano",
-  "inicio": 44.036,
-  "fim": 44.268
- },
- {
-  "palavra": "de",
-  "inicio": 44.303,
-  "fim": 44.361
- },
- {
-  "palavra": "saúde.",
-  "inicio": 44.396,
-  "fim": 44.814
- },
- {
-  "palavra": "A",
-  "inicio": 44.964,
-  "fim": 45.022
- },
- {
-  "palavra": "vovó",
-  "inicio": 45.092,
-  "fim": 45.417
- },
- {
-  "palavra": "nunca",
-  "inicio": 45.545,
-  "fim": 46.033
- },
- {
-  "palavra": "vai",
-  "inicio": 46.091,
-  "fim": 46.23
- },
- {
-  "palavra": "usar.",
-  "inicio": 46.265,
-  "fim": 46.671
- },
- {
-  "palavra": "Nem",
-  "inicio": 46.822,
-  "fim": 47.031
- },
- {
-  "palavra": "vai",
-  "inicio": 47.089,
-  "fim": 47.217
- },
- {
-  "palavra": "saber",
-  "inicio": 47.252,
-  "fim": 47.553
- },
- {
-  "palavra": "que",
-  "inicio": 47.623,
-  "fim": 47.704
- },
- {
-  "palavra": "é",
-  "inicio": 47.739,
-  "fim": 47.774
- },
- {
-  "palavra": "sócia.",
-  "inicio": 47.832,
-  "fim": 48.308
- },
- {
-  "palavra": "Dica",
-  "inicio": 48.424,
-  "fim": 48.622
- },
- {
-  "palavra": "seis:",
-  "inicio": 48.656,
-  "fim": 49.028
- },
- {
-  "palavra": "desconta",
-  "inicio": 49.098,
-  "fim": 49.562
- },
- {
-  "palavra": "pouquinho",
-  "inicio": 49.597,
-  "fim": 49.945
- },
- {
-  "palavra": "todo",
-  "inicio": 49.992,
-  "fim": 50.154
- },
- {
-  "palavra": "mês,",
-  "inicio": 50.189,
-  "fim": 50.456
- },
- {
-  "palavra": "pra",
-  "inicio": 50.491,
-  "fim": 50.595
- },
- {
-  "palavra": "ninguém",
-  "inicio": 50.63,
-  "fim": 50.92
- },
- {
-  "palavra": "notar.",
-  "inicio": 50.955,
-  "fim": 51.385
- },
- {
-  "palavra": "Mensalidade",
-  "inicio": 51.571,
-  "fim": 52.058
- },
- {
-  "palavra": "associativa.",
-  "inicio": 52.081,
-  "fim": 52.755
- },
- {
-  "palavra": "Agora",
-  "inicio": 52.94,
-  "fim": 53.219
- },
- {
-  "palavra": "multiplica",
-  "inicio": 53.254,
-  "fim": 53.66
- },
- {
-  "palavra": "por",
-  "inicio": 53.695,
-  "fim": 53.811
- },
- {
-  "palavra": "milhões",
-  "inicio": 53.869,
-  "fim": 54.241
- },
- {
-  "palavra": "de",
-  "inicio": 54.264,
-  "fim": 54.31
- },
- {
-  "palavra": "aposentados.",
-  "inicio": 54.334,
-  "fim": 55.1
- },
- {
-  "palavra": "De",
-  "inicio": 55.437,
-  "fim": 55.529
- },
- {
-  "palavra": "dois",
-  "inicio": 55.611,
-  "fim": 55.831
- },
- {
-  "palavra": "mil",
-  "inicio": 55.901,
-  "fim": 56.063
- },
- {
-  "palavra": "e",
-  "inicio": 56.214,
-  "fim": 56.342
- },
- {
-  "palavra": "dezenove",
-  "inicio": 56.4,
-  "fim": 56.888
- },
- {
-  "palavra": "a",
-  "inicio": 56.969,
-  "fim": 57.039
- },
- {
-  "palavra": "dois",
-  "inicio": 57.097,
-  "fim": 57.294
- },
- {
-  "palavra": "mil",
-  "inicio": 57.364,
-  "fim": 57.503
- },
- {
-  "palavra": "e",
-  "inicio": 57.584,
-  "fim": 57.689
- },
- {
-  "palavra": "vinte",
-  "inicio": 57.759,
-  "fim": 57.991
- },
- {
-  "palavra": "e",
-  "inicio": 58.026,
-  "fim": 58.049
- },
- {
-  "palavra": "quatro,",
-  "inicio": 58.107,
-  "fim": 58.548
- },
- {
-  "palavra": "os",
-  "inicio": 58.699,
-  "fim": 58.827
- },
- {
-  "palavra": "descontos",
-  "inicio": 58.873,
-  "fim": 59.256
- },
- {
-  "palavra": "somaram",
-  "inicio": 59.279,
-  "fim": 59.593
- },
- {
-  "palavra": "seis",
-  "inicio": 59.697,
-  "fim": 59.93
- },
- {
-  "palavra": "vírgula",
-  "inicio": 60.011,
-  "fim": 60.406
- },
- {
-  "palavra": "três",
-  "inicio": 60.51,
-  "fim": 60.847
- },
- {
-  "palavra": "bilhões",
-  "inicio": 60.951,
-  "fim": 61.381
- },
- {
-  "palavra": "de",
-  "inicio": 61.427,
-  "fim": 61.485
- },
- {
-  "palavra": "reais.",
-  "inicio": 61.532,
-  "fim": 62.008
- },
- {
-  "palavra": "Só",
-  "inicio": 62.194,
-  "fim": 62.321
- },
- {
-  "palavra": "esqueceram",
-  "inicio": 62.356,
-  "fim": 62.739
- },
- {
-  "palavra": "de",
-  "inicio": 62.774,
-  "fim": 62.82
- },
- {
-  "palavra": "um",
-  "inicio": 62.855,
-  "fim": 62.902
- },
- {
-  "palavra": "detalhe.",
-  "inicio": 62.937,
-  "fim": 63.378
- },
- {
-  "palavra": "A",
-  "inicio": 63.656,
-  "fim": 63.726
- },
- {
-  "palavra": "CGU",
-  "inicio": 63.831,
-  "fim": 64.214
- },
- {
-  "palavra": "foi",
-  "inicio": 64.318,
-  "fim": 64.434
- },
- {
-  "palavra": "bater",
-  "inicio": 64.469,
-  "fim": 64.701
- },
- {
-  "palavra": "na",
-  "inicio": 64.759,
-  "fim": 64.829
- },
- {
-  "palavra": "porta",
-  "inicio": 64.899,
-  "fim": 65.189
- },
- {
-  "palavra": "de",
-  "inicio": 65.224,
-  "fim": 65.293
- },
- {
-  "palavra": "mil",
-  "inicio": 65.375,
-  "fim": 65.514
- },
- {
-  "palavra": "e",
-  "inicio": 65.595,
-  "fim": 65.653
- },
- {
-  "palavra": "trezentos",
-  "inicio": 65.688,
-  "fim": 66.036
- },
- {
-  "palavra": "aposentados",
-  "inicio": 66.071,
-  "fim": 66.64
- },
- {
-  "palavra": "e",
-  "inicio": 66.721,
-  "fim": 66.825
- },
- {
-  "palavra": "perguntou:",
-  "inicio": 66.872,
-  "fim": 67.441
- },
- {
-  "palavra": "o",
-  "inicio": 67.719,
-  "fim": 67.766
- },
- {
-  "palavra": "senhor",
-  "inicio": 67.801,
-  "fim": 68.021
- },
- {
-  "palavra": "autorizou",
-  "inicio": 68.056,
-  "fim": 68.37
- },
- {
-  "palavra": "isso?",
-  "inicio": 68.404,
-  "fim": 68.706
- },
- {
-  "palavra": "Abril",
-  "inicio": 69.043,
-  "fim": 69.275
- },
- {
-  "palavra": "de",
-  "inicio": 69.31,
-  "fim": 69.38
- },
- {
-  "palavra": "dois",
-  "inicio": 69.415,
-  "fim": 69.565
- },
- {
-  "palavra": "mil",
-  "inicio": 69.623,
-  "fim": 69.74
- },
- {
-  "palavra": "e",
-  "inicio": 69.798,
-  "fim": 69.832
- },
- {
-  "palavra": "vinte",
-  "inicio": 69.879,
-  "fim": 70.076
- },
- {
-  "palavra": "e",
-  "inicio": 70.099,
-  "fim": 70.123
- },
- {
-  "palavra": "cinco.",
-  "inicio": 70.146,
-  "fim": 70.552
- },
- {
-  "palavra": "Operação",
-  "inicio": 70.703,
-  "fim": 71.075
- },
- {
-  "palavra": "Sem",
-  "inicio": 71.11,
-  "fim": 71.191
- },
- {
-  "palavra": "Desconto.",
-  "inicio": 71.226,
-  "fim": 71.702
- },
- {
-  "palavra": "Polícia",
-  "inicio": 71.853,
-  "fim": 72.143
- },
- {
-  "palavra": "Federal",
-  "inicio": 72.178,
-  "fim": 72.433
- },
- {
-  "palavra": "na",
-  "inicio": 72.456,
-  "fim": 72.526
- },
- {
-  "palavra": "porta,",
-  "inicio": 72.561,
-  "fim": 72.932
- },
- {
-  "palavra": "acordos",
-  "inicio": 72.99,
-  "fim": 73.385
- },
- {
-  "palavra": "suspensos,",
-  "inicio": 73.408,
-  "fim": 74.047
- },
- {
-  "palavra": "bens",
-  "inicio": 74.151,
-  "fim": 74.337
- },
- {
-  "palavra": "bloqueados.",
-  "inicio": 74.372,
-  "fim": 74.941
- },
- {
-  "palavra": "Numa",
-  "inicio": 75.092,
-  "fim": 75.243
- },
- {
-  "palavra": "das",
-  "inicio": 75.278,
-  "fim": 75.405
- },
- {
-  "palavra": "casas,",
-  "inicio": 75.452,
-  "fim": 75.928
- },
- {
-  "palavra": "dinheiro",
-  "inicio": 76.009,
-  "fim": 76.276
- },
- {
-  "palavra": "vivo",
-  "inicio": 76.311,
-  "fim": 76.497
- },
- {
-  "palavra": "escondido",
-  "inicio": 76.52,
-  "fim": 76.845
- },
- {
-  "palavra": "em",
-  "inicio": 76.868,
-  "fim": 76.915
- },
- {
-  "palavra": "saco",
-  "inicio": 76.949,
-  "fim": 77.147
- },
- {
-  "palavra": "de",
-  "inicio": 77.182,
-  "fim": 77.228
- },
- {
-  "palavra": "lixo.",
-  "inicio": 77.263,
-  "fim": 77.611
- },
- {
-  "palavra": "Os",
-  "inicio": 77.739,
-  "fim": 77.878
- },
- {
-  "palavra": "três",
-  "inicio": 77.925,
-  "fim": 78.099
- },
- {
-  "palavra": "heróis",
-  "inicio": 78.122,
-  "fim": 78.342
- },
- {
-  "palavra": "viram",
-  "inicio": 78.377,
-  "fim": 78.54
- },
- {
-  "palavra": "réus.",
-  "inicio": 78.575,
-  "fim": 78.946
- },
- {
-  "palavra": "E",
-  "inicio": 79.155,
-  "fim": 79.225
- },
- {
-  "palavra": "a",
-  "inicio": 79.283,
-  "fim": 79.306
- },
- {
-  "palavra": "parte",
-  "inicio": 79.364,
-  "fim": 79.562
- },
- {
-  "palavra": "que",
-  "inicio": 79.585,
-  "fim": 79.666
- },
- {
-  "palavra": "quase",
-  "inicio": 79.724,
-  "fim": 79.945
- },
- {
-  "palavra": "ninguém",
-  "inicio": 79.979,
-  "fim": 80.223
- },
- {
-  "palavra": "conta:",
-  "inicio": 80.27,
-  "fim": 80.664
- },
- {
-  "palavra": "mais",
-  "inicio": 80.792,
-  "fim": 80.978
- },
- {
-  "palavra": "de",
-  "inicio": 81.013,
-  "fim": 81.071
- },
- {
-  "palavra": "seis",
-  "inicio": 81.14,
-  "fim": 81.315
- },
- {
-  "palavra": "milhões",
-  "inicio": 81.349,
-  "fim": 81.628
- },
- {
-  "palavra": "pediram",
-  "inicio": 81.686,
-  "fim": 81.93
- },
- {
-  "palavra": "o",
-  "inicio": 81.976,
-  "fim": 82
- },
- {
-  "palavra": "dinheiro",
-  "inicio": 82.034,
-  "fim": 82.267
- },
- {
-  "palavra": "de",
-  "inicio": 82.301,
-  "fim": 82.36
- },
- {
-  "palavra": "volta,",
-  "inicio": 82.394,
-  "fim": 82.743
- },
- {
-  "palavra": "e",
-  "inicio": 82.812,
-  "fim": 82.894
- },
- {
-  "palavra": "o",
-  "inicio": 82.928,
-  "fim": 82.952
- },
- {
-  "palavra": "governo",
-  "inicio": 82.986,
-  "fim": 83.288
- },
- {
-  "palavra": "já",
-  "inicio": 83.323,
-  "fim": 83.393
- },
- {
-  "palavra": "devolveu",
-  "inicio": 83.428,
-  "fim": 83.718
- },
- {
-  "palavra": "três",
-  "inicio": 83.764,
-  "fim": 83.938
- },
- {
-  "palavra": "vírgula",
-  "inicio": 83.985,
-  "fim": 84.264
- },
- {
-  "palavra": "seis",
-  "inicio": 84.31,
-  "fim": 84.484
- },
- {
-  "palavra": "bilhões.",
-  "inicio": 84.519,
-  "fim": 85.053
- },
- {
-  "palavra": "Com",
-  "inicio": 85.332,
-  "fim": 85.483
- },
- {
-  "palavra": "dinheiro",
-  "inicio": 85.517,
-  "fim": 85.784
- },
- {
-  "palavra": "público.",
-  "inicio": 85.819,
-  "fim": 86.237
- },
- {
-  "palavra": "Ou",
-  "inicio": 86.342,
-  "fim": 86.458
- },
- {
-  "palavra": "seja,",
-  "inicio": 86.516,
-  "fim": 86.922
- },
- {
-  "palavra": "por",
-  "inicio": 87.108,
-  "fim": 87.213
- },
- {
-  "palavra": "enquanto,",
-  "inicio": 87.247,
-  "fim": 87.584
- },
- {
-  "palavra": "quem",
-  "inicio": 87.619,
-  "fim": 87.747
- },
- {
-  "palavra": "pagou",
-  "inicio": 87.793,
-  "fim": 88.048
- },
- {
-  "palavra": "foi",
-  "inicio": 88.106,
-  "fim": 88.223
- },
- {
-  "palavra": "você.",
-  "inicio": 88.257,
-  "fim": 88.686
- },
- {
-  "palavra": "Última",
-  "inicio": 89.023,
-  "fim": 89.279
- },
- {
-  "palavra": "dica,",
-  "inicio": 89.313,
-  "fim": 89.708
- },
- {
-  "palavra": "a",
-  "inicio": 89.859,
-  "fim": 89.894
- },
- {
-  "palavra": "única",
-  "inicio": 89.952,
-  "fim": 90.138
- },
- {
-  "palavra": "que",
-  "inicio": 90.173,
-  "fim": 90.254
- },
- {
-  "palavra": "funciona:",
-  "inicio": 90.289,
-  "fim": 90.834
- },
- {
-  "palavra": "confere",
-  "inicio": 90.962,
-  "fim": 91.415
- },
- {
-  "palavra": "o",
-  "inicio": 91.473,
-  "fim": 91.543
- },
- {
-  "palavra": "extrato",
-  "inicio": 91.589,
-  "fim": 92.019
+  "inicio": 4.888,
+  "fim": 5.143
  },
  {
   "palavra": "do",
-  "inicio": 92.053,
-  "fim": 92.123
+  "inicio": 5.19,
+  "fim": 5.248
  },
  {
-  "palavra": "seu",
-  "inicio": 92.181,
-  "fim": 92.32
+  "palavra": "poste",
+  "inicio": 5.306,
+  "fim": 5.619
  },
  {
-  "palavra": "avô.",
-  "inicio": 92.367,
-  "fim": 92.68
+  "palavra": "e",
+  "inicio": 5.642,
+  "fim": 5.666
  },
  {
-  "palavra": "Hoje",
-  "inicio": 92.808,
-  "fim": 93.122
+  "palavra": "puxa",
+  "inicio": 5.759,
+  "fim": 6.06
  },
  {
-  "palavra": "uma",
-  "inicio": 93.191,
-  "fim": 93.319
+  "palavra": "a",
+  "inicio": 6.084,
+  "fim": 6.107
  },
  {
-  "palavra": "lei",
-  "inicio": 93.365,
-  "fim": 93.493
+  "palavra": "carteira.",
+  "inicio": 6.13,
+  "fim": 6.757
  },
  {
-  "palavra": "já",
-  "inicio": 93.551,
-  "fim": 93.644
+  "palavra": "O",
+  "inicio": 6.966,
+  "fim": 7.047
  },
  {
-  "palavra": "proíbe",
-  "inicio": 93.702,
-  "fim": 94.085
+  "palavra": "Aracnildo",
+  "inicio": 7.117,
+  "fim": 7.593
  },
  {
-  "palavra": "esse",
-  "inicio": 94.12,
-  "fim": 94.248
+  "palavra": "tentou.",
+  "inicio": 7.639,
+  "fim": 8.115
  },
  {
-  "palavra": "desconto.",
-  "inicio": 94.282,
-  "fim": 94.666
+  "palavra": "A",
+  "inicio": 8.243,
+  "fim": 8.313
  },
  {
-  "palavra": "Seu",
-  "inicio": 94.793,
-  "fim": 94.979
+  "palavra": "vovó",
+  "inicio": 8.394,
+  "fim": 8.684
  },
  {
-  "palavra": "avô",
-  "inicio": 95.026,
-  "fim": 95.304
+  "palavra": "puxou",
+  "inicio": 8.742,
+  "fim": 9.114
  },
  {
-  "palavra": "ou",
-  "inicio": 95.374,
-  "fim": 95.467
+  "palavra": "de",
+  "inicio": 9.16,
+  "fim": 9.218
  },
  {
-  "palavra": "sua",
-  "inicio": 95.525,
-  "fim": 95.722
+  "palavra": "volta.",
+  "inicio": 9.265,
+  "fim": 9.834
  },
  {
-  "palavra": "avó",
-  "inicio": 95.745,
-  "fim": 96.001
+  "palavra": "Bengalada",
+  "inicio": 10.008,
+  "fim": 10.542
  },
  {
-  "palavra": "já",
-  "inicio": 96.105,
-  "fim": 96.233
+  "palavra": "na",
+  "inicio": 10.577,
+  "fim": 10.635
  },
  {
-  "palavra": "teve",
-  "inicio": 96.291,
-  "fim": 96.477
+  "palavra": "máscara.",
+  "inicio": 10.681,
+  "fim": 11.204
  },
  {
-  "palavra": "desconto",
-  "inicio": 96.512,
-  "fim": 96.964
+  "palavra": "Dica",
+  "inicio": 11.343,
+  "fim": 11.68
+ },
+ {
+  "palavra": "dois:",
+  "inicio": 11.726,
+  "fim": 12.202
+ },
+ {
+  "palavra": "sem",
+  "inicio": 12.469,
+  "fim": 12.678
+ },
+ {
+  "palavra": "teia?",
+  "inicio": 12.771,
+  "fim": 13.27
+ },
+ {
+  "palavra": "Fica",
+  "inicio": 13.41,
+  "fim": 13.688
+ },
+ {
+  "palavra": "invisível",
+  "inicio": 13.711,
+  "fim": 14.269
+ },
+ {
+  "palavra": "igual",
+  "inicio": 14.303,
+  "fim": 14.559
+ },
+ {
+  "palavra": "a",
+  "inicio": 14.605,
+  "fim": 14.629
+ },
+ {
+  "palavra": "Coruja",
+  "inicio": 14.663,
+  "fim": 15.139
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.232,
+  "fim": 15.372
+ },
+ {
+  "palavra": "chega",
+  "inicio": 15.453,
+  "fim": 15.802
+ },
+ {
+  "palavra": "de",
+  "inicio": 15.836,
+  "fim": 15.883
+ },
+ {
+  "palavra": "mansinho.",
+  "inicio": 15.929,
+  "fim": 16.579
+ },
+ {
+  "palavra": "Só",
+  "inicio": 16.719,
+  "fim": 16.905
  },
  {
   "palavra": "que",
-  "inicio": 97.022,
-  "fim": 97.127
+  "inicio": 16.951,
+  "fim": 17.021
+ },
+ {
+  "palavra": "vovó",
+  "inicio": 17.067,
+  "fim": 17.357
+ },
+ {
+  "palavra": "sente",
+  "inicio": 17.427,
+  "fim": 17.659
+ },
+ {
+  "palavra": "golpe",
+  "inicio": 17.717,
+  "fim": 17.949
+ },
+ {
+  "palavra": "de",
+  "inicio": 17.973,
+  "fim": 18.019
+ },
+ {
+  "palavra": "longe.",
+  "inicio": 18.054,
+  "fim": 18.542
+ },
+ {
+  "palavra": "Guarda-chuva",
+  "inicio": 18.681,
+  "fim": 19.285
+ },
+ {
+  "palavra": "na",
+  "inicio": 19.308,
+  "fim": 19.354
+ },
+ {
+  "palavra": "cabeça.",
+  "inicio": 19.389,
+  "fim": 19.981
+ },
+ {
+  "palavra": "Dica",
+  "inicio": 20.48,
+  "fim": 20.84
+ },
+ {
+  "palavra": "três:",
+  "inicio": 20.887,
+  "fim": 21.363
+ },
+ {
+  "palavra": "deu",
+  "inicio": 21.537,
+  "fim": 21.723
+ },
+ {
+  "palavra": "tudo",
+  "inicio": 21.816,
+  "fim": 22.106
+ },
+ {
+  "palavra": "errado,",
+  "inicio": 22.129,
+  "fim": 22.628
+ },
+ {
+  "palavra": "esquece",
+  "inicio": 22.895,
+  "fim": 23.394
+ },
+ {
+  "palavra": "a",
+  "inicio": 23.418,
+  "fim": 23.441
+ },
+ {
+  "palavra": "rua.",
+  "inicio": 23.476,
+  "fim": 23.847
+ },
+ {
+  "palavra": "Abre",
+  "inicio": 24.114,
+  "fim": 24.381
+ },
+ {
+  "palavra": "uma",
+  "inicio": 24.405,
+  "fim": 24.497
+ },
+ {
+  "palavra": "associação.",
+  "inicio": 24.521,
+  "fim": 25.589
+ },
+ {
+  "palavra": "Chama",
+  "inicio": 25.626,
+  "fim": 25.916
+ },
+ {
+  "palavra": "o",
+  "inicio": 25.939,
+  "fim": 25.963
+ },
+ {
+  "palavra": "Major",
+  "inicio": 26.009,
+  "fim": 26.288
+ },
+ {
+  "palavra": "Cometa,",
+  "inicio": 26.323,
+  "fim": 26.857
+ },
+ {
+  "palavra": "assina",
+  "inicio": 27.031,
+  "fim": 27.391
+ },
+ {
+  "palavra": "acordo",
+  "inicio": 27.414,
+  "fim": 27.716
+ },
+ {
+  "palavra": "com",
+  "inicio": 27.762,
+  "fim": 27.867
+ },
+ {
+  "palavra": "o",
+  "inicio": 27.89,
+  "fim": 27.913
+ },
+ {
+  "palavra": "INSS,",
+  "inicio": 27.96,
+  "fim": 28.935
+ },
+ {
+  "palavra": "e",
+  "inicio": 29.074,
+  "fim": 29.167
+ },
+ {
+  "palavra": "cobra",
+  "inicio": 29.248,
+  "fim": 29.527
+ },
+ {
+  "palavra": "direto",
+  "inicio": 29.562,
+  "fim": 29.875
+ },
+ {
+  "palavra": "da",
+  "inicio": 29.91,
+  "fim": 29.957
+ },
+ {
+  "palavra": "aposentadoria.",
+  "inicio": 29.98,
+  "fim": 30.862
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 31.187,
+  "fim": 31.373
+ },
+ {
+  "palavra": "a",
+  "inicio": 31.443,
+  "fim": 31.466
+ },
+ {
+  "palavra": "regra",
+  "inicio": 31.524,
+  "fim": 31.791
+ },
+ {
+  "palavra": "exige",
+  "inicio": 31.814,
+  "fim": 32.116
+ },
+ {
+  "palavra": "autorização",
+  "inicio": 32.139,
+  "fim": 32.801
+ },
+ {
+  "palavra": "do",
+  "inicio": 32.824,
+  "fim": 32.871
+ },
+ {
+  "palavra": "aposentado.",
+  "inicio": 32.905,
+  "fim": 33.695
+ },
+ {
+  "palavra": "Assinatura",
+  "inicio": 34.066,
+  "fim": 34.809
+ },
+ {
+  "palavra": "e",
+  "inicio": 34.984,
+  "fim": 35.088
+ },
+ {
+  "palavra": "biometria.",
+  "inicio": 35.158,
+  "fim": 35.936
+ },
+ {
+  "palavra": "Dica",
+  "inicio": 36.365,
+  "fim": 36.748
+ },
+ {
+  "palavra": "quatro:",
+  "inicio": 36.806,
+  "fim": 37.317
+ },
+ {
+  "palavra": "fabrica.",
+  "inicio": 37.642,
+  "fim": 38.362
+ },
+ {
+  "palavra": "Assinatura",
+  "inicio": 38.594,
+  "fim": 39.222
+ },
+ {
+  "palavra": "falsa,",
+  "inicio": 39.28,
+  "fim": 39.791
+ },
+ {
+  "palavra": "documento",
+  "inicio": 40,
+  "fim": 40.51
+ },
+ {
+  "palavra": "falso,",
+  "inicio": 40.58,
+  "fim": 41.137
+ },
+ {
+  "palavra": "até",
+  "inicio": 41.37,
+  "fim": 41.718
+ },
+ {
+  "palavra": "áudio",
+  "inicio": 41.811,
+  "fim": 42.054
+ },
+ {
+  "palavra": "falso.",
+  "inicio": 42.124,
+  "fim": 42.623
+ },
+ {
+  "palavra": "Dica",
+  "inicio": 42.948,
+  "fim": 43.297
+ },
+ {
+  "palavra": "cinco:",
+  "inicio": 43.343,
+  "fim": 44.005
+ },
+ {
+  "palavra": "promete",
+  "inicio": 44.504,
+  "fim": 44.945
+ },
+ {
+  "palavra": "academia,",
+  "inicio": 44.969,
+  "fim": 45.688
+ },
+ {
+  "palavra": "advogado,",
+  "inicio": 45.828,
+  "fim": 46.664
+ },
+ {
+  "palavra": "plano",
+  "inicio": 46.896,
+  "fim": 47.221
+ },
+ {
+  "palavra": "de",
+  "inicio": 47.267,
+  "fim": 47.314
+ },
+ {
+  "palavra": "saúde.",
+  "inicio": 47.36,
+  "fim": 47.929
+ },
+ {
+  "palavra": "A",
+  "inicio": 48.301,
+  "fim": 48.382
+ },
+ {
+  "palavra": "vovó",
+  "inicio": 48.463,
+  "fim": 48.742
+ },
+ {
+  "palavra": "nunca",
+  "inicio": 48.835,
+  "fim": 49.067
+ },
+ {
+  "palavra": "vai",
+  "inicio": 49.102,
+  "fim": 49.218
+ },
+ {
+  "palavra": "usar.",
+  "inicio": 49.241,
+  "fim": 49.717
+ },
+ {
+  "palavra": "Nem",
+  "inicio": 49.949,
+  "fim": 50.1
+ },
+ {
+  "palavra": "sabe",
+  "inicio": 50.17,
+  "fim": 50.46
+ },
+ {
+  "palavra": "que",
+  "inicio": 50.483,
+  "fim": 50.553
+ },
+ {
+  "palavra": "é",
+  "inicio": 50.576,
+  "fim": 50.599
+ },
+ {
+  "palavra": "sócia.",
+  "inicio": 50.669,
+  "fim": 51.226
+ },
+ {
+  "palavra": "Dica",
+  "inicio": 51.354,
+  "fim": 51.668
+ },
+ {
+  "palavra": "seis:",
+  "inicio": 51.726,
+  "fim": 52.202
+ },
+ {
+  "palavra": "desconta",
+  "inicio": 52.376,
+  "fim": 52.852
+ },
+ {
+  "palavra": "pouquinho",
+  "inicio": 52.887,
+  "fim": 53.281
+ },
+ {
+  "palavra": "todo",
+  "inicio": 53.351,
+  "fim": 53.548
+ },
+ {
+  "palavra": "mês.",
+  "inicio": 53.595,
+  "fim": 54.187
+ },
+ {
+  "palavra": "Mensalidade",
+  "inicio": 54.23,
+  "fim": 54.88
+ },
+ {
+  "palavra": "associativa.",
+  "inicio": 54.915,
+  "fim": 55.716
+ },
+ {
+  "palavra": "Agora",
+  "inicio": 55.89,
+  "fim": 56.25
+ },
+ {
+  "palavra": "multiplica",
+  "inicio": 56.273,
+  "fim": 56.761
+ },
+ {
+  "palavra": "por",
+  "inicio": 56.796,
+  "fim": 56.9
+ },
+ {
+  "palavra": "milhões",
+  "inicio": 56.935,
+  "fim": 57.26
+ },
+ {
+  "palavra": "de",
+  "inicio": 57.283,
+  "fim": 57.33
+ },
+ {
+  "palavra": "aposentados.",
+  "inicio": 57.353,
+  "fim": 58.247
+ },
+ {
+  "palavra": "De",
+  "inicio": 58.375,
+  "fim": 58.479
+ },
+ {
+  "palavra": "dois",
+  "inicio": 58.537,
+  "fim": 58.758
+ },
+ {
+  "palavra": "mil",
+  "inicio": 58.839,
+  "fim": 58.978
+ },
+ {
+  "palavra": "e",
+  "inicio": 59.025,
+  "fim": 59.048
+ },
+ {
+  "palavra": "dezenove",
+  "inicio": 59.083,
+  "fim": 59.663
+ },
+ {
+  "palavra": "a",
+  "inicio": 59.803,
+  "fim": 59.896
+ },
+ {
+  "palavra": "dois",
+  "inicio": 59.954,
+  "fim": 60.151
+ },
+ {
+  "palavra": "mil",
+  "inicio": 60.221,
+  "fim": 60.36
+ },
+ {
+  "palavra": "e",
+  "inicio": 60.407,
+  "fim": 60.43
+ },
+ {
+  "palavra": "vinte",
+  "inicio": 60.476,
+  "fim": 60.697
+ },
+ {
+  "palavra": "e",
+  "inicio": 60.72,
+  "fim": 60.743
+ },
+ {
+  "palavra": "quatro,",
+  "inicio": 60.801,
+  "fim": 61.289
+ },
+ {
+  "palavra": "os",
+  "inicio": 61.428,
+  "fim": 61.579
+ },
+ {
+  "palavra": "descontos",
+  "inicio": 61.637,
+  "fim": 62.148
+ },
+ {
+  "palavra": "somaram",
+  "inicio": 62.171,
+  "fim": 62.554
+ },
+ {
+  "palavra": "seis",
+  "inicio": 62.647,
+  "fim": 62.937
+ },
+ {
+  "palavra": "vírgula",
+  "inicio": 63.019,
+  "fim": 63.402
+ },
+ {
+  "palavra": "três",
+  "inicio": 63.472,
+  "fim": 63.715
+ },
+ {
+  "palavra": "bilhões.",
+  "inicio": 63.773,
+  "fim": 64.424
+ },
+ {
+  "palavra": "Só",
+  "inicio": 64.691,
+  "fim": 64.9
+ },
+ {
+  "palavra": "esqueceram",
+  "inicio": 64.946,
+  "fim": 65.515
+ },
+ {
+  "palavra": "de",
+  "inicio": 65.573,
+  "fim": 65.619
+ },
+ {
+  "palavra": "um",
+  "inicio": 65.666,
+  "fim": 65.712
+ },
+ {
+  "palavra": "detalhe.",
+  "inicio": 65.747,
+  "fim": 66.316
+ },
+ {
+  "palavra": "A",
+  "inicio": 66.444,
+  "fim": 66.537
+ },
+ {
+  "palavra": "CGU",
+  "inicio": 66.63,
+  "fim": 67.059
+ },
+ {
+  "palavra": "perguntou",
+  "inicio": 67.129,
+  "fim": 67.582
+ },
+ {
+  "palavra": "a",
+  "inicio": 67.64,
+  "fim": 67.663
+ },
+ {
+  "palavra": "mil",
+  "inicio": 67.721,
+  "fim": 67.895
+ },
+ {
+  "palavra": "e",
+  "inicio": 67.953,
+  "fim": 67.976
+ },
+ {
+  "palavra": "trezentos",
+  "inicio": 68,
+  "fim": 68.441
+ },
+ {
+  "palavra": "aposentados:",
+  "inicio": 68.487,
+  "fim": 69.381
+ },
+ {
+  "palavra": "o",
+  "inicio": 69.706,
+  "fim": 69.776
+ },
+ {
+  "palavra": "senhor",
+  "inicio": 69.834,
+  "fim": 70.124
+ },
+ {
+  "palavra": "autorizou",
+  "inicio": 70.159,
+  "fim": 70.612
+ },
+ {
+  "palavra": "isso?",
+  "inicio": 70.681,
+  "fim": 71.157
+ },
+ {
+  "palavra": "Abril",
+  "inicio": 71.483,
+  "fim": 71.866
+ },
+ {
+  "palavra": "de",
+  "inicio": 71.912,
+  "fim": 71.959
+ },
+ {
+  "palavra": "dois",
+  "inicio": 72.005,
+  "fim": 72.168
+ },
+ {
+  "palavra": "mil",
+  "inicio": 72.237,
+  "fim": 72.365
+ },
+ {
+  "palavra": "e",
+  "inicio": 72.411,
+  "fim": 72.435
+ },
+ {
+  "palavra": "vinte",
+  "inicio": 72.481,
+  "fim": 72.69
+ },
+ {
+  "palavra": "e",
+  "inicio": 72.713,
+  "fim": 72.736
+ },
+ {
+  "palavra": "cinco.",
+  "inicio": 72.771,
+  "fim": 73.329
+ },
+ {
+  "palavra": "Operação",
+  "inicio": 73.654,
+  "fim": 74.269
+ },
+ {
+  "palavra": "Sem",
+  "inicio": 74.315,
+  "fim": 74.478
+ },
+ {
+  "palavra": "Desconto.",
+  "inicio": 74.524,
+  "fim": 75.407
+ },
+ {
+  "palavra": "Polícia",
+  "inicio": 75.442,
+  "fim": 75.802
+ },
+ {
+  "palavra": "Federal",
+  "inicio": 75.848,
+  "fim": 76.162
+ },
+ {
+  "palavra": "na",
+  "inicio": 76.197,
+  "fim": 76.255
+ },
+ {
+  "palavra": "porta,",
+  "inicio": 76.301,
+  "fim": 76.789
+ },
+ {
+  "palavra": "acordos",
+  "inicio": 77.021,
+  "fim": 77.439
+ },
+ {
+  "palavra": "suspensos,",
+  "inicio": 77.462,
+  "fim": 78.217
+ },
+ {
+  "palavra": "bens",
+  "inicio": 78.31,
+  "fim": 78.553
+ },
+ {
+  "palavra": "bloqueados.",
+  "inicio": 78.6,
+  "fim": 79.331
+ },
+ {
+  "palavra": "Numa",
+  "inicio": 79.471,
+  "fim": 79.703
+ },
+ {
+  "palavra": "casa,",
+  "inicio": 79.738,
+  "fim": 80.307
+ },
+ {
+  "palavra": "dinheiro",
+  "inicio": 80.516,
+  "fim": 80.864
+ },
+ {
+  "palavra": "vivo",
+  "inicio": 80.957,
+  "fim": 81.27
+ },
+ {
+  "palavra": "em",
+  "inicio": 81.305,
+  "fim": 81.351
+ },
+ {
+  "palavra": "saco",
+  "inicio": 81.433,
+  "fim": 81.793
+ },
+ {
+  "palavra": "de",
+  "inicio": 81.839,
+  "fim": 81.886
+ },
+ {
+  "palavra": "lixo.",
+  "inicio": 81.92,
+  "fim": 82.466
+ },
+ {
+  "palavra": "Os",
+  "inicio": 82.896,
+  "fim": 83.07
+ },
+ {
+  "palavra": "três",
+  "inicio": 83.151,
+  "fim": 83.337
+ },
+ {
+  "palavra": "heróis",
+  "inicio": 83.383,
+  "fim": 83.662
+ },
+ {
+  "palavra": "viram",
+  "inicio": 83.755,
+  "fim": 84.01
+ },
+ {
+  "palavra": "réus.",
+  "inicio": 84.068,
+  "fim": 84.614
+ },
+ {
+  "palavra": "E",
+  "inicio": 84.846,
+  "fim": 84.939
+ },
+ {
+  "palavra": "o",
+  "inicio": 85.009,
+  "fim": 85.032
+ },
+ {
+  "palavra": "que",
+  "inicio": 85.078,
+  "fim": 85.148
+ },
+ {
+  "palavra": "ninguém",
+  "inicio": 85.194,
+  "fim": 85.45
+ },
+ {
+  "palavra": "conta:",
+  "inicio": 85.508,
+  "fim": 86.088
+ },
+ {
+  "palavra": "mais",
+  "inicio": 86.216,
+  "fim": 86.46
+ },
+ {
+  "palavra": "de",
+  "inicio": 86.506,
+  "fim": 86.564
+ },
+ {
+  "palavra": "seis",
+  "inicio": 86.657,
+  "fim": 86.889
+ },
+ {
+  "palavra": "milhões",
+  "inicio": 86.947,
+  "fim": 87.284
+ },
+ {
+  "palavra": "pediram",
+  "inicio": 87.342,
+  "fim": 87.679
+ },
+ {
+  "palavra": "de",
+  "inicio": 87.714,
+  "fim": 87.76
+ },
+ {
+  "palavra": "volta,",
+  "inicio": 87.819,
+  "fim": 88.387
+ },
+ {
+  "palavra": "e",
+  "inicio": 88.527,
+  "fim": 88.62
+ },
+ {
+  "palavra": "o",
+  "inicio": 88.666,
+  "fim": 88.689
+ },
+ {
+  "palavra": "governo",
+  "inicio": 88.736,
+  "fim": 89.142
+ },
+ {
+  "palavra": "já",
+  "inicio": 89.2,
+  "fim": 89.293
+ },
+ {
+  "palavra": "devolveu",
+  "inicio": 89.363,
+  "fim": 89.734
+ },
+ {
+  "palavra": "três",
+  "inicio": 89.792,
+  "fim": 89.978
+ },
+ {
+  "palavra": "vírgula",
+  "inicio": 90.024,
+  "fim": 90.338
+ },
+ {
+  "palavra": "seis",
+  "inicio": 90.431,
+  "fim": 90.675
+ },
+ {
+  "palavra": "bilhões.",
+  "inicio": 90.733,
+  "fim": 91.336
+ },
+ {
+  "palavra": "Com",
+  "inicio": 91.603,
+  "fim": 91.754
+ },
+ {
+  "palavra": "dinheiro",
+  "inicio": 91.812,
+  "fim": 92.103
+ },
+ {
+  "palavra": "público.",
+  "inicio": 92.149,
+  "fim": 92.625
+ },
+ {
+  "palavra": "Ou",
+  "inicio": 92.764,
+  "fim": 92.904
+ },
+ {
+  "palavra": "seja,",
+  "inicio": 92.95,
+  "fim": 93.403
+ },
+ {
+  "palavra": "quem",
+  "inicio": 93.67,
+  "fim": 93.809
+ },
+ {
+  "palavra": "pagou",
+  "inicio": 93.879,
+  "fim": 94.158
+ },
+ {
+  "palavra": "foi",
+  "inicio": 94.192,
+  "fim": 94.285
+ },
+ {
+  "palavra": "você.",
+  "inicio": 94.309,
+  "fim": 94.785
+ },
+ {
+  "palavra": "Última",
+  "inicio": 95.156,
+  "fim": 95.458
+ },
+ {
+  "palavra": "dica,",
+  "inicio": 95.504,
+  "fim": 95.934
+ },
+ {
+  "palavra": "a",
+  "inicio": 96.259,
+  "fim": 96.329
+ },
+ {
+  "palavra": "única",
+  "inicio": 96.41,
+  "fim": 96.677
+ },
+ {
+  "palavra": "que",
+  "inicio": 96.712,
+  "fim": 96.781
+ },
+ {
+  "palavra": "funciona:",
+  "inicio": 96.816,
+  "fim": 97.42
+ },
+ {
+  "palavra": "confere",
+  "inicio": 97.687,
+  "fim": 98.14
+ },
+ {
+  "palavra": "o",
+  "inicio": 98.163,
+  "fim": 98.198
+ },
+ {
+  "palavra": "extrato",
+  "inicio": 98.256,
+  "fim": 98.662
+ },
+ {
+  "palavra": "do",
+  "inicio": 98.709,
+  "fim": 98.767
+ },
+ {
+  "palavra": "seu",
+  "inicio": 98.825,
+  "fim": 98.976
+ },
+ {
+  "palavra": "avô.",
+  "inicio": 99.011,
+  "fim": 99.637
+ },
+ {
+  "palavra": "Hoje",
+  "inicio": 99.683,
+  "fim": 99.938
+ },
+ {
+  "palavra": "uma",
+  "inicio": 99.962,
+  "fim": 100.055
+ },
+ {
+  "palavra": "lei",
+  "inicio": 100.101,
+  "fim": 100.194
+ },
+ {
+  "palavra": "proíbe",
+  "inicio": 100.24,
+  "fim": 100.647
+ },
+ {
+  "palavra": "esse",
+  "inicio": 100.67,
+  "fim": 100.763
+ },
+ {
+  "palavra": "desconto.",
+  "inicio": 100.798,
+  "fim": 101.436
+ },
+ {
+  "palavra": "Seu",
+  "inicio": 101.703,
+  "fim": 101.901
+ },
+ {
+  "palavra": "avô",
+  "inicio": 101.947,
+  "fim": 102.272
+ },
+ {
+  "palavra": "ou",
+  "inicio": 102.446,
+  "fim": 102.539
+ },
+ {
+  "palavra": "sua",
+  "inicio": 102.585,
+  "fim": 102.76
+ },
+ {
+  "palavra": "avó",
+  "inicio": 102.783,
+  "fim": 103.073
+ },
+ {
+  "palavra": "já",
+  "inicio": 103.34,
+  "fim": 103.479
+ },
+ {
+  "palavra": "teve",
+  "inicio": 103.561,
+  "fim": 103.77
+ },
+ {
+  "palavra": "desconto",
+  "inicio": 103.805,
+  "fim": 104.234
+ },
+ {
+  "palavra": "que",
+  "inicio": 104.281,
+  "fim": 104.35
  },
  {
   "palavra": "não",
-  "inicio": 97.185,
-  "fim": 97.289
+  "inicio": 104.443,
+  "fim": 104.606
  },
  {
   "palavra": "autorizou?",
-  "inicio": 97.324,
-  "fim": 97.824
+  "inicio": 104.64,
+  "fim": 105.291
  },
  {
   "palavra": "Conta",
-  "inicio": 97.951,
-  "fim": 98.172
+  "inicio": 105.79,
+  "fim": 106.092
  },
  {
   "palavra": "aqui.",
-  "inicio": 98.195,
-  "fim": 98.59
+  "inicio": 106.115,
+  "fim": 106.649
  }
 ]

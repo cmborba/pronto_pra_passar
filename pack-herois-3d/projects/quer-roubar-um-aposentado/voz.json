@@ -1,11 +1,12 @@
 {
- "provedor": "elevenlabs",
- "audio": "narracao.mp3",
- "duracao": 89.68,
- "palavras": 306,
- "frases": 37,
- "voz": "IEnk2DOls89FyLHQBvdf",
- "geradoEm": "2026-11-16T03:50:31.565Z",
- "atempo": 1.1,
- "velocidade": 1.15
+  "provedor": "elevenlabs",
+  "audio": "narracao.mp3",
+  "duracao": 91.06,
+  "palavras": 261,
+  "frases": 37,
+  "voz": "ahU0krwiXgueBD1C8B4w",
+  "geradoEm": "2026-11-16T13:23:21.240Z",
+  "atempo": 1.17,
+  "velocidade": 1.2,
+  "partes": 5
 }
