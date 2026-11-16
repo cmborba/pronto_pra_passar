@@ -1,6 +1,6 @@
 # Quer roubar um aposentado? (fraude no INSS)
 
-Formato: "quer roubar…" subindo de nível; os heróis (Aracnildo, Major Cometa, Coruja Noturna) tentam golpes de rua e falham contra a vovó Dirce (personagem fictícia); a virada: o roubo real foi silencioso, no extrato.
+Formato: "quer roubar…" subindo de nível; os heróis (Aracnildo, Major Cometa, Coruja Noturna) são os protagonistas e os réus: falham nos golpes de rua contra a vovó Dirce (fictícia), sobem pro "nível final" (abrir uma associação de fachada e descontar do benefício) e terminam réus na Operação Sem Desconto. A parte com os heróis é ficção; os números são do caso real.
 
 ## Fatos (conferidos) e fontes
 - Operação Sem Desconto (PF + CGU), abril de 2025, sobre descontos associativos em aposentadorias e pensões.
